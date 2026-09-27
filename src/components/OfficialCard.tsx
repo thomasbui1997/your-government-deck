@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import { useI18n } from "@/i18n/client";
 import { format } from "@/i18n/config";
 import { officeTitle } from "@/i18n/labels";
+import { formatElectionDate } from "@/lib/electionDates";
 import type { Official, Party } from "@/lib/types";
 
 const partyStrip: Record<Party, string> = {
@@ -30,6 +31,35 @@ function initials(name: string) {
     .toUpperCase();
 }
 
+type SeatUp = NonNullable<NonNullable<Official["election"]>["seatUp"]>;
+
+/** Strip across the bottom of the portrait when their seat is on the next ballot. */
+function BallotBanner({ seatUp, lang }: { seatUp: SeatUp; lang: string }) {
+  const { t } = useI18n();
+  const date = formatElectionDate(seatUp.date, lang);
+  const out = seatUp.status === "notRunning" || seatUp.status === "lostPrimary";
+  const headline = out
+    ? t.card[seatUp.status as "notRunning" | "lostPrimary"]
+    : seatUp.status
+      ? format(t.card.onBallot, { date })
+      : format(t.card.seatUp, { date });
+  const sub = out
+    ? format(t.card.seatUp, { date })
+    : seatUp.days === 0
+      ? t.card.electionToday
+      : format(seatUp.days === 1 ? t.card.dayLeft : t.card.daysLeft, { days: seatUp.days });
+  return (
+    <div
+      className={`absolute inset-x-0 bottom-0 flex items-baseline justify-between gap-2 px-2 py-1 ${
+        out ? "bg-stone-200 text-stone-700" : "bg-gold text-navy-deep"
+      }`}
+    >
+      <span className="truncate font-display text-[11px] uppercase">🗳 {headline}</span>
+      <span className="shrink-0 text-[10px] font-bold tabular-nums">{sub}</span>
+    </div>
+  );
+}
+
 export function OfficialCard({
   official,
   size = "deck",
@@ -37,7 +67,7 @@ export function OfficialCard({
   official: Official;
   size?: "deck" | "hero";
 }) {
-  const { t, href } = useI18n();
+  const { t, href, htmlLang } = useI18n();
   const ref = useRef<HTMLDivElement>(null);
   // 0 = primary photo, 1 = fallback photo, 2 = initials.
   const [photoStep, setPhotoStep] = useState(0);
@@ -120,6 +150,9 @@ export function OfficialCard({
               {t.card.maybe}
             </span>
           )}
+          {official.election?.seatUp && (
+            <BallotBanner seatUp={official.election.seatUp} lang={htmlLang} />
+          )}
           {official.appointed && (
             <span className="absolute start-1.5 top-1.5 rounded bg-cream/90 px-1.5 text-[9px] font-bold text-navy uppercase">
               {t.card.appointed}
@@ -152,6 +185,18 @@ export function OfficialCard({
             <div className="flex justify-between">
               <span>📅 {t.card.term}</span>
               <span className="font-bold tabular-nums">→ {official.termEnds}</span>
+            </div>
+          )}
+          {official.election?.nextYear && (
+            <div className="flex justify-between">
+              <span>🗳 {t.card.nextElection}</span>
+              <span className="font-bold tabular-nums">{official.election.nextYear}</span>
+            </div>
+          )}
+          {official.election?.termLimited && (
+            <div className="flex justify-between">
+              <span>🗳 {t.card.nextElection}</span>
+              <span className="font-bold">{t.card.termLimited}</span>
             </div>
           )}
         </div>

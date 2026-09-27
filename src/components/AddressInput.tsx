@@ -1,8 +1,10 @@
 "use client";
 
-import { startTransition, useActionState, useEffect, useId, useRef, useState } from "react";
-import { type AddressLookupState, lookupAddress } from "@/app/actions";
+import { useRouter } from "next/navigation";
+import { useEffect, useId, useRef, useState, useSyncExternalStore, useTransition } from "react";
+import { type AddressError, lookupAddress } from "@/app/actions";
 import { useI18n } from "@/i18n/client";
+import { readSavedAddress, saveAddress, subscribeSavedAddress } from "@/lib/savedDeck";
 
 interface Suggestion {
   placeId: string;
@@ -13,6 +15,8 @@ interface Suggestion {
 /**
  * Address search. With Google Places enabled (`placesOn`), it suggests addresses, zips,
  * and towns as you type; without it, it takes a full street address or a zip.
+ * In the header (`compact`), once an address is saved it shows that address instead,
+ * and clicking it opens the search box to change it.
  */
 export function AddressInput({
   compact = false,
@@ -21,11 +25,13 @@ export function AddressInput({
   compact?: boolean;
   placesOn?: boolean;
 }) {
-  const { t, locale } = useI18n();
-  const [state, formAction, pending] = useActionState<AddressLookupState, FormData>(
-    lookupAddress,
-    {},
-  );
+  const { t, href } = useI18n();
+  const router = useRouter();
+  const [pending, startTransition] = useTransition();
+  const [error, setError] = useState<AddressError>();
+  // Only in this browser; null on the server and when nothing's saved.
+  const saved = useSyncExternalStore(subscribeSavedAddress, readSavedAddress, () => null);
+  const [editing, setEditing] = useState(false);
   // Controlled so a failed lookup doesn't wipe what they typed (form actions reset uncontrolled fields).
   const [address, setAddress] = useState("");
   // Tagged with the query they answer, so stale results never show for newer text.
@@ -68,10 +74,19 @@ export function AddressInput({
     data.set("address", text);
     data.set("placeId", placeId);
     data.set("session", session.current);
-    data.set("locale", locale);
     session.current = "";
     setOpen(false);
-    startTransition(() => formAction(data));
+    setError(undefined);
+    startTransition(async () => {
+      const result = await lookupAddress(data);
+      if ("error" in result) {
+        setError(result.error);
+        return;
+      }
+      saveAddress(text);
+      setEditing(false);
+      router.push(href(result.path));
+    });
   }
 
   function pick(s: Suggestion) {
@@ -80,12 +95,25 @@ export function AddressInput({
     submit(text, s.placeId);
   }
 
+  function startEditing() {
+    setAddress(saved ?? "");
+    setError(undefined);
+    setEditing(true);
+  }
+
+  function stopEditing() {
+    setEditing(false);
+    setOpen(false);
+    setError(undefined);
+  }
+
   const showList = open && suggestions.length > 0;
   const activeId = showList && active >= 0 ? `${listId}-${active}` : undefined;
 
   function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (!showList) {
       if (e.key === "ArrowDown" && suggestions.length) setOpen(true);
+      if (e.key === "Escape" && editing) stopEditing();
       return;
     }
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
@@ -110,11 +138,32 @@ export function AddressInput({
       ? t.address.placeholderShort
       : t.address.placeholder;
 
+  if (compact && saved && !editing) {
+    return (
+      <button
+        type="button"
+        onClick={startEditing}
+        title={t.address.change}
+        className="flex max-w-44 items-center gap-2 rounded-xl border-4 border-navy bg-white px-3 py-1.5 text-sm text-navy hover:border-gold focus:border-gold focus:outline-none sm:max-w-72"
+      >
+        <span className="truncate">{saved}</span>
+        <span className="sr-only">{t.address.change}</span>
+        <span aria-hidden className="shrink-0 text-navy/50">
+          ✎
+        </span>
+      </button>
+    );
+  }
+
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
         submit(address.trim());
+      }}
+      onBlur={(e) => {
+        // Clicked away while changing it: back to showing the saved address.
+        if (editing && !pending && !e.currentTarget.contains(e.relatedTarget)) stopEditing();
       }}
       className={`relative text-start ${compact ? "" : "w-full max-w-lg"}`}
     >
@@ -135,7 +184,11 @@ export function AddressInput({
             setAddress(e.target.value);
             setOpen(true);
           }}
-          onFocus={() => setOpen(true)}
+          onFocus={(e) => {
+            setOpen(true);
+            if (editing) e.currentTarget.select();
+          }}
+          autoFocus={editing}
           onBlur={() => setOpen(false)}
           onKeyDown={onKeyDown}
           className={`min-w-0 flex-1 rounded-xl border-4 border-navy bg-white px-4 text-navy placeholder:text-navy/30 focus:border-gold focus:outline-none ${compact ? "w-44 py-1.5 text-sm sm:w-64" : "py-3 text-lg"}`}
@@ -143,6 +196,8 @@ export function AddressInput({
         <button
           type="submit"
           disabled={pending}
+          // Safari doesn't focus buttons on click, so the form's blur would close it first.
+          onMouseDown={(e) => e.preventDefault()}
           className={`rounded-xl border-4 border-navy bg-gold font-display text-navy shadow-[4px_4px_0_var(--color-navy)] transition active:translate-x-1 active:translate-y-1 active:shadow-none disabled:opacity-50 ${compact ? "px-3 text-sm" : "px-5 text-lg"}`}
         >
           {pending ? (
@@ -198,7 +253,7 @@ export function AddressInput({
             : "mt-2 min-h-5 text-sm text-party-r"
         }
       >
-        {!showList && state.error && t.address[state.error]}
+        {!showList && error && t.address[error]}
       </p>
     </form>
   );

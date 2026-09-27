@@ -10,9 +10,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: `${t.methodology.metaTitle} · ${t.meta.title}` };
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ id, title, children }: { id?: string; title: string; children: React.ReactNode }) {
   return (
-    <section className="mt-10">
+    <section id={id} className="mt-10 scroll-mt-24">
       <h2 className="font-display text-xl text-navy">{title}</h2>
       <div className="mt-3 space-y-3 leading-relaxed text-navy/85">{children}</div>
     </section>
@@ -69,6 +69,14 @@ export default async function MethodologyPage() {
 
         <Section title={m.limitsTitle}>
           <p>{m.limits}</p>
+        </Section>
+
+        <Section id="money" title={m.moneyTitle}>
+          <p>{m.money1}</p>
+          <p>{m.money2}</p>
+          <p>{m.money3}</p>
+          <p>{m.money4}</p>
+          <p>{m.money5}</p>
         </Section>
 
         <Section title={m.correctionsTitle}>

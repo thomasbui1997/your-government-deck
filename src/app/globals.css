@@ -22,6 +22,24 @@
   --color-tier-county: #c2410c;
   --color-tier-town: #15803d;
   --color-tier-school: #be185d;
+
+  /* Campaign money, grassroots → big money: donor sizes, then PACs. */
+  --color-money-0: #2f9e6e;
+  --color-money-1: #8cc9a3;
+  --color-money-2: #e3d38a;
+  --color-money-3: #e8b33a;
+  --color-money-4: #d9731f;
+  --color-money-pac: #1b2a4a;
+  --color-money-party: #78716c;
+  --color-money-self: #7c3aed;
+  --color-money-unknown: #d6cfbf;
+
+  /* Who sponsors a PAC. */
+  --color-pac-labor: #0f766e;
+  --color-pac-corporate: #9a3412;
+  --color-pac-trade: #a16207;
+  --color-pac-politician: #6d28d9;
+  --color-pac-other: #78716c;
 }
 
 body {

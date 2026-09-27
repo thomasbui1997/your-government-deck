@@ -1,4 +1,5 @@
 import "server-only";
+import { electionBadges } from "./campaigns";
 import {
   type DelegationMember,
   getBills,
@@ -51,6 +52,8 @@ const FEDERAL_EXEC: Official[] = [
     photoFallbackUrl:
       "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
     termEnds: "2029",
+    // 22nd Amendment: elected twice (2016, 2024).
+    election: { termLimited: true },
     stats: [],
   },
   {
@@ -279,12 +282,19 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
     .filter((m): m is DelegationMember => m !== undefined);
 
   const split = districts.length > 1;
-  const congress = await Promise.all(
-    [...senators, ...reps].map(async (m) => {
-      const card = await toCard(m, state, index.get(m.bioguideId));
-      return m.chamber === "House" && split ? { ...card, maybe: true } : card;
-    }),
-  );
+  const members = [...senators, ...reps];
+  const infos = members.map((m) => index.get(m.bioguideId));
+  const [cards, badges] = await Promise.all([
+    Promise.all(members.map((m, i) => toCard(m, state, infos[i]))),
+    electionBadges(infos.filter((i) => i !== undefined)),
+  ]);
+  const badgeFor = new Map(infos.filter((i) => i !== undefined).map((info, i) => [info, badges[i]]));
+  const congress = cards.map((card, i) => {
+    const m = members[i];
+    const info = infos[i];
+    const withBadge = info ? { ...card, election: badgeFor.get(info) } : card;
+    return m.chamber === "House" && split ? { ...withBadge, maybe: true } : withBadge;
+  });
 
   const federal: Tier[] = [
     {
@@ -354,11 +364,12 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
 
     // Posts only from a Bluesky handle verified by their official website's domain.
     const bskyHandle = handleFromWebsite(info?.website ?? member.officialWebsiteUrl);
-    const [sponsored, cosponsored, voteItems, posts] = await Promise.all([
+    const [sponsored, cosponsored, voteItems, posts, badges] = await Promise.all([
       getBills(id, "sponsored", 10),
       getBills(id, "cosponsored", 10),
       votes.catch(() => [] as ActivityItem[]),
       bskyHandle ? getBlueskyPosts(bskyHandle, 8).catch(() => [] as ActivityItem[]) : [],
+      info ? electionBadges([info]) : [],
     ]);
 
     const official: Official = {
@@ -370,6 +381,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
       photoUrl: photoFor(id),
       photoFallbackUrl: member.depiction?.imageUrl,
       termEnds: info?.termEnd.slice(0, 4),
+      election: badges[0],
       lastActiveDaysAgo: sponsored[0] ? daysSince(sponsored[0].date) : undefined,
       stats: [
         ...(member.sponsoredLegislation

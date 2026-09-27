@@ -55,7 +55,8 @@ export default async function DeckPage(props: PageProps<"/[locale]/z/[zip]">) {
         {deck.narrowed && !deck.splits && (
           <p className="mx-4 mt-4 rounded-full bg-emerald-100 px-4 py-1.5 text-center text-sm text-navy sm:mx-auto sm:w-fit">
             {t.deck.narrowed} ·{" "}
-            <Link href={await href("/")} className="font-medium underline">
+            {/* ?new: the search page, not the saved deck the home page would open. */}
+            <Link href={`${await href("/")}?new`} className="font-medium underline">
               {t.deck.narrowedReset}
             </Link>
           </p>

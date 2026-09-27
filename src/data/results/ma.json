@@ -1,0 +1,7352 @@
+{
+ "source": "Massachusetts Secretary of the Commonwealth, PD43+ election statistics",
+ "sourceUrl": "https://electionstats.state.ma.us",
+ "fetched": "2026-09-27",
+ "races": [
+  {
+   "id": 172949,
+   "year": 2026,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 49927,
+     "pct": 54
+    },
+    {
+     "name": "Jeromie Whalen",
+     "votes": 42488,
+     "pct": 45.9
+    }
+   ],
+   "totalVotes": 94143
+  },
+  {
+   "id": 172985,
+   "year": 2026,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 80813,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 91077
+  },
+  {
+   "id": 172917,
+   "year": 2026,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "votes": 69670,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 81572
+  },
+  {
+   "id": 172918,
+   "year": 2026,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Gary J. Grossi",
+     "votes": 22068,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 27958
+  },
+  {
+   "id": 173039,
+   "year": 2026,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "votes": 66952,
+     "pct": 73.1
+    },
+    {
+     "name": "Jason Poulos",
+     "votes": 24524,
+     "pct": 26.8
+    }
+   ],
+   "totalVotes": 95770
+  },
+  {
+   "id": 173040,
+   "year": 2026,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Thomas Stalcup",
+     "votes": 21905,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 29391
+  },
+  {
+   "id": 173005,
+   "year": 2026,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 85802,
+     "pct": 73.6
+    },
+    {
+     "name": "Jonathan Paz",
+     "votes": 22904,
+     "pct": 19.7
+    },
+    {
+     "name": "Tarik Samman",
+     "votes": 7675,
+     "pct": 6.6
+    }
+   ],
+   "totalVotes": 123129
+  },
+  {
+   "id": 173006,
+   "year": 2026,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Walter Grochowski",
+     "party": "(Write-In)",
+     "votes": 13,
+     "pct": 1.3
+    }
+   ],
+   "totalVotes": 19532
+  },
+  {
+   "id": 172973,
+   "year": 2026,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Dan Koh",
+     "votes": 47835,
+     "pct": 40.9
+    },
+    {
+     "name": "Tram T. Nguyen",
+     "votes": 34324,
+     "pct": 29.4
+    },
+    {
+     "name": "John A. Beccia, III",
+     "votes": 14215,
+     "pct": 12.2
+    },
+    {
+     "name": "Jamie M. Belsito",
+     "votes": 11268,
+     "pct": 9.6
+    },
+    {
+     "name": "Mariah L. Lancaster",
+     "votes": 4725,
+     "pct": 4
+    },
+    {
+     "name": "Bethany Andres-Beck",
+     "votes": 4385,
+     "pct": 3.8
+    }
+   ],
+   "totalVotes": 121551
+  },
+  {
+   "id": 172974,
+   "year": 2026,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Micah Quinney Jones",
+     "votes": 29111,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 37940
+  },
+  {
+   "id": 173113,
+   "year": 2026,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "votes": 74100,
+     "pct": 98.4
+    }
+   ],
+   "totalVotes": 87017
+  },
+  {
+   "id": 172899,
+   "year": 2026,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 57823,
+     "pct": 55.6
+    },
+    {
+     "name": "Patrick Thomas Roath",
+     "votes": 45946,
+     "pct": 44.2
+    }
+   ],
+   "totalVotes": 108557
+  },
+  {
+   "id": 172900,
+   "year": 2026,
+   "office": "house",
+   "district": 8,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Robert Gerald Burke",
+     "votes": 20362,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 27491
+  },
+  {
+   "id": 172935,
+   "year": 2026,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "votes": 81847,
+     "pct": 77.5
+    },
+    {
+     "name": "Craig Swallow",
+     "votes": 23671,
+     "pct": 22.4
+    }
+   ],
+   "totalVotes": 110952
+  },
+  {
+   "id": 172936,
+   "year": 2026,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "R. Tyler Macallister",
+     "votes": 40104,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 51722
+  },
+  {
+   "id": 172905,
+   "year": 2026,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 580628,
+     "pct": 64.7
+    },
+    {
+     "name": "Seth W. Moulton",
+     "votes": 314198,
+     "pct": 35
+    }
+   ],
+   "totalVotes": 913768
+  },
+  {
+   "id": 172906,
+   "year": 2026,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "John Deaton",
+     "votes": 221950,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 260781
+  },
+  {
+   "id": 163580,
+   "year": 2024,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 56364,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 60638
+  },
+  {
+   "id": 165323,
+   "year": 2024,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 223325,
+     "pct": 62.4
+    },
+    {
+     "name": "Nadia Donya Milleron",
+     "party": "Unenrolled",
+     "votes": 133552,
+     "pct": 37.3
+    }
+   ],
+   "totalVotes": 385005
+  },
+  {
+   "id": 163640,
+   "year": 2024,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 56343,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 58618
+  },
+  {
+   "id": 165343,
+   "year": 2024,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 251441,
+     "pct": 68.6
+    },
+    {
+     "name": "Cornelius Shea",
+     "party": "Unenrolled",
+     "votes": 114065,
+     "pct": 31.1
+    }
+   ],
+   "totalVotes": 389337
+  },
+  {
+   "id": 163535,
+   "year": 2024,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "votes": 54612,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 59703
+  },
+  {
+   "id": 165309,
+   "year": 2024,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "party": "Democratic",
+     "votes": 264698,
+     "pct": 97.5
+    }
+   ],
+   "totalVotes": 362678
+  },
+  {
+   "id": 163730,
+   "year": 2024,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "votes": 64238,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 72676
+  },
+  {
+   "id": 165373,
+   "year": 2024,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "party": "Democratic",
+     "votes": 289347,
+     "pct": 97.2
+    },
+    {
+     "name": "Sana A. Fadel",
+     "party": "(Write-In)",
+     "votes": 1099,
+     "pct": 0.4
+    }
+   ],
+   "totalVotes": 411578
+  },
+  {
+   "id": 163673,
+   "year": 2024,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 76806,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 84514
+  },
+  {
+   "id": 165353,
+   "year": 2024,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 286689,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 379701
+  },
+  {
+   "id": 163619,
+   "year": 2024,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "votes": 62986,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 68278
+  },
+  {
+   "id": 165336,
+   "year": 2024,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "party": "Democratic",
+     "votes": 321186,
+     "pct": 97.8
+    }
+   ],
+   "totalVotes": 438573
+  },
+  {
+   "id": 163856,
+   "year": 2024,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "votes": 57172,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 64646
+  },
+  {
+   "id": 165413,
+   "year": 2024,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "party": "Democratic",
+     "votes": 232094,
+     "pct": 97.1
+    }
+   ],
+   "totalVotes": 283194
+  },
+  {
+   "id": 163514,
+   "year": 2024,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 64761,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 74245
+  },
+  {
+   "id": 163516,
+   "year": 2024,
+   "office": "house",
+   "district": 8,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Robert G. Burke",
+     "votes": 10335,
+     "pct": 46.1
+    },
+    {
+     "name": "James M. Govatsos",
+     "votes": 6216,
+     "pct": 27.7
+    },
+    {
+     "name": "Daniel P. Kelly",
+     "votes": 5761,
+     "pct": 25.7
+    }
+   ],
+   "totalVotes": 25189
+  },
+  {
+   "id": 165302,
+   "year": 2024,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 265432,
+     "pct": 70.4
+    },
+    {
+     "name": "Robert G. Burke",
+     "party": "Republican",
+     "votes": 110638,
+     "pct": 29.4
+    }
+   ],
+   "totalVotes": 397767
+  },
+  {
+   "id": 163559,
+   "year": 2024,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "votes": 71814,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 76521
+  },
+  {
+   "id": 163561,
+   "year": 2024,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Dan Sullivan",
+     "votes": 36888,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 45143
+  },
+  {
+   "id": 165316,
+   "year": 2024,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "party": "Democratic",
+     "votes": 251931,
+     "pct": 56.4
+    },
+    {
+     "name": "Dan Sullivan",
+     "party": "Republican",
+     "votes": 193822,
+     "pct": 43.4
+    }
+   ],
+   "totalVotes": 465097
+  },
+  {
+   "id": 163520,
+   "year": 2024,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Elizabeth Ann Warren",
+     "votes": 562709,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 619839
+  },
+  {
+   "id": 163522,
+   "year": 2024,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "John Deaton",
+     "votes": 136773,
+     "pct": 64.5
+    },
+    {
+     "name": "Robert J. Antonellis",
+     "votes": 54940,
+     "pct": 25.9
+    },
+    {
+     "name": "Ian Cain",
+     "votes": 19374,
+     "pct": 9.1
+    }
+   ],
+   "totalVotes": 217963
+  },
+  {
+   "id": 165304,
+   "year": 2024,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Elizabeth Ann Warren",
+     "party": "Democratic",
+     "votes": 2041668,
+     "pct": 59.8
+    },
+    {
+     "name": "John Deaton",
+     "party": "Republican",
+     "votes": 1365440,
+     "pct": 40
+    }
+   ],
+   "totalVotes": 3512930
+  },
+  {
+   "id": 152337,
+   "year": 2022,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 71928,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 84588
+  },
+  {
+   "id": 152338,
+   "year": 2022,
+   "office": "house",
+   "district": 1,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Dean James Martilli",
+     "votes": 23256,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 29470
+  },
+  {
+   "id": 154363,
+   "year": 2022,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 157635,
+     "pct": 61.5
+    },
+    {
+     "name": "Dean James Martilli",
+     "party": "Republican",
+     "votes": 98386,
+     "pct": 38.4
+    }
+   ],
+   "totalVotes": 263651
+  },
+  {
+   "id": 152373,
+   "year": 2022,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 69839,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 77417
+  },
+  {
+   "id": 152374,
+   "year": 2022,
+   "office": "house",
+   "district": 2,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jeffrey A. Sossa-Paquette",
+     "votes": 22675,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 29547
+  },
+  {
+   "id": 154381,
+   "year": 2022,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 180639,
+     "pct": 66.2
+    },
+    {
+     "name": "Jeffrey A. Sossa-Paquette",
+     "party": "Republican",
+     "votes": 91956,
+     "pct": 33.7
+    }
+   ],
+   "totalVotes": 280071
+  },
+  {
+   "id": 152305,
+   "year": 2022,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "votes": 64190,
+     "pct": 99.9
+    }
+   ],
+   "totalVotes": 73658
+  },
+  {
+   "id": 152306,
+   "year": 2022,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Dean Tran",
+     "votes": 24087,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 31811
+  },
+  {
+   "id": 154347,
+   "year": 2022,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "party": "Democratic",
+     "votes": 154496,
+     "pct": 63.5
+    },
+    {
+     "name": "Dean Tran",
+     "party": "Republican",
+     "votes": 88585,
+     "pct": 36.4
+    }
+   ],
+   "totalVotes": 251389
+  },
+  {
+   "id": 152427,
+   "year": 2022,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "votes": 67738,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 81312
+  },
+  {
+   "id": 152428,
+   "year": 2022,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "David B. Cannata",
+     "party": "(Write-In)",
+     "votes": 1091,
+     "pct": 42.8
+    }
+   ],
+   "totalVotes": 30940
+  },
+  {
+   "id": 154410,
+   "year": 2022,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "party": "Democratic",
+     "votes": 201882,
+     "pct": 96.9
+    }
+   ],
+   "totalVotes": 291569
+  },
+  {
+   "id": 152395,
+   "year": 2022,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 84845,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 98696
+  },
+  {
+   "id": 152396,
+   "year": 2022,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Caroline Colarusso",
+     "votes": 16184,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 22146
+  },
+  {
+   "id": 154393,
+   "year": 2022,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 203994,
+     "pct": 74
+    },
+    {
+     "name": "Caroline Colarusso",
+     "party": "Republican",
+     "votes": 71491,
+     "pct": 25.9
+    }
+   ],
+   "totalVotes": 284881
+  },
+  {
+   "id": 152361,
+   "year": 2022,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "votes": 84860,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 98352
+  },
+  {
+   "id": 152362,
+   "year": 2022,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Bob May",
+     "votes": 29503,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 38647
+  },
+  {
+   "id": 154375,
+   "year": 2022,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "party": "Democratic",
+     "votes": 198119,
+     "pct": 62.9
+    },
+    {
+     "name": "Bob May",
+     "party": "Republican",
+     "votes": 110770,
+     "pct": 35.2
+    },
+    {
+     "name": "Mark T. Tashjian",
+     "party": "Unenrolled",
+     "votes": 5995,
+     "pct": 1.9
+    }
+   ],
+   "totalVotes": 323032
+  },
+  {
+   "id": 152497,
+   "year": 2022,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "votes": 69227,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 81312
+  },
+  {
+   "id": 152498,
+   "year": 2022,
+   "office": "house",
+   "district": 7,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Donnie Dionicio Palmer, Jr",
+     "votes": 4657,
+     "pct": 97.6
+    }
+   ],
+   "totalVotes": 6863
+  },
+  {
+   "id": 154446,
+   "year": 2022,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "party": "Democratic",
+     "votes": 151825,
+     "pct": 84.6
+    },
+    {
+     "name": "Donnie Dionicio Palmer, Jr",
+     "party": "Republican",
+     "votes": 27129,
+     "pct": 15.1
+    }
+   ],
+   "totalVotes": 189830
+  },
+  {
+   "id": 152289,
+   "year": 2022,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 73191,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 89845
+  },
+  {
+   "id": 152290,
+   "year": 2022,
+   "office": "house",
+   "district": 8,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Robert G. Burke",
+     "votes": 19173,
+     "pct": 73
+    },
+    {
+     "name": "Hamilton Soares Rodrigues",
+     "votes": 6977,
+     "pct": 26.6
+    }
+   ],
+   "totalVotes": 32008
+  },
+  {
+   "id": 154339,
+   "year": 2022,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 189987,
+     "pct": 69.7
+    },
+    {
+     "name": "Robert G. Burke",
+     "party": "Republican",
+     "votes": 82126,
+     "pct": 30.1
+    }
+   ],
+   "totalVotes": 284583
+  },
+  {
+   "id": 152323,
+   "year": 2022,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "votes": 81530,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 92046
+  },
+  {
+   "id": 152324,
+   "year": 2022,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jesse G. Brown",
+     "votes": 24384,
+     "pct": 51.3
+    },
+    {
+     "name": "Dan Sullivan",
+     "votes": 23002,
+     "pct": 48.4
+    }
+   ],
+   "totalVotes": 53756
+  },
+  {
+   "id": 154356,
+   "year": 2022,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "party": "Democratic",
+     "votes": 197823,
+     "pct": 59.1
+    },
+    {
+     "name": "Jesse G. Brown",
+     "party": "Republican",
+     "votes": 136347,
+     "pct": 40.9
+    }
+   ],
+   "totalVotes": 342455
+  },
+  {
+   "id": 139865,
+   "year": 2020,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 84092,
+     "pct": 58.6
+    },
+    {
+     "name": "Alex B. Morse",
+     "votes": 59110,
+     "pct": 41.2
+    }
+   ],
+   "totalVotes": 145136
+  },
+  {
+   "id": 140772,
+   "year": 2020,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 275376,
+     "pct": 96.5
+    },
+    {
+     "name": "Alex B. Morse",
+     "party": "(Write-In)",
+     "votes": 1274,
+     "pct": 0.4
+    }
+   ],
+   "totalVotes": 372716
+  },
+  {
+   "id": 139917,
+   "year": 2020,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 121645,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 137267
+  },
+  {
+   "id": 139920,
+   "year": 2020,
+   "office": "house",
+   "district": 2,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Tracy Lyn Lovvorn",
+     "votes": 26456,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 31373
+  },
+  {
+   "id": 140785,
+   "year": 2020,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 249854,
+     "pct": 65.3
+    },
+    {
+     "name": "Tracy Lyn Lovvorn",
+     "party": "Republican",
+     "votes": 132220,
+     "pct": 34.6
+    }
+   ],
+   "totalVotes": 394084
+  },
+  {
+   "id": 139813,
+   "year": 2020,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "votes": 115142,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 135189
+  },
+  {
+   "id": 140759,
+   "year": 2020,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "party": "Democratic",
+     "votes": 286896,
+     "pct": 97.7
+    }
+   ],
+   "totalVotes": 388210
+  },
+  {
+   "id": 140021,
+   "year": 2020,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "votes": 35361,
+     "pct": 22.4
+    },
+    {
+     "name": "Jesse R. Mermell",
+     "votes": 33216,
+     "pct": 21
+    },
+    {
+     "name": "Becky Grossman",
+     "votes": 28578,
+     "pct": 18.1
+    },
+    {
+     "name": "Natalia Linos",
+     "votes": 18364,
+     "pct": 11.6
+    },
+    {
+     "name": "Ihssane Leckey",
+     "votes": 17539,
+     "pct": 11.1
+    },
+    {
+     "name": "Alan A. Khazei",
+     "votes": 14440,
+     "pct": 9.1
+    }
+   ]
+  },
+  {
+   "id": 140024,
+   "year": 2020,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Julie A. Hall",
+     "votes": 19394,
+     "pct": 62.8
+    },
+    {
+     "name": "David A. Rosa",
+     "votes": 11296,
+     "pct": 36.6
+    }
+   ],
+   "totalVotes": 32702
+  },
+  {
+   "id": 140813,
+   "year": 2020,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Jake Auchincloss",
+     "party": "Democratic",
+     "votes": 251102,
+     "pct": 60.8
+    },
+    {
+     "name": "Julie A. Hall",
+     "party": "Republican",
+     "votes": 160474,
+     "pct": 38.9
+    }
+   ],
+   "totalVotes": 434533
+  },
+  {
+   "id": 139961,
+   "year": 2020,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 162768,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 191632
+  },
+  {
+   "id": 139963,
+   "year": 2020,
+   "office": "house",
+   "district": 5,
+   "stage": "Libertarian Primary",
+   "candidates": [
+    {
+     "name": "Walter J. Ziobro, Jr",
+     "party": "(Write-In)",
+     "votes": 17,
+     "pct": 7.5
+    }
+   ],
+   "totalVotes": 464
+  },
+  {
+   "id": 139964,
+   "year": 2020,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Caroline Colarusso",
+     "votes": 18818,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 23121
+  },
+  {
+   "id": 140797,
+   "year": 2020,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 294427,
+     "pct": 74.3
+    },
+    {
+     "name": "Caroline Colarusso",
+     "party": "Republican",
+     "votes": 101351,
+     "pct": 25.6
+    }
+   ],
+   "totalVotes": 413371
+  },
+  {
+   "id": 139901,
+   "year": 2020,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "votes": 124928,
+     "pct": 78
+    },
+    {
+     "name": "Jamie M. Belsito",
+     "votes": 19492,
+     "pct": 12.2
+    },
+    {
+     "name": "Angus G. McQuilken",
+     "votes": 15478,
+     "pct": 9.7
+    }
+   ],
+   "totalVotes": 165595
+  },
+  {
+   "id": 139904,
+   "year": 2020,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "John Paul Moran",
+     "votes": 32564,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 39629
+  },
+  {
+   "id": 140781,
+   "year": 2020,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "party": "Democratic",
+     "votes": 286377,
+     "pct": 65.4
+    },
+    {
+     "name": "John Paul Moran",
+     "party": "Republican",
+     "votes": 150695,
+     "pct": 34.4
+    }
+   ],
+   "totalVotes": 452574
+  },
+  {
+   "id": 140169,
+   "year": 2020,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "votes": 142108,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 160373
+  },
+  {
+   "id": 140172,
+   "year": 2020,
+   "office": "house",
+   "district": 7,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Rayla Campbell",
+     "party": "(Write-In)",
+     "votes": 1202,
+     "pct": 39.6
+    },
+    {
+     "name": "Rachel Nicole Miselman",
+     "party": "(Write-In)",
+     "votes": 55,
+     "pct": 1.8
+    }
+   ],
+   "totalVotes": 8715
+  },
+  {
+   "id": 140850,
+   "year": 2020,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "party": "Democratic",
+     "votes": 267362,
+     "pct": 86.6
+    },
+    {
+     "name": "Roy A. Owens, Sr",
+     "party": "Unenrolled",
+     "votes": 38675,
+     "pct": 12.5
+    },
+    {
+     "name": "Rayla Danella Campbell",
+     "party": "(Write-In)",
+     "votes": 695,
+     "pct": 0.2
+    },
+    {
+     "name": "Rachel Nicole Miselman",
+     "party": "(Write-In)",
+     "votes": 11,
+     "pct": 0
+    },
+    {
+     "name": "Claudette N. Joseph",
+     "party": "(Write-In)",
+     "votes": 1,
+     "pct": 0
+    }
+   ],
+   "totalVotes": 326837
+  },
+  {
+   "id": 139789,
+   "year": 2020,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 111542,
+     "pct": 66.4
+    },
+    {
+     "name": "Robbie H. Goldstein",
+     "votes": 56219,
+     "pct": 33.5
+    }
+   ],
+   "totalVotes": 175181
+  },
+  {
+   "id": 140753,
+   "year": 2020,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 310940,
+     "pct": 80.7
+    },
+    {
+     "name": "Jonathan D. Lott",
+     "party": "Unenrolled",
+     "votes": 72060,
+     "pct": 18.7
+    }
+   ],
+   "totalVotes": 433545
+  },
+  {
+   "id": 139845,
+   "year": 2020,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "votes": 125608,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 149661
+  },
+  {
+   "id": 139848,
+   "year": 2020,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Helen Brady",
+     "votes": 36238,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 44969
+  },
+  {
+   "id": 140767,
+   "year": 2020,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "party": "Democratic",
+     "votes": 260262,
+     "pct": 61.3
+    },
+    {
+     "name": "Helen Brady",
+     "party": "Republican",
+     "votes": 154261,
+     "pct": 36.3
+    },
+    {
+     "name": "Michael Manley",
+     "party": "Unenrolled",
+     "votes": 9717,
+     "pct": 2.3
+    }
+   ],
+   "totalVotes": 442135
+  },
+  {
+   "id": 139797,
+   "year": 2020,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 782694,
+     "pct": 55.4
+    },
+    {
+     "name": "Joseph P. Kennedy, III",
+     "votes": 629359,
+     "pct": 44.5
+    }
+   ],
+   "totalVotes": 1427868
+  },
+  {
+   "id": 139799,
+   "year": 2020,
+   "office": "senate",
+   "stage": "Libertarian Primary",
+   "candidates": [
+    {
+     "name": "Vermin Love Supreme",
+     "party": "(Write-In)",
+     "votes": 27,
+     "pct": 0.8
+    }
+   ],
+   "totalVotes": 4871
+  },
+  {
+   "id": 140755,
+   "year": 2020,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 2357809,
+     "pct": 66.2
+    },
+    {
+     "name": "Kevin J. O'Connor",
+     "party": "Republican",
+     "votes": 1177765,
+     "pct": 33
+    },
+    {
+     "name": "Shiva Ayyadurai",
+     "party": "(Write-In)",
+     "votes": 21134,
+     "pct": 0.6
+    }
+   ],
+   "totalVotes": 3658005
+  },
+  {
+   "id": 131524,
+   "year": 2018,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 211790,
+     "pct": 97.6
+    }
+   ],
+   "totalVotes": 275066
+  },
+  {
+   "id": 131853,
+   "year": 2018,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 49696,
+     "pct": 70.6
+    },
+    {
+     "name": "Tahirah Amatul-Wadud",
+     "votes": 20565,
+     "pct": 29.2
+    }
+   ],
+   "totalVotes": 73261
+  },
+  {
+   "id": 131540,
+   "year": 2018,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 191332,
+     "pct": 67.2
+    },
+    {
+     "name": "Tracy Lyn Lovvorn",
+     "party": "Republican",
+     "votes": 93391,
+     "pct": 32.8
+    }
+   ],
+   "totalVotes": 293163
+  },
+  {
+   "id": 131913,
+   "year": 2018,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 53848,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 62291
+  },
+  {
+   "id": 131915,
+   "year": 2018,
+   "office": "house",
+   "district": 2,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Tracy Lyn Lovvorn",
+     "votes": 15792,
+     "pct": 60.6
+    },
+    {
+     "name": "Kevin William Powers",
+     "votes": 10170,
+     "pct": 39
+    }
+   ],
+   "totalVotes": 32085
+  },
+  {
+   "id": 131511,
+   "year": 2018,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "party": "Democratic",
+     "votes": 173175,
+     "pct": 62
+    },
+    {
+     "name": "Rick Green",
+     "party": "Republican",
+     "votes": 93445,
+     "pct": 33.5
+    },
+    {
+     "name": "Michael P. Mullen",
+     "party": "Unenrolled",
+     "votes": 12572,
+     "pct": 4.5
+    }
+   ],
+   "totalVotes": 286583
+  },
+  {
+   "id": 131805,
+   "year": 2018,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Lori Loureiro Trahan",
+     "votes": 18580,
+     "pct": 21.7
+    },
+    {
+     "name": "Daniel Arrigg Koh",
+     "votes": 18435,
+     "pct": 21.5
+    },
+    {
+     "name": "Barbara A. L'Italien",
+     "votes": 13018,
+     "pct": 15.2
+    },
+    {
+     "name": "Juana B. Matias",
+     "votes": 12993,
+     "pct": 15.2
+    },
+    {
+     "name": "Rufus Gifford",
+     "votes": 12873,
+     "pct": 15
+    },
+    {
+     "name": "Alexandra E. Chandler",
+     "votes": 4846,
+     "pct": 5.7
+    }
+   ]
+  },
+  {
+   "id": 131807,
+   "year": 2018,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Rick Green",
+     "votes": 24047,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 32651
+  },
+  {
+   "id": 131568,
+   "year": 2018,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "party": "Democratic",
+     "votes": 245289,
+     "pct": 97.7
+    }
+   ],
+   "totalVotes": 322127
+  },
+  {
+   "id": 132015,
+   "year": 2018,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "votes": 60214,
+     "pct": 93.4
+    },
+    {
+     "name": "Gary J. Rucinski",
+     "votes": 4240,
+     "pct": 6.6
+    }
+   ],
+   "totalVotes": 66425
+  },
+  {
+   "id": 131551,
+   "year": 2018,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 236243,
+     "pct": 75.9
+    },
+    {
+     "name": "John Hugo",
+     "party": "Republican",
+     "votes": 74856,
+     "pct": 24
+    }
+   ],
+   "totalVotes": 323836
+  },
+  {
+   "id": 131955,
+   "year": 2018,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 78156,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 93695
+  },
+  {
+   "id": 131957,
+   "year": 2018,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "John Hugo",
+     "votes": 11859,
+     "pct": 63.2
+    },
+    {
+     "name": "Louis Kuchnir",
+     "votes": 6763,
+     "pct": 36
+    }
+   ],
+   "totalVotes": 25544
+  },
+  {
+   "id": 131535,
+   "year": 2018,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "party": "Democratic",
+     "votes": 217703,
+     "pct": 65.2
+    },
+    {
+     "name": "Joseph S. Schneider",
+     "party": "Republican",
+     "votes": 104798,
+     "pct": 31.4
+    },
+    {
+     "name": "Mary Jean Charbonneau",
+     "party": "Unenrolled",
+     "votes": 11309,
+     "pct": 3.4
+    }
+   ],
+   "totalVotes": 343765
+  },
+  {
+   "id": 131895,
+   "year": 2018,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "votes": 59326,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 68728
+  },
+  {
+   "id": 131897,
+   "year": 2018,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Joseph S. Schneider",
+     "votes": 26579,
+     "pct": 98.9
+    },
+    {
+     "name": "Carlos Armando Hernandez",
+     "party": "(Write-In)",
+     "votes": 51,
+     "pct": 0.2
+    }
+   ],
+   "totalVotes": 40846
+  },
+  {
+   "id": 131605,
+   "year": 2018,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "party": "Democratic",
+     "votes": 216559,
+     "pct": 98.3
+    }
+   ],
+   "totalVotes": 249377
+  },
+  {
+   "id": 132150,
+   "year": 2018,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Ayanna S. Pressley",
+     "votes": 60046,
+     "pct": 58.5
+    },
+    {
+     "name": "Michael E. Capuano",
+     "votes": 42430,
+     "pct": 41.3
+    }
+   ],
+   "totalVotes": 106556
+  },
+  {
+   "id": 131502,
+   "year": 2018,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 259159,
+     "pct": 98.4
+    }
+   ],
+   "totalVotes": 327378
+  },
+  {
+   "id": 131775,
+   "year": 2018,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 52269,
+     "pct": 70.9
+    },
+    {
+     "name": "Brianna Wu",
+     "votes": 16878,
+     "pct": 22.9
+    },
+    {
+     "name": "Christopher L. Voehl",
+     "votes": 4435,
+     "pct": 6
+    }
+   ],
+   "totalVotes": 78712
+  },
+  {
+   "id": 131518,
+   "year": 2018,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "party": "Democratic",
+     "votes": 192347,
+     "pct": 59.4
+    },
+    {
+     "name": "Peter D. Tedeschi",
+     "party": "Republican",
+     "votes": 131463,
+     "pct": 40.6
+    }
+   ],
+   "totalVotes": 331370
+  },
+  {
+   "id": 131832,
+   "year": 2018,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Bill Keating",
+     "votes": 50015,
+     "pct": 85.3
+    },
+    {
+     "name": "Bill Cimbrelo",
+     "votes": 8530,
+     "pct": 14.5
+    }
+   ],
+   "totalVotes": 62453
+  },
+  {
+   "id": 131834,
+   "year": 2018,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Peter D. Tedeschi",
+     "votes": 35911,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 48072
+  },
+  {
+   "id": 131505,
+   "year": 2018,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Elizabeth A. Warren",
+     "party": "Democratic",
+     "votes": 1633371,
+     "pct": 60.3
+    },
+    {
+     "name": "Geoff Diehl",
+     "party": "Republican",
+     "votes": 979210,
+     "pct": 36.2
+    },
+    {
+     "name": "Shiva Ayyadurai",
+     "party": "Unenrolled",
+     "votes": 91710,
+     "pct": 3.4
+    }
+   ],
+   "totalVotes": 2752665
+  },
+  {
+   "id": 131784,
+   "year": 2018,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Elizabeth A. Warren",
+     "votes": 590835,
+     "pct": 98.1
+    }
+   ],
+   "totalVotes": 700944
+  },
+  {
+   "id": 131786,
+   "year": 2018,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Geoff Diehl",
+     "votes": 144043,
+     "pct": 55.2
+    },
+    {
+     "name": "John Kingston",
+     "votes": 69636,
+     "pct": 26.7
+    },
+    {
+     "name": "Beth Joyce Lindstrom",
+     "votes": 46693,
+     "pct": 17.9
+    }
+   ],
+   "totalVotes": 278000
+  },
+  {
+   "id": 129240,
+   "year": 2016,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 44857,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 56728
+  },
+  {
+   "id": 130262,
+   "year": 2016,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 235803,
+     "pct": 73.3
+    },
+    {
+     "name": "Frederick O. Mayock",
+     "party": "Unenrolled",
+     "votes": 57504,
+     "pct": 17.9
+    },
+    {
+     "name": "Thomas T. Simmons",
+     "party": "Libertarian",
+     "votes": 27511,
+     "pct": 8.6
+    }
+   ],
+   "totalVotes": 349676
+  },
+  {
+   "id": 129292,
+   "year": 2016,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 21562,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 25342
+  },
+  {
+   "id": 130275,
+   "year": 2016,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 275487,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 363197
+  },
+  {
+   "id": 129188,
+   "year": 2016,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "votes": 21047,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 26043
+  },
+  {
+   "id": 129190,
+   "year": 2016,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Ann Wofford",
+     "votes": 5774,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 6944
+  },
+  {
+   "id": 130249,
+   "year": 2016,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "Democratic",
+     "votes": 236713,
+     "pct": 68.7
+    },
+    {
+     "name": "Ann Wofford",
+     "party": "Republican",
+     "votes": 107519,
+     "pct": 31.2
+    }
+   ],
+   "totalVotes": 360124
+  },
+  {
+   "id": 129400,
+   "year": 2016,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "votes": 15849,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 17737
+  },
+  {
+   "id": 129402,
+   "year": 2016,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "David A. Rosa",
+     "votes": 4299,
+     "pct": 98
+    }
+   ],
+   "totalVotes": 5178
+  },
+  {
+   "id": 130302,
+   "year": 2016,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "party": "Democratic",
+     "votes": 265823,
+     "pct": 70.1
+    },
+    {
+     "name": "David A. Rosa",
+     "party": "Republican",
+     "votes": 113055,
+     "pct": 29.8
+    }
+   ],
+   "totalVotes": 395304
+  },
+  {
+   "id": 129340,
+   "year": 2016,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 30066,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 36595
+  },
+  {
+   "id": 130286,
+   "year": 2016,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 285606,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 385455
+  },
+  {
+   "id": 129276,
+   "year": 2016,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "votes": 28206,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 33979
+  },
+  {
+   "id": 130271,
+   "year": 2016,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "party": "Democratic",
+     "votes": 308923,
+     "pct": 98.4
+    }
+   ],
+   "totalVotes": 415749
+  },
+  {
+   "id": 129540,
+   "year": 2016,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 37547,
+     "pct": 98.3
+    }
+   ],
+   "totalVotes": 46735
+  },
+  {
+   "id": 130337,
+   "year": 2016,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 253354,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 309645
+  },
+  {
+   "id": 129168,
+   "year": 2016,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 27335,
+     "pct": 97.4
+    }
+   ],
+   "totalVotes": 33974
+  },
+  {
+   "id": 129170,
+   "year": 2016,
+   "office": "house",
+   "district": 8,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "William Burke",
+     "votes": 5856,
+     "pct": 95.3
+    }
+   ],
+   "totalVotes": 7518
+  },
+  {
+   "id": 130244,
+   "year": 2016,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 271019,
+     "pct": 72.4
+    },
+    {
+     "name": "William Burke",
+     "party": "Republican",
+     "votes": 102744,
+     "pct": 27.5
+    }
+   ],
+   "totalVotes": 396009
+  },
+  {
+   "id": 129220,
+   "year": 2016,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William Richard Keating",
+     "votes": 31074,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 36417
+  },
+  {
+   "id": 129222,
+   "year": 2016,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Mark C. Alliegro",
+     "votes": 12467,
+     "pct": 61.9
+    },
+    {
+     "name": "Thomas Joseph O'Malley, Jr",
+     "votes": 7632,
+     "pct": 37.9
+    }
+   ],
+   "totalVotes": 21354
+  },
+  {
+   "id": 130257,
+   "year": 2016,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William Richard Keating",
+     "party": "Democratic",
+     "votes": 211790,
+     "pct": 55.7
+    },
+    {
+     "name": "Mark C. Alliegro",
+     "party": "Republican",
+     "votes": 127803,
+     "pct": 33.6
+    },
+    {
+     "name": "Paul J. Harrington",
+     "party": "Unenrolled",
+     "votes": 26233,
+     "pct": 6.9
+    },
+    {
+     "name": "Christopher D. Cataldo",
+     "party": "Unenrolled",
+     "votes": 8338,
+     "pct": 2.2
+    },
+    {
+     "name": "Anna Grace Raduc",
+     "party": "Unenrolled",
+     "votes": 5320,
+     "pct": 1.4
+    }
+   ],
+   "totalVotes": 403642
+  },
+  {
+   "id": 125565,
+   "year": 2014,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 43225,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 56285
+  },
+  {
+   "id": 126110,
+   "year": 2014,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 167612,
+     "pct": 98
+    }
+   ],
+   "totalVotes": 227075
+  },
+  {
+   "id": 125597,
+   "year": 2014,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 39852,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 50165
+  },
+  {
+   "id": 126126,
+   "year": 2014,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 169640,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 235813
+  },
+  {
+   "id": 125535,
+   "year": 2014,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "votes": 39152,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 51632
+  },
+  {
+   "id": 125536,
+   "year": 2014,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Roseann Ehrhard L. Wofford",
+     "votes": 12731,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 17309
+  },
+  {
+   "id": 126095,
+   "year": 2014,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "Democratic",
+     "votes": 139104,
+     "pct": 63
+    },
+    {
+     "name": "Roseann Ehrhard L. Wofford",
+     "party": "Republican",
+     "votes": 81638,
+     "pct": 36.9
+    }
+   ],
+   "totalVotes": 230789
+  },
+  {
+   "id": 125653,
+   "year": 2014,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "votes": 44606,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 56304
+  },
+  {
+   "id": 126155,
+   "year": 2014,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "party": "Democratic",
+     "votes": 184158,
+     "pct": 97.9
+    }
+   ],
+   "totalVotes": 255297
+  },
+  {
+   "id": 125621,
+   "year": 2014,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 57014,
+     "pct": 81.2
+    },
+    {
+     "name": "Sheldon Schwartz",
+     "votes": 13070,
+     "pct": 18.6
+    }
+   ],
+   "totalVotes": 80120
+  },
+  {
+   "id": 126138,
+   "year": 2014,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 182100,
+     "pct": 98.3
+    },
+    {
+     "name": "William F. Wilt",
+     "party": "(Write-In)",
+     "votes": 1,
+     "pct": 0
+    }
+   ],
+   "totalVotes": 256486
+  },
+  {
+   "id": 125587,
+   "year": 2014,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "votes": 36575,
+     "pct": 50.8
+    },
+    {
+     "name": "John F. Tierney",
+     "votes": 28915,
+     "pct": 40.1
+    },
+    {
+     "name": "Marisa A. Defranco",
+     "votes": 4293,
+     "pct": 6
+    },
+    {
+     "name": "John Patrick Devine",
+     "votes": 1527,
+     "pct": 2.1
+    },
+    {
+     "name": "John J. Gutta",
+     "votes": 691,
+     "pct": 1
+    }
+   ],
+   "totalVotes": 74170
+  },
+  {
+   "id": 125588,
+   "year": 2014,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Richard R. Tisei",
+     "votes": 18227,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 21897
+  },
+  {
+   "id": 126121,
+   "year": 2014,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Seth W. Moulton",
+     "party": "Democratic",
+     "votes": 149638,
+     "pct": 55
+    },
+    {
+     "name": "Richard R. Tisei",
+     "party": "Republican",
+     "votes": 111989,
+     "pct": 41.1
+    },
+    {
+     "name": "Christopher J. Stockwell",
+     "party": "Unenrolled",
+     "votes": 10373,
+     "pct": 3.8
+    }
+   ],
+   "totalVotes": 278919
+  },
+  {
+   "id": 125729,
+   "year": 2014,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 45292,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 61725
+  },
+  {
+   "id": 126193,
+   "year": 2014,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 142133,
+     "pct": 98.3
+    }
+   ],
+   "totalVotes": 176077
+  },
+  {
+   "id": 125517,
+   "year": 2014,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 51077,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 68474
+  },
+  {
+   "id": 126086,
+   "year": 2014,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 200644,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 261781
+  },
+  {
+   "id": 125553,
+   "year": 2014,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William Richard Keating",
+     "votes": 42716,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 57217
+  },
+  {
+   "id": 125554,
+   "year": 2014,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "John C. Chapman",
+     "votes": 9567,
+     "pct": 32.3
+    },
+    {
+     "name": "Mark C. Alliegro",
+     "votes": 9049,
+     "pct": 30.6
+    },
+    {
+     "name": "Daniel L. Shores",
+     "votes": 6973,
+     "pct": 23.6
+    },
+    {
+     "name": "Vincent A. Cogliano, Jr",
+     "votes": 3917,
+     "pct": 13.2
+    }
+   ],
+   "totalVotes": 31374
+  },
+  {
+   "id": 126104,
+   "year": 2014,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William Richard Keating",
+     "party": "Democratic",
+     "votes": 140413,
+     "pct": 54.9
+    },
+    {
+     "name": "John C. Chapman",
+     "party": "Republican",
+     "votes": 114971,
+     "pct": 45
+    }
+   ],
+   "totalVotes": 264552
+  },
+  {
+   "id": 125523,
+   "year": 2014,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 402433,
+     "pct": 98.3
+    }
+   ],
+   "totalVotes": 556092
+  },
+  {
+   "id": 125524,
+   "year": 2014,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Brian J. Herr",
+     "votes": 117216,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 159936
+  },
+  {
+   "id": 126089,
+   "year": 2014,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 1289944,
+     "pct": 61.9
+    },
+    {
+     "name": "Brian J. Herr",
+     "party": "Republican",
+     "votes": 791950,
+     "pct": 38
+    },
+    {
+     "name": "Brian R. Muello",
+     "party": "(Write-In)",
+     "votes": 6,
+     "pct": 0
+    }
+   ],
+   "totalVotes": 2186789
+  },
+  {
+   "id": 124821,
+   "year": 2013,
+   "office": "house",
+   "district": 5,
+   "stage": "Special Democratic Primary",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "votes": 21983,
+     "pct": 31.5
+    },
+    {
+     "name": "Peter J. Koutoujian",
+     "votes": 15303,
+     "pct": 21.9
+    },
+    {
+     "name": "Carl M. Sciortino, Jr.",
+     "votes": 11160,
+     "pct": 16
+    },
+    {
+     "name": "William N. Brownsberger",
+     "votes": 10163,
+     "pct": 14.6
+    },
+    {
+     "name": "Karen E. Spilka",
+     "votes": 9088,
+     "pct": 13
+    },
+    {
+     "name": "Paul John Maisano",
+     "votes": 1520,
+     "pct": 2.2
+    },
+    {
+     "name": "Martin Long",
+     "votes": 398,
+     "pct": 0.6
+    }
+   ],
+   "totalVotes": 69786
+  },
+  {
+   "id": 124822,
+   "year": 2013,
+   "office": "house",
+   "district": 5,
+   "stage": "Special Republican Primary",
+   "candidates": [
+    {
+     "name": "Frank John Addivinola, Jr.",
+     "votes": 4760,
+     "pct": 48.5
+    },
+    {
+     "name": "Michael P. Stopa",
+     "votes": 2478,
+     "pct": 25.3
+    },
+    {
+     "name": "Tom Tierney",
+     "votes": 2457,
+     "pct": 25.1
+    }
+   ],
+   "totalVotes": 9845
+  },
+  {
+   "id": 124836,
+   "year": 2013,
+   "office": "house",
+   "district": 5,
+   "stage": "Special General Election",
+   "candidates": [
+    {
+     "name": "Katherine M. Clark",
+     "party": "Democratic",
+     "votes": 40303,
+     "pct": 65.8
+    },
+    {
+     "name": "Frank John Addivinola, Jr.",
+     "party": "Republican",
+     "votes": 19328,
+     "pct": 31.5
+    },
+    {
+     "name": "James V. Aulenti",
+     "party": "Unenrolled",
+     "votes": 996,
+     "pct": 1.6
+    },
+    {
+     "name": "James O. Hall",
+     "party": "Unenrolled",
+     "votes": 452,
+     "pct": 0.7
+    }
+   ],
+   "totalVotes": 61380
+  },
+  {
+   "id": 124762,
+   "year": 2013,
+   "office": "senate",
+   "stage": "Special Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 311219,
+     "pct": 57.3
+    },
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 230335,
+     "pct": 42.4
+    }
+   ],
+   "totalVotes": 544339
+  },
+  {
+   "id": 124763,
+   "year": 2013,
+   "office": "senate",
+   "stage": "Special Republican Primary",
+   "candidates": [
+    {
+     "name": "Gabriel E. Gomez",
+     "votes": 96057,
+     "pct": 50.7
+    },
+    {
+     "name": "Michael J. Sullivan",
+     "votes": 67946,
+     "pct": 35.9
+    },
+    {
+     "name": "Daniel B. Winslow",
+     "votes": 24662,
+     "pct": 13
+    }
+   ],
+   "totalVotes": 189775
+  },
+  {
+   "id": 124797,
+   "year": 2013,
+   "office": "senate",
+   "stage": "Special General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 645429,
+     "pct": 54.8
+    },
+    {
+     "name": "Gabriel E. Gomez",
+     "party": "Republican",
+     "votes": 525307,
+     "pct": 44.6
+    },
+    {
+     "name": "Richard A. Heos",
+     "party": "Twelve Visions",
+     "votes": 4550,
+     "pct": 0.4
+    }
+   ],
+   "totalVotes": 1179781
+  },
+  {
+   "id": 112723,
+   "year": 2012,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 261936,
+     "pct": 98.4
+    }
+   ],
+   "totalVotes": 336555
+  },
+  {
+   "id": 113043,
+   "year": 2012,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 40295,
+     "pct": 65.5
+    },
+    {
+     "name": "Andrea F. Nuciforo, Jr.",
+     "votes": 15159,
+     "pct": 24.6
+    },
+    {
+     "name": "Bill Shein",
+     "votes": 6059,
+     "pct": 9.8
+    }
+   ],
+   "totalVotes": 63372
+  },
+  {
+   "id": 112741,
+   "year": 2012,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 259257,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 342736
+  },
+  {
+   "id": 113097,
+   "year": 2012,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 24375,
+     "pct": 91.3
+    },
+    {
+     "name": "William B. Feegbeh",
+     "votes": 2265,
+     "pct": 8.5
+    }
+   ],
+   "totalVotes": 30052
+  },
+  {
+   "id": 112707,
+   "year": 2012,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "Democratic",
+     "votes": 212119,
+     "pct": 65.9
+    },
+    {
+     "name": "Jonathan A. Golnik",
+     "party": "Republican",
+     "votes": 109372,
+     "pct": 34
+    }
+   ],
+   "totalVotes": 335111
+  },
+  {
+   "id": 112995,
+   "year": 2012,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "votes": 24105,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 28334
+  },
+  {
+   "id": 112997,
+   "year": 2012,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jonathan A. Golnik",
+     "votes": 12928,
+     "pct": 66.3
+    },
+    {
+     "name": "Thomas J.M. Weaver",
+     "votes": 6527,
+     "pct": 33.5
+    }
+   ],
+   "totalVotes": 21277
+  },
+  {
+   "id": 112774,
+   "year": 2012,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "party": "Democratic",
+     "votes": 221303,
+     "pct": 61.1
+    },
+    {
+     "name": "Sean Bielat",
+     "party": "Republican",
+     "votes": 129936,
+     "pct": 35.9
+    },
+    {
+     "name": "David A. Rosa",
+     "party": "Unenrolled",
+     "votes": 10741,
+     "pct": 3
+    }
+   ],
+   "totalVotes": 373114
+  },
+  {
+   "id": 113190,
+   "year": 2012,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Joseph P. Kennedy, III",
+     "votes": 36557,
+     "pct": 90
+    },
+    {
+     "name": "Rachel E. Brown",
+     "votes": 2635,
+     "pct": 6.5
+    },
+    {
+     "name": "Herb Robinson",
+     "votes": 1373,
+     "pct": 3.4
+    }
+   ],
+   "totalVotes": 42295
+  },
+  {
+   "id": 113192,
+   "year": 2012,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Sean Bielat",
+     "votes": 14834,
+     "pct": 73.2
+    },
+    {
+     "name": "Elizabeth Childs",
+     "votes": 2735,
+     "pct": 13.5
+    },
+    {
+     "name": "David L. Steinhof",
+     "votes": 2669,
+     "pct": 13.2
+    }
+   ],
+   "totalVotes": 21189
+  },
+  {
+   "id": 112754,
+   "year": 2012,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 257490,
+     "pct": 75.5
+    },
+    {
+     "name": "Tom Tierney",
+     "party": "Republican",
+     "votes": 82944,
+     "pct": 24.3
+    }
+   ],
+   "totalVotes": 364201
+  },
+  {
+   "id": 113133,
+   "year": 2012,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 38196,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 45411
+  },
+  {
+   "id": 113135,
+   "year": 2012,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Tom Tierney",
+     "votes": 4789,
+     "pct": 41.2
+    },
+    {
+     "name": "Frank John Addivinola, Jr.",
+     "votes": 3531,
+     "pct": 30.3
+    },
+    {
+     "name": "Jeffrey M. Semon",
+     "votes": 3250,
+     "pct": 27.9
+    }
+   ],
+   "totalVotes": 13175
+  },
+  {
+   "id": 112735,
+   "year": 2012,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 180942,
+     "pct": 48.3
+    },
+    {
+     "name": "Richard R. Tisei",
+     "party": "Republican",
+     "votes": 176612,
+     "pct": 47.1
+    },
+    {
+     "name": "Daniel Fishman",
+     "party": "Libertarian",
+     "votes": 16739,
+     "pct": 4.5
+    }
+   ],
+   "totalVotes": 389852
+  },
+  {
+   "id": 113079,
+   "year": 2012,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 28395,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 37773
+  },
+  {
+   "id": 113081,
+   "year": 2012,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Richard R. Tisei",
+     "votes": 18331,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 20601
+  },
+  {
+   "id": 112817,
+   "year": 2012,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 210794,
+     "pct": 83.4
+    },
+    {
+     "name": "Karla Romero",
+     "party": "Unenrolled",
+     "votes": 41199,
+     "pct": 16.3
+    }
+   ],
+   "totalVotes": 285134
+  },
+  {
+   "id": 113319,
+   "year": 2012,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 32445,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 41162
+  },
+  {
+   "id": 112700,
+   "year": 2012,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 263999,
+     "pct": 76.1
+    },
+    {
+     "name": "Joe Selvaggi",
+     "party": "Republican",
+     "votes": 82242,
+     "pct": 23.7
+    }
+   ],
+   "totalVotes": 371694
+  },
+  {
+   "id": 112974,
+   "year": 2012,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 29352,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 36668
+  },
+  {
+   "id": 112976,
+   "year": 2012,
+   "office": "house",
+   "district": 8,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Joe Selvaggi",
+     "votes": 5968,
+     "pct": 59.1
+    },
+    {
+     "name": "Matias Temperley",
+     "votes": 4081,
+     "pct": 40.4
+    }
+   ],
+   "totalVotes": 12514
+  },
+  {
+   "id": 112717,
+   "year": 2012,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William Richard Keating",
+     "party": "Democratic",
+     "votes": 212754,
+     "pct": 58.7
+    },
+    {
+     "name": "Christopher Sheldon",
+     "party": "Republican",
+     "votes": 116531,
+     "pct": 32.2
+    },
+    {
+     "name": "Daniel S. Botelho",
+     "party": "Unenrolled",
+     "votes": 32655,
+     "pct": 9
+    }
+   ],
+   "totalVotes": 385799
+  },
+  {
+   "id": 113025,
+   "year": 2012,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William Richard Keating",
+     "votes": 31366,
+     "pct": 59.1
+    },
+    {
+     "name": "C. Samuel Sutter",
+     "votes": 21675,
+     "pct": 40.8
+    }
+   ],
+   "totalVotes": 54893
+  },
+  {
+   "id": 113027,
+   "year": 2012,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Christopher Sheldon",
+     "votes": 11046,
+     "pct": 50
+    },
+    {
+     "name": "Adam G. Chaprales",
+     "votes": 10967,
+     "pct": 49.6
+    }
+   ],
+   "totalVotes": 24722
+  },
+  {
+   "id": 112702,
+   "year": 2012,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Elizabeth A. Warren",
+     "party": "Democratic",
+     "votes": 1696346,
+     "pct": 53.7
+    },
+    {
+     "name": "Scott P. Brown",
+     "party": "Republican",
+     "votes": 1458048,
+     "pct": 46.2
+    }
+   ],
+   "totalVotes": 3184196
+  },
+  {
+   "id": 112980,
+   "year": 2012,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Elizabeth A. Warren",
+     "votes": 308979,
+     "pct": 97.6
+    }
+   ],
+   "totalVotes": 379960
+  },
+  {
+   "id": 112982,
+   "year": 2012,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Scott P. Brown",
+     "votes": 133860,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 138530
+  },
+  {
+   "id": 104811,
+   "year": 2010,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "votes": 43363,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 56091
+  },
+  {
+   "id": 104813,
+   "year": 2010,
+   "office": "house",
+   "district": 1,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "William L. Gunn, Jr.",
+     "votes": 13354,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 16245
+  },
+  {
+   "id": 105516,
+   "year": 2010,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "party": "Democratic",
+     "votes": 128011,
+     "pct": 60
+    },
+    {
+     "name": "William L. Gunn, Jr.",
+     "party": "Republican",
+     "votes": 74418,
+     "pct": 34.9
+    },
+    {
+     "name": "Michael Engel",
+     "party": "Unenrolled",
+     "votes": 10880,
+     "pct": 5.1
+    }
+   ],
+   "totalVotes": 218856
+  },
+  {
+   "id": 104826,
+   "year": 2010,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 31053,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 41895
+  },
+  {
+   "id": 104828,
+   "year": 2010,
+   "office": "house",
+   "district": 2,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Thomas A. Wesley",
+     "votes": 10780,
+     "pct": 56.1
+    },
+    {
+     "name": "Jay S. Fleitman",
+     "votes": 8403,
+     "pct": 43.7
+    }
+   ],
+   "totalVotes": 20754
+  },
+  {
+   "id": 105521,
+   "year": 2010,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 122751,
+     "pct": 57.3
+    },
+    {
+     "name": "Thomas A. Wesley",
+     "party": "Republican",
+     "votes": 91209,
+     "pct": 42.6
+    }
+   ],
+   "totalVotes": 220424
+  },
+  {
+   "id": 104940,
+   "year": 2010,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 32108,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 40680
+  },
+  {
+   "id": 104942,
+   "year": 2010,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Martin A. Lamb",
+     "votes": 6963,
+     "pct": 31.1
+    },
+    {
+     "name": "Brian J. Herr",
+     "votes": 5584,
+     "pct": 25
+    },
+    {
+     "name": "Michael P. Stopa",
+     "votes": 3701,
+     "pct": 16.5
+    },
+    {
+     "name": "Robert J. Chipman",
+     "votes": 3139,
+     "pct": 14
+    },
+    {
+     "name": "Robert A. Delle",
+     "votes": 2864,
+     "pct": 12.8
+    }
+   ],
+   "totalVotes": 24832
+  },
+  {
+   "id": 105561,
+   "year": 2010,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 122708,
+     "pct": 56.5
+    },
+    {
+     "name": "Martin A. Lamb",
+     "party": "Republican",
+     "votes": 85124,
+     "pct": 39.2
+    },
+    {
+     "name": "Patrick J. Barron",
+     "party": "Unenrolled",
+     "votes": 9388,
+     "pct": 4.3
+    }
+   ],
+   "totalVotes": 224103
+  },
+  {
+   "id": 104793,
+   "year": 2010,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "votes": 39974,
+     "pct": 79.4
+    },
+    {
+     "name": "Rachel E. Brown",
+     "votes": 10289,
+     "pct": 20.4
+    }
+   ],
+   "totalVotes": 52805
+  },
+  {
+   "id": 104795,
+   "year": 2010,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Sean Bielat",
+     "votes": 11797,
+     "pct": 60
+    },
+    {
+     "name": "Earl H. Sholley",
+     "votes": 7782,
+     "pct": 39.6
+    }
+   ],
+   "totalVotes": 21492
+  },
+  {
+   "id": 105510,
+   "year": 2010,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "party": "Democratic",
+     "votes": 126194,
+     "pct": 53.9
+    },
+    {
+     "name": "Sean Bielat",
+     "party": "Republican",
+     "votes": 101517,
+     "pct": 43.4
+    },
+    {
+     "name": "Susan Allen",
+     "party": "Unenrolled",
+     "votes": 3445,
+     "pct": 1.5
+    },
+    {
+     "name": "Donald M. Jordan",
+     "party": "Unenrolled",
+     "votes": 2873,
+     "pct": 1.2
+    }
+   ],
+   "totalVotes": 238359
+  },
+  {
+   "id": 104769,
+   "year": 2010,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "votes": 29773,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 39563
+  },
+  {
+   "id": 104771,
+   "year": 2010,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jonathan A. Golnik",
+     "votes": 11384,
+     "pct": 38.6
+    },
+    {
+     "name": "Sam S. Meas",
+     "votes": 7601,
+     "pct": 25.7
+    },
+    {
+     "name": "Thomas J.M. Weaver",
+     "votes": 6143,
+     "pct": 20.8
+    },
+    {
+     "name": "Robert L. Shapiro",
+     "votes": 4351,
+     "pct": 14.7
+    }
+   ],
+   "totalVotes": 31208
+  },
+  {
+   "id": 105502,
+   "year": 2010,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "Democratic",
+     "votes": 122858,
+     "pct": 54.8
+    },
+    {
+     "name": "Jonathan A. Golnik",
+     "party": "Republican",
+     "votes": 94646,
+     "pct": 42.2
+    },
+    {
+     "name": "Dale E. Brown",
+     "party": "Unenrolled",
+     "votes": 4387,
+     "pct": 2
+    },
+    {
+     "name": "Robert M. Clark",
+     "party": "Unenrolled",
+     "votes": 1991,
+     "pct": 0.9
+    }
+   ],
+   "totalVotes": 229647
+  },
+  {
+   "id": 104847,
+   "year": 2010,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 28136,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 36327
+  },
+  {
+   "id": 104849,
+   "year": 2010,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Bill Hudak",
+     "votes": 20765,
+     "pct": 76.3
+    },
+    {
+     "name": "Robert J. McCarthy, Jr.",
+     "votes": 6345,
+     "pct": 23.3
+    }
+   ],
+   "totalVotes": 29291
+  },
+  {
+   "id": 105528,
+   "year": 2010,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 142732,
+     "pct": 56.8
+    },
+    {
+     "name": "Bill Hudak",
+     "party": "Republican",
+     "votes": 107930,
+     "pct": 43
+    }
+   ],
+   "totalVotes": 260618
+  },
+  {
+   "id": 104898,
+   "year": 2010,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 35573,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 46763
+  },
+  {
+   "id": 104900,
+   "year": 2010,
+   "office": "house",
+   "district": 7,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Gerry Dembrowski",
+     "votes": 9382,
+     "pct": 56
+    },
+    {
+     "name": "Thomas P. Tierney",
+     "votes": 7302,
+     "pct": 43.6
+    }
+   ],
+   "totalVotes": 19164
+  },
+  {
+   "id": 105546,
+   "year": 2010,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 145696,
+     "pct": 66.4
+    },
+    {
+     "name": "Gerry Dembrowski",
+     "party": "Republican",
+     "votes": 73467,
+     "pct": 33.5
+    }
+   ],
+   "totalVotes": 228430
+  },
+  {
+   "id": 105066,
+   "year": 2010,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 32198,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 42342
+  },
+  {
+   "id": 105068,
+   "year": 2010,
+   "office": "house",
+   "district": 8,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Frederick T. Golder",
+     "party": "(Write-In)",
+     "votes": 178,
+     "pct": 21.5
+    }
+   ],
+   "totalVotes": 4098
+  },
+  {
+   "id": 105603,
+   "year": 2010,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 134974,
+     "pct": 98
+    }
+   ],
+   "totalVotes": 165933
+  },
+  {
+   "id": 104976,
+   "year": 2010,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 42527,
+     "pct": 64.7
+    },
+    {
+     "name": "Macdonald K. D'alessandro",
+     "votes": 23109,
+     "pct": 35.2
+    }
+   ],
+   "totalVotes": 69382
+  },
+  {
+   "id": 104978,
+   "year": 2010,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Vernon M. Harrison",
+     "votes": 10261,
+     "pct": 62.5
+    },
+    {
+     "name": "Keith P. Lepor",
+     "votes": 6026,
+     "pct": 36.7
+    }
+   ],
+   "totalVotes": 20451
+  },
+  {
+   "id": 105573,
+   "year": 2010,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 157071,
+     "pct": 68.3
+    },
+    {
+     "name": "Vernon M. Harrison",
+     "party": "Republican",
+     "votes": 59965,
+     "pct": 26.1
+    },
+    {
+     "name": "Philip Dunkelbarger",
+     "party": "Unenrolled",
+     "votes": 12572,
+     "pct": 5.5
+    }
+   ],
+   "totalVotes": 243061
+  },
+  {
+   "id": 104745,
+   "year": 2010,
+   "office": "house",
+   "district": 10,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William R. Keating",
+     "votes": 29953,
+     "pct": 50.9
+    },
+    {
+     "name": "Robert A. O'Leary",
+     "votes": 28656,
+     "pct": 48.7
+    }
+   ],
+   "totalVotes": 61969
+  },
+  {
+   "id": 104747,
+   "year": 2010,
+   "office": "house",
+   "district": 10,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jeffrey Davis Perry",
+     "votes": 31851,
+     "pct": 60.6
+    },
+    {
+     "name": "Joseph Daniel Malone",
+     "votes": 16060,
+     "pct": 30.5
+    },
+    {
+     "name": "Robert E. Hayden, III",
+     "votes": 2364,
+     "pct": 4.5
+    },
+    {
+     "name": "Raymond Kasperowicz",
+     "votes": 2237,
+     "pct": 4.3
+    }
+   ],
+   "totalVotes": 53535
+  },
+  {
+   "id": 105494,
+   "year": 2010,
+   "office": "house",
+   "district": 10,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William R. Keating",
+     "party": "Democratic",
+     "votes": 132743,
+     "pct": 46.9
+    },
+    {
+     "name": "Jeffrey Davis Perry",
+     "party": "Republican",
+     "votes": 120029,
+     "pct": 42.4
+    },
+    {
+     "name": "Maryanne Lewis",
+     "party": "Unenrolled",
+     "votes": 16705,
+     "pct": 5.9
+    },
+    {
+     "name": "James A. Sheets",
+     "party": "Unenrolled",
+     "votes": 10445,
+     "pct": 3.7
+    },
+    {
+     "name": "Joe Van Nes",
+     "party": "Unenrolled",
+     "votes": 3084,
+     "pct": 1.1
+    }
+   ],
+   "totalVotes": 290532
+  },
+  {
+   "id": 104711,
+   "year": 2010,
+   "office": "senate",
+   "stage": "Special General Election",
+   "candidates": [
+    {
+     "name": "Scott P. Brown",
+     "party": "Republican",
+     "votes": 1168178,
+     "pct": 51.9
+    },
+    {
+     "name": "Martha Coakley",
+     "party": "Democratic",
+     "votes": 1060861,
+     "pct": 47.1
+    },
+    {
+     "name": "Joseph L. Kennedy",
+     "party": "Unenrolled",
+     "votes": 22388,
+     "pct": 1
+    }
+   ],
+   "totalVotes": 2253727
+  },
+  {
+   "id": 104708,
+   "year": 2009,
+   "office": "senate",
+   "stage": "Special Democratic Primary",
+   "candidates": [
+    {
+     "name": "Martha Coakley",
+     "votes": 311548,
+     "pct": 46.6
+    },
+    {
+     "name": "Michael E. Capuano",
+     "votes": 185157,
+     "pct": 27.7
+    },
+    {
+     "name": "Alan A. Khazei",
+     "votes": 89294,
+     "pct": 13.4
+    },
+    {
+     "name": "Stephen G. Pagliuca",
+     "votes": 80217,
+     "pct": 12
+    }
+   ],
+   "totalVotes": 668926
+  },
+  {
+   "id": 104710,
+   "year": 2009,
+   "office": "senate",
+   "stage": "Special Republican Primary",
+   "candidates": [
+    {
+     "name": "Scott P. Brown",
+     "votes": 146057,
+     "pct": 88.8
+    },
+    {
+     "name": "Jack E. Robinson, III",
+     "votes": 17344,
+     "pct": 10.5
+    }
+   ],
+   "totalVotes": 165007
+  },
+  {
+   "id": 103573,
+   "year": 2008,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "votes": 33513,
+     "pct": 79.2
+    },
+    {
+     "name": "Robert A. Feuer",
+     "votes": 8765,
+     "pct": 20.7
+    }
+   ],
+   "totalVotes": 44201
+  },
+  {
+   "id": 103575,
+   "year": 2008,
+   "office": "house",
+   "district": 1,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Nathan A. Bech",
+     "votes": 3659,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 4122
+  },
+  {
+   "id": 104478,
+   "year": 2008,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "party": "Democratic",
+     "votes": 215696,
+     "pct": 72.8
+    },
+    {
+     "name": "Nathan A. Bech",
+     "party": "Republican",
+     "votes": 80067,
+     "pct": 27
+    }
+   ],
+   "totalVotes": 309617
+  },
+  {
+   "id": 103589,
+   "year": 2008,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 30017,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 38443
+  },
+  {
+   "id": 104482,
+   "year": 2008,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 234369,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 306820
+  },
+  {
+   "id": 103725,
+   "year": 2008,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 37041,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 46052
+  },
+  {
+   "id": 104520,
+   "year": 2008,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 227619,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 303315
+  },
+  {
+   "id": 103553,
+   "year": 2008,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "votes": 38642,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 47068
+  },
+  {
+   "id": 103555,
+   "year": 2008,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Earl H. Sholley",
+     "votes": 4087,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 4861
+  },
+  {
+   "id": 104473,
+   "year": 2008,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "party": "Democratic",
+     "votes": 203032,
+     "pct": 68
+    },
+    {
+     "name": "Earl Henry Sholley",
+     "party": "Republican",
+     "votes": 75571,
+     "pct": 25.3
+    },
+    {
+     "name": "Susan Allen",
+     "party": "Unenrolled",
+     "votes": 19848,
+     "pct": 6.6
+    }
+   ],
+   "totalVotes": 315734
+  },
+  {
+   "id": 103521,
+   "year": 2008,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "votes": 40248,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 51248
+  },
+  {
+   "id": 103523,
+   "year": 2008,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Theodore J. Gaiero, Jr",
+     "party": "(Write-In)",
+     "votes": 114,
+     "pct": 15.6
+    }
+   ],
+   "totalVotes": 7985
+  },
+  {
+   "id": 104465,
+   "year": 2008,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "Democratic",
+     "votes": 225947,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 302397
+  },
+  {
+   "id": 103613,
+   "year": 2008,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 36646,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 47032
+  },
+  {
+   "id": 103615,
+   "year": 2008,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Richard A. Baker, Jr.",
+     "votes": 5160,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 6068
+  },
+  {
+   "id": 104488,
+   "year": 2008,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 226216,
+     "pct": 70.4
+    },
+    {
+     "name": "Richard A. Baker, Jr.",
+     "party": "Republican",
+     "votes": 94845,
+     "pct": 29.5
+    }
+   ],
+   "totalVotes": 338718
+  },
+  {
+   "id": 103673,
+   "year": 2008,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 56210,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 72570
+  },
+  {
+   "id": 103675,
+   "year": 2008,
+   "office": "house",
+   "district": 7,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "John Cunningham",
+     "votes": 4825,
+     "pct": 98.1
+    }
+   ],
+   "totalVotes": 5786
+  },
+  {
+   "id": 104506,
+   "year": 2008,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 212304,
+     "pct": 75.6
+    },
+    {
+     "name": "John Cunningham",
+     "party": "Republican",
+     "votes": 67978,
+     "pct": 24.2
+    }
+   ],
+   "totalVotes": 301210
+  },
+  {
+   "id": 103897,
+   "year": 2008,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 35189,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 48026
+  },
+  {
+   "id": 104563,
+   "year": 2008,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 185530,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 244013
+  },
+  {
+   "id": 103781,
+   "year": 2008,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 40332,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 52926
+  },
+  {
+   "id": 104534,
+   "year": 2008,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 242166,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 317420
+  },
+  {
+   "id": 103497,
+   "year": 2008,
+   "office": "house",
+   "district": 10,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "votes": 45587,
+     "pct": 98.4
+    }
+   ],
+   "totalVotes": 58621
+  },
+  {
+   "id": 104459,
+   "year": 2008,
+   "office": "house",
+   "district": 10,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "party": "Democratic",
+     "votes": 272899,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 363751
+  },
+  {
+   "id": 103505,
+   "year": 2008,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Kerry",
+     "votes": 342446,
+     "pct": 68.9
+    },
+    {
+     "name": "Edward J. O'Reilly",
+     "votes": 154395,
+     "pct": 31
+    }
+   ],
+   "totalVotes": 506187
+  },
+  {
+   "id": 103507,
+   "year": 2008,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jeffrey K. Beatty",
+     "votes": 51788,
+     "pct": 98
+    }
+   ],
+   "totalVotes": 60204
+  },
+  {
+   "id": 104461,
+   "year": 2008,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Kerry",
+     "party": "Democratic",
+     "votes": 1971974,
+     "pct": 65.9
+    },
+    {
+     "name": "Jeffrey K. Beatty",
+     "party": "Republican",
+     "votes": 926044,
+     "pct": 30.9
+    },
+    {
+     "name": "Robert J. Underwood",
+     "party": "Libertarian",
+     "votes": 93713,
+     "pct": 3.1
+    }
+   ],
+   "totalVotes": 3102995
+  },
+  {
+   "id": 103437,
+   "year": 2007,
+   "office": "house",
+   "district": 5,
+   "stage": "Special Democratic Primary",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "votes": 19821,
+     "pct": 35.6
+    },
+    {
+     "name": "Eileen M. Donoghue",
+     "votes": 17385,
+     "pct": 31.2
+    },
+    {
+     "name": "James B. Eldridge",
+     "votes": 8042,
+     "pct": 14.5
+    },
+    {
+     "name": "Barry R. Finegold",
+     "votes": 6999,
+     "pct": 12.6
+    },
+    {
+     "name": "James R. Miceli",
+     "votes": 3297,
+     "pct": 5.9
+    },
+    {
+     "name": "Jim Ogonowski",
+     "party": "(Write-In)",
+     "votes": 17,
+     "pct": 0
+    },
+    {
+     "name": "Patrick O. Murphy",
+     "votes": 3,
+     "pct": 0
+    }
+   ],
+   "totalVotes": 55804
+  },
+  {
+   "id": 103438,
+   "year": 2007,
+   "office": "house",
+   "district": 5,
+   "stage": "Special Green-Rainbow Primary",
+   "candidates": [
+    {
+     "name": "Barry R. Finegold",
+     "party": "(Write-In)",
+     "votes": 2,
+     "pct": 8.3
+    },
+    {
+     "name": "Eileen M. Donoghue",
+     "party": "(Write-In)",
+     "votes": 1,
+     "pct": 4.2
+    },
+    {
+     "name": "James B. Eldridge",
+     "party": "(Write-In)",
+     "votes": 1,
+     "pct": 4.2
+    }
+   ],
+   "totalVotes": 33
+  },
+  {
+   "id": 103439,
+   "year": 2007,
+   "office": "house",
+   "district": 5,
+   "stage": "Special Republican Primary",
+   "candidates": [
+    {
+     "name": "Jim Ogonowski",
+     "votes": 12022,
+     "pct": 88.5
+    },
+    {
+     "name": "Thomas P. Tierney",
+     "votes": 1471,
+     "pct": 10.8
+    },
+    {
+     "name": "Eileen M. Donoghue",
+     "party": "(Write-In)",
+     "votes": 12,
+     "pct": 0.1
+    },
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "(Write-In)",
+     "votes": 4,
+     "pct": 0
+    },
+    {
+     "name": "James R. Miceli",
+     "party": "(Write-In)",
+     "votes": 3,
+     "pct": 0
+    }
+   ],
+   "totalVotes": 13659
+  },
+  {
+   "id": 103440,
+   "year": 2007,
+   "office": "house",
+   "district": 5,
+   "stage": "Special Working Families Primary",
+   "candidates": [
+    {
+     "name": "Jim Ogonowski",
+     "party": "(Write-In)",
+     "votes": 3,
+     "pct": 23.1
+    },
+    {
+     "name": "Eileen M. Donoghue",
+     "party": "(Write-In)",
+     "votes": 1,
+     "pct": 7.7
+    },
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "(Write-In)",
+     "votes": 1,
+     "pct": 7.7
+    }
+   ],
+   "totalVotes": 15
+  },
+  {
+   "id": 103450,
+   "year": 2007,
+   "office": "house",
+   "district": 5,
+   "stage": "Special General Election",
+   "candidates": [
+    {
+     "name": "Nicola S. Tsongas",
+     "party": "Democratic",
+     "votes": 54359,
+     "pct": 51.3
+    },
+    {
+     "name": "Jim Ogonowski",
+     "party": "Republican",
+     "votes": 47782,
+     "pct": 45.1
+    },
+    {
+     "name": "Patrick O. Murphy",
+     "party": "Unenrolled",
+     "votes": 2175,
+     "pct": 2.1
+    },
+    {
+     "name": "Kurt Hayes",
+     "party": "Unenrolled",
+     "votes": 1126,
+     "pct": 1.1
+    },
+    {
+     "name": "Kevin J. Thompson",
+     "party": "Constitution Party",
+     "votes": 391,
+     "pct": 0.4
+    },
+    {
+     "name": "Eileen M. Donoghue",
+     "party": "(Write-In)",
+     "votes": 24,
+     "pct": 0
+    }
+   ],
+   "totalVotes": 106063
+  },
+  {
+   "id": 102596,
+   "year": 2006,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "votes": 63875,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 79628
+  },
+  {
+   "id": 103177,
+   "year": 2006,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "party": "Democratic",
+     "votes": 158057,
+     "pct": 76.4
+    },
+    {
+     "name": "William H. Szych",
+     "party": "Unenrolled",
+     "votes": 48574,
+     "pct": 23.5
+    }
+   ],
+   "totalVotes": 219932
+  },
+  {
+   "id": 102608,
+   "year": 2006,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 60953,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 80575
+  },
+  {
+   "id": 103183,
+   "year": 2006,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 164939,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 214939
+  },
+  {
+   "id": 102749,
+   "year": 2006,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 64756,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 82286
+  },
+  {
+   "id": 103229,
+   "year": 2006,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 166973,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 215101
+  },
+  {
+   "id": 102582,
+   "year": 2006,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "votes": 80066,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 98810
+  },
+  {
+   "id": 102583,
+   "year": 2006,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Charles A. Morse",
+     "party": "(Write-In)",
+     "votes": 145,
+     "pct": 32.6
+    }
+   ],
+   "totalVotes": 7632
+  },
+  {
+   "id": 103170,
+   "year": 2006,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "party": "Democratic",
+     "votes": 176513,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 226914
+  },
+  {
+   "id": 102564,
+   "year": 2006,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "votes": 62052,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 81711
+  },
+  {
+   "id": 103161,
+   "year": 2006,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "party": "Democratic",
+     "votes": 159120,
+     "pct": 98.1
+    }
+   ],
+   "totalVotes": 216832
+  },
+  {
+   "id": 102626,
+   "year": 2006,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 71530,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 95903
+  },
+  {
+   "id": 102627,
+   "year": 2006,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Richard W. Barton",
+     "votes": 6051,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 8846
+  },
+  {
+   "id": 103192,
+   "year": 2006,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 168056,
+     "pct": 69.6
+    },
+    {
+     "name": "Richard W. Barton",
+     "party": "Republican",
+     "votes": 72997,
+     "pct": 30.2
+    }
+   ],
+   "totalVotes": 253284
+  },
+  {
+   "id": 102664,
+   "year": 2006,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 80901,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 107128
+  },
+  {
+   "id": 103212,
+   "year": 2006,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 171902,
+     "pct": 98.3
+    }
+   ],
+   "totalVotes": 226130
+  },
+  {
+   "id": 102855,
+   "year": 2006,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 56482,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 85051
+  },
+  {
+   "id": 103281,
+   "year": 2006,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 125515,
+     "pct": 90.7
+    },
+    {
+     "name": "Laura Garza",
+     "party": "Unenrolled",
+     "votes": 12449,
+     "pct": 9
+    }
+   ],
+   "totalVotes": 159425
+  },
+  {
+   "id": 102773,
+   "year": 2006,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 75323,
+     "pct": 77.1
+    },
+    {
+     "name": "Philip Dunkelbarger",
+     "votes": 22048,
+     "pct": 22.6
+    }
+   ],
+   "totalVotes": 110182
+  },
+  {
+   "id": 102774,
+   "year": 2006,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jack E. Robinson, III",
+     "votes": 4409,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 7128
+  },
+  {
+   "id": 103245,
+   "year": 2006,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 169420,
+     "pct": 78.1
+    },
+    {
+     "name": "Jack E. Robinson, III",
+     "party": "Republican",
+     "votes": 47114,
+     "pct": 21.7
+    }
+   ],
+   "totalVotes": 234505
+  },
+  {
+   "id": 102544,
+   "year": 2006,
+   "office": "house",
+   "district": 10,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "votes": 82020,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 105128
+  },
+  {
+   "id": 102545,
+   "year": 2006,
+   "office": "house",
+   "district": 10,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jeffrey K. Beatty",
+     "votes": 13542,
+     "pct": 98.2
+    }
+   ],
+   "totalVotes": 19624
+  },
+  {
+   "id": 103151,
+   "year": 2006,
+   "office": "house",
+   "district": 10,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "party": "Democratic",
+     "votes": 171812,
+     "pct": 64.3
+    },
+    {
+     "name": "Jeffrey K. Beatty",
+     "party": "Republican",
+     "votes": 78439,
+     "pct": 29.4
+    },
+    {
+     "name": "Peter A. White",
+     "party": "Unenrolled",
+     "votes": 16808,
+     "pct": 6.3
+    }
+   ],
+   "totalVotes": 276773
+  },
+  {
+   "id": 102550,
+   "year": 2006,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward M. Kennedy",
+     "votes": 729137,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 926402
+  },
+  {
+   "id": 102551,
+   "year": 2006,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Kenneth G. Chase",
+     "votes": 35595,
+     "pct": 50.6
+    },
+    {
+     "name": "Kevin P. Scott",
+     "votes": 34262,
+     "pct": 48.7
+    }
+   ],
+   "totalVotes": 85770
+  },
+  {
+   "id": 103154,
+   "year": 2006,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward M. Kennedy",
+     "party": "Democratic",
+     "votes": 1500738,
+     "pct": 69.3
+    },
+    {
+     "name": "Kenneth G. Chase",
+     "party": "Republican",
+     "votes": 661532,
+     "pct": 30.5
+    }
+   ],
+   "totalVotes": 2243835
+  },
+  {
+   "id": 110815,
+   "year": 2004,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "votes": 35037,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 42068
+  },
+  {
+   "id": 110818,
+   "year": 2004,
+   "office": "house",
+   "district": 1,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Steven E. Adam",
+     "party": "(Write-In)",
+     "votes": 660,
+     "pct": 49.4
+    }
+   ],
+   "totalVotes": 6983
+  },
+  {
+   "id": 111711,
+   "year": 2004,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "party": "Democratic",
+     "votes": 229465,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 295208
+  },
+  {
+   "id": 110831,
+   "year": 2004,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 29707,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 37153
+  },
+  {
+   "id": 111715,
+   "year": 2004,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 217682,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 287871
+  },
+  {
+   "id": 110967,
+   "year": 2004,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 39014,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 46824
+  },
+  {
+   "id": 110970,
+   "year": 2004,
+   "office": "house",
+   "district": 3,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Ronald A. Crews",
+     "votes": 8443,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 10830
+  },
+  {
+   "id": 111750,
+   "year": 2004,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 192036,
+     "pct": 70.5
+    },
+    {
+     "name": "Ronald A. Crews",
+     "party": "Republican",
+     "votes": 80197,
+     "pct": 29.4
+    }
+   ],
+   "totalVotes": 285996
+  },
+  {
+   "id": 110791,
+   "year": 2004,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "votes": 22019,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 25551
+  },
+  {
+   "id": 111706,
+   "year": 2004,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "party": "Democratic",
+     "votes": 219260,
+     "pct": 77.7
+    },
+    {
+     "name": "Charles A. Morse",
+     "party": "Unenrolled",
+     "votes": 62293,
+     "pct": 22.1
+    }
+   ],
+   "totalVotes": 299783
+  },
+  {
+   "id": 110763,
+   "year": 2004,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "votes": 19418,
+     "pct": 98.6
+    }
+   ],
+   "totalVotes": 23874
+  },
+  {
+   "id": 110766,
+   "year": 2004,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Thomas P. Tierney",
+     "votes": 4711,
+     "pct": 61.4
+    },
+    {
+     "name": "Ilana Freedman",
+     "votes": 2918,
+     "pct": 38.1
+    }
+   ],
+   "totalVotes": 8253
+  },
+  {
+   "id": 111699,
+   "year": 2004,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "party": "Democratic",
+     "votes": 179652,
+     "pct": 67
+    },
+    {
+     "name": "Thomas P. Tierney",
+     "party": "Republican",
+     "votes": 88232,
+     "pct": 32.9
+    }
+   ],
+   "totalVotes": 280310
+  },
+  {
+   "id": 110855,
+   "year": 2004,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 27660,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 32910
+  },
+  {
+   "id": 110858,
+   "year": 2004,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Stephen P. O'Malley, Jr.",
+     "votes": 6204,
+     "pct": 98
+    }
+   ],
+   "totalVotes": 7879
+  },
+  {
+   "id": 111721,
+   "year": 2004,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 213458,
+     "pct": 69.9
+    },
+    {
+     "name": "Stephen P. O'Malley, Jr.",
+     "party": "Republican",
+     "votes": 91597,
+     "pct": 30
+    }
+   ],
+   "totalVotes": 321736
+  },
+  {
+   "id": 110915,
+   "year": 2004,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 38583,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 48057
+  },
+  {
+   "id": 110918,
+   "year": 2004,
+   "office": "house",
+   "district": 7,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Kenneth G. Chase",
+     "votes": 4928,
+     "pct": 97.3
+    }
+   ],
+   "totalVotes": 6022
+  },
+  {
+   "id": 111736,
+   "year": 2004,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 202399,
+     "pct": 73.6
+    },
+    {
+     "name": "Kenneth G. Chase",
+     "party": "Republican",
+     "votes": 60334,
+     "pct": 21.9
+    },
+    {
+     "name": "James O. Hall",
+     "party": "Unenrolled",
+     "votes": 12139,
+     "pct": 4.4
+    }
+   ],
+   "totalVotes": 292187
+  },
+  {
+   "id": 111131,
+   "year": 2004,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 32648,
+     "pct": 98.4
+    }
+   ],
+   "totalVotes": 44546
+  },
+  {
+   "id": 111790,
+   "year": 2004,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 165852,
+     "pct": 98.7
+    }
+   ],
+   "totalVotes": 215800
+  },
+  {
+   "id": 111015,
+   "year": 2004,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 37035,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 47337
+  },
+  {
+   "id": 111761,
+   "year": 2004,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 218167,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 297826
+  },
+  {
+   "id": 110743,
+   "year": 2004,
+   "office": "house",
+   "district": 10,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "votes": 25939,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 30104
+  },
+  {
+   "id": 110746,
+   "year": 2004,
+   "office": "house",
+   "district": 10,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Michael J. Jones",
+     "votes": 11856,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 15306
+  },
+  {
+   "id": 111694,
+   "year": 2004,
+   "office": "house",
+   "district": 10,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "party": "Democratic",
+     "votes": 222013,
+     "pct": 65.9
+    },
+    {
+     "name": "Michael J. Jones",
+     "party": "Republican",
+     "votes": 114879,
+     "pct": 34.1
+    }
+   ],
+   "totalVotes": 350738
+  },
+  {
+   "id": 109233,
+   "year": 2002,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "votes": 49907,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 62498
+  },
+  {
+   "id": 109236,
+   "year": 2002,
+   "office": "house",
+   "district": 1,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Matthew W. Kinnaman",
+     "votes": 13780,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 21060
+  },
+  {
+   "id": 110177,
+   "year": 2002,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "party": "Democratic",
+     "votes": 137841,
+     "pct": 67.6
+    },
+    {
+     "name": "Matthew W. Kinnaman",
+     "party": "Republican",
+     "votes": 66061,
+     "pct": 32.4
+    }
+   ],
+   "totalVotes": 212216
+  },
+  {
+   "id": 109253,
+   "year": 2002,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 47369,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 61610
+  },
+  {
+   "id": 110182,
+   "year": 2002,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 153387,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 208498
+  },
+  {
+   "id": 109409,
+   "year": 2002,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 44515,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 55740
+  },
+  {
+   "id": 110224,
+   "year": 2002,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 155697,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 212304
+  },
+  {
+   "id": 109209,
+   "year": 2002,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "votes": 66057,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 80061
+  },
+  {
+   "id": 110171,
+   "year": 2002,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "party": "Democratic",
+     "votes": 166125,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 221209
+  },
+  {
+   "id": 109173,
+   "year": 2002,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "votes": 49041,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 64113
+  },
+  {
+   "id": 109175,
+   "year": 2002,
+   "office": "house",
+   "district": 5,
+   "stage": "Libertarian Primary",
+   "candidates": [
+    {
+     "name": "Ilana Freedman",
+     "votes": 195,
+     "pct": 100
+    }
+   ],
+   "totalVotes": 236
+  },
+  {
+   "id": 109176,
+   "year": 2002,
+   "office": "house",
+   "district": 5,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Charles F. McCarthy",
+     "votes": 13068,
+     "pct": 56.4
+    },
+    {
+     "name": "Thomas P. Tierney",
+     "votes": 10046,
+     "pct": 43.4
+    }
+   ],
+   "totalVotes": 28145
+  },
+  {
+   "id": 110162,
+   "year": 2002,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "party": "Democratic",
+     "votes": 122562,
+     "pct": 60.1
+    },
+    {
+     "name": "Charles F. McCarthy",
+     "party": "Republican",
+     "votes": 69337,
+     "pct": 34
+    },
+    {
+     "name": "Ilana Freedman",
+     "party": "Libertarian",
+     "votes": 11729,
+     "pct": 5.8
+    }
+   ],
+   "totalVotes": 214022
+  },
+  {
+   "id": 109281,
+   "year": 2002,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 68992,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 89181
+  },
+  {
+   "id": 109284,
+   "year": 2002,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Mark C. Smith",
+     "votes": 22117,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 36062
+  },
+  {
+   "id": 110189,
+   "year": 2002,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 162900,
+     "pct": 68.3
+    },
+    {
+     "name": "Mark C. Smith",
+     "party": "Republican",
+     "votes": 75462,
+     "pct": 31.6
+    }
+   ],
+   "totalVotes": 252867
+  },
+  {
+   "id": 109349,
+   "year": 2002,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 73014,
+     "pct": 84.9
+    },
+    {
+     "name": "James O. Hall",
+     "votes": 12964,
+     "pct": 15.1
+    }
+   ],
+   "totalVotes": 97303
+  },
+  {
+   "id": 110208,
+   "year": 2002,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 170968,
+     "pct": 98.2
+    },
+    {
+     "name": "Daniel Melnechuk",
+     "party": "(Write-In)",
+     "votes": 863,
+     "pct": 0.5
+    }
+   ],
+   "totalVotes": 236013
+  },
+  {
+   "id": 109589,
+   "year": 2002,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 49451,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 75072
+  },
+  {
+   "id": 110271,
+   "year": 2002,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 111861,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 155279
+  },
+  {
+   "id": 109465,
+   "year": 2002,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 69244,
+     "pct": 80.6
+    },
+    {
+     "name": "William A. Ferguson, Jr.",
+     "votes": 16643,
+     "pct": 19.4
+    }
+   ],
+   "totalVotes": 101566
+  },
+  {
+   "id": 110238,
+   "year": 2002,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 168055,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 235866
+  },
+  {
+   "id": 109137,
+   "year": 2002,
+   "office": "house",
+   "district": 10,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "votes": 64686,
+     "pct": 99.7
+    }
+   ],
+   "totalVotes": 80082
+  },
+  {
+   "id": 109140,
+   "year": 2002,
+   "office": "house",
+   "district": 10,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Luiz Gonzaga",
+     "votes": 24851,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 42906
+  },
+  {
+   "id": 110153,
+   "year": 2002,
+   "office": "house",
+   "district": 10,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "party": "Democratic",
+     "votes": 179238,
+     "pct": 69.2
+    },
+    {
+     "name": "Luiz Gonzaga",
+     "party": "Republican",
+     "votes": 79624,
+     "pct": 30.7
+    }
+   ],
+   "totalVotes": 272027
+  },
+  {
+   "id": 109149,
+   "year": 2002,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Kerry",
+     "votes": 615517,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 767226
+  },
+  {
+   "id": 109151,
+   "year": 2002,
+   "office": "senate",
+   "stage": "Libertarian Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Cloud",
+     "votes": 1427,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 1751
+  },
+  {
+   "id": 109152,
+   "year": 2002,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jack E. Robinson, III",
+     "party": "(Write-In)",
+     "votes": 1441,
+     "pct": 11.1
+    }
+   ],
+   "totalVotes": 254398
+  },
+  {
+   "id": 110156,
+   "year": 2002,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Kerry",
+     "party": "Democratic",
+     "votes": 1605976,
+     "pct": 80
+    },
+    {
+     "name": "Michael E. Cloud",
+     "party": "Libertarian",
+     "votes": 369807,
+     "pct": 18.4
+    },
+    {
+     "name": "Randall Forsberg",
+     "party": "(Write-In)",
+     "votes": 24898,
+     "pct": 1.2
+    }
+   ],
+   "totalVotes": 2220301
+  },
+  {
+   "id": 106100,
+   "year": 2001,
+   "office": "house",
+   "district": 9,
+   "stage": "Special Democratic Primary",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "votes": 44905,
+     "pct": 39.4
+    },
+    {
+     "name": "Cheryl Ann Jacques",
+     "votes": 32933,
+     "pct": 28.9
+    },
+    {
+     "name": "Brian A. Joyce",
+     "votes": 16818,
+     "pct": 14.8
+    },
+    {
+     "name": "Marc R. Pacheco",
+     "votes": 15009,
+     "pct": 13.2
+    },
+    {
+     "name": "William F. Sinnott",
+     "votes": 3110,
+     "pct": 2.7
+    },
+    {
+     "name": "John E. Taylor",
+     "votes": 767,
+     "pct": 0.7
+    },
+    {
+     "name": "William A. Ferguson, Jr.",
+     "votes": 253,
+     "pct": 0.2
+    }
+   ],
+   "totalVotes": 114911
+  },
+  {
+   "id": 106101,
+   "year": 2001,
+   "office": "house",
+   "district": 9,
+   "stage": "Special Republican Primary",
+   "candidates": [
+    {
+     "name": "Jo Ann Sprague",
+     "votes": 9013,
+     "pct": 69
+    },
+    {
+     "name": "William D. McKinney",
+     "votes": 3789,
+     "pct": 29
+    }
+   ],
+   "totalVotes": 13454
+  },
+  {
+   "id": 106102,
+   "year": 2001,
+   "office": "house",
+   "district": 9,
+   "stage": "Special General Election",
+   "candidates": [
+    {
+     "name": "Stephen F. Lynch",
+     "party": "Democratic",
+     "votes": 44943,
+     "pct": 65
+    },
+    {
+     "name": "Jo Ann Sprague",
+     "party": "Republican",
+     "votes": 22645,
+     "pct": 32.7
+    },
+    {
+     "name": "Susan Gallagher C. Long",
+     "party": "Conservative",
+     "votes": 827,
+     "pct": 1.2
+    },
+    {
+     "name": "Brock R. Satter",
+     "party": "Socialist Workers",
+     "votes": 510,
+     "pct": 0.7
+    }
+   ],
+   "totalVotes": 69730
+  },
+  {
+   "id": 99011,
+   "year": 2000,
+   "office": "house",
+   "district": 1,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "votes": 10715,
+     "pct": 99.5
+    }
+   ],
+   "totalVotes": 13999
+  },
+  {
+   "id": 99012,
+   "year": 2000,
+   "office": "house",
+   "district": 1,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Peter J. Abair",
+     "votes": 3223,
+     "pct": 99.4
+    }
+   ],
+   "totalVotes": 3999
+  },
+  {
+   "id": 99013,
+   "year": 2000,
+   "office": "house",
+   "district": 1,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John W. Olver",
+     "party": "Democratic",
+     "votes": 169375,
+     "pct": 68.2
+    },
+    {
+     "name": "Peter J. Abair",
+     "party": "Republican",
+     "votes": 73580,
+     "pct": 29.6
+    },
+    {
+     "name": "Robert L. Potvin",
+     "party": "Unenrolled",
+     "votes": 5157,
+     "pct": 2.1
+    }
+   ],
+   "totalVotes": 259300
+  },
+  {
+   "id": 99014,
+   "year": 2000,
+   "office": "house",
+   "district": 2,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "votes": 20253,
+     "pct": 86.4
+    },
+    {
+     "name": "Joseph R. Fountain",
+     "votes": 3149,
+     "pct": 13.4
+    }
+   ],
+   "totalVotes": 25984
+  },
+  {
+   "id": 99016,
+   "year": 2000,
+   "office": "house",
+   "district": 2,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Richard E. Neal",
+     "party": "Democratic",
+     "votes": 196670,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 253867
+  },
+  {
+   "id": 99017,
+   "year": 2000,
+   "office": "house",
+   "district": 3,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "votes": 36705,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 46734
+  },
+  {
+   "id": 99019,
+   "year": 2000,
+   "office": "house",
+   "district": 3,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "James P. McGovern",
+     "party": "Democratic",
+     "votes": 213065,
+     "pct": 98.8
+    }
+   ],
+   "totalVotes": 278570
+  },
+  {
+   "id": 99020,
+   "year": 2000,
+   "office": "house",
+   "district": 4,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "votes": 27728,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 33121
+  },
+  {
+   "id": 99021,
+   "year": 2000,
+   "office": "house",
+   "district": 4,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Martin D. Travis",
+     "votes": 5850,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 8207
+  },
+  {
+   "id": 99022,
+   "year": 2000,
+   "office": "house",
+   "district": 4,
+   "stage": "Libertarian Primary",
+   "candidates": [
+    {
+     "name": "David J. Euchner",
+     "votes": 124,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 153
+  },
+  {
+   "id": 99023,
+   "year": 2000,
+   "office": "house",
+   "district": 4,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Barney Frank",
+     "party": "Democratic",
+     "votes": 200638,
+     "pct": 74.9
+    },
+    {
+     "name": "David J. Euchner",
+     "party": "Libertarian",
+     "votes": 10553,
+     "pct": 3.9
+    }
+   ],
+   "totalVotes": 283381
+  },
+  {
+   "id": 99024,
+   "year": 2000,
+   "office": "house",
+   "district": 5,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Martin T. Mechan",
+     "votes": 16394,
+     "pct": 73
+    },
+    {
+     "name": "Thomas P. Tierney",
+     "votes": 4253,
+     "pct": 18.9
+    },
+    {
+     "name": "Joseph F. Osbadeston",
+     "votes": 1687,
+     "pct": 7.5
+    }
+   ],
+   "totalVotes": 24703
+  },
+  {
+   "id": 99026,
+   "year": 2000,
+   "office": "house",
+   "district": 5,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Martin T. Meehan",
+     "party": "Democratic",
+     "votes": 199601,
+     "pct": 98
+    }
+   ],
+   "totalVotes": 268461
+  },
+  {
+   "id": 99027,
+   "year": 2000,
+   "office": "house",
+   "district": 6,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "votes": 24873,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 31194
+  },
+  {
+   "id": 99028,
+   "year": 2000,
+   "office": "house",
+   "district": 6,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Paul McCarthy",
+     "votes": 5417,
+     "pct": 67.3
+    },
+    {
+     "name": "Frederick T. Golder",
+     "votes": 2574,
+     "pct": 32
+    }
+   ],
+   "totalVotes": 9298
+  },
+  {
+   "id": 99029,
+   "year": 2000,
+   "office": "house",
+   "district": 6,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John F. Tierney",
+     "party": "Democratic",
+     "votes": 205324,
+     "pct": 71
+    },
+    {
+     "name": "Paul McCarthy",
+     "party": "Republican",
+     "votes": 83501,
+     "pct": 28.9
+    }
+   ],
+   "totalVotes": 303845
+  },
+  {
+   "id": 99030,
+   "year": 2000,
+   "office": "house",
+   "district": 7,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "votes": 26785,
+     "pct": 99.2
+    }
+   ],
+   "totalVotes": 34887
+  },
+  {
+   "id": 99032,
+   "year": 2000,
+   "office": "house",
+   "district": 7,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward J. Markey",
+     "party": "Democratic",
+     "votes": 211543,
+     "pct": 98.9
+    }
+   ],
+   "totalVotes": 279965
+  },
+  {
+   "id": 99033,
+   "year": 2000,
+   "office": "house",
+   "district": 8,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "votes": 14950,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 21191
+  },
+  {
+   "id": 99035,
+   "year": 2000,
+   "office": "house",
+   "district": 8,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Michael E. Capuano",
+     "party": "Democratic",
+     "votes": 144031,
+     "pct": 99.3
+    }
+   ],
+   "totalVotes": 202723
+  },
+  {
+   "id": 99036,
+   "year": 2000,
+   "office": "house",
+   "district": 9,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "John Joseph Moakley",
+     "votes": 19342,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 24109
+  },
+  {
+   "id": 99037,
+   "year": 2000,
+   "office": "house",
+   "district": 9,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Janet E. Jeghelian",
+     "votes": 3705,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 4673
+  },
+  {
+   "id": 99038,
+   "year": 2000,
+   "office": "house",
+   "district": 9,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "John Joseph Moakley",
+     "party": "Democratic",
+     "votes": 193020,
+     "pct": 77.6
+    },
+    {
+     "name": "Janet E. Jeghelian",
+     "party": "Republican",
+     "votes": 48672,
+     "pct": 19.6
+    },
+    {
+     "name": "David A. Rosa",
+     "party": "Unenrolled",
+     "votes": 6998,
+     "pct": 2.8
+    }
+   ],
+   "totalVotes": 271069
+  },
+  {
+   "id": 99039,
+   "year": 2000,
+   "office": "house",
+   "district": 10,
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "votes": 29886,
+     "pct": 99.6
+    }
+   ],
+   "totalVotes": 37087
+  },
+  {
+   "id": 99040,
+   "year": 2000,
+   "office": "house",
+   "district": 10,
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Eric V. Bleicken",
+     "votes": 9808,
+     "pct": 99.1
+    }
+   ],
+   "totalVotes": 13963
+  },
+  {
+   "id": 99041,
+   "year": 2000,
+   "office": "house",
+   "district": 10,
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "William D. Delahunt",
+     "party": "Democratic",
+     "votes": 234675,
+     "pct": 74.1
+    },
+    {
+     "name": "Eric V. Bleicken",
+     "party": "Republican",
+     "votes": 81192,
+     "pct": 25.6
+    }
+   ],
+   "totalVotes": 332791
+  },
+  {
+   "id": 99007,
+   "year": 2000,
+   "office": "senate",
+   "stage": "Democratic Primary",
+   "candidates": [
+    {
+     "name": "Edward M. Kennedy",
+     "votes": 236875,
+     "pct": 99
+    }
+   ],
+   "totalVotes": 293005
+  },
+  {
+   "id": 99008,
+   "year": 2000,
+   "office": "senate",
+   "stage": "Republican Primary",
+   "candidates": [
+    {
+     "name": "Jack E. Robinson, III",
+     "votes": 42263,
+     "pct": 96.6
+    }
+   ],
+   "totalVotes": 65812
+  },
+  {
+   "id": 99009,
+   "year": 2000,
+   "office": "senate",
+   "stage": "Libertarian Primary",
+   "candidates": [
+    {
+     "name": "Carla A. Howell",
+     "votes": 1219,
+     "pct": 98.5
+    }
+   ],
+   "totalVotes": 1322
+  },
+  {
+   "id": 102504,
+   "year": 2000,
+   "office": "senate",
+   "stage": "General Election",
+   "candidates": [
+    {
+     "name": "Edward M. Kennedy",
+     "party": "Democratic",
+     "votes": 1889494,
+     "pct": 72.7
+    },
+    {
+     "name": "Jack E. Robinson, III",
+     "party": "Republican",
+     "votes": 334341,
+     "pct": 12.9
+    },
+    {
+     "name": "Carla A. Howell",
+     "party": "Libertarian",
+     "votes": 308860,
+     "pct": 11.9
+    },
+    {
+     "name": "Philip F. Lawler",
+     "party": "Constitution",
+     "votes": 42113,
+     "pct": 1.6
+    },
+    {
+     "name": "Dale E. Friedgen",
+     "party": "Unenrolled",
+     "votes": 13687,
+     "pct": 0.5
+    },
+    {
+     "name": "Philip Hyde, III",
+     "party": "Timesizing Not Downsizing",
+     "votes": 8452,
+     "pct": 0.3
+    }
+   ],
+   "totalVotes": 2734006
+  }
+ ]
+}

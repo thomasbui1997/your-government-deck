@@ -34,7 +34,7 @@ export default async function Home() {
 
       <AddressInput placesOn={placesOn} />
       <p className="-mt-6 max-w-md text-xs text-navy/50">
-        {placesOn ? t.home.privacyGoogle : t.home.privacy}
+        {placesOn ? t.home.privacyGoogle : t.home.privacy} {t.home.remembers}
       </p>
     </main>
   );

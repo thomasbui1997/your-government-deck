@@ -14,10 +14,12 @@ interface RawSocial {
 }
 
 interface RawLegislator {
-  id: { bioguide: string; lis?: string };
+  id: { bioguide: string; lis?: string; fec?: string[] };
   name: { first: string; last: string; nickname?: string; official_full?: string };
   terms: {
     type: "sen" | "rep";
+    state: string;
+    district?: number;
     end: string;
     url?: string;
     phone?: string;
@@ -29,6 +31,11 @@ interface RawLegislator {
 export interface LegislatorInfo {
   displayName: string;
   lisId?: string;
+  /** Every FEC candidate ID they've had (one per office they've run for). */
+  fecIds: string[];
+  chamber: "Senate" | "House";
+  state: string;
+  district?: number;
   termEnd: string;
   website?: string;
   phone?: string;
@@ -58,6 +65,10 @@ export async function getLegislatorIndex(): Promise<Map<string, LegislatorInfo>>
     index.set(l.id.bioguide, {
       displayName,
       lisId: l.id.lis,
+      fecIds: l.id.fec ?? [],
+      chamber: term.type === "sen" ? "Senate" : "House",
+      state: term.state,
+      district: term.district,
       termEnd: term.end,
       website: term.url,
       phone: term.phone,

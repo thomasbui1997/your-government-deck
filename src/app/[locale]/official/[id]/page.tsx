@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
+import { MoneyPanel, MoneyPanelSkeleton } from "@/components/MoneyPanel";
 import { OfficialCard } from "@/components/OfficialCard";
 import { PromiseTracker } from "@/components/PromiseTracker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -95,6 +97,13 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
             )}
             {contact.office && (
               <p className="text-sm text-navy/60">📍 {contact.office}</p>
+            )}
+
+            {/^[A-Z]\d{6}$/.test(official.id) && (
+              // Streams in after the rest of the profile: FEC calls can be slow.
+              <Suspense fallback={<MoneyPanelSkeleton />}>
+                <MoneyPanel bioguideId={official.id} />
+              </Suspense>
             )}
 
             <section className={panel}>

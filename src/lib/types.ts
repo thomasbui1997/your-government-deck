@@ -35,6 +35,23 @@ export interface PromiseSummary {
   total: number;
 }
 
+/** Where an official stands with the next election. */
+export interface ElectionBadge {
+  /** Their seat is on the next federal general-election ballot. */
+  seatUp?: {
+    /** Election Day, ISO date. */
+    date: string;
+    /** Days to go when the page was built (0 on Election Day). */
+    days: number;
+    /** From FEC filings and official primary results; absent when unknown. */
+    status?: "running" | "wonPrimary" | "lostPrimary" | "notRunning";
+  };
+  /** Year of their next election, when it isn't the upcoming one. */
+  nextYear?: number;
+  /** Can't run again for this office. */
+  termLimited?: boolean;
+}
+
 export interface Official {
   id: string;
   name: string;
@@ -52,6 +69,7 @@ export interface Official {
   stats: CardStat[];
   promises?: PromiseSummary;
   appointed?: boolean;
+  election?: ElectionBadge;
 }
 
 export interface Tier {

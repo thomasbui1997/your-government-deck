@@ -1,0 +1,614 @@
+<title>Lynch Election Cards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  /* One deliberate look: the site's own cream / navy / gold trading-card palette. */
+  :root {
+    color-scheme: light;
+    --navy: #1b2a4a;
+    --navy-deep: #111c33;
+    --gold: #e8b33a;
+    --gold-light: #f7d77a;
+    --cream: #fdf6e3;
+    --paper: #fffdf6;
+    --ink: #1c1917;
+    --muted: #5b6275;
+    --line: rgb(27 42 74 / 0.14);
+    --won: #15803d;
+    --lost: #b91c1c;
+    --dem: #2563eb;
+    --rep: #dc2626;
+    /* Grassroots → big money scale */
+    --s0: #2f9e6e;
+    --s1: #8cc9a3;
+    --s2: #e3d38a;
+    --s3: #e8b33a;
+    --s4: #d9731f;
+    --pac: #1b2a4a;
+    --party: #78716c;
+    --self: #7c3aed;
+    --unassigned: #d6cfbf;
+    --labor: #0f766e;
+    --corp: #9a3412;
+    --trade: #a16207;
+    --lead: #6d28d9;
+    --other: #78716c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background-color: var(--cream);
+    background-image: radial-gradient(rgb(27 42 74 / 0.08) 1px, transparent 1px);
+    background-size: 18px 18px;
+    color: var(--ink);
+    font: 15px/1.5 Inter, ui-sans-serif, system-ui, sans-serif;
+    padding-inline: 16px;
+    padding-block: 0 64px;
+  }
+  .display { font-family: Bungee, Impact, ui-sans-serif, sans-serif; font-weight: 400; letter-spacing: 0.01em; }
+  a { color: var(--navy); }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  header.site {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+    margin-inline: -16px; padding: 10px 16px;
+    background: rgb(253 246 227 / 0.95); border-bottom: 4px solid var(--navy);
+    display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+  }
+  header.site .brand { color: var(--navy); font-size: 14px; }
+  .addr { border: 4px solid var(--navy); border-radius: 12px; background: #fff; padding: 4px 12px; font-size: 13px; color: var(--navy); }
+  .mock-note {
+    margin: 20px 0 0; padding: 10px 14px; border: 2px dashed var(--navy); border-radius: 12px;
+    font-size: 13px; color: var(--navy); background: var(--paper);
+  }
+  h2 { font-size: 18px; color: var(--navy); margin: 44px 0 4px; }
+  .lede { color: var(--muted); max-width: 62ch; margin: 0; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ---------- Deck cards with ballot badges ---------- */
+  .deck { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 18px; margin-top: 16px; }
+  .tcard {
+    position: relative; border-radius: 14px; padding: 5px;
+    background: linear-gradient(145deg, var(--gold-light), var(--gold) 40%, #b8860b 70%, var(--gold-light));
+    box-shadow: 0 10px 20px -12px rgb(17 28 51 / 0.5);
+  }
+  .tcard .inner { position: relative; overflow: hidden; border-radius: 10px; background: var(--navy); color: #fff; min-height: 220px; display: flex; flex-direction: column; }
+  .tcard .office { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 10px; background: var(--party-c, var(--dem)); }
+  .tcard .portrait { flex: 1; display: grid; place-items: center; margin: 8px; border: 1px solid rgb(247 215 122 / 0.5); border-radius: 8px; background: var(--navy-deep); }
+  .tcard .portrait span { font-family: Bungee, Impact, sans-serif; font-size: 34px; color: var(--gold); }
+  .tcard .name { font-family: Bungee, Impact, sans-serif; font-size: 14px; padding: 0 10px; }
+  .tcard .where { font-size: 11px; color: rgb(255 255 255 / 0.65); padding: 0 10px 8px; }
+  .tcard .next { font-size: 11px; padding: 6px 10px; border-top: 1px solid rgb(255 255 255 / 0.15); color: rgb(255 255 255 / 0.8); }
+  .ribbon {
+    position: absolute; top: 14px; right: -34px; transform: rotate(35deg);
+    width: 150px; text-align: center; padding: 3px 0; font-size: 9.5px; font-weight: 800; letter-spacing: 0.08em;
+    background: var(--gold); color: var(--navy-deep); box-shadow: 0 2px 6px rgb(0 0 0 / 0.35);
+  }
+  .ribbon.retiring { background: #e7e5e4; color: #44403c; }
+  .countdown { display: inline-flex; gap: 6px; align-items: baseline; font-size: 11px; padding: 6px 10px; background: rgb(232 179 58 / 0.18); color: var(--gold-light); border-top: 1px solid rgb(247 215 122 / 0.35); }
+  .countdown b { font-family: Bungee, Impact, sans-serif; font-weight: 400; font-size: 15px; color: var(--gold); }
+  .example-tag { position: absolute; bottom: -9px; left: 10px; font-size: 10px; background: var(--paper); border: 1px solid var(--line); border-radius: 99px; padding: 0 8px; color: var(--muted); }
+
+  /* ---------- Profile hero ---------- */
+  .profile { display: flex; gap: 16px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
+  .chip { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 99px; padding: 2px 10px; }
+  .chip.dem { background: var(--dem); color: #fff; }
+
+  /* ---------- Election cards ---------- */
+  .elections { display: grid; gap: 22px; margin-top: 16px; }
+  .ecard {
+    background: var(--paper); border: 4px solid var(--navy); border-radius: 18px;
+    box-shadow: 6px 6px 0 var(--navy); overflow: hidden;
+  }
+  .ecard.upcoming { border-color: var(--gold); box-shadow: 6px 6px 0 var(--gold); }
+  .ehead { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; padding: 14px 18px 12px; background: var(--navy); color: #fff; flex-wrap: wrap; }
+  .ecard.upcoming .ehead { background: linear-gradient(90deg, var(--navy), #2a3d66); }
+  .ehead .year { font-family: Bungee, Impact, sans-serif; font-size: 30px; line-height: 1; color: var(--gold); }
+  .ehead .race { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(255 255 255 / 0.8); margin-top: 4px; }
+  .stamp { font-family: Bungee, Impact, sans-serif; font-size: 13px; padding: 4px 10px; border: 3px solid currentColor; border-radius: 8px; transform: rotate(-4deg); white-space: nowrap; }
+  .stamp.won { color: #86efac; }
+  .stamp.lost { color: #fca5a5; }
+  .stamp.soon { color: var(--gold); }
+  .ebody { padding: 16px 18px 18px; display: grid; gap: 18px; }
+  .summary { font-size: 15px; font-weight: 500; color: var(--navy); margin: 0; max-width: 64ch; }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+  .stat .v { font-family: Bungee, Impact, sans-serif; font-size: 22px; color: var(--navy); line-height: 1.1; }
+  .stat .k { font-size: 11px; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+
+  .results { display: grid; gap: 8px; }
+  .result { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; background: #fff; }
+  .result .rtitle { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; font-weight: 700; color: var(--navy); letter-spacing: 0.04em; text-transform: uppercase; flex-wrap: wrap; }
+  .result .rtitle a { font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 12px; }
+  .vote { display: grid; grid-template-columns: minmax(0, 11em) 1fr auto; gap: 8px; align-items: center; font-size: 13px; margin-top: 6px; }
+  .vote .who { overflow-wrap: anywhere; }
+  .vote .track { height: 12px; background: rgb(27 42 74 / 0.08); border-radius: 99px; overflow: hidden; }
+  .vote .fill { height: 100%; border-radius: 99px; background: var(--muted); }
+  .vote .fill.me { background: var(--navy); }
+  .vote .pct { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 4.2em; text-align: end; }
+
+  /* Grassroots ↔ big money */
+  .tug { display: grid; gap: 6px; }
+  .tug .ends { display: flex; justify-content: space-between; font-family: Bungee, Impact, sans-serif; font-size: 13px; }
+  .tug .ends .g { color: var(--s0); }
+  .tug .ends .b { color: var(--s4); }
+  .stack { display: flex; height: 34px; border-radius: 10px; overflow: hidden; border: 2px solid var(--navy); background: #fff; }
+  .stack > span { display: block; height: 100%; min-width: 0; position: relative; }
+  .stack > span + span { box-shadow: inset 1px 0 0 rgb(255 255 255 / 0.7); }
+  .stack > span i { position: absolute; inset: 0; display: grid; place-items: center; font-style: normal; font-size: 11px; font-weight: 700; color: #fff; text-shadow: 0 1px 1px rgb(0 0 0 / 0.35); white-space: nowrap; overflow: hidden; }
+  .stack > span.light i { color: var(--navy-deep); text-shadow: none; }
+  .legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 4px 18px; font-size: 13px; }
+  .legend div { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; }
+  .legend .sw { width: 12px; height: 12px; border-radius: 3px; }
+  .legend .amt { font-variant-numeric: tabular-nums; color: var(--muted); }
+  .legend .amt b { color: var(--ink); font-weight: 600; }
+
+  .h2h { display: grid; gap: 10px; }
+  .h2h .row { display: grid; grid-template-columns: minmax(0, 9em) 1fr; gap: 10px; align-items: center; font-size: 13px; }
+  .h2h .row .stack { height: 26px; }
+  .h2h .row .nm { font-weight: 600; }
+  .h2h .row .nm small { display: block; font-weight: 400; color: var(--muted); }
+
+  .outside { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ob { border-radius: 12px; padding: 10px 12px; border: 2px solid; background: #fff; }
+  .ob.help { border-color: var(--won); }
+  .ob.hurt { border-color: var(--lost); }
+  .ob .big { font-family: Bungee, Impact, sans-serif; font-size: 22px; line-height: 1.1; }
+  .ob.help .big { color: var(--won); }
+  .ob.hurt .big { color: var(--lost); }
+  .ob .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
+  .ob ul { margin: 6px 0 0; padding: 0; list-style: none; font-size: 13px; }
+  .ob li { display: flex; justify-content: space-between; gap: 8px; }
+  .ob li .n { overflow-wrap: anywhere; }
+
+  .backers { display: grid; gap: 6px; }
+  .backer { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; font-size: 13px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  .tag { font-size: 10px; font-weight: 800; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 5px; color: #fff; min-width: 54px; text-align: center; }
+  .backer .n { overflow-wrap: anywhere; }
+  .backer .a { font-variant-numeric: tabular-nums; font-weight: 600; display: flex; gap: 6px; align-items: center; }
+  .maxed { font-size: 9.5px; font-weight: 800; letter-spacing: 0.06em; color: var(--lost); border: 2px solid var(--lost); border-radius: 5px; padding: 0 4px; transform: rotate(-3deg); }
+
+  .fine { font-size: 12px; color: var(--muted); margin: 0; }
+  details { font-size: 13px; }
+  summary { cursor: pointer; color: var(--navy); font-weight: 600; }
+  .tbl { overflow-x: auto; margin-top: 8px; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th, td { text-align: start; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+  td.r, th.r { text-align: end; }
+
+  /* Trend strip */
+  .trend { margin-top: 14px; background: var(--paper); border: 4px solid var(--navy); border-radius: 18px; padding: 16px 18px; }
+  .trend-grid { display: grid; grid-template-columns: repeat(13, minmax(0, 1fr)); gap: 6px; align-items: end; height: 170px; margin-top: 12px; }
+  .tcol { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 4px; }
+  .tcol .bar { width: 100%; border-radius: 6px 6px 0 0; background: var(--pac); }
+  .tcol .bar.hi { background: var(--s4); }
+  .tcol .pv { font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--navy); }
+  .tyears { display: grid; grid-template-columns: repeat(13, minmax(0, 1fr)); gap: 6px; font-size: 11px; color: var(--muted); text-align: center; border-top: 2px solid var(--navy); padding-top: 4px; font-variant-numeric: tabular-nums; }
+
+  .sources { margin-top: 40px; font-size: 13px; color: var(--muted); }
+  .sources li { margin-bottom: 4px; }
+
+  @media (max-width: 560px) {
+    .outside { grid-template-columns: 1fr; }
+    .vote { grid-template-columns: minmax(0, 8em) 1fr auto; }
+    .h2h .row { grid-template-columns: 1fr; gap: 4px; }
+    .tyears, .trend-grid { gap: 3px; }
+    .tcol .pv { font-size: 9px; }
+    .tyears { font-size: 9px; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="site">
+    <span class="brand display">★ Your Government Deck ★</span>
+    <span class="addr">02072 ✎</span>
+  </header>
+
+  <p class="mock-note"><strong>Design mockup.</strong> Real FEC and Massachusetts election figures for Rep. Stephen F. Lynch (MA-8), pulled Sept 27, 2026. Layout and wording are proposals.</p>
+
+  <section aria-labelledby="deck-h">
+    <h2 id="deck-h" class="display">1 · On the deck</h2>
+    <p class="lede">A ribbon marks anyone whose seat is on the Nov 3 ballot. Cards also show when an official's next election is.</p>
+    <div class="deck">
+      <div class="tcard" style="--party-c: var(--dem)">
+        <div class="inner">
+          <div class="ribbon">ON THE BALLOT</div>
+          <div class="office">U.S. Rep · D</div>
+          <div class="portrait"><span>SL</span></div>
+          <div class="name">Stephen F. Lynch</div>
+          <div class="where">Massachusetts · District 8</div>
+          <div class="countdown"><b class="num" id="days">37</b> days to Nov 3</div>
+        </div>
+      </div>
+      <div class="tcard" style="--party-c: var(--dem)">
+        <div class="inner">
+          <div class="office">U.S. Senator · D</div>
+          <div class="portrait"><span>EW</span></div>
+          <div class="name">Elizabeth Warren</div>
+          <div class="where">Massachusetts</div>
+          <div class="next">Next election: 2030</div>
+        </div>
+      </div>
+      <div class="tcard" style="--party-c: #57534e">
+        <div class="inner">
+          <div class="ribbon retiring">NOT RUNNING</div>
+          <div class="office">Example seat</div>
+          <div class="portrait"><span>??</span></div>
+          <div class="name">Retiring member</div>
+          <div class="where">Seat is up, no 2026 filing</div>
+          <div class="next">Seat open Nov 3</div>
+        </div>
+        <span class="example-tag">layout example</span>
+      </div>
+      <div class="tcard" style="--party-c: var(--rep)">
+        <div class="inner">
+          <div class="office">President · R</div>
+          <div class="portrait"><span>DT</span></div>
+          <div class="name">Donald Trump</div>
+          <div class="where">United States</div>
+          <div class="next">Term-limited · term ends 2029</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="el-h">
+    <h2 id="el-h" class="display">2 · Profile: elections</h2>
+    <div class="profile">
+      <div>
+        <div class="eyebrow">Federal · Congress</div>
+        <div class="display" style="font-size: 26px; color: var(--navy)">Stephen F. Lynch</div>
+        <span class="chip dem">Democrat</span> <span class="fine" style="display:inline">U.S. House, MA-8 · in office since 2001</span>
+      </div>
+    </div>
+    <p class="lede" style="margin-top: 10px">One card per campaign. The money bar runs from grassroots donors on the left to big checks and PACs on the right.</p>
+    <div class="elections" id="elections"></div>
+  </section>
+
+  <section aria-labelledby="trend-h">
+    <h2 id="trend-h" class="display">3 · Every race since 2002</h2>
+    <p class="lede">Share of campaign contributions that came from PACs, each two-year House cycle. Orange marks cycles where PACs gave more than individuals did.</p>
+    <div class="trend">
+      <div class="trend-grid" id="trend" role="img"></div>
+      <div class="tyears" id="trend-years" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="sources" aria-labelledby="src-h">
+    <h2 id="src-h" class="display" style="font-size: 14px">Sources and rules used</h2>
+    <ul>
+      <li>Money: <a href="https://www.fec.gov/data/candidate/H2MA09072/" target="_blank" rel="noopener">FEC candidate H2MA09072</a> (House) and <a href="https://www.fec.gov/data/candidate/S0MA00083/" target="_blank" rel="noopener">S0MA00083</a> (2013 Senate). Totals are for the full election cycle; 2026 runs through Aug 12, 2026.</li>
+      <li>Donation sizes are the FEC's own buckets, per donor per cycle. Donations of $200 or less aren't itemized, so the FEC counts them as one group.</li>
+      <li>PAC types come from the FEC's record of each PAC's sponsor (labor union, corporation or cooperative, trade or membership group). ActBlue and other conduits are left out of top backers because they pass along individuals' donations.</li>
+      <li>"Maxed": a PAC can give $5,000 per election, so $10,000 covers both the primary and the general.</li>
+      <li>Outside money: FEC-processed independent expenditures. Late 24- and 48-hour reports can take weeks to appear in these totals.</li>
+      <li>Vote counts: <a href="https://electionstats.state.ma.us/" target="_blank" rel="noopener">Massachusetts Secretary of the Commonwealth election statistics</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+// ---- Data (FEC API + electionstats.state.ma.us, pulled 2026-09-27) ----
+const ES = (id) => `https://electionstats.state.ma.us/elections/view/${id}/`;
+const SIZE_LABELS = ["$200 or less", "$200–499", "$500–999", "$1,000–1,999", "$2,000+"];
+
+const CAMPAIGNS = [
+  {
+    year: "2026", race: "U.S. House · MA-8", upcoming: true,
+    stamp: { kind: "soon", text: "NOV 3" },
+    raised: 910160, spent: 1356628, cash: 642256, through: "Aug 12, 2026",
+    sizes: [34092, 29700, 86000, 159250, 246500], indiv: 555542, pac: 339200, party: 0, self: 0,
+    stages: [
+      { title: "Democratic primary · Sept 1", link: ES(172899), rows: [["Stephen F. Lynch", 55.6, true], ["Patrick Thomas Roath", 44.2]] },
+      { title: "General · Nov 3", upcoming: "vs. Robert Gerald Burke (R), who reports $1,525 raised" },
+    ],
+    rival: { name: "Patrick Roath", role: "primary challenger", raised: 1280230,
+      sizes: [281556, 104614, 179449, 234934, 411550], indiv: 1212628, pac: 11000, party: 0, self: 3733 },
+    outside: {
+      help: [], hurt: [["Leaders We Deserve", 213732]],
+      rivalHelp: [["Leaders We Deserve", 255817], ["Indivisible Action", 21617]],
+    },
+    pacTypes: { labor: 147500, corp: 75300, trade: 70500, lead: 7500, other: 24500 },
+    maxed: 8, pacCount: 99,
+    backers: [
+      ["United Food and Commercial Workers International Union Active Ballot Club", "labor", 10000],
+      ["Int'l Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers", "labor", 10000],
+      ["American Federation of State County & Municipal Employees PEOPLE", "labor", 10000],
+      ["International Association of Firefighters PAC", "labor", 10000],
+      ["National Association of Insurance and Financial Advisors PAC", "trade", 10000],
+    ],
+  },
+  {
+    year: "2024", race: "U.S. House · MA-8",
+    stamp: { kind: "won", text: "WON 70.4%" },
+    raised: 710124, cash: 1088724,
+    sizes: [6106, 8500, 34400, 88500, 140100], indiv: 277606, pac: 407500, party: 0, self: 0,
+    stages: [
+      { title: "General · Nov 5", link: ES(165302), rows: [["Stephen F. Lynch (D)", 70.4, true], ["Robert G. Burke (R)", 29.4]] },
+      { title: "Democratic primary", link: ES(163514), note: "Unopposed (98.7%)" },
+    ],
+    oppRaised: { name: "Robert G. Burke", raised: 1147 },
+    outside: { help: [], hurt: [] },
+    pacTypes: { labor: 178000, corp: 128500, trade: 78000, lead: 1000, other: 17000 },
+    maxed: 11, pacCount: 115,
+    backers: [
+      ["Machinists Non-Partisan Political League", "labor", 10000],
+      ["UNITE HERE TIP Campaign Committee", "labor", 10000],
+      ["Air Line Pilots Assoc. Int'l PAC", "labor", 10000],
+      ["Realtors Political Action Committee", "trade", 10000],
+      ["American Crystal Sugar Company", "corp", 10000],
+    ],
+  },
+  {
+    year: "2022", race: "U.S. House · MA-8",
+    stamp: { kind: "won", text: "WON 69.7%" },
+    raised: 962334, cash: 1354910,
+    sizes: [8134, 17300, 64450, 173705, 268100], indiv: 532189, pac: 427350, party: 0, self: 0,
+    stages: [
+      { title: "General · Nov 8", link: ES(154339), rows: [["Stephen F. Lynch (D)", 69.7, true], ["Robert G. Burke (R)", 30.1]] },
+      { title: "Democratic primary", link: ES(152289), note: "Unopposed (99.0%)" },
+    ],
+    oppNote: "His general-election opponent has no FEC report for 2022.",
+    outside: { help: [], hurt: [] },
+    pacTypes: { labor: 168500, corp: 139850, trade: 95500, lead: 2000, other: 13000 },
+    maxed: 11, pacCount: 120,
+    backers: [
+      ["Realtors Political Action Committee", "trade", 10000],
+      ["American Federation of State County & Municipal Employees PEOPLE", "labor", 10000],
+      ["UNITE HERE TIP Campaign Committee", "labor", 10000],
+      ["The Williams Companies, Inc. PAC", "corp", 10000],
+      ["National Association of Letter Carriers Political Fund", "labor", 10000],
+    ],
+  },
+  {
+    year: "2020", race: "U.S. House · MA-8",
+    stamp: { kind: "won", text: "WON 80.7%" },
+    raised: 911202, cash: 1213384,
+    sizes: [12551, 23800, 59000, 106900, 192000], indiv: 394251, pac: 497000, party: 0, self: 0,
+    stages: [
+      { title: "Democratic primary · Sept 1", link: ES(139789), rows: [["Stephen F. Lynch", 66.4, true], ["Robbie H. Goldstein", 33.5]] },
+      { title: "General · Nov 3", link: ES(140753), rows: [["Stephen F. Lynch (D)", 80.7, true], ["Jonathan D. Lott (Unenrolled)", 18.7]] },
+    ],
+    oppRaised: { name: "Robbie Goldstein", raised: 593012 },
+    outside: {
+      help: [["Massachusetts Nurses Association", 4917]],
+      hurt: [["The Committee for Access to Affordable Healthcare", 35325]],
+    },
+    pacTypes: { labor: 191000, corp: 136500, trade: 112000, lead: 11010, other: 18000 },
+    maxed: 13, pacCount: 130,
+    backers: [
+      ["Sheet Metal Workers International PAC", "labor", 10000],
+      ["Machinists Non-Partisan Political League", "labor", 10000],
+      ["National Beer Wholesalers Association PAC", "trade", 10000],
+      ["CULAC, the PAC of Credit Union National Association", "trade", 10000],
+      ["Massachusetts Mutual Life Insurance Co.", "corp", 10000],
+    ],
+  },
+  {
+    year: "2013", race: "U.S. Senate special · Massachusetts",
+    stamp: { kind: "lost", text: "LOST PRIMARY" },
+    raised: 2657862,
+    sizes: [256258, 169545, 376151, 354350, 497900], indiv: 1698578, pac: 215007, party: 0, self: 0,
+    stages: [
+      { title: "Special Democratic primary · Apr 30", link: ES(124762), rows: [["Edward J. Markey", 57.3], ["Stephen F. Lynch", 42.4, true]] },
+    ],
+    oppNote: "Markey's FEC totals combine this special with his 2014 race, so no fundraising comparison is shown.",
+    outside: { help: [], hurt: [] },
+    note: "PAC types and top backers weren't pulled for this race in the mockup.",
+  },
+];
+
+// Every House cycle, for the trend strip: [cycle, individual contributions, PAC contributions].
+const HISTORY = [
+  ["2002", 173230, 387400], ["2004", 842851, 310090], ["2006", 813451, 321975], ["2008", 621883, 349223],
+  ["2010", 434614, 424900], ["2012", 250776, 464175], ["2014", 429108, 296060], ["2016", 848115, 362520],
+  ["2018", 538061, 313400], ["2020", 394251, 497000], ["2022", 532189, 427350], ["2024", 277606, 407500],
+  ["2026", 555542, 339200],
+];
+
+// ---- Helpers ----
+const $ = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const money = (n) => n >= 1e6 ? `$${(n / 1e6).toFixed(2).replace(/0$/, "")}M` : n >= 1e4 ? `$${Math.round(n / 1e3)}K` : `$${n.toLocaleString("en-US")}`;
+const full = (n) => `$${Math.round(n).toLocaleString("en-US")}`;
+const pct = (a, b) => b ? (a / b) * 100 : 0;
+const pctTxt = (p) => p < 1 && p > 0 ? "<1%" : `${Math.round(p)}%`;
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+const SEG_COLORS = ["var(--s0)", "var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--pac)", "var(--party)", "var(--self)", "var(--unassigned)"];
+const LIGHT = new Set([1, 2, 3, 8]);
+const TYPE_META = {
+  labor: ["LABOR", "var(--labor)", "Labor unions"],
+  corp: ["CORP", "var(--corp)", "Corporations & co-ops"],
+  trade: ["TRADE", "var(--trade)", "Trade & professional groups"],
+  lead: ["POL", "var(--lead)", "Politicians' PACs"],
+  other: ["OTHER", "var(--other)", "Unclassified PACs"],
+};
+
+function segments(c) {
+  const sized = c.sizes.reduce((a, b) => a + b, 0);
+  const unassigned = Math.max(0, c.indiv - sized);
+  const vals = [...c.sizes, c.pac, c.party, c.self, unassigned];
+  const labels = [...SIZE_LABELS.map((s) => `Individuals ${s}`), "PACs", "Party committees", "Candidate's own money", "Individuals, size not assigned"];
+  const total = vals.reduce((a, b) => a + b, 0);
+  return { vals, labels, total };
+}
+
+function stackBar({ vals, labels, total }, compact = false) {
+  const bar = $("div", "stack");
+  bar.setAttribute("aria-hidden", "true");
+  vals.forEach((v, i) => {
+    if (!v) return;
+    const p = pct(v, total);
+    const s = $("span", LIGHT.has(i) ? "light" : "");
+    s.style.width = `${p}%`;
+    s.style.background = SEG_COLORS[i];
+    s.title = `${labels[i]}: ${full(v)} (${pctTxt(p)})`;
+    if (!compact && p >= 7) s.append($("i", "", pctTxt(p)));
+    bar.append(s);
+  });
+  return bar;
+}
+
+function card(c) {
+  const seg = segments(c);
+  const grass = pct(c.sizes[0], seg.total);
+  const big = pct(c.sizes[4] + c.pac, seg.total);
+  const pacShare = pct(c.pac, seg.total);
+
+  const el = $("article", `ecard${c.upcoming ? " upcoming" : ""}`);
+  el.setAttribute("aria-label", `${c.year} ${c.race}`);
+
+  const head = $("div", "ehead");
+  head.append($("div", "", `<div class="year">${c.year}</div><div class="race">${c.race}${c.upcoming ? " · upcoming" : ""}</div>`));
+  head.append($("div", `stamp ${c.stamp.kind}`, c.stamp.text));
+  el.append(head);
+
+  const body = $("div", "ebody");
+
+  // One-sentence summary, written from the numbers.
+  const lead = pacShare >= 50 ? `PACs supplied more than half of this campaign's contributions (${pctTxt(pacShare)}).`
+    : big >= 50 ? `Most of the money came in big checks: ${pctTxt(big)} from $2,000+ donors and PACs.`
+    : `Donors giving $200 or less supplied ${pctTxt(grass)} of contributions.`;
+  body.append($("p", "summary", lead));
+
+  // Headline stats
+  const stats = $("div", "stats");
+  const stat = (v, k) => stats.append($("div", "stat", `<div class="v num">${v}</div><div class="k">${k}</div>`));
+  stat(money(c.raised), c.upcoming ? `raised through ${c.through}` : "raised");
+  if (c.spent) stat(money(c.spent), "spent so far");
+  if (c.cash != null) stat(money(c.cash), c.upcoming ? "cash on hand" : "left in the bank");
+  if (c.rival) {
+    const r = c.rival.raised / c.raised;
+    stat(`${r.toFixed(1)} : 1`, `outraised by ${c.rival.role}`);
+  } else if (c.oppRaised) {
+    const r = c.raised / Math.max(1, c.oppRaised.raised);
+    stat(r >= 100 ? `${Math.round(r).toLocaleString("en-US")} : 1` : `${r.toFixed(1)} : 1`, `outraised ${c.oppRaised.name}`);
+  }
+  body.append(stats);
+
+  // Results
+  const results = $("div", "results");
+  for (const st of c.stages) {
+    const r = $("div", "result");
+    r.append($("div", "rtitle", `<span>${st.title}</span>${st.link ? `<a href="${st.link}" target="_blank" rel="noopener">Official results ↗</a>` : ""}`));
+    if (st.rows) for (const [who, p, me] of st.rows) {
+      const v = $("div", "vote");
+      v.append($("span", "who", `${me ? "<strong>" : ""}${esc(who)}${me ? "</strong>" : ""}`));
+      const t = $("div", "track"); const f = $("div", `fill${me ? " me" : ""}`); f.style.width = `${p}%`; t.append(f); v.append(t);
+      v.append($("span", "pct", `${p.toFixed(1)}%`));
+      r.append(v);
+    }
+    if (st.note) r.append($("p", "fine", st.note));
+    if (st.upcoming) r.append($("p", "fine", st.upcoming));
+    results.append(r);
+  }
+  body.append(results);
+
+  // Grassroots ↔ big money
+  const tug = $("div", "tug");
+  tug.append($("div", "eyebrow", "Who funded this campaign"));
+  tug.append($("div", "ends", `<span class="g">GRASSROOTS ${pctTxt(grass)}</span><span class="b">BIG MONEY ${pctTxt(big)}</span>`));
+  tug.append(stackBar(seg));
+  const leg = $("div", "legend");
+  seg.vals.forEach((v, i) => {
+    if (!v) return;
+    leg.append($("div", "", `<span class="sw" style="background:${SEG_COLORS[i]}"></span><span>${seg.labels[i].replace("Individuals ", "")}</span><span class="amt"><b>${pctTxt(pct(v, seg.total))}</b> ${money(v)}</span>`));
+  });
+  tug.append(leg);
+  tug.append($("p", "fine", `Grassroots = donors giving $200 or less. Big money = individuals giving $2,000+ plus PACs. Shares are of ${full(seg.total)} in contributions; the ${money(c.raised)} raised also counts refunds, interest and loans.`));
+  body.append(tug);
+
+  // Head-to-head vs rival
+  if (c.rival) {
+    const rs = segments(c.rival);
+    const h = $("div", "h2h");
+    h.append($("div", "eyebrow", "Head to head: where each side's money came from"));
+    const row = (name, sub, s) => { const r = $("div", "row"); r.append($("div", "nm", `${name}<small>${sub}</small>`)); r.append(stackBar(s, true)); return r; };
+    h.append(row("Lynch", `${money(c.raised)} · PACs ${pctTxt(pct(c.pac, seg.total))} · $200 or less ${pctTxt(grass)}`, seg));
+    h.append(row("Roath", `${money(c.rival.raised)} · PACs ${pctTxt(pct(c.rival.pac, rs.total))} · $200 or less ${pctTxt(pct(c.rival.sizes[0], rs.total))}`, rs));
+    body.append(h);
+  }
+
+  // Outside money
+  const o = c.outside;
+  const sum = (a) => a.reduce((t, [, v]) => t + v, 0);
+  const box = (cls, label, list) => {
+    const b = $("div", `ob ${cls}`);
+    b.append($("div", "lbl", label));
+    b.append($("div", "big num", list.length ? money(sum(list)) : "$0"));
+    const ul = $("ul");
+    for (const [n, v] of list) ul.append($("li", "", `<span class="n">${esc(n)}</span><span class="num">${money(v)}</span>`));
+    b.append(ul);
+    return b;
+  };
+  const ow = $("div", "");
+  ow.append($("div", "eyebrow", "Outside money (super PACs and groups)"));
+  const og = $("div", "outside");
+  og.style.marginTop = "6px";
+  og.append(box("help", "▲ Spent to help Lynch", o.help));
+  og.append(box("hurt", "▼ Spent to defeat Lynch", o.hurt));
+  ow.append(og);
+  if (o.rivalHelp) ow.append($("p", "fine", `Also ${money(sum(o.rivalHelp))} spent to help Roath: ${o.rivalHelp.map(([n, v]) => `${esc(n)} ${money(v)}`).join(", ")}.`));
+  body.append(ow);
+
+  // PAC types + top backers
+  if (c.pacTypes) {
+    const pt = $("div", "tug");
+    const tot = Object.values(c.pacTypes).reduce((a, b) => a + b, 0);
+    pt.append($("div", "eyebrow", `Which PACs: ${c.pacCount} gave, ${c.maxed} gave the $10,000 maximum`));
+    const bar = $("div", "stack"); bar.setAttribute("aria-hidden", "true"); bar.style.height = "22px";
+    const lg = $("div", "legend");
+    for (const [k, v] of Object.entries(c.pacTypes)) {
+      if (!v) continue;
+      const [, color, label] = TYPE_META[k]; const p = pct(v, tot);
+      const s = $("span"); s.style.width = `${p}%`; s.style.background = color; if (p >= 9) s.append($("i", "", pctTxt(p))); bar.append(s);
+      lg.append($("div", "", `<span class="sw" style="background:${color}"></span><span>${label}</span><span class="amt"><b>${pctTxt(p)}</b> ${money(v)}</span>`));
+    }
+    pt.append(bar); pt.append(lg);
+    body.append(pt);
+
+    const bk = $("div", "backers");
+    bk.append($("div", "eyebrow", "Top backers"));
+    for (const [n, t, v] of c.backers) {
+      const [tag, color] = TYPE_META[t];
+      bk.append($("div", "backer", `<span class="tag" style="background:${color}">${tag}</span><span class="n" lang="en">${esc(n)}</span><span class="a num">${v >= 10000 ? '<span class="maxed">MAXED</span>' : ""}${full(v)}</span>`));
+    }
+    body.append(bk);
+  }
+
+  if (c.oppNote) body.append($("p", "fine", c.oppNote));
+  if (c.note) body.append($("p", "fine", c.note));
+
+  // Accessible table of the money bar
+  const d = $("details");
+  d.append($("summary", "", "Show the numbers as a table"));
+  const rows = seg.vals.map((v, i) => v ? `<tr><td>${seg.labels[i]}</td><td class="r">${full(v)}</td><td class="r">${pctTxt(pct(v, seg.total))}</td></tr>` : "").join("");
+  d.append($("div", "tbl", `<table><thead><tr><th>Source</th><th class="r">Amount</th><th class="r">Share</th></tr></thead><tbody>${rows}<tr><th>Total contributions</th><th class="r">${full(seg.total)}</th><th class="r">100%</th></tr></tbody></table>`));
+  body.append(d);
+
+  el.append(body);
+  return el;
+}
+
+const list = document.getElementById("elections");
+CAMPAIGNS.forEach((c) => list.append(card(c)));
+
+// Trend strip
+const trend = document.getElementById("trend");
+const years = document.getElementById("trend-years");
+const shares = HISTORY.map(([y, ind, pac]) => [y, pct(pac, ind + pac), pac > ind]);
+trend.setAttribute("aria-label", "PAC share of contributions by cycle: " + shares.map(([y, p]) => `${y} ${pctTxt(p)}`).join(", "));
+for (const [y, p, over] of shares) {
+  const col = $("div", "tcol");
+  col.append($("span", "pv", pctTxt(p)));
+  const b = $("div", `bar${over ? " hi" : ""}`); b.style.height = `${p * 1.8}px`; col.append(b);
+  trend.append(col);
+  years.append($("span", "", `'${y.slice(2)}`));
+}
+
+// Countdown to Nov 3, 2026.
+const days = Math.max(0, Math.ceil((new Date("2026-11-03T00:00:00-05:00") - Date.now()) / 864e5));
+document.getElementById("days").textContent = days;
+</script>

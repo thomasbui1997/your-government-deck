@@ -1,10 +1,10 @@
 "use server";
 
-import { redirect } from "next/navigation";
-import { DEFAULT_LOCALE, isLocale, type Locale, localePath } from "@/i18n/config";
+import { cookies } from "next/headers";
 import { districtsAtPoint, geocodeAddress } from "@/lib/providers/geocode";
 import { autocomplete, placeDetails, placesEnabled, tooBroad } from "@/lib/providers/places";
 import { districtsForZip } from "@/lib/providers/zip";
+import { DECK_COOKIE } from "@/lib/savedDeck";
 
 export type AddressError =
   | "errorTooShort"
@@ -16,10 +16,11 @@ export type AddressError =
   | "errorTooBroad"
   | "errorNoData";
 
-export interface AddressLookupState {
+export type AddressLookupResult =
   /** Dictionary key under `address`; the form shows it in the visitor's language. */
-  error?: AddressError;
-}
+  | { error: AddressError }
+  /** The deck to open, without a locale prefix. */
+  | { path: string };
 
 // Place types that sit inside one set of districts. A town or street can span several,
 // so those get the zip deck, which lists everyone who might represent it.
@@ -40,32 +41,36 @@ function deckPath(zip: string, found: { cd?: number; upper?: string; lower?: str
 }
 
 /**
- * Resolves a street address, zip, or town to the deck for its districts.
- * Only district codes go in the URL; the address itself is never stored or logged.
+ * Resolves a street address, zip, or town to the deck for its districts, and remembers
+ * that deck so the home page opens it next time. Only district codes go in the URL and
+ * the cookie; the address itself is never stored or logged on the server.
  */
-export async function lookupAddress(
-  _prev: AddressLookupState,
-  formData: FormData,
-): Promise<AddressLookupState> {
+export async function lookupAddress(formData: FormData): Promise<AddressLookupResult> {
   const address = String(formData.get("address") ?? "").trim();
   const placeId = String(formData.get("placeId") ?? "");
   const token = String(formData.get("session") ?? "");
   const session = /^[\w-]{8,64}$/.test(token) ? token : crypto.randomUUID();
-  // Server actions can't read the [locale] segment, so the form sends it.
-  const rawLocale = String(formData.get("locale") ?? "");
-  const locale: Locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const places = placesEnabled();
 
   // A bare zip still works; the deck shows everyone who might represent it.
-  if (/^\d{5}$/.test(address)) redirect(localePath(locale, `/z/${address}`));
+  if (/^\d{5}$/.test(address)) return remember(`/z/${address}`);
 
   if (address.length < (places ? 3 : 5)) {
     return { error: places ? "errorTooShortAny" : "errorTooShort" };
   }
 
   const path = places ? await lookupPlace(address, placeId, session) : await lookupCensus(address);
-  if (typeof path === "object") return path;
-  redirect(localePath(locale, path));
+  return typeof path === "object" ? path : remember(path);
+}
+
+async function remember(path: string): Promise<AddressLookupResult> {
+  (await cookies()).set(DECK_COOKIE, path, {
+    path: "/",
+    maxAge: 60 * 60 * 24 * 365,
+    sameSite: "lax",
+    httpOnly: true,
+  });
+  return { path };
 }
 
 /** Google finds the place (forgiving of typos and partial input); Census finds its districts. */
@@ -73,7 +78,7 @@ async function lookupPlace(
   address: string,
   placeId: string,
   session: string,
-): Promise<string | AddressLookupState> {
+): Promise<string | AddressLookupResult> {
   let place, point;
   try {
     // Typed and submitted without picking a suggestion: take Google's best match. If that's a
@@ -103,7 +108,7 @@ async function lookupPlace(
 }
 
 /** Fallback without a Google key: the Census Geocoder needs a full street address. */
-async function lookupCensus(address: string): Promise<string | AddressLookupState> {
+async function lookupCensus(address: string): Promise<string | AddressLookupResult> {
   if (!/\b\d{5}\b/.test(address) && !address.includes(",")) return { error: "errorNeedCity" };
 
   let found;
