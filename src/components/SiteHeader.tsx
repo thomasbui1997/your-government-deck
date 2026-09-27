@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { getDictionary, href } from "@/i18n/server";
+import { placesEnabled } from "@/lib/providers/places";
 import { AddressInput } from "./AddressInput";
 import { LanguagePicker } from "./LanguagePicker";
 
@@ -13,7 +14,7 @@ export async function SiteHeader() {
           {t.header.brand}
         </Link>
         <div className="flex items-center gap-2">
-          <AddressInput compact />
+          <AddressInput compact placesOn={placesEnabled()} />
           {/* useSearchParams needs a Suspense boundary during prerendering. */}
           <Suspense>
             <LanguagePicker />

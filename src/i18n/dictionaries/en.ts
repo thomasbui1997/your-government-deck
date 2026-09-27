@@ -17,6 +17,8 @@ export const en = {
       "Every official who represents you, from the President to your school committee, and whether they're keeping their promises.",
     privacy:
       "We send your address to the U.S. Census Geocoder to find your districts, and never store it.",
+    privacyGoogle:
+      "We send what you type to Google Maps and the U.S. Census Geocoder to find your districts, and never store it.",
   },
   address: {
     placeholder: "10 Pearl St, Stoughton, MA",
@@ -25,8 +27,16 @@ export const en = {
     submit: "Deal me in",
     errorTooShort: "Enter your street address, like “10 Pearl St, Stoughton, MA”.",
     errorNeedCity: "Add your city and state (or zip) after the street.",
-    errorService: "The Census address service didn't answer. Try again in a moment.",
+    errorService: "The address service didn't answer. Try again in a moment.",
     errorNotFound: "We couldn't find that address. Check the house number, street, and city.",
+    placeholderAny: "Street address, zip, or town",
+    placeholderAnyShort: "Address, zip, or town",
+    labelAny: "Street address, zip, or town",
+    errorTooShortAny: "Enter your address, zip, or town, like “Stoughton, MA”.",
+    errorPlaceNotFound: "We couldn't find that place. Try a street address, zip, or town.",
+    errorTooBroad: "That's a whole state or county. Narrow it to a town, zip, or street address.",
+    errorNoData: "We don't have district data for that area yet. Try a nearby zip.",
+    suggestions: "Suggestions",
   },
   deck: {
     sample: "sample",

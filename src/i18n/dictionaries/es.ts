@@ -16,6 +16,8 @@ export const es: Dictionary = {
       "Cada funcionario que te representa, desde el Presidente hasta el comité escolar, y si está cumpliendo sus promesas.",
     privacy:
       "Enviamos tu dirección al geocodificador de la Oficina del Censo de EE. UU. para encontrar tus distritos, y nunca la guardamos.",
+    privacyGoogle:
+      "Enviamos lo que escribes a Google Maps y al geocodificador de la Oficina del Censo de EE. UU. para encontrar tus distritos, y nunca lo guardamos.",
   },
   address: {
     placeholder: "10 Pearl St, Stoughton, MA",
@@ -24,8 +26,16 @@ export const es: Dictionary = {
     submit: "Repartir",
     errorTooShort: "Escribe tu dirección, por ejemplo “10 Pearl St, Stoughton, MA”.",
     errorNeedCity: "Agrega tu ciudad y estado (o código postal) después de la calle.",
-    errorService: "El servicio de direcciones del Censo no respondió. Inténtalo de nuevo en un momento.",
+    errorService: "El servicio de direcciones no respondió. Inténtalo de nuevo en un momento.",
     errorNotFound: "No encontramos esa dirección. Revisa el número, la calle y la ciudad.",
+    placeholderAny: "Dirección, código postal o pueblo",
+    placeholderAnyShort: "Dirección, código o pueblo",
+    labelAny: "Dirección, código postal o pueblo",
+    errorTooShortAny: "Escribe tu dirección, código postal o pueblo, por ejemplo “Stoughton, MA”.",
+    errorPlaceNotFound: "No encontramos ese lugar. Prueba con una dirección, un código postal o un pueblo.",
+    errorTooBroad: "Eso es un estado o condado completo. Especifica un pueblo, código postal o dirección.",
+    errorNoData: "Aún no tenemos datos de distritos para esa zona. Prueba con un código postal cercano.",
+    suggestions: "Sugerencias",
   },
   deck: {
     sample: "muestra",

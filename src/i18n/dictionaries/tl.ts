@@ -16,6 +16,8 @@ export const tl: Dictionary = {
       "Bawat opisyal na kumakatawan sa iyo, mula sa Pangulo hanggang sa komite ng paaralan, at kung tinutupad nila ang kanilang mga pangako.",
     privacy:
       "Ipinapadala namin ang iyong address sa U.S. Census Geocoder para mahanap ang iyong mga distrito, at hindi namin ito kailanman iniimbak.",
+    privacyGoogle:
+      "Ipinapadala namin ang tina-type mo sa Google Maps at sa U.S. Census Geocoder para mahanap ang iyong mga distrito, at hindi namin ito kailanman iniimbak.",
   },
   address: {
     placeholder: "10 Pearl St, Stoughton, MA",
@@ -24,8 +26,16 @@ export const tl: Dictionary = {
     submit: "Ibigay ang baraha",
     errorTooShort: "Ilagay ang iyong address, gaya ng “10 Pearl St, Stoughton, MA”.",
     errorNeedCity: "Idagdag ang iyong lungsod at estado (o zip code) pagkatapos ng kalye.",
-    errorService: "Hindi sumagot ang serbisyo ng address ng Census. Subukang muli mamaya.",
+    errorService: "Hindi sumagot ang serbisyo ng address. Subukang muli mamaya.",
     errorNotFound: "Hindi namin mahanap ang address na iyon. Suriin ang numero ng bahay, kalye, at lungsod.",
+    placeholderAny: "Address, zip, o bayan",
+    placeholderAnyShort: "Address, zip, o bayan",
+    labelAny: "Address, zip code, o bayan",
+    errorTooShortAny: "Ilagay ang iyong address, zip, o bayan, gaya ng “Stoughton, MA”.",
+    errorPlaceNotFound: "Hindi namin mahanap ang lugar na iyon. Subukan ang address, zip, o bayan.",
+    errorTooBroad: "Buong estado o county iyan. Paliitin sa bayan, zip, o address.",
+    errorNoData: "Wala pa kaming datos ng distrito para sa lugar na iyon. Subukan ang kalapit na zip.",
+    suggestions: "Mga mungkahi",
   },
   deck: {
     sample: "halimbawa",

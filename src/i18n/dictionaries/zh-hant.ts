@@ -13,6 +13,8 @@ export const zhHant: Dictionary = {
     title: "你的政府牌組",
     tagline: "從總統到學校委員會，每一位代表你的官員，以及他們是否在兌現承諾。",
     privacy: "我們會將你的地址傳送給美國人口普查局地理編碼服務以查找你所在的選區，並且從不儲存。",
+    privacyGoogle:
+      "我們會將你輸入的內容傳送給 Google 地圖和美國人口普查局地理編碼服務以查找你的選區，並且從不儲存。",
   },
   address: {
     placeholder: "10 Pearl St, Stoughton, MA",
@@ -21,8 +23,16 @@ export const zhHant: Dictionary = {
     submit: "發牌",
     errorTooShort: "請輸入街道地址，例如「10 Pearl St, Stoughton, MA」。",
     errorNeedCity: "請在街道後加上城市和州（或郵遞區號）。",
-    errorService: "人口普查局地址服務沒有回應，請稍後再試。",
+    errorService: "地址服務沒有回應，請稍後再試。",
     errorNotFound: "找不到該地址。請檢查門牌號碼、街道和城市。",
+    placeholderAny: "街道地址、郵遞區號或城鎮",
+    placeholderAnyShort: "地址、郵遞區號或城鎮",
+    labelAny: "街道地址、郵遞區號或城鎮",
+    errorTooShortAny: "請輸入地址、郵遞區號或城鎮，例如「Stoughton, MA」。",
+    errorPlaceNotFound: "找不到該地點。請嘗試街道地址、郵遞區號或城鎮。",
+    errorTooBroad: "這是整個州或郡。請縮小到城鎮、郵遞區號或街道地址。",
+    errorNoData: "我們暫時沒有該地區的選區資料。請嘗試附近的郵遞區號。",
+    suggestions: "建議",
   },
   deck: {
     sample: "範例",

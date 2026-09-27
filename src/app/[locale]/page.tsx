@@ -1,9 +1,11 @@
 import type { ReactNode } from "react";
 import { AddressInput } from "@/components/AddressInput";
 import { getDictionary } from "@/i18n/server";
+import { placesEnabled } from "@/lib/providers/places";
 
 export default async function Home() {
   const t = await getDictionary();
+  const placesOn = placesEnabled();
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-8 px-4 py-16 text-center">
       <div className="flex -space-x-10" aria-hidden>
@@ -30,8 +32,10 @@ export default async function Home() {
         <p className="mx-auto max-w-md text-lg text-navy/75">{t.home.tagline}</p>
       </div>
 
-      <AddressInput />
-      <p className="-mt-6 max-w-md text-xs text-navy/50">{t.home.privacy}</p>
+      <AddressInput placesOn={placesOn} />
+      <p className="-mt-6 max-w-md text-xs text-navy/50">
+        {placesOn ? t.home.privacyGoogle : t.home.privacy}
+      </p>
     </main>
   );
 }

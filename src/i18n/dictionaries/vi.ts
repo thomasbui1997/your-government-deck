@@ -16,6 +16,8 @@ export const vi: Dictionary = {
       "Mọi quan chức đại diện cho bạn, từ Tổng thống đến ủy ban trường học, và liệu họ có đang giữ lời hứa hay không.",
     privacy:
       "Chúng tôi gửi địa chỉ của bạn đến dịch vụ định vị địa chỉ của Cục Điều tra Dân số Hoa Kỳ để tìm khu vực bầu cử của bạn, và không bao giờ lưu lại.",
+    privacyGoogle:
+      "Chúng tôi gửi nội dung bạn nhập đến Google Maps và dịch vụ định vị địa chỉ của Cục Điều tra Dân số Hoa Kỳ để tìm khu vực bầu cử của bạn, và không bao giờ lưu lại.",
   },
   address: {
     placeholder: "10 Pearl St, Stoughton, MA",
@@ -24,8 +26,16 @@ export const vi: Dictionary = {
     submit: "Chia bài",
     errorTooShort: "Nhập địa chỉ của bạn, ví dụ “10 Pearl St, Stoughton, MA”.",
     errorNeedCity: "Thêm thành phố và tiểu bang (hoặc mã bưu chính) sau tên đường.",
-    errorService: "Dịch vụ địa chỉ của Cục Điều tra Dân số không phản hồi. Vui lòng thử lại sau.",
+    errorService: "Dịch vụ địa chỉ không phản hồi. Vui lòng thử lại sau.",
     errorNotFound: "Không tìm thấy địa chỉ đó. Hãy kiểm tra số nhà, tên đường và thành phố.",
+    placeholderAny: "Địa chỉ, mã bưu chính hoặc thị trấn",
+    placeholderAnyShort: "Địa chỉ, mã hoặc thị trấn",
+    labelAny: "Địa chỉ, mã bưu chính hoặc thị trấn",
+    errorTooShortAny: "Nhập địa chỉ, mã bưu chính hoặc thị trấn, ví dụ “Stoughton, MA”.",
+    errorPlaceNotFound: "Không tìm thấy địa điểm đó. Hãy thử địa chỉ, mã bưu chính hoặc thị trấn.",
+    errorTooBroad: "Đó là cả một tiểu bang hoặc quận. Hãy thu hẹp thành thị trấn, mã bưu chính hoặc địa chỉ.",
+    errorNoData: "Chúng tôi chưa có dữ liệu khu vực bầu cử cho vùng đó. Hãy thử một mã bưu chính gần đó.",
+    suggestions: "Gợi ý",
   },
   deck: {
     sample: "mẫu",

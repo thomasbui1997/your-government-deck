@@ -13,6 +13,8 @@ export const ko: Dictionary = {
     title: "나의 정부 카드 덱",
     tagline: "대통령부터 학교 위원회까지 나를 대표하는 모든 공직자, 그리고 그들이 약속을 지키고 있는지.",
     privacy: "선거구를 찾기 위해 주소를 미국 인구조사국 지오코더로 보내며, 주소는 절대 저장하지 않습니다.",
+    privacyGoogle:
+      "선거구를 찾기 위해 입력한 내용을 Google 지도와 미국 인구조사국 지오코더로 보내며, 절대 저장하지 않습니다.",
   },
   address: {
     placeholder: "10 Pearl St, Stoughton, MA",
@@ -21,8 +23,16 @@ export const ko: Dictionary = {
     submit: "카드 받기",
     errorTooShort: "주소를 입력하세요. 예: “10 Pearl St, Stoughton, MA”.",
     errorNeedCity: "도로명 뒤에 도시와 주(또는 우편번호)를 추가하세요.",
-    errorService: "인구조사국 주소 서비스가 응답하지 않습니다. 잠시 후 다시 시도하세요.",
+    errorService: "주소 서비스가 응답하지 않습니다. 잠시 후 다시 시도하세요.",
     errorNotFound: "해당 주소를 찾을 수 없습니다. 번지, 도로명, 도시를 확인하세요.",
+    placeholderAny: "주소, 우편번호 또는 타운",
+    placeholderAnyShort: "주소, 우편번호, 타운",
+    labelAny: "주소, 우편번호 또는 타운",
+    errorTooShortAny: "주소, 우편번호 또는 타운을 입력하세요. 예: “Stoughton, MA”.",
+    errorPlaceNotFound: "해당 장소를 찾을 수 없습니다. 주소, 우편번호 또는 타운으로 시도해 보세요.",
+    errorTooBroad: "주 또는 카운티 전체입니다. 타운, 우편번호 또는 주소로 좁혀 주세요.",
+    errorNoData: "해당 지역의 선거구 데이터가 아직 없습니다. 가까운 우편번호로 시도해 보세요.",
+    suggestions: "추천",
   },
   deck: {
     sample: "샘플",
