@@ -44,6 +44,10 @@ const FEDERAL_EXEC: Official[] = [
     office: "President",
     jurisdiction: "United States",
     party: "R",
+    photoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/500px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg",
+    photoFallbackUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
     termEnds: "2029",
     stats: [],
   },
@@ -53,6 +57,11 @@ const FEDERAL_EXEC: Official[] = [
     office: "Vice President",
     jurisdiction: "United States",
     party: "R",
+    photoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/March_2026_Official_Vice_Presidential_Portrait_of_JD_Vance_%283x4_cropped%29.jpg/500px-March_2026_Official_Vice_Presidential_Portrait_of_JD_Vance_%283x4_cropped%29.jpg",
+    // Senate portrait, from his bioguide ID.
+    photoFallbackUrl:
+      "https://raw.githubusercontent.com/unitedstates/images/gh-pages/congress/450x550/V000137.jpg",
     termEnds: "2029",
     stats: [],
   },
