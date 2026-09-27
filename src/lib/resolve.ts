@@ -18,7 +18,8 @@ import {
   type StatePerson,
 } from "./providers/openstates";
 import { getSenateVotes } from "./providers/senate";
-import { districtsForZip } from "./providers/zip";
+import { getPublishedPromises, withPromises } from "./promiseStore";
+import { districtsForZip, type StateDistrict, stateDistrict } from "./providers/zip";
 import type { ActivityItem, Deck, Official, OfficialProfile, Tier } from "./types";
 
 const STATE_NAMES: Record<string, string> = {
@@ -101,7 +102,7 @@ function stateOffice(p: StatePerson) {
 const districtName = (d: string) => (/^\d+[A-Z]?$/i.test(d) ? `District ${d}` : d);
 
 function stateCard(p: StatePerson): Official {
-  return {
+  return withPromises({
     id: toOsId(p),
     name: p.name,
     office: stateOffice(p),
@@ -110,7 +111,7 @@ function stateCard(p: StatePerson): Official {
     photoUrl: p.image,
     termEnds: p.termEnd?.slice(0, 4),
     stats: [],
-  };
+  });
 }
 
 /** Legislators whose districts match the Census district names a zip overlaps. */
@@ -127,7 +128,11 @@ function matchDistricts(roster: StatePerson[], censusNames: string[]) {
   });
 }
 
-async function stateTiers(state: string, upper: string[], lower: string[]): Promise<Tier[]> {
+async function stateTiers(
+  state: string,
+  upper: StateDistrict[],
+  lower: StateDistrict[],
+): Promise<Tier[]> {
   const legislators = await getLegislators(state);
   const upperKind = UNICAMERAL.has(state) ? "legislature" : "upper";
 
@@ -140,8 +145,14 @@ async function stateTiers(state: string, upper: string[], lower: string[]): Prom
   // Only the chamber that's actually split gets "maybe" badges.
   const inChamber = (kind: string) => legislators.filter((p) => p.kind === kind);
   const legCards = [
-    ...matchDistricts(inChamber(upperKind), upper).map((p) => ({ ...stateCard(p), maybe: upper.length > 1 })),
-    ...matchDistricts(inChamber("lower"), lower).map((p) => ({ ...stateCard(p), maybe: lower.length > 1 })),
+    ...matchDistricts(inChamber(upperKind), upper.map((d) => d.name)).map((p) => ({
+      ...stateCard(p),
+      maybe: upper.length > 1,
+    })),
+    ...matchDistricts(inChamber("lower"), lower.map((d) => d.name)).map((p) => ({
+      ...stateCard(p),
+      maybe: lower.length > 1,
+    })),
   ];
 
   const stateName = STATE_NAMES[state] ?? state;
@@ -189,7 +200,7 @@ async function toCard(
   const lastBill = latestBill.status === "fulfilled" ? latestBill.value[0]?.date : undefined;
 
   const isSenator = m.chamber === "Senate";
-  return {
+  return withPromises({
     id: m.bioguideId,
     name: info?.displayName ?? directName(m.invertedName),
     office: isSenator ? "U.S. Senator" : m.district === 0 && state === "DC" ? "Delegate" : "U.S. Representative",
@@ -205,13 +216,28 @@ async function toCard(
         : []),
       { icon: "🏛", label: "Serving since", value: String(m.firstYear) },
     ],
-  };
+  });
 }
 
-export async function getDeck(zip: string): Promise<Deck | null> {
+/** District codes from a street-address lookup: congressional number, state GEOIDs. */
+export interface DistrictPick {
+  cd?: number;
+  upper?: string;
+  lower?: string;
+}
+
+export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Deck | null> {
   const found = districtsForZip(zip);
   if (!found) return null;
-  const { state, districts, upper, lower } = found;
+  const { state } = found;
+  // An address pick beats the zip's options: it can land in a sliver the zip table
+  // dropped. Unknown GEOIDs are ignored.
+  const pickUpper = pick.upper ? stateDistrict("upper", pick.upper) : null;
+  const pickLower = pick.lower ? stateDistrict("lower", pick.lower) : null;
+  const districts = pick.cd !== undefined ? [pick.cd] : found.districts;
+  const upper = pickUpper ? [pickUpper] : found.upper;
+  const lower = pickLower ? [pickLower] : found.lower;
+  const narrowed = pick.cd !== undefined || !!pickUpper || !!pickLower;
 
   const [delegation, index, stateLevel] = await Promise.all([
     getDelegation(state),
@@ -233,15 +259,20 @@ export async function getDeck(zip: string): Promise<Deck | null> {
   );
 
   const federal: Tier[] = [
-    { id: "federal-exec", level: "federal", title: "Federal · Executive", officials: FEDERAL_EXEC },
+    {
+      id: "federal-exec",
+      level: "federal",
+      title: "Federal · Executive",
+      officials: FEDERAL_EXEC.map(withPromises),
+    },
     { id: "federal-leg", level: "federal", title: "Federal · Congress", officials: congress },
   ];
 
   const splits = [
     split && `U.S. House: ${districts.map((d) => districtLabel(state, d)).join(", ")}`,
     upper.length > 1 &&
-      `${state === "DC" ? "Council" : UNICAMERAL.has(state) ? "Legislature" : "State Senate"}: ${upper.join(", ")}`,
-    lower.length > 1 && `State House: ${lower.join(", ")}`,
+      `${state === "DC" ? "Council" : UNICAMERAL.has(state) ? "Legislature" : "State Senate"}: ${upper.map((d) => d.name).join(", ")}`,
+    lower.length > 1 && `State House: ${lower.map((d) => d.name).join(", ")}`,
   ].filter((s): s is string => Boolean(s));
 
   return {
@@ -249,6 +280,7 @@ export async function getDeck(zip: string): Promise<Deck | null> {
     state,
     place: `${zip} · ${STATE_NAMES[state] ?? state}`,
     splits: splits.length ? splits : undefined,
+    narrowed,
     tiers: [...federal, ...stateLevel, ...sampleTiersFor(zip)],
   };
 }
@@ -257,6 +289,16 @@ const merge = (...lists: ActivityItem[][]) =>
   lists.flat().sort((a, b) => b.date.localeCompare(a.date));
 
 export async function getProfile(id: string): Promise<OfficialProfile | null> {
+  const profile = await loadProfile(id);
+  if (!profile) return null;
+  return {
+    ...profile,
+    official: withPromises(profile.official),
+    promises: getPublishedPromises(profile.official.id),
+  };
+}
+
+async function loadProfile(id: string): Promise<OfficialProfile | null> {
   const exec = FEDERAL_EXEC.find((o) => o.id === id);
   if (exec) {
     return {

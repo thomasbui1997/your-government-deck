@@ -35,10 +35,11 @@ export async function getLegislatorIndex(): Promise<Map<string, LegislatorInfo>>
   const index = new Map<string, LegislatorInfo>();
   for (const l of raw) {
     const term = l.terms[l.terms.length - 1];
-    // Prefer how they're commonly known ("Ed Markey"), else the official full name.
+    // Prefer how they're commonly known ("Ed Markey"), else the official full name without
+    // middle initials ("Stephen F. Lynch" → "Stephen Lynch", "Eleanor Holmes Norton" stays).
     const displayName = l.name.nickname
       ? `${l.name.nickname} ${l.name.last}`
-      : (l.name.official_full ?? `${l.name.first} ${l.name.last}`);
+      : (l.name.official_full ?? `${l.name.first} ${l.name.last}`).replace(/ [A-Z]\. /g, " ");
     index.set(l.id.bioguide, {
       displayName,
       lisId: l.id.lis,

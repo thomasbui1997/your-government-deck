@@ -1,3 +1,5 @@
+import type { PublishedPromises } from "./promises";
+
 export type Party = "D" | "R" | "I" | "NP";
 
 export type TierId =
@@ -55,6 +57,8 @@ export interface Deck {
   state: string;
   /** One line per kind of district the zip splits, e.g. "U.S. House: NY-12, NY-13". */
   splits?: string[];
+  /** True when the deck was narrowed to the districts of a street address. */
+  narrowed?: boolean;
   tiers: Tier[];
 }
 
@@ -71,6 +75,8 @@ export interface ActivityItem {
 }
 
 export interface OfficialProfile {
+  /** Approved campaign promises, when this official is tracked. */
+  promises?: PublishedPromises | null;
   official: Official;
   tierTitle: string;
   contact: {

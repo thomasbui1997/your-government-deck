@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { OfficialCard } from "@/components/OfficialCard";
+import { PromiseTracker } from "@/components/PromiseTracker";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getProfile } from "@/lib/resolve";
 
@@ -73,10 +75,16 @@ export default async function OfficialPage(props: PageProps<"/official/[id]">) {
 
             <section className={panel}>
               <h2 className="font-display text-navy">Promise tracker</h2>
-              <p className="mt-1 text-sm text-navy/60">
-                Coming in build step 5: campaign promises grouped by topic,
-                each with a status and linked evidence.
-              </p>
+              {profile.promises ? (
+                <PromiseTracker data={profile.promises} />
+              ) : (
+                <p className="mt-1 text-sm text-navy/60">
+                  We haven&apos;t tracked {official.name}&apos;s campaign promises yet.{" "}
+                  <Link href="/methodology" className="underline">
+                    How promise tracking works
+                  </Link>
+                </p>
+              )}
             </section>
 
             <section className={panel}>

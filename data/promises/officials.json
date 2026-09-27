@@ -1,0 +1,16 @@
+[
+  {
+    "officialId": "os-ma-d90a06b9-0edf-4fda-a823-4247987244dc",
+    "name": "Maura Healey",
+    "office": "Governor of Massachusetts",
+    "role": "executive",
+    "termStart": "2023-01-05",
+    "electionDate": "2022-11-08",
+    "campaignSites": [
+      {
+        "domain": "maurahealey.com",
+        "include": ["^/issues/[^/]+/$", "^/mauras-priorities/$"]
+      }
+    ]
+  }
+]
