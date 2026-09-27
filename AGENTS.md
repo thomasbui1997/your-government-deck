@@ -41,6 +41,8 @@ street address or zip via the free Census Geocoder).
 - `src/lib/providers/`: one file per source (congress, senate XML votes, legislators,
   openstates, zip, geocode, places, local, agendaCenter, bluesky).
 - `src/data/local/<place>.json`: hand-curated local officials. Only Stoughton, MA (02072).
+  Per official: `website`, `email`, `phone` (`x123` for extensions), `address`, and `photo`
+  (hot-linked from an official page, with its source key). `office` is the title, not the address.
 - `src/i18n/`: config, dictionaries (en is the type source), server/client helpers.
 - Campaign money: `src/lib/providers/fec.ts` (FEC API), `src/lib/providers/results.ts`
   (official results files), `src/lib/campaigns.ts` (races, outcomes, deck ballot badges).

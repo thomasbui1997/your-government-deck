@@ -3,7 +3,7 @@
   "place": "Stoughton, MA",
   "state": "MA",
   "zips": ["02072"],
-  "checked": "2026-09-26",
+  "checked": "2026-09-27",
   "agendaCenter": "https://www.stoughton.org/AgendaCenter",
   "sources": {
     "selectBoard": {
@@ -69,6 +69,42 @@
     "council2024": {
       "title": "2024 Governor's Council, 2nd District, MA Election Statistics",
       "url": "https://electionstats.state.ma.us/elections/view/163712"
+    },
+    "councillors": {
+      "title": "Councillors, Governor's Council, Mass.gov",
+      "url": "https://www.mass.gov/info-details/councillors"
+    },
+    "sheriffBio": {
+      "title": "Meet the Sheriff, Norfolk County Sheriff's Office",
+      "url": "https://www.norfolksheriff.com/meetSheriff"
+    },
+    "daProfile": {
+      "title": "Michael W. Morrissey, Norfolk County District Attorney, Mass.gov",
+      "url": "https://www.mass.gov/person/michael-w-morrissey-norfolk-county-district-attorney"
+    },
+    "deedsRegister": {
+      "title": "Register William P. O'Donnell, Norfolk County Registry of Deeds",
+      "url": "https://www.norfolkdeeds.org/about/registry-william-p-odonnell/"
+    },
+    "probateCourt": {
+      "title": "Norfolk Probate and Family Court, Mass.gov",
+      "url": "https://www.mass.gov/locations/norfolk-probate-and-family-court"
+    },
+    "superiorCourt": {
+      "title": "Norfolk County Superior Court, Mass.gov",
+      "url": "https://www.mass.gov/locations/norfolk-county-superior-court"
+    },
+    "treasurer": {
+      "title": "County Treasurer, Norfolk County",
+      "url": "https://www.norfolkcounty.org/treasurer/index.php"
+    },
+    "townMeeting": {
+      "title": "Town Meeting, Town of Stoughton",
+      "url": "https://www.stoughton.org/312/Town-Meeting"
+    },
+    "schoolCommittee": {
+      "title": "School Committee, Stoughton Public Schools",
+      "url": "https://www.stoughtonschools.org/page/school-committee"
     }
   },
   "stateOfficials": [
@@ -79,7 +115,10 @@
       "jurisdiction": "District 2",
       "party": "D",
       "termEnds": "2027",
-      "sources": ["council2024"]
+      "website": "https://www.mass.gov/info-details/councillors",
+      "email": "Tamisha.Civil@mass.gov",
+      "phone": "617-725-4015 x2",
+      "sources": ["council2024", "councillors"]
     }
   ],
   "tiers": [
@@ -88,15 +127,15 @@
       "level": "county",
       "title": "Norfolk County",
       "officials": [
-        { "slug": "commissioner-shea", "name": "Joseph P. Shea", "office": "County Commissioner", "role": "chair", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "sources": ["commissioners", "commissioners2024"] },
-        { "slug": "commissioner-collins", "name": "Peter H. Collins", "office": "County Commissioner", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "sources": ["commissioners", "commissioners2022"] },
-        { "slug": "commissioner-staiti", "name": "Richard R. Staiti", "office": "County Commissioner", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "sources": ["commissioners", "commissioners2024"] },
-        { "slug": "sheriff", "name": "Patrick W. McDermott", "office": "Sheriff", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "sources": ["sheriff2022"] },
-        { "slug": "district-attorney", "name": "Michael W. Morrissey", "office": "District Attorney", "jurisdiction": "Norfolk District", "party": "D", "termEnds": "2027", "sources": ["da2022"] },
-        { "slug": "register-of-deeds", "name": "William P. O'Donnell", "office": "Register of Deeds", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2031", "sources": ["deeds2024"] },
-        { "slug": "register-of-probate", "name": "Colleen M. Brierley", "office": "Register of Probate", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "sources": ["probate2020"] },
-        { "slug": "clerk-of-courts", "name": "Walter F. Timilty, Jr.", "office": "Clerk of Courts", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2031", "sources": ["clerk2024"] },
-        { "slug": "county-treasurer", "name": "Michael G. Bellotti", "office": "County Treasurer", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "sources": ["treasurer2020"] }
+        { "slug": "commissioner-shea", "name": "Joseph P. Shea", "office": "County Commissioner", "role": "chair", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "website": "https://www.norfolkcounty.org/county_commission/commissioners.php", "phone": "781-461-6105", "address": "614 High Street, Dedham, MA 02027", "sources": ["commissioners", "commissioners2024"] },
+        { "slug": "commissioner-collins", "name": "Peter H. Collins", "office": "County Commissioner", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "website": "https://www.norfolkcounty.org/county_commission/commissioners.php", "phone": "781-461-6105", "address": "614 High Street, Dedham, MA 02027", "sources": ["commissioners", "commissioners2022"] },
+        { "slug": "commissioner-staiti", "name": "Richard R. Staiti", "office": "County Commissioner", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "website": "https://www.norfolkcounty.org/county_commission/commissioners.php", "phone": "781-461-6105", "address": "614 High Street, Dedham, MA 02027", "sources": ["commissioners", "commissioners2024"] },
+        { "slug": "sheriff", "name": "Patrick W. McDermott", "office": "Sheriff", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "website": "https://www.norfolksheriff.com/meetSheriff", "phone": "781-329-3705", "address": "200 West Street, P.O. Box 149, Dedham, MA 02027", "photo": {"url": "https://cdn.myocv.com/ocvapps/a85902027/files/686d26aa9156e-sheriff_patrick_mcdermott_photo.jpeg", "source": "sheriffBio"}, "sources": ["sheriff2022", "sheriffBio"] },
+        { "slug": "district-attorney", "name": "Michael W. Morrissey", "office": "District Attorney", "jurisdiction": "Norfolk District", "party": "D", "termEnds": "2027", "website": "https://nfkda.com/", "phone": "781-830-4800", "address": "45 Shawmut Road, Canton, MA 02021", "sources": ["da2022", "daProfile"] },
+        { "slug": "register-of-deeds", "name": "William P. O'Donnell", "office": "Register of Deeds", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2031", "website": "https://www.norfolkdeeds.org/about/registry-william-p-odonnell/", "address": "649 High Street, Dedham, MA 02026", "photo": {"url": "https://i0.wp.com/www.norfolkdeeds.org/wp-content/uploads/Wpodonnell-Sm-Image.jpg", "source": "deedsRegister"}, "sources": ["deeds2024", "deedsRegister"] },
+        { "slug": "register-of-probate", "name": "Colleen M. Brierley", "office": "Register of Probate", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "website": "https://www.mass.gov/locations/norfolk-probate-and-family-court", "phone": "781-830-1200", "address": "35 Shawmut Road, Canton, MA 02021", "sources": ["probate2020", "probateCourt"] },
+        { "slug": "clerk-of-courts", "name": "Walter F. Timilty, Jr.", "office": "Clerk of Courts", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2031", "website": "https://www.mass.gov/locations/norfolk-county-superior-court", "phone": "781-326-1600", "address": "650 High Street, Dedham, MA 02026", "sources": ["clerk2024", "superiorCourt"] },
+        { "slug": "county-treasurer", "name": "Michael G. Bellotti", "office": "County Treasurer", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "website": "https://www.norfolkcounty.org/treasurer/index.php", "email": "mbellotti@norfolkcounty.org", "phone": "781-461-6110", "address": "614 High Street, P.O. Box 346, Dedham, MA 02026", "photo": {"url": "https://www.norfolkcounty.org/Mike%20Bellotti.png", "source": "treasurer"}, "sources": ["treasurer2020", "treasurer"] }
       ]
     },
     {
@@ -105,13 +144,13 @@
       "title": "Town of Stoughton",
       "board": { "agendaCategory": 2 },
       "officials": [
-        { "slug": "select-board-mokrisky", "name": "Joseph M. Mokrisky", "office": "Select Board", "role": "chair", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2028", "email": "jmokrisky@stoughton-ma.gov", "phone": "781-344-8887", "meetings": 2, "sources": ["selectBoard", "results2025"] },
-        { "slug": "select-board-roberts", "name": "Debra C. Roberts", "office": "Select Board", "role": "viceChair", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2029", "email": "droberts@stoughton-ma.gov", "phone": "781-385-1494", "meetings": 2, "sources": ["selectBoard", "results2026"] },
-        { "slug": "select-board-jacques", "name": "Lori A. Jacques", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2029", "email": "ljacques@stoughton-ma.gov", "phone": "781-408-2433", "meetings": 2, "sources": ["selectBoard", "results2026"] },
-        { "slug": "select-board-carrara", "name": "Scott D. Carrara", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "email": "sdcarrara@stoughton-ma.gov", "meetings": 2, "sources": ["selectBoard", "results2024"] },
-        { "slug": "select-board-cavey", "name": "Stephen M. Cavey", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "email": "scavey@stoughton-ma.gov", "phone": "781-686-2832", "meetings": 2, "sources": ["selectBoard", "results2024"] },
-        { "slug": "town-moderator", "name": "Robert E. Mullen, Jr.", "office": "Town Moderator", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "sources": ["results2025"] },
-        { "slug": "town-manager", "name": "Marc Tisdelle", "office": "Acting Town Manager", "jurisdiction": "Stoughton", "party": "NP", "appointed": true, "meetings": 2, "sources": ["townManager"] }
+        { "slug": "select-board-mokrisky", "name": "Joseph M. Mokrisky", "office": "Select Board", "role": "chair", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2028", "website": "https://stoughton.org/334/Select-Board", "email": "jmokrisky@stoughton-ma.gov", "phone": "781-344-8887", "address": "10 Pearl Street, 3rd Floor, Stoughton, MA 02072", "photo": {"url": "https://www.stoughton.org/ImageRepository/Document?documentID=693", "source": "selectBoard"}, "meetings": 2, "sources": ["selectBoard", "results2025"] },
+        { "slug": "select-board-roberts", "name": "Debra C. Roberts", "office": "Select Board", "role": "viceChair", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2029", "website": "https://stoughton.org/334/Select-Board", "email": "droberts@stoughton-ma.gov", "phone": "781-385-1494", "address": "10 Pearl Street, 3rd Floor, Stoughton, MA 02072", "photo": {"url": "https://www.stoughton.org/ImageRepository/Document?documentID=692", "source": "selectBoard"}, "meetings": 2, "sources": ["selectBoard", "results2026"] },
+        { "slug": "select-board-jacques", "name": "Lori A. Jacques", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2029", "website": "https://stoughton.org/334/Select-Board", "email": "ljacques@stoughton-ma.gov", "phone": "781-408-2433", "address": "10 Pearl Street, 3rd Floor, Stoughton, MA 02072", "meetings": 2, "sources": ["selectBoard", "results2026"] },
+        { "slug": "select-board-carrara", "name": "Scott D. Carrara", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "website": "https://stoughton.org/334/Select-Board", "email": "sdcarrara@stoughton-ma.gov", "address": "10 Pearl Street, 3rd Floor, Stoughton, MA 02072", "photo": {"url": "https://www.stoughton.org/ImageRepository/Document?documentID=695", "source": "selectBoard"}, "meetings": 2, "sources": ["selectBoard", "results2024"] },
+        { "slug": "select-board-cavey", "name": "Stephen M. Cavey", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "website": "https://stoughton.org/334/Select-Board", "email": "scavey@stoughton-ma.gov", "phone": "781-686-2832", "address": "10 Pearl Street, 3rd Floor, Stoughton, MA 02072", "photo": {"url": "https://www.stoughton.org/ImageRepository/Document?documentID=696", "source": "selectBoard"}, "meetings": 2, "sources": ["selectBoard", "results2024"] },
+        { "slug": "town-moderator", "name": "Robert E. Mullen, Jr.", "office": "Town Moderator", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "website": "https://www.stoughton.org/312/Town-Meeting", "email": "bmullen@stoughton-ma.gov", "sources": ["results2025", "townMeeting"] },
+        { "slug": "town-manager", "name": "Marc Tisdelle", "office": "Acting Town Manager", "jurisdiction": "Stoughton", "party": "NP", "appointed": true, "website": "https://www.stoughton.org/256/Town-Manager", "email": "twnmgr@stoughton-ma.gov", "phone": "781-341-1300 x9211", "address": "10 Pearl Street, 3rd Floor, Stoughton, MA 02072", "meetings": 2, "sources": ["townManager"] }
       ]
     },
     {
@@ -119,11 +158,11 @@
       "level": "school",
       "title": "Stoughton School Committee",
       "officials": [
-        { "slug": "school-committee-shannon", "name": "Christine A. Shannon", "office": "School Committee", "role": "chair", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2029", "meetings": 30, "sources": ["schoolMinutes", "results2026"] },
-        { "slug": "school-committee-distefano", "name": "Jillian DiStefano", "office": "School Committee", "role": "viceChair", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2028", "meetings": 30, "sources": ["schoolMinutes", "results2025"] },
-        { "slug": "school-committee-sears", "name": "Jennifer A. Sears", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2028", "meetings": 30, "sources": ["schoolMinutes", "results2025"] },
-        { "slug": "school-committee-hollins", "name": "Charlene C. Hollins", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2029", "meetings": 30, "sources": ["schoolMinutes", "results2026"] },
-        { "slug": "school-committee-powers", "name": "Karen Powers", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2027", "meetings": 30, "sources": ["schoolMinutes", "results2024"] }
+        { "slug": "school-committee-shannon", "name": "Christine A. Shannon", "office": "School Committee", "role": "chair", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2029", "website": "https://www.stoughtonschools.org/page/school-committee", "meetings": 30, "sources": ["schoolMinutes", "results2026", "schoolCommittee"] },
+        { "slug": "school-committee-distefano", "name": "Jillian DiStefano", "office": "School Committee", "role": "viceChair", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2028", "website": "https://www.stoughtonschools.org/page/school-committee", "meetings": 30, "sources": ["schoolMinutes", "results2025", "schoolCommittee"] },
+        { "slug": "school-committee-sears", "name": "Jennifer A. Sears", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2028", "website": "https://www.stoughtonschools.org/page/school-committee", "meetings": 30, "sources": ["schoolMinutes", "results2025", "schoolCommittee"] },
+        { "slug": "school-committee-hollins", "name": "Charlene C. Hollins", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2029", "website": "https://www.stoughtonschools.org/page/school-committee", "meetings": 30, "sources": ["schoolMinutes", "results2026", "schoolCommittee"] },
+        { "slug": "school-committee-powers", "name": "Karen Powers", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2027", "website": "https://www.stoughtonschools.org/page/school-committee", "meetings": 30, "sources": ["schoolMinutes", "results2024", "schoolCommittee"] }
       ]
     }
   ]

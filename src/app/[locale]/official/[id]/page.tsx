@@ -61,7 +61,8 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
                 )}
                 {contact.phone && (
                   <a
-                    href={`tel:${contact.phone.replace(/[^\d+]/g, "")}`}
+                    // "781-341-1300 x9211" dials the extension after a pause.
+                    href={`tel:${contact.phone.replace(/\s*x\s*/i, ",").replace(/[^\d+,]/g, "")}`}
                     className="rounded-xl border-4 border-navy bg-white px-4 py-1.5 font-display text-sm text-navy shadow-[3px_3px_0_var(--color-navy)]"
                   >
                     📞 {contact.phone}
@@ -96,7 +97,12 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
               </nav>
             )}
             {contact.office && (
-              <p className="text-sm text-navy/60">📍 {contact.office}</p>
+              <p className="text-sm text-navy/60">
+                📍{" "}
+                <span lang="en" dir="ltr">
+                  {contact.office}
+                </span>
+              </p>
             )}
 
             {/^[A-Z]\d{6}$/.test(official.id) && (

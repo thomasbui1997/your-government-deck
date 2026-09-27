@@ -15,6 +15,12 @@ interface LocalOfficial {
   termEnds?: string;
   email?: string;
   phone?: string;
+  /** The official's or office's page on an official site. */
+  website?: string;
+  /** Office address. (`office` is the title.) */
+  address?: string;
+  /** Headshot from an official site, hot-linked; `source` is a key into `sources`. */
+  photo?: { url: string; source: string };
   appointed?: boolean;
   /** Agenda Center category whose meetings this official takes part in. */
   meetings?: number;
@@ -45,6 +51,7 @@ function toOfficial(place: LocalPlace, o: LocalOfficial): Official {
     office: o.office,
     jurisdiction: o.jurisdiction,
     party: o.party,
+    photoUrl: o.photo?.url,
     role: o.role,
     termEnds: o.termEnds,
     appointed: o.appointed,
@@ -90,9 +97,16 @@ export function findLocalOfficial(id: string) {
         place,
         official: toOfficial(place, hit.o),
         tierTitle: hit.tier,
-        contact: { email: hit.o.email, phone: hit.o.phone },
+        contact: {
+          website: hit.o.website,
+          phone: hit.o.phone,
+          email: hit.o.email,
+          office: hit.o.address,
+        },
         meetings: hit.o.meetings,
-        sources: hit.o.sources.map((key) => place.sources[key]).filter(Boolean),
+        sources: [...new Set([...hit.o.sources, ...(hit.o.photo ? [hit.o.photo.source] : [])])]
+          .map((key) => place.sources[key])
+          .filter(Boolean),
       };
     }
   }
