@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
+import { useI18n } from "@/i18n/client";
+import { tierTitle } from "@/i18n/labels";
 import type { Level, Tier } from "@/lib/types";
 import { OfficialCard } from "./OfficialCard";
 
@@ -14,6 +16,7 @@ const levelColor: Record<Level, string> = {
 };
 
 export function TierBand({ tier, index }: { tier: Tier; index: number }) {
+  const { t } = useI18n();
   const [open, setOpen] = useState(true);
 
   return (
@@ -24,11 +27,11 @@ export function TierBand({ tier, index }: { tier: Tier; index: number }) {
         aria-expanded={open}
         className={`${levelColor[tier.level]} mx-auto flex items-center gap-2 rounded-full px-4 py-1.5 font-display text-xs tracking-wide text-cream uppercase shadow`}
       >
-        {tier.title}
+        {tierTitle(tier.label, t)}
         {tier.sample && (
-          <span className="rounded-full bg-cream/25 px-2 text-[10px]">sample</span>
+          <span className="rounded-full bg-cream/25 px-2 text-[10px]">{t.deck.sample}</span>
         )}
-        <span className={`transition-transform ${open ? "" : "-rotate-90"}`}>
+        <span className={`transition-transform ${open ? "" : "-rotate-90 rtl:rotate-90"}`}>
           ▾
         </span>
       </button>
@@ -38,7 +41,7 @@ export function TierBand({ tier, index }: { tier: Tier; index: number }) {
           {tier.comingSoon ? (
             <div className="mx-auto flex h-48 w-60 flex-col items-center justify-center rounded-2xl border-4 border-dashed border-navy/25 text-center text-sm text-navy/50">
               <span className="text-3xl">🎴</span>
-              Card pack coming soon
+              {t.deck.comingSoon}
             </div>
           ) : (
             // Scrolls sideways on narrow screens, centers when it fits.

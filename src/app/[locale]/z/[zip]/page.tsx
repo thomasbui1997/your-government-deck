@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TierBand } from "@/components/TierBand";
+import { format } from "@/i18n/config";
+import { getDictionary, href } from "@/i18n/server";
 import { type DistrictPick, getDeck } from "@/lib/resolve";
 
 const GEOID = /^\d{2}[0-9A-Z]{3}$/;
@@ -19,12 +21,13 @@ function parsePick(params: Record<string, string | string[] | undefined>): Distr
   };
 }
 
-export default async function DeckPage(props: PageProps<"/z/[zip]">) {
+export default async function DeckPage(props: PageProps<"/[locale]/z/[zip]">) {
   const { zip } = await props.params;
   if (!/^\d{5}$/.test(zip)) notFound();
 
   const deck = await getDeck(zip, parsePick(await props.searchParams));
   if (!deck) notFound();
+  const t = await getDictionary();
 
   return (
     <>
@@ -36,27 +39,24 @@ export default async function DeckPage(props: PageProps<"/z/[zip]">) {
 
         {deck.splits && (
           <div className="mx-4 mt-4 rounded-2xl border-4 border-navy bg-gold/40 p-4 text-center text-sm text-navy sm:mx-auto sm:max-w-xl">
-            <p className="font-display">🃏 Your zip splits districts</p>
-            <p className="mt-1">
-              Parts of {zip} fall in different districts, so we&apos;re showing
-              everyone who might represent you:
-            </p>
+            <p className="font-display">{t.deck.splitTitle}</p>
+            <p className="mt-1">{format(t.deck.splitBody, { zip })}</p>
             <ul className="mt-2 space-y-0.5 font-medium">
               {deck.splits.map((s) => (
-                <li key={s}>{s}</li>
+                <li key={s.kind}>
+                  {t.deck.splitKinds[s.kind]}: <span lang="en">{s.districts.join(", ")}</span>
+                </li>
               ))}
             </ul>
-            <p className="mt-3">
-              Search your full street address above to see just yours.
-            </p>
+            <p className="mt-3">{t.deck.splitHint}</p>
           </div>
         )}
 
         {deck.narrowed && !deck.splits && (
           <p className="mx-4 mt-4 rounded-full bg-emerald-100 px-4 py-1.5 text-center text-sm text-navy sm:mx-auto sm:w-fit">
-            📍 Showing the officials for your street address ·{" "}
-            <Link href="/" className="font-medium underline">
-              use a different address
+            {t.deck.narrowed} ·{" "}
+            <Link href={await href("/")} className="font-medium underline">
+              {t.deck.narrowedReset}
             </Link>
           </p>
         )}

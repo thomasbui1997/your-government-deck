@@ -20,7 +20,7 @@ import {
 import { getSenateVotes } from "./providers/senate";
 import { getPublishedPromises, withPromises } from "./promiseStore";
 import { districtsForZip, type StateDistrict, stateDistrict } from "./providers/zip";
-import type { ActivityItem, Deck, Official, OfficialProfile, Tier } from "./types";
+import type { ActivityItem, Deck, Official, OfficialProfile, SplitKind, Tier } from "./types";
 
 const STATE_NAMES: Record<string, string> = {
   AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
@@ -167,12 +167,17 @@ async function stateTiers(
   const stateName = STATE_NAMES[state] ?? state;
   const tiers: Tier[] = [];
   if (execCards.length) {
-    tiers.push({ id: "state-exec", level: "state", title: `${stateName} · Executive`, officials: execCards });
+    tiers.push({
+      id: "state-exec",
+      level: "state",
+      label: { key: "stateExec", state: stateName },
+      officials: execCards,
+    });
   }
   tiers.push({
     id: "state-leg",
     level: "state",
-    title: state === "DC" ? "DC Council" : `${stateName} · Legislature`,
+    label: state === "DC" ? { key: "dcCouncil" } : { key: "stateLeg", state: stateName },
     officials: legCards,
   });
   return tiers;
@@ -221,9 +226,9 @@ async function toCard(
     lastActiveDaysAgo: lastBill ? daysSince(lastBill) : undefined,
     stats: [
       ...(sponsored !== undefined
-        ? [{ icon: "📜", label: "Bills sponsored", value: sponsored.toLocaleString("en-US") }]
+        ? [{ icon: "📜", key: "billsSponsored", value: sponsored.toLocaleString("en-US") }]
         : []),
-      { icon: "🏛", label: "Serving since", value: String(m.firstYear) },
+      { icon: "🏛", key: "servingSince", value: String(m.firstYear) },
     ],
   });
 }
@@ -271,18 +276,18 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
     {
       id: "federal-exec",
       level: "federal",
-      title: "Federal · Executive",
+      label: { key: "federalExec" },
       officials: FEDERAL_EXEC.map(withPromises),
     },
-    { id: "federal-leg", level: "federal", title: "Federal · Congress", officials: congress },
+    { id: "federal-leg", level: "federal", label: { key: "federalLeg" }, officials: congress },
   ];
 
+  const upperKind: SplitKind = state === "DC" ? "council" : UNICAMERAL.has(state) ? "legislature" : "stateSenate";
   const splits = [
-    split && `U.S. House: ${districts.map((d) => districtLabel(state, d)).join(", ")}`,
-    upper.length > 1 &&
-      `${state === "DC" ? "Council" : UNICAMERAL.has(state) ? "Legislature" : "State Senate"}: ${upper.map((d) => d.name).join(", ")}`,
-    lower.length > 1 && `State House: ${lower.map((d) => d.name).join(", ")}`,
-  ].filter((s): s is string => Boolean(s));
+    split && { kind: "usHouse" as const, districts: districts.map((d) => districtLabel(state, d)) },
+    upper.length > 1 && { kind: upperKind, districts: upper.map((d) => d.name) },
+    lower.length > 1 && { kind: "stateHouse" as const, districts: lower.map((d) => d.name) },
+  ].filter((s) => s !== false);
 
   return {
     zip,
@@ -312,10 +317,10 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
   if (exec) {
     return {
       official: exec,
-      tierTitle: "Federal · Executive",
+      tierLabel: { key: "federalExec" },
       contact: { website: "https://www.whitehouse.gov" },
       activity: [],
-      activityNote: "Executive orders and actions are coming in a later build step.",
+      activityNote: "noteFederalExec",
     };
   }
 
@@ -351,15 +356,15 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
       lastActiveDaysAgo: sponsored[0] ? daysSince(sponsored[0].date) : undefined,
       stats: [
         ...(member.sponsoredLegislation
-          ? [{ icon: "📜", label: "Bills sponsored", value: member.sponsoredLegislation.count.toLocaleString("en-US") }]
+          ? [{ icon: "📜", key: "billsSponsored", value: member.sponsoredLegislation.count.toLocaleString("en-US") }]
           : []),
-        { icon: "🏛", label: "Serving since", value: String(Math.min(...member.terms.map((t) => t.startYear))) },
+        { icon: "🏛", key: "servingSince", value: String(Math.min(...member.terms.map((t) => t.startYear))) },
       ],
     };
 
     return {
       official,
-      tierTitle: "Federal · Congress",
+      tierLabel: { key: "federalLeg" },
       contact: {
         website: info?.website ?? member.officialWebsiteUrl,
         phone: info?.phone ?? member.addressInformation?.phoneNumber,
@@ -384,7 +389,11 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
         ...stateCard(person),
         lastActiveDaysAgo: activity[0] ? daysSince(activity[0].date) : undefined,
       },
-      tierTitle: isExec ? `${stateName} · Executive` : state === "DC" ? "DC Council" : `${stateName} · Legislature`,
+      tierLabel: isExec
+        ? { key: "stateExec", state: stateName }
+        : state === "DC"
+          ? { key: "dcCouncil" }
+          : { key: "stateLeg", state: stateName },
       contact: {
         website: person.website,
         phone: person.phone,
@@ -392,9 +401,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
         office: person.address,
       },
       activity,
-      activityNote: isExec
-        ? "Statewide officials don't file bills, and executive actions aren't tracked yet."
-        : undefined,
+      activityNote: isExec ? "noteStateExec" : undefined,
     };
   }
 
@@ -402,7 +409,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
   if (!sample) return null;
   return {
     official: sample,
-    tierTitle: getTierFor(id)?.title ?? "",
+    tierLabel: getTierFor(id)?.label ?? { text: "" },
     contact: {},
     activity: [],
     sample: true,

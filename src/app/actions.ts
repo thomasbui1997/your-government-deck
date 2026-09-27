@@ -1,10 +1,14 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { DEFAULT_LOCALE, isLocale, localePath } from "@/i18n/config";
 import { geocodeAddress } from "@/lib/providers/geocode";
 
+export type AddressError = "errorTooShort" | "errorNeedCity" | "errorService" | "errorNotFound";
+
 export interface AddressLookupState {
-  error?: string;
+  /** Dictionary key under `address`; the form shows it in the visitor's language. */
+  error?: AddressError;
 }
 
 /**
@@ -16,30 +20,27 @@ export async function lookupAddress(
   formData: FormData,
 ): Promise<AddressLookupState> {
   const address = String(formData.get("address") ?? "").trim();
+  // Server actions can't read the [locale] segment, so the form sends it.
+  const rawLocale = String(formData.get("locale") ?? "");
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
 
   // A bare zip still works; the deck shows everyone who might represent it.
-  if (/^\d{5}$/.test(address)) redirect(`/z/${address}`);
+  if (/^\d{5}$/.test(address)) redirect(localePath(locale, `/z/${address}`));
 
-  if (address.length < 5) {
-    return { error: "Enter your street address, like “10 Pearl St, Stoughton, MA”." };
-  }
-  if (!/\b\d{5}\b/.test(address) && !address.includes(",")) {
-    return { error: "Add your city and state (or zip) after the street." };
-  }
+  if (address.length < 5) return { error: "errorTooShort" };
+  if (!/\b\d{5}\b/.test(address) && !address.includes(",")) return { error: "errorNeedCity" };
 
   let found;
   try {
     found = await geocodeAddress(address);
   } catch {
-    return { error: "The Census address service didn't answer. Try again in a moment." };
+    return { error: "errorService" };
   }
-  if (!found) {
-    return { error: "We couldn't find that address. Check the house number, street, and city." };
-  }
+  if (!found) return { error: "errorNotFound" };
 
   const params = new URLSearchParams();
   if (found.cd !== undefined) params.set("cd", String(found.cd));
   if (found.upper) params.set("u", found.upper);
   if (found.lower) params.set("l", found.lower);
-  redirect(`/z/${found.zip}?${params}`);
+  redirect(localePath(locale, `/z/${found.zip}?${params}`));
 }

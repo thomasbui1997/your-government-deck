@@ -5,7 +5,7 @@ const tiers: Tier[] = [
   {
     id: "county",
     level: "county",
-    title: "Norfolk County",
+    label: { text: "Norfolk County" },
     officials: [
       {
         id: "norfolk-sheriff",
@@ -30,7 +30,7 @@ const tiers: Tier[] = [
   {
     id: "town",
     level: "town",
-    title: "Town of Stoughton",
+    label: { text: "Town of Stoughton" },
     officials: [
       {
         id: "stoughton-select-1",
@@ -40,7 +40,7 @@ const tiers: Tier[] = [
         party: "NP",
         termEnds: "2027",
         lastActiveDaysAgo: 7,
-        stats: [{ icon: "📅", label: "Meetings", value: "18" }],
+        stats: [{ icon: "📅", key: "meetings", value: "18" }],
       },
       {
         id: "stoughton-select-2",
@@ -50,7 +50,7 @@ const tiers: Tier[] = [
         party: "NP",
         termEnds: "2028",
         lastActiveDaysAgo: 7,
-        stats: [{ icon: "📅", label: "Meetings", value: "17" }],
+        stats: [{ icon: "📅", key: "meetings", value: "17" }],
       },
       {
         id: "stoughton-town-manager",
@@ -66,7 +66,7 @@ const tiers: Tier[] = [
   {
     id: "school",
     level: "school",
-    title: "School Committee",
+    label: { text: "School Committee" },
     officials: [
       {
         id: "stoughton-school-1",
@@ -75,7 +75,7 @@ const tiers: Tier[] = [
         jurisdiction: "Stoughton Public Schools",
         party: "NP",
         termEnds: "2027",
-        stats: [{ icon: "📅", label: "Meetings", value: "11" }],
+        stats: [{ icon: "📅", key: "meetings", value: "11" }],
       },
     ],
   },

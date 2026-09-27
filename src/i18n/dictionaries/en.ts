@@ -1,0 +1,228 @@
+// English strings. Every other locale must provide the same keys (checked by `Dictionary`).
+// {placeholders} are filled with format() from @/i18n/config.
+
+export const en = {
+  meta: {
+    title: "Your Government Deck",
+    description:
+      "Enter your address and meet every elected official who represents you, and see whether they keep their promises.",
+  },
+  header: {
+    brand: "★ Your Government Deck ★",
+    language: "Language",
+  },
+  home: {
+    title: "Your Government Deck",
+    tagline:
+      "Every official who represents you, from the President to your school committee, and whether they're keeping their promises.",
+    privacy:
+      "We send your address to the U.S. Census Geocoder to find your districts, and never store it.",
+  },
+  address: {
+    placeholder: "10 Pearl St, Stoughton, MA",
+    placeholderShort: "Your address",
+    label: "Street address",
+    submit: "Deal me in",
+    errorTooShort: "Enter your street address, like “10 Pearl St, Stoughton, MA”.",
+    errorNeedCity: "Add your city and state (or zip) after the street.",
+    errorService: "The Census address service didn't answer. Try again in a moment.",
+    errorNotFound: "We couldn't find that address. Check the house number, street, and city.",
+  },
+  deck: {
+    sample: "sample",
+    comingSoon: "Card pack coming soon",
+    splitTitle: "🃏 Your zip splits districts",
+    splitBody:
+      "Parts of {zip} fall in different districts, so we're showing everyone who might represent you:",
+    splitHint: "Search your full street address above to see just yours.",
+    narrowed: "📍 Showing the officials for your street address",
+    narrowedReset: "use a different address",
+    splitKinds: {
+      usHouse: "U.S. House",
+      stateSenate: "State Senate",
+      stateHouse: "State House",
+      council: "Council",
+      legislature: "Legislature",
+    },
+  },
+  tiers: {
+    federalExec: "Federal · Executive",
+    federalLeg: "Federal · Congress",
+    stateExec: "{state} · Executive",
+    stateLeg: "{state} · Legislature",
+    dcCouncil: "DC Council",
+  },
+  /** Office titles, keyed by the English title the data layer produces. */
+  offices: {
+    President: "President",
+    "Vice President": "Vice President",
+    "U.S. Senator": "U.S. Senator",
+    "U.S. Representative": "U.S. Representative",
+    Delegate: "Delegate",
+    Governor: "Governor",
+    "Lieutenant Governor": "Lieutenant Governor",
+    "Attorney General": "Attorney General",
+    "Secretary of State": "Secretary of State",
+    "Secretary of the Commonwealth": "Secretary of the Commonwealth",
+    Treasurer: "Treasurer",
+    Auditor: "Auditor",
+    Comptroller: "Comptroller",
+    Controller: "Controller",
+    "Superintendent of Public Instruction": "Superintendent of Public Instruction",
+    "Insurance Commissioner": "Insurance Commissioner",
+    "Agriculture Commissioner": "Agriculture Commissioner",
+    "Labor Commissioner": "Labor Commissioner",
+    "State Senator": "State Senator",
+    "State Representative": "State Representative",
+    Assemblymember: "Assemblymember",
+    Councilmember: "Councilmember",
+    Sheriff: "Sheriff",
+    "District Attorney": "District Attorney",
+    "Select Board": "Select Board",
+    "Town Manager": "Town Manager",
+    "School Committee": "School Committee",
+  } as Record<string, string>,
+  card: {
+    promisesKept: "Promises kept",
+    notTracked: "Promises not tracked yet",
+    activeToday: "active today",
+    activeDaysAgo: "active {days}d ago",
+    appointed: "Appointed",
+    maybe: "Maybe yours",
+    term: "Term",
+  },
+  /** Card stat labels, keyed by the stat key the data layer produces. */
+  stats: {
+    billsSponsored: "Bills sponsored",
+    servingSince: "Serving since",
+    meetings: "Meetings",
+  } as Record<string, string>,
+  profile: {
+    termEnds: "term ends {year}",
+    website: "Website",
+    email: "Email",
+    sampleData: "sample data",
+    promiseTracker: "Promise tracker",
+    notTrackedYet: "We haven't tracked {name}'s campaign promises yet.",
+    howTrackingWorks: "How promise tracking works",
+    latestActivity: "Latest activity",
+    activityLater: "Real activity for this office arrives in a later build step.",
+    noteFederalExec: "Executive orders and actions are coming in a later build step.",
+    noteStateExec: "Statewide officials don't file bills, and executive actions aren't tracked yet.",
+    englishRecords: "Bill titles, votes, and other official records are shown in English.",
+  },
+  activity: {
+    all: "All",
+    vote: "Votes",
+    bill: "Bills",
+    cosponsor: "Cosponsored",
+    meeting: "Meetings",
+    post: "Posts",
+    none: "No recent activity found.",
+    /** Vote casts as the Clerk and Senate record them. */
+    casts: {
+      Yea: "Yea",
+      Nay: "Nay",
+      Aye: "Aye",
+      No: "No",
+      "Not Voting": "Not Voting",
+      Present: "Present",
+    } as Record<string, string>,
+  },
+  promises: {
+    statuses: {
+      kept: { label: "Kept", description: "Delivered as promised, or substantially so." },
+      compromise: {
+        label: "Compromise",
+        description: "Partly delivered: a real result, but less than what was promised.",
+      },
+      in_progress: {
+        label: "In progress",
+        description: "Concrete action is underway (a bill filed, a budget line, a program launched).",
+      },
+      stalled: { label: "Stalled", description: "Action started but has stopped moving, or was blocked." },
+      not_started: { label: "Not started", description: "No meaningful action found yet." },
+      broken: {
+        label: "Broken",
+        description: "Abandoned, reversed, or no longer achievable this term.",
+      },
+    },
+    topics: {
+      "Economy & Jobs": "Economy & Jobs",
+      Housing: "Housing",
+      "Health Care": "Health Care",
+      Education: "Education",
+      "Climate & Environment": "Climate & Environment",
+      Transportation: "Transportation",
+      "Public Safety & Justice": "Public Safety & Justice",
+      "Civil Rights": "Civil Rights",
+      Immigration: "Immigration",
+      "Government & Democracy": "Government & Democracy",
+      "Taxes & Budget": "Taxes & Budget",
+      Other: "Other",
+    } as Record<string, string>,
+    evidenceKinds: {
+      law: "Law",
+      bill: "Bill",
+      vote: "Vote",
+      exec_action: "Executive action",
+      budget: "Budget",
+      official_statement: "Official statement",
+      news: "News",
+      report: "Report",
+    } as Record<string, string>,
+    scoreLine: "{kept} of {total} promises kept",
+    howWeScore: "How we score",
+    filterLabel: "Filter by status",
+    topicKept: "{kept}/{total} kept",
+    sources: "Sources & evidence ({count})",
+    promisedOn: "Promised on",
+    archived: "archived {date}",
+    lastReviewed: "Last reviewed {date}",
+    footer:
+      "Updated {date}. Promises come from archived campaign materials; every status is reviewed by a person before it's published.",
+    englishContent: "Promises and evidence are shown in English, as they appear in the original sources.",
+  },
+  error: {
+    title: "The deck got shuffled",
+    body: "One of our data sources didn't answer. Give it another try in a moment.",
+    retry: "Try again",
+  },
+  methodology: {
+    metaTitle: "How we track promises",
+    title: "How we track promises",
+    intro:
+      "The goal is simple: show what officials said they would do, and what actually happened, with the receipts attached.",
+    whatTitle: "What counts as a promise",
+    what1:
+      "We only track specific, checkable commitments: to pass a law, fund a program, reach a target, or take an action. Values statements (“I believe in…”), criticism of opponents, and goals too vague to check (“fight for working families”) aren't included.",
+    what2Before: "Promises come from the candidate's own campaign materials, archived by the ",
+    what2Link: "Internet Archive's Wayback Machine",
+    what2After:
+      " as they appeared just before election day. Every promise links to that archived page and quotes it word for word, so you can check the exact wording yourself.",
+    statusesTitle: "Statuses",
+    statusesNote: "Promises are judged against their original wording, not a later, narrower version.",
+    rolesTitle: "Executives and legislators are scored differently",
+    roles:
+      "A governor or mayor can sign laws, write budgets, and run agencies, so we score them on outcomes. A single legislator is one vote among many and can't pass a bill alone, so sponsoring a bill, voting for it, and moving it through committee all count as progress for them.",
+    scoreTitle: "The score",
+    score:
+      "The headline percentage counts each kept promise fully and each compromise as half, out of all tracked promises. “In progress” counts as zero until something is delivered.",
+    reviewTitle: "How statuses are researched and reviewed",
+    review1:
+      "An AI model (Anthropic's Claude) drafts the list of promises from the archived pages, then searches the web for what happened, preferring primary sources such as government websites, legislative records, and budgets, then established news outlets.",
+    review2:
+      "Nothing it drafts is published automatically. Automated checks flag any quote that doesn't appear word for word on the source page and any evidence link the model didn't actually find in its research. Then a person reviews every promise, edits or rejects it, and approves it before it appears here. Each promise shows when it was last reviewed.",
+    limitsTitle: "Limits",
+    limits:
+      "Tracking is only as good as the public record. Some promises are hard to measure, evidence can lag behind events, and reasonable people can disagree about whether a compromise counts. We'd rather say “not started, little evidence found” than guess.",
+    correctionsTitle: "Corrections",
+    correctionsBefore: "Spot a mistake or missing evidence? ",
+    correctionsLink: "Open an issue on GitHub",
+    correctionsAfter: " with a link to your source, and we'll review it.",
+  },
+};
+
+export type Dictionary = typeof en;
+/** The part of the dictionary sent to the browser; long server-only pages are left out. */
+export type ClientDictionary = Omit<Dictionary, "methodology">;

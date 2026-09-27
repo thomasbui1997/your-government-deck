@@ -15,9 +15,19 @@ export type Level = "federal" | "state" | "county" | "town" | "school";
 
 export interface CardStat {
   icon: string;
-  label: string;
+  /** Dictionary key under `stats`, e.g. "billsSponsored". */
+  key: string;
   value: string;
 }
+
+/** How to title a tier; rendered in the visitor's language. */
+export type TierLabel =
+  | { key: "federalExec" | "federalLeg" | "dcCouncil" }
+  | { key: "stateExec" | "stateLeg"; state: string }
+  /** A proper noun such as "Town of Stoughton", shown as is. */
+  | { text: string };
+
+export type SplitKind = "usHouse" | "stateSenate" | "stateHouse" | "council" | "legislature";
 
 export interface PromiseSummary {
   kept: number;
@@ -44,7 +54,7 @@ export interface Official {
 export interface Tier {
   id: TierId;
   level: Level;
-  title: string;
+  label: TierLabel;
   officials: Official[];
   comingSoon?: boolean;
   /** Placeholder data, not yet backed by a real source. */
@@ -55,8 +65,8 @@ export interface Deck {
   zip: string;
   place: string;
   state: string;
-  /** One line per kind of district the zip splits, e.g. "U.S. House: NY-12, NY-13". */
-  splits?: string[];
+  /** One entry per kind of district the zip splits, e.g. U.S. House: NY-12, NY-13. */
+  splits?: { kind: SplitKind; districts: string[] }[];
   /** True when the deck was narrowed to the districts of a street address. */
   narrowed?: boolean;
   tiers: Tier[];
@@ -78,7 +88,7 @@ export interface OfficialProfile {
   /** Approved campaign promises, when this official is tracked. */
   promises?: PublishedPromises | null;
   official: Official;
-  tierTitle: string;
+  tierLabel: TierLabel;
   contact: {
     website?: string;
     phone?: string;
@@ -86,7 +96,7 @@ export interface OfficialProfile {
     office?: string;
   };
   activity: ActivityItem[];
-  /** Explains an empty timeline, e.g. offices whose activity isn't tracked yet. */
-  activityNote?: string;
+  /** Dictionary key (under `profile`) explaining an empty timeline. */
+  activityNote?: "noteFederalExec" | "noteStateExec";
   sample?: boolean;
 }

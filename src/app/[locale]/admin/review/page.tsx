@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
-import { type DraftPromise, STATUS_META, STATUSES, TOPICS } from "@/lib/promises";
+import { en } from "@/i18n/dictionaries/en";
+import { type DraftPromise, type PromiseStatus, STATUSES, TOPICS } from "@/lib/promises";
+
+// Review is a local, English-only tool.
+const statusLabel = (s: string) => en.promises.statuses[s as PromiseStatus]?.label ?? s;
 import { approveDraft, rejectDraft } from "./actions";
 import { listDraftFiles, readPublished, reviewEnabled } from "./store";
 
@@ -56,8 +60,7 @@ function DraftCard({
         <span className="text-navy/60">confidence: {draft.confidence}</span>
         {draft.updatesId && currentStatus && (
           <span className="text-navy/80">
-            {STATUS_META[currentStatus as keyof typeof STATUS_META]?.label ?? currentStatus} →{" "}
-            <b>{STATUS_META[draft.status].label}</b>
+            {statusLabel(currentStatus)} → <b>{statusLabel(draft.status)}</b>
           </span>
         )}
       </div>
@@ -96,7 +99,7 @@ function DraftCard({
           <select name="status" defaultValue={draft.status} className={`${input} mt-1`}>
             {STATUSES.map((s) => (
               <option key={s} value={s}>
-                {STATUS_META[s].label}
+                {statusLabel(s)}
               </option>
             ))}
           </select>

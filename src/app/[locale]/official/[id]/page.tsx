@@ -4,16 +4,21 @@ import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { OfficialCard } from "@/components/OfficialCard";
 import { PromiseTracker } from "@/components/PromiseTracker";
 import { SiteHeader } from "@/components/SiteHeader";
+import { format } from "@/i18n/config";
+import { officeTitle, tierTitle } from "@/i18n/labels";
+import { getDictionary, getLocale, href } from "@/i18n/server";
 import { getProfile } from "@/lib/resolve";
 
 const panel =
   "rounded-2xl border-4 border-navy bg-white p-5 text-start shadow-[6px_6px_0_var(--color-navy)]";
 
-export default async function OfficialPage(props: PageProps<"/official/[id]">) {
+export default async function OfficialPage(props: PageProps<"/[locale]/official/[id]">) {
   const { id } = await props.params;
   const profile = await getProfile(id);
   if (!profile) notFound();
   const { official, contact, activity } = profile;
+  const t = await getDictionary();
+  const locale = await getLocale();
 
   return (
     <>
@@ -27,15 +32,15 @@ export default async function OfficialPage(props: PageProps<"/official/[id]">) {
           <div className="w-full flex-1 space-y-6 text-center md:text-start">
             <div className="space-y-2">
               <p className="font-display text-xs tracking-wide text-navy/60 uppercase">
-                {profile.tierTitle}
-                {profile.sample && " · sample data"}
+                {tierTitle(profile.tierLabel, t)}
+                {profile.sample && ` · ${t.profile.sampleData}`}
               </p>
               <h1 className="font-display text-3xl text-navy sm:text-4xl">
                 {official.name}
               </h1>
               <p className="text-lg text-navy/80">
-                {official.office} · {official.jurisdiction}
-                {official.termEnds && ` · term ends ${official.termEnds}`}
+                {officeTitle(official.office, t)} · {official.jurisdiction}
+                {official.termEnds && ` · ${format(t.profile.termEnds, { year: official.termEnds })}`}
               </p>
             </div>
 
@@ -48,7 +53,7 @@ export default async function OfficialPage(props: PageProps<"/official/[id]">) {
                     rel="noreferrer"
                     className="rounded-xl border-4 border-navy bg-gold px-4 py-1.5 font-display text-sm text-navy shadow-[3px_3px_0_var(--color-navy)]"
                   >
-                    🌐 Website
+                    🌐 {t.profile.website}
                   </a>
                 )}
                 {contact.phone && (
@@ -64,7 +69,7 @@ export default async function OfficialPage(props: PageProps<"/official/[id]">) {
                     href={`mailto:${contact.email}`}
                     className="rounded-xl border-4 border-navy bg-white px-4 py-1.5 font-display text-sm text-navy shadow-[3px_3px_0_var(--color-navy)]"
                   >
-                    ✉️ Email
+                    ✉️ {t.profile.email}
                   </a>
                 )}
               </div>
@@ -74,28 +79,32 @@ export default async function OfficialPage(props: PageProps<"/official/[id]">) {
             )}
 
             <section className={panel}>
-              <h2 className="font-display text-navy">Promise tracker</h2>
+              <h2 className="font-display text-navy">{t.profile.promiseTracker}</h2>
               {profile.promises ? (
                 <PromiseTracker data={profile.promises} />
               ) : (
                 <p className="mt-1 text-sm text-navy/60">
-                  We haven&apos;t tracked {official.name}&apos;s campaign promises yet.{" "}
-                  <Link href="/methodology" className="underline">
-                    How promise tracking works
+                  {format(t.profile.notTrackedYet, { name: official.name })}{" "}
+                  <Link href={await href("/methodology")} className="underline">
+                    {t.profile.howTrackingWorks}
                   </Link>
                 </p>
               )}
             </section>
 
             <section className={panel}>
-              <h2 className="font-display text-navy">Latest activity</h2>
+              <h2 className="font-display text-navy">{t.profile.latestActivity}</h2>
               {profile.sample || profile.activityNote ? (
                 <p className="mt-1 text-sm text-navy/60">
-                  {profile.activityNote ??
-                    "Real activity for this office arrives in a later build step."}
+                  {profile.activityNote ? t.profile[profile.activityNote] : t.profile.activityLater}
                 </p>
               ) : (
-                <ActivityTimeline items={activity} />
+                <>
+                  {locale !== "en" && activity.length > 0 && (
+                    <p className="mt-1 text-xs text-navy/60">{t.profile.englishRecords}</p>
+                  )}
+                  <ActivityTimeline items={activity} />
+                </>
               )}
             </section>
           </div>

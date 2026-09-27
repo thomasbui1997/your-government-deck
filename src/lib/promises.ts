@@ -11,46 +11,14 @@ export const STATUSES = [
 ] as const;
 export type PromiseStatus = (typeof STATUSES)[number];
 
-export const STATUS_META: Record<
-  PromiseStatus,
-  { label: string; progress: number; color: string; description: string }
-> = {
-  kept: {
-    label: "Kept",
-    progress: 100,
-    color: "bg-emerald-600",
-    description: "Delivered as promised, or substantially so.",
-  },
-  compromise: {
-    label: "Compromise",
-    progress: 75,
-    color: "bg-teal-500",
-    description: "Partly delivered: a real result, but less than what was promised.",
-  },
-  in_progress: {
-    label: "In progress",
-    progress: 50,
-    color: "bg-gold",
-    description: "Concrete action is underway (a bill filed, a budget line, a program launched).",
-  },
-  stalled: {
-    label: "Stalled",
-    progress: 25,
-    color: "bg-orange-500",
-    description: "Action started but has stopped moving, or was blocked.",
-  },
-  not_started: {
-    label: "Not started",
-    progress: 0,
-    color: "bg-navy/30",
-    description: "No meaningful action found yet.",
-  },
-  broken: {
-    label: "Broken",
-    progress: 0,
-    color: "bg-party-r",
-    description: "Abandoned, reversed, or no longer achievable this term.",
-  },
+/** Visual treatment per status; labels and descriptions live in the i18n dictionaries. */
+export const STATUS_META: Record<PromiseStatus, { progress: number; color: string }> = {
+  kept: { progress: 100, color: "bg-emerald-600" },
+  compromise: { progress: 75, color: "bg-teal-500" },
+  in_progress: { progress: 50, color: "bg-gold" },
+  stalled: { progress: 25, color: "bg-orange-500" },
+  not_started: { progress: 0, color: "bg-navy/30" },
+  broken: { progress: 0, color: "bg-party-r" },
 };
 
 export const TOPICS = [

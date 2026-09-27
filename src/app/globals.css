@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-body);
-  --font-display: var(--font-display);
+  /* --font-script is set per locale for Chinese, Korean, and Arabic text. */
+  --font-sans: var(--font-body), var(--font-script, ui-sans-serif), sans-serif;
+  --font-display: var(--font-bungee), var(--font-script, ui-sans-serif), sans-serif;
 
   --color-navy: #1b2a4a;
   --color-navy-deep: #111c33;

@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useI18n } from "@/i18n/client";
+import { format } from "@/i18n/config";
+import { officeTitle } from "@/i18n/labels";
 import type { Official, Party } from "@/lib/types";
 
 const partyStrip: Record<Party, string> = {
@@ -27,12 +30,6 @@ function initials(name: string) {
     .toUpperCase();
 }
 
-function activeLabel(days?: number) {
-  if (days === undefined) return null;
-  if (days === 0) return "active today";
-  return `active ${days}d ago`;
-}
-
 export function OfficialCard({
   official,
   size = "deck",
@@ -40,6 +37,7 @@ export function OfficialCard({
   official: Official;
   size?: "deck" | "hero";
 }) {
+  const { t, href } = useI18n();
   const ref = useRef<HTMLDivElement>(null);
   // 0 = primary photo, 1 = fallback photo, 2 = initials.
   const [photoStep, setPhotoStep] = useState(0);
@@ -65,7 +63,10 @@ export function OfficialCard({
   }
 
   const width = size === "hero" ? "w-80" : "w-60";
-  const active = activeLabel(official.lastActiveDaysAgo);
+  const days = official.lastActiveDaysAgo;
+  const active =
+    days === undefined ? null : days === 0 ? t.card.activeToday : format(t.card.activeDaysAgo, { days });
+  const office = officeTitle(official.office, t);
   const photos = [official.photoUrl, official.photoFallbackUrl];
   const photo = photoStep < 2 ? photos[photoStep] : undefined;
   const nextPhoto = () =>
@@ -87,7 +88,7 @@ export function OfficialCard({
           className={`${partyStrip[official.party]} flex items-center justify-between gap-2 px-3 py-1.5`}
         >
           <span className="truncate font-display text-xs tracking-wide uppercase">
-            {official.office}
+            {office}
           </span>
           <span className="rounded bg-black/25 px-1.5 text-xs font-bold">
             {partyLabel[official.party]}
@@ -116,12 +117,12 @@ export function OfficialCard({
           )}
           {official.maybe && (
             <span className="absolute end-1.5 top-1.5 rounded bg-gold px-1.5 text-[10px] font-bold text-navy uppercase">
-              Maybe yours
+              {t.card.maybe}
             </span>
           )}
           {official.appointed && (
             <span className="absolute start-1.5 top-1.5 rounded bg-cream/90 px-1.5 text-[9px] font-bold text-navy uppercase">
-              Appointed
+              {t.card.appointed}
             </span>
           )}
         </div>
@@ -139,16 +140,16 @@ export function OfficialCard({
         {/* Stats */}
         <div className="mx-3 mt-1.5 space-y-0.5 border-t border-gold/40 pt-1.5 text-xs">
           {official.stats.map((s) => (
-            <div key={s.label} className="flex justify-between">
+            <div key={s.key} className="flex justify-between">
               <span>
-                {s.icon} {s.label}
+                {s.icon} {t.stats[s.key] ?? s.key}
               </span>
               <span className="font-bold tabular-nums">{s.value}</span>
             </div>
           ))}
           {official.termEnds && (
             <div className="flex justify-between">
-              <span>📅 Term</span>
+              <span>📅 {t.card.term}</span>
               <span className="font-bold tabular-nums">→ {official.termEnds}</span>
             </div>
           )}
@@ -159,7 +160,7 @@ export function OfficialCard({
           {pct !== null ? (
             <>
               <div className="flex justify-between text-[11px] text-cream/80">
-                <span>Promises kept</span>
+                <span>{t.card.promisesKept}</span>
                 <span className="tabular-nums">
                   {official.promises!.kept}/{official.promises!.total}
                 </span>
@@ -172,7 +173,7 @@ export function OfficialCard({
               </div>
             </>
           ) : (
-            <p className="text-[11px] text-cream/50">Promises not tracked yet</p>
+            <p className="text-[11px] text-cream/50">{t.card.notTracked}</p>
           )}
           {active && (
             <p className="mt-1 flex items-center gap-1 text-[11px] text-cream/70">
@@ -193,9 +194,9 @@ export function OfficialCard({
   if (size === "hero") return card;
   return (
     <Link
-      href={`/official/${official.id}`}
+      href={href(`/official/${official.id}`)}
       className="flex rounded-2xl focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-gold"
-      aria-label={`${official.name}, ${official.office}`}
+      aria-label={`${official.name}, ${office}`}
     >
       {card}
     </Link>

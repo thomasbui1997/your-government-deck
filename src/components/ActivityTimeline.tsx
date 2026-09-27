@@ -1,14 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { useI18n } from "@/i18n/client";
 import type { ActivityItem, ActivityKind } from "@/lib/types";
 
-const kinds: { kind: ActivityKind; label: string; icon: string }[] = [
-  { kind: "vote", label: "Votes", icon: "🗳" },
-  { kind: "bill", label: "Bills", icon: "📜" },
-  { kind: "cosponsor", label: "Cosponsored", icon: "🤝" },
-  { kind: "meeting", label: "Meetings", icon: "📅" },
-  { kind: "post", label: "Posts", icon: "💬" },
+const kinds: { kind: ActivityKind; icon: string }[] = [
+  { kind: "vote", icon: "🗳" },
+  { kind: "bill", icon: "📜" },
+  { kind: "cosponsor", icon: "🤝" },
+  { kind: "meeting", icon: "📅" },
+  { kind: "post", icon: "💬" },
 ];
 
 const iconFor = Object.fromEntries(kinds.map((k) => [k.kind, k.icon]));
@@ -20,8 +21,8 @@ const voteBadge: Record<string, string> = {
   No: "bg-party-r text-white",
 };
 
-function formatDate(iso: string) {
-  return new Date(`${iso}T12:00:00`).toLocaleDateString("en-US", {
+function formatDate(iso: string, lang: string) {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString(lang, {
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -29,12 +30,13 @@ function formatDate(iso: string) {
 }
 
 export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
+  const { t, htmlLang } = useI18n();
   const present = kinds.filter((k) => items.some((i) => i.kind === k.kind));
   const [filter, setFilter] = useState<ActivityKind | "all">("all");
   const shown = filter === "all" ? items : items.filter((i) => i.kind === filter);
 
   if (!items.length) {
-    return <p className="mt-2 text-sm text-navy/60">No recent activity found.</p>;
+    return <p className="mt-2 text-sm text-navy/60">{t.activity.none}</p>;
   }
 
   const chip = (active: boolean) =>
@@ -44,7 +46,7 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
     <div>
       <div className="mt-3 flex flex-wrap gap-2">
         <button type="button" className={chip(filter === "all")} onClick={() => setFilter("all")}>
-          All
+          {t.activity.all}
         </button>
         {present.map((k) => (
           <button
@@ -53,7 +55,7 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
             className={chip(filter === k.kind)}
             onClick={() => setFilter(k.kind)}
           >
-            {k.icon} {k.label}
+            {k.icon} {t.activity[k.kind]}
           </button>
         ))}
       </div>
@@ -66,12 +68,13 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
             </span>
             <div className="min-w-0 flex-1 border-b border-navy/10 pb-3">
               <div className="flex flex-wrap items-center gap-2 text-xs text-navy/60">
-                <time dateTime={item.date}>{formatDate(item.date)}</time>
+                <time dateTime={item.date}>{formatDate(item.date, htmlLang)}</time>
                 {item.badge && (
                   <span
                     className={`rounded px-1.5 py-0.5 font-bold ${voteBadge[item.badge] ?? "bg-navy/10 text-navy"}`}
                   >
-                    {item.badge}
+                    {/* Vote casts are translated; bill numbers stay as they are. */}
+                    {t.activity.casts[item.badge] ?? item.badge}
                   </span>
                 )}
               </div>
@@ -80,15 +83,20 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
                   href={item.url}
                   target="_blank"
                   rel="noreferrer"
+                  lang="en"
                   className="mt-0.5 line-clamp-2 font-medium text-navy hover:underline"
                 >
                   {item.title}
                 </a>
               ) : (
-                <p className="mt-0.5 line-clamp-2 font-medium text-navy">{item.title}</p>
+                <p lang="en" className="mt-0.5 line-clamp-2 font-medium text-navy">
+                  {item.title}
+                </p>
               )}
               {item.detail && (
-                <p className="mt-0.5 line-clamp-1 text-sm text-navy/60">{item.detail}</p>
+                <p lang="en" className="mt-0.5 line-clamp-1 text-sm text-navy/60">
+                  {item.detail}
+                </p>
               )}
             </div>
           </li>

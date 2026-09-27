@@ -1,7 +1,9 @@
 import type { ReactNode } from "react";
 import { AddressInput } from "@/components/AddressInput";
+import { getDictionary } from "@/i18n/server";
 
-export default function Home() {
+export default async function Home() {
+  const t = await getDictionary();
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-8 px-4 py-16 text-center">
       <div className="flex -space-x-10" aria-hidden>
@@ -23,19 +25,13 @@ export default function Home() {
 
       <div className="space-y-3">
         <h1 className="font-display text-4xl leading-tight text-navy sm:text-6xl">
-          Your Government Deck
+          {t.home.title}
         </h1>
-        <p className="mx-auto max-w-md text-lg text-navy/75">
-          Every official who represents you, from the President to your school
-          committee, and whether they&apos;re keeping their promises.
-        </p>
+        <p className="mx-auto max-w-md text-lg text-navy/75">{t.home.tagline}</p>
       </div>
 
       <AddressInput />
-      <p className="-mt-6 max-w-md text-xs text-navy/50">
-        We send your address to the U.S. Census Geocoder to find your districts,
-        and never store it.
-      </p>
+      <p className="-mt-6 max-w-md text-xs text-navy/50">{t.home.privacy}</p>
     </main>
   );
 }

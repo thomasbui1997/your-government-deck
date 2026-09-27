@@ -67,7 +67,7 @@ export async function approveDraft(form: FormData) {
   writePublished(published);
 
   writeDraftFile({ ...file, drafts: file.drafts.filter((d) => d.draftId !== draft.draftId) });
-  revalidatePath("/admin/review");
+  revalidatePath("/[locale]/admin/review", "page");
 }
 
 export async function rejectDraft(form: FormData) {
@@ -89,5 +89,5 @@ export async function rejectDraft(form: FormData) {
   }
 
   writeDraftFile({ ...file, drafts: file.drafts.filter((d) => d.draftId !== draft.draftId) });
-  revalidatePath("/admin/review");
+  revalidatePath("/[locale]/admin/review", "page");
 }
