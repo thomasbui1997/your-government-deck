@@ -174,6 +174,27 @@ export async function getBills(
     }));
 }
 
+/**
+ * What a member's bills are about: Congress.gov's policy area for each of their most recent
+ * sponsored bills (up to 250), counted and ranked.
+ */
+export async function getSponsoredPolicyAreas(bioguideId: string, top = 3) {
+  const data = await cg<{ sponsoredLegislation?: (CgBill & { policyArea?: { name?: string } | null })[] }>(
+    `/member/${bioguideId}/sponsored-legislation`,
+    { limit: 250 },
+    DAY,
+  );
+  const counts = new Map<string, number>();
+  for (const b of data.sponsoredLegislation ?? []) {
+    const area = b.policyArea?.name;
+    if (area) counts.set(area, (counts.get(area) ?? 0) + 1);
+  }
+  return [...counts]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, top)
+    .map(([name, bills]) => ({ name, bills }));
+}
+
 // ---- House votes -----------------------------------------------------------
 
 interface CgHouseVote {

@@ -1,0 +1,2 @@
+# Gitignored files copied into every worktree Claude Code creates (agents need the API keys).
+.env.local

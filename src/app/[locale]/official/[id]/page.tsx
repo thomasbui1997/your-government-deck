@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { MoneyPanel, MoneyPanelSkeleton } from "@/components/MoneyPanel";
-import { OfficialCard } from "@/components/OfficialCard";
+import { FlipCard } from "@/components/FlipCard";
 import { PromiseTracker } from "@/components/PromiseTracker";
 import { SiteHeader } from "@/components/SiteHeader";
 import { format, LOCALE_INFO } from "@/i18n/config";
@@ -29,7 +29,7 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10">
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
           <div className="md:sticky md:top-24">
-            <OfficialCard official={official} size="hero" />
+            <FlipCard official={official} bio={profile.bio} />
           </div>
 
           <div className="w-full flex-1 space-y-6 text-center md:text-start">

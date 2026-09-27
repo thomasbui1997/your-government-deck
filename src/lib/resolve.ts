@@ -6,9 +6,10 @@ import {
   getDelegation,
   getHouseVotes,
   getMember,
+  getSponsoredPolicyAreas,
   partyFromName,
 } from "./providers/congress";
-import { getLegislatorIndex, type LegislatorInfo } from "./providers/legislators";
+import { getCommittees, getLegislatorIndex, type LegislatorInfo } from "./providers/legislators";
 import {
   districtKey,
   findStatePerson,
@@ -19,11 +20,12 @@ import {
 } from "./providers/openstates";
 import { getMeetings } from "./providers/agendaCenter";
 import { getBlueskyPosts, handleFromWebsite } from "./providers/bluesky";
+import { directorySource, getDirectoryBio } from "./providers/bios";
 import { findLocalOfficial, isLocalId, localStateOfficials, localTiers } from "./providers/local";
 import { getSenateVotes } from "./providers/senate";
 import { getPublishedPromises, withPromises } from "./promiseStore";
 import { districtsForZip, type StateDistrict, stateDistrict } from "./providers/zip";
-import type { ActivityItem, Deck, Official, OfficialProfile, SplitKind, Tier } from "./types";
+import type { ActivityItem, Deck, Official, OfficialBio, OfficialProfile, SplitKind, Tier } from "./types";
 
 const STATE_NAMES: Record<string, string> = {
   AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
@@ -323,6 +325,35 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
   };
 }
 
+const DIRECTORY = { title: directorySource.title, url: directorySource.url };
+
+/**
+ * The card back for a member of Congress (or the Vice President): their Congressional Directory
+ * entry, plus what their bills are about and their committees. Each part is optional.
+ */
+async function congressBio(id: string, bioguideId?: string): Promise<OfficialBio | undefined> {
+  const entry = getDirectoryBio(id);
+  const [issues, committees] = bioguideId
+    ? await Promise.all([
+        getSponsoredPolicyAreas(bioguideId).catch(() => undefined),
+        getCommittees(bioguideId).catch(() => undefined),
+      ])
+    : [undefined, undefined];
+  if (!entry && !issues?.length && !committees?.length) return undefined;
+  const sources = [
+    ...(entry ? [DIRECTORY] : []),
+    ...(issues?.length || committees?.length
+      ? [{ title: "Congress.gov", url: `https://www.congress.gov/member/${bioguideId}` }]
+      : []),
+  ];
+  return {
+    ...(entry ?? { education: [], career: [], military: [] }),
+    ...(issues?.length ? { issues } : {}),
+    ...(committees?.length ? { committees } : {}),
+    sources,
+  };
+}
+
 const merge = (...lists: ActivityItem[][]) =>
   lists.flat().sort((a, b) => b.date.localeCompare(a.date));
 
@@ -344,6 +375,8 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
       tierLabel: { key: "federalExec" },
       contact: { website: "https://www.whitehouse.gov" },
       activity: [],
+      // The Vice President presides over the Senate, so the Congressional Directory has an entry.
+      bio: await congressBio(exec.id),
       activityNote: "noteFederalExec",
     };
   }
@@ -364,12 +397,13 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
 
     // Posts only from a Bluesky handle verified by their official website's domain.
     const bskyHandle = handleFromWebsite(info?.website ?? member.officialWebsiteUrl);
-    const [sponsored, cosponsored, voteItems, posts, badges] = await Promise.all([
+    const [sponsored, cosponsored, voteItems, posts, badges, bio] = await Promise.all([
       getBills(id, "sponsored", 10),
       getBills(id, "cosponsored", 10),
       votes.catch(() => [] as ActivityItem[]),
       bskyHandle ? getBlueskyPosts(bskyHandle, 8).catch(() => [] as ActivityItem[]) : [],
       info ? electionBadges([info]) : [],
+      congressBio(id, id),
     ]);
 
     const official: Official = {
@@ -407,6 +441,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
         ],
       },
       activity: merge(voteItems, sponsored, cosponsored, posts),
+      bio,
     };
   }
 

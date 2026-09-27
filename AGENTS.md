@@ -23,6 +23,8 @@ github.com/thomasbui1997/your-government-deck.
   legislative districts, from Census ZCTA relationship files)
 - `node scripts/build-executives.mjs` → `src/data/executives.json` (statewide officials,
   from the openstates/people repo)
+- `node --env-file=.env.local scripts/build-congress-bios.mjs` → `src/data/bios/congress.json`
+  (each member's official bio for the card back, from the newest Congressional Directory)
 - `node scripts/build-ma-results.mjs` → `src/data/results/ma.json` (official vote counts for
   every MA U.S. House/Senate primary, general, and special since 2000, from electionstats)
 - `npm run promises -- draft|reassess <officialId>` → drafts in `data/promises/pending/`;
@@ -48,6 +50,9 @@ street address or zip via the free Census Geocoder).
   (official results files), `src/lib/campaigns.ts` (races, outcomes, deck ballot badges).
   UI: `MoneyPanel` on profiles, `/[locale]/official/[id]/elections?race=<fecId>-<year>`
   (`ElectionCard`, shared bars in `CampaignMoney.tsx`), methodology `#money`.
+- Card back (click the profile card to flip): `FlipCard.tsx`; bio assembled in `resolve.ts`
+  (`congressBio`) from `providers/bios.ts`, bill policy areas (`getSponsoredPolicyAreas`), and
+  committees (`getCommittees`). Only Congress and the VP have bios; others say none on file.
 - Promise tracker: `src/lib/promises.ts` (model), `src/data/promises.json` (published, empty),
   `/[locale]/admin/review` (local-only review UI; 404 in production), `/methodology`.
 
@@ -63,6 +68,9 @@ street address or zip via the free Census Geocoder).
 - FEC API (api.open.fec.gov, 1,000 req/hour/key): campaign totals per election
   (`election_full=true`), donor-size buckets, independent expenditures, PAC gifts. Members'
   FEC candidate IDs come from congress-legislators (`id.fec`).
+- Congressional Directory (GPO, govinfo API, same api.data.gov key): member bios. The
+  Bioguide site sits behind a bot check, so don't scrape it. unitedstates committee files:
+  committee seats and leadership titles.
 - Massachusetts PD43+ (electionstats.state.ma.us): official vote counts. Other states show
   money without results until someone adds a `build-<state>-results` script.
 - Bluesky public API: posts only from handles equal to the official's website domain
@@ -100,6 +108,9 @@ street address or zip via the free Census Geocoder).
   member's House and Senate careers; Senate PAC totals start at the race's coverage date.
   Presidential totals (Trump's show $3.9M for 2024) miss the general-election committees,
   so presidential money isn't shown.
+- Testing in an automated/background browser tab: React 19 reveals streamed Suspense content
+  on `requestAnimationFrame`, which hidden tabs don't fire, so pages look loaded but never
+  hydrate (clicks do nothing). Take a screenshot (forces a frame) before interacting.
 - Results say "Stephen F. Lynch", the FEC says "LYNCH, STEPHEN F": `sameCandidate()` matches
   last name + first initial.
 
@@ -108,8 +119,9 @@ street address or zip via the free Census Geocoder).
 - **After Nov 3, 2026:** update `src/data/local/stoughton-ma.json` (DA, Commissioner Collins,
   County Treasurer, Register of Probate, Governor's Councillor were on the ballot), rerun
   `build-executives.mjs`, and rerun `build-ma-results.mjs` once MA certifies the general.
-- **Jan 3, 2027 (120th Congress):** switch the geocoder vintage to `Current_Current` and
-  rebuild `zips.json` with the new CD/SLD relationship files.
+- **Jan 3, 2027 (120th Congress):** switch the geocoder vintage to `Current_Current`,
+  rebuild `zips.json` with the new CD/SLD relationship files, and rerun
+  `build-congress-bios.mjs` once GPO publishes the 120th Congress directory.
 
 ## Open work
 

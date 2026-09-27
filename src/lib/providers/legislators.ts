@@ -78,3 +78,57 @@ export async function getLegislatorIndex(): Promise<Map<string, LegislatorInfo>>
   }
   return index;
 }
+
+// ---- Committees ------------------------------------------------------------
+
+const COMMITTEES =
+  "https://raw.githubusercontent.com/unitedstates/congress-legislators/gh-pages/committees-current.json";
+const MEMBERSHIP =
+  "https://raw.githubusercontent.com/unitedstates/congress-legislators/gh-pages/committee-membership-current.json";
+
+interface RawCommittee {
+  thomas_id: string;
+  name: string;
+  subcommittees?: { thomas_id: string; name: string }[];
+}
+
+export interface CommitteeSeat {
+  name: string;
+  /** Leadership title as listed, e.g. "Chair", "Ranking Member". */
+  role?: string;
+  /** Set for subcommittees: the full committee's name. */
+  parent?: string;
+}
+
+/**
+ * Committees a member sits on, plus any subcommittee they lead. Plain subcommittee seats are
+ * left out; there are too many to be informative.
+ */
+export async function getCommittees(bioguideId: string): Promise<CommitteeSeat[]> {
+  const [cRes, mRes] = await Promise.all([
+    fetch(COMMITTEES, { next: { revalidate: 86400 } }),
+    fetch(MEMBERSHIP, { next: { revalidate: 86400 } }),
+  ]);
+  if (!cRes.ok || !mRes.ok) throw new Error("congress-legislators committees unavailable");
+  const committees: RawCommittee[] = await cRes.json();
+  const membership: Record<string, { bioguide: string; title?: string }[]> = await mRes.json();
+
+  const names = new Map<string, { name: string; parent?: string }>();
+  for (const c of committees) {
+    names.set(c.thomas_id, { name: c.name });
+    for (const sub of c.subcommittees ?? []) {
+      names.set(c.thomas_id + sub.thomas_id, { name: sub.name, parent: c.name });
+    }
+  }
+
+  const seats: CommitteeSeat[] = [];
+  for (const [id, members] of Object.entries(membership)) {
+    const me = members.find((m) => m.bioguide === bioguideId);
+    const committee = names.get(id);
+    if (!me || !committee) continue;
+    if (committee.parent && !me.title) continue;
+    seats.push({ ...committee, ...(me.title ? { role: me.title } : {}) });
+  }
+  // Full committees first, then led subcommittees.
+  return seats.sort((a, b) => Number(!!a.parent) - Number(!!b.parent) || a.name.localeCompare(b.name));
+}

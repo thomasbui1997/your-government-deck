@@ -105,6 +105,21 @@ export interface ActivityItem {
   url?: string;
 }
 
+/** The back of an official's card: who they are, from official sources. */
+export interface OfficialBio {
+  /** An official biography published as prose (e.g. a legislature profile), shown verbatim. */
+  summary?: string;
+  hometown?: string;
+  born?: { place: string; date?: string };
+  education: string[];
+  career: string[];
+  military: string[];
+  /** Most common topics of the bills they sponsor, from Congress.gov's policy areas. */
+  issues?: { name: string; bills: number }[];
+  committees?: { name: string; role?: string; parent?: string }[];
+  sources: { title: string; url: string }[];
+}
+
 export interface OfficialProfile {
   /** Approved campaign promises, when this official is tracked. */
   promises?: PublishedPromises | null;
@@ -118,6 +133,7 @@ export interface OfficialProfile {
     socials?: SocialLink[];
   };
   activity: ActivityItem[];
+  bio?: OfficialBio;
   /** Dictionary key (under `profile`) explaining an empty timeline. */
   activityNote?: "noteFederalExec" | "noteStateExec" | "noteLocal";
   /** Where hand-curated data came from, and when it was last checked. */
