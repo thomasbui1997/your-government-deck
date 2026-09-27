@@ -46,6 +46,9 @@ export const ko: Dictionary = {
     stateExec: "{state} · 행정부",
     stateLeg: "{state} · 의회",
     dcCouncil: "DC 의회",
+    county: "카운티",
+    town: "시 / 타운",
+    school: "학교",
   },
   offices: {
     President: "대통령",
@@ -75,6 +78,14 @@ export const ko: Dictionary = {
     "Select Board": "타운 행정위원회",
     "Town Manager": "타운 매니저",
     "School Committee": "학교 위원회",
+    "Town Moderator": "타운 의장",
+    "Acting Town Manager": "타운 매니저 대행",
+    "County Commissioner": "카운티 커미셔너",
+    "Register of Deeds": "등기관",
+    "Register of Probate": "유언검인 등기관",
+    "Clerk of Courts": "법원 서기",
+    "County Treasurer": "카운티 재무관",
+    "Governor's Councillor": "주지사 자문위원",
   },
   card: {
     promisesKept: "지킨 약속",
@@ -84,6 +95,8 @@ export const ko: Dictionary = {
     appointed: "임명직",
     maybe: "내 대표일 수 있음",
     term: "임기",
+    chair: "의장",
+    viceChair: "부의장",
   },
   stats: {
     billsSponsored: "발의 법안",
@@ -94,7 +107,6 @@ export const ko: Dictionary = {
     termEnds: "임기 종료 {year}년",
     website: "웹사이트",
     email: "이메일",
-    sampleData: "샘플 데이터",
     promiseTracker: "약속 추적",
     notTrackedYet: "아직 {name}의 선거 공약을 추적하지 않았습니다.",
     howTrackingWorks: "약속 추적 방식",
@@ -103,6 +115,9 @@ export const ko: Dictionary = {
     noteFederalExec: "행정명령과 행정 조치는 이후 단계에서 추가됩니다.",
     noteStateExec: "주 행정 공직자는 법안을 발의하지 않으며, 행정 조치는 아직 추적하지 않습니다.",
     englishRecords: "법안 제목, 표결 및 기타 공식 기록은 영어로 표시됩니다.",
+    noteLocal: "이 직책의 회의 기록은 아직 추적하지 않습니다.",
+    sources: "출처",
+    checked: "{date} 확인",
   },
   activity: {
     all: "전체",
@@ -119,6 +134,10 @@ export const ko: Dictionary = {
       No: "반대",
       "Not Voting": "불참",
       Present: "출석",
+    },
+    docs: {
+      Agenda: "안건",
+      Minutes: "회의록",
     },
   },
   promises: {

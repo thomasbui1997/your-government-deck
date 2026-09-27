@@ -1,0 +1,130 @@
+{
+  "id": "stoughton-ma",
+  "place": "Stoughton, MA",
+  "state": "MA",
+  "zips": ["02072"],
+  "checked": "2026-09-26",
+  "agendaCenter": "https://www.stoughton.org/AgendaCenter",
+  "sources": {
+    "selectBoard": {
+      "title": "Select Board, Town of Stoughton",
+      "url": "https://stoughton.org/334/Select-Board"
+    },
+    "results2026": {
+      "title": "April 7, 2026 Local Election results, Town of Stoughton",
+      "url": "https://www.stoughton.org/DocumentCenter/View/6210/April-7-2026---Local-Election-"
+    },
+    "results2025": {
+      "title": "April 8, 2025 Local Election results, Town of Stoughton",
+      "url": "https://www.stoughton.org/DocumentCenter/View/4554/April-8-2025---Local-Election"
+    },
+    "results2024": {
+      "title": "April 2, 2024 Local Election results, Town of Stoughton",
+      "url": "https://www.stoughton.org/DocumentCenter/View/4130/April-2-2024---Local-Election"
+    },
+    "schoolMinutes": {
+      "title": "School Committee minutes, September 8, 2026",
+      "url": "https://www.stoughton.org/AgendaCenter/ViewFile/Minutes/_09082026-5583"
+    },
+    "townManager": {
+      "title": "Town Manager, Town of Stoughton",
+      "url": "https://www.stoughton.org/256/Town-Manager"
+    },
+    "commissioners": {
+      "title": "Board of County Commissioners, Norfolk County",
+      "url": "https://www.norfolkcounty.org/county_commission/commissioners.php"
+    },
+    "commissioners2024": {
+      "title": "2024 County Commissioner Democratic Primary, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/163751"
+    },
+    "commissioners2022": {
+      "title": "2022 County Commissioner Democratic Primary, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/152439"
+    },
+    "sheriff2022": {
+      "title": "2022 Sheriff General Election, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/154420"
+    },
+    "da2022": {
+      "title": "2022 District Attorney General Election, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/154417"
+    },
+    "deeds2024": {
+      "title": "2024 Register of Deeds Democratic Primary, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/163754"
+    },
+    "probate2020": {
+      "title": "2020 Register of Probate General Election, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/140822"
+    },
+    "clerk2024": {
+      "title": "2024 Clerk of Courts General Election, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/165379"
+    },
+    "treasurer2020": {
+      "title": "2020 County Treasurer General Election, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/140821"
+    },
+    "council2024": {
+      "title": "2024 Governor's Council, 2nd District, MA Election Statistics",
+      "url": "https://electionstats.state.ma.us/elections/view/163712"
+    }
+  },
+  "stateOfficials": [
+    {
+      "slug": "governors-councillor",
+      "name": "Tamisha L. Civil",
+      "office": "Governor's Councillor",
+      "jurisdiction": "District 2",
+      "party": "D",
+      "termEnds": "2027",
+      "sources": ["council2024"]
+    }
+  ],
+  "tiers": [
+    {
+      "id": "county",
+      "level": "county",
+      "title": "Norfolk County",
+      "officials": [
+        { "slug": "commissioner-shea", "name": "Joseph P. Shea", "office": "County Commissioner", "role": "chair", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "sources": ["commissioners", "commissioners2024"] },
+        { "slug": "commissioner-collins", "name": "Peter H. Collins", "office": "County Commissioner", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "sources": ["commissioners", "commissioners2022"] },
+        { "slug": "commissioner-staiti", "name": "Richard R. Staiti", "office": "County Commissioner", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "sources": ["commissioners", "commissioners2024"] },
+        { "slug": "sheriff", "name": "Patrick W. McDermott", "office": "Sheriff", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2029", "sources": ["sheriff2022"] },
+        { "slug": "district-attorney", "name": "Michael W. Morrissey", "office": "District Attorney", "jurisdiction": "Norfolk District", "party": "D", "termEnds": "2027", "sources": ["da2022"] },
+        { "slug": "register-of-deeds", "name": "William P. O'Donnell", "office": "Register of Deeds", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2031", "sources": ["deeds2024"] },
+        { "slug": "register-of-probate", "name": "Colleen M. Brierley", "office": "Register of Probate", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "sources": ["probate2020"] },
+        { "slug": "clerk-of-courts", "name": "Walter F. Timilty, Jr.", "office": "Clerk of Courts", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2031", "sources": ["clerk2024"] },
+        { "slug": "county-treasurer", "name": "Michael G. Bellotti", "office": "County Treasurer", "jurisdiction": "Norfolk County", "party": "D", "termEnds": "2027", "sources": ["treasurer2020"] }
+      ]
+    },
+    {
+      "id": "town",
+      "level": "town",
+      "title": "Town of Stoughton",
+      "board": { "agendaCategory": 2 },
+      "officials": [
+        { "slug": "select-board-mokrisky", "name": "Joseph M. Mokrisky", "office": "Select Board", "role": "chair", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2028", "email": "jmokrisky@stoughton-ma.gov", "phone": "781-344-8887", "meetings": 2, "sources": ["selectBoard", "results2025"] },
+        { "slug": "select-board-roberts", "name": "Debra C. Roberts", "office": "Select Board", "role": "viceChair", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2029", "email": "droberts@stoughton-ma.gov", "phone": "781-385-1494", "meetings": 2, "sources": ["selectBoard", "results2026"] },
+        { "slug": "select-board-jacques", "name": "Lori A. Jacques", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2029", "email": "ljacques@stoughton-ma.gov", "phone": "781-408-2433", "meetings": 2, "sources": ["selectBoard", "results2026"] },
+        { "slug": "select-board-carrara", "name": "Scott D. Carrara", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "email": "sdcarrara@stoughton-ma.gov", "meetings": 2, "sources": ["selectBoard", "results2024"] },
+        { "slug": "select-board-cavey", "name": "Stephen M. Cavey", "office": "Select Board", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "email": "scavey@stoughton-ma.gov", "phone": "781-686-2832", "meetings": 2, "sources": ["selectBoard", "results2024"] },
+        { "slug": "town-moderator", "name": "Robert E. Mullen, Jr.", "office": "Town Moderator", "jurisdiction": "Stoughton", "party": "NP", "termEnds": "2027", "sources": ["results2025"] },
+        { "slug": "town-manager", "name": "Marc Tisdelle", "office": "Acting Town Manager", "jurisdiction": "Stoughton", "party": "NP", "appointed": true, "meetings": 2, "sources": ["townManager"] }
+      ]
+    },
+    {
+      "id": "school",
+      "level": "school",
+      "title": "Stoughton School Committee",
+      "officials": [
+        { "slug": "school-committee-shannon", "name": "Christine A. Shannon", "office": "School Committee", "role": "chair", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2029", "meetings": 30, "sources": ["schoolMinutes", "results2026"] },
+        { "slug": "school-committee-distefano", "name": "Jillian DiStefano", "office": "School Committee", "role": "viceChair", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2028", "meetings": 30, "sources": ["schoolMinutes", "results2025"] },
+        { "slug": "school-committee-sears", "name": "Jennifer A. Sears", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2028", "meetings": 30, "sources": ["schoolMinutes", "results2025"] },
+        { "slug": "school-committee-hollins", "name": "Charlene C. Hollins", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2029", "meetings": 30, "sources": ["schoolMinutes", "results2026"] },
+        { "slug": "school-committee-powers", "name": "Karen Powers", "office": "School Committee", "jurisdiction": "Stoughton Public Schools", "party": "NP", "termEnds": "2027", "meetings": 30, "sources": ["schoolMinutes", "results2024"] }
+      ]
+    }
+  ]
+}

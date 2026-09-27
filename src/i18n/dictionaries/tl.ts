@@ -50,6 +50,9 @@ export const tl: Dictionary = {
     stateExec: "{state} · Ehekutibo",
     stateLeg: "{state} · Lehislatura",
     dcCouncil: "Konseho ng DC",
+    county: "County",
+    town: "Lungsod / Bayan",
+    school: "Mga Paaralan",
   },
   offices: {
     President: "Pangulo",
@@ -79,6 +82,14 @@ export const tl: Dictionary = {
     "Select Board": "Select Board",
     "Town Manager": "Tagapamahala ng Bayan",
     "School Committee": "Komite ng Paaralan",
+    "Town Moderator": "Moderator ng Bayan",
+    "Acting Town Manager": "Pansamantalang Tagapamahala ng Bayan",
+    "County Commissioner": "Komisyoner ng County",
+    "Register of Deeds": "Register of Deeds",
+    "Register of Probate": "Register of Probate",
+    "Clerk of Courts": "Klerk ng mga Hukuman",
+    "County Treasurer": "Ingat-yaman ng County",
+    "Governor's Councillor": "Konsehal ng Gobernador",
   },
   card: {
     promisesKept: "Natupad na pangako",
@@ -88,6 +99,8 @@ export const tl: Dictionary = {
     appointed: "Itinalaga",
     maybe: "Posibleng sa iyo",
     term: "Termino",
+    chair: "Tagapangulo",
+    viceChair: "Pangalawang Tagapangulo",
   },
   stats: {
     billsSponsored: "Mga panukalang batas",
@@ -98,7 +111,6 @@ export const tl: Dictionary = {
     termEnds: "matatapos ang termino sa {year}",
     website: "Website",
     email: "Email",
-    sampleData: "halimbawang datos",
     promiseTracker: "Tagasubaybay ng pangako",
     notTrackedYet: "Hindi pa namin sinusubaybayan ang mga pangako sa kampanya ni {name}.",
     howTrackingWorks: "Paano gumagana ang pagsubaybay",
@@ -108,6 +120,9 @@ export const tl: Dictionary = {
     noteStateExec:
       "Hindi naghahain ng panukalang batas ang mga opisyal ng buong estado, at hindi pa sinusubaybayan ang kanilang mga aksyong ehekutibo.",
     englishRecords: "Nasa Ingles ang mga pamagat ng panukalang batas, mga boto, at iba pang opisyal na rekord.",
+    noteLocal: "Hindi pa sinusubaybayan ang mga rekord ng pulong para sa posisyong ito.",
+    sources: "Mga pinagmulan",
+    checked: "Sinuri noong {date}",
   },
   activity: {
     all: "Lahat",
@@ -124,6 +139,10 @@ export const tl: Dictionary = {
       No: "Hindi",
       "Not Voting": "Hindi bumoto",
       Present: "Present",
+    },
+    docs: {
+      Agenda: "Agenda",
+      Minutes: "Katitikan",
     },
   },
   promises: {

@@ -46,6 +46,9 @@ export const zhHant: Dictionary = {
     stateExec: "{state} · 行政",
     stateLeg: "{state} · 立法",
     dcCouncil: "華盛頓特區議會",
+    county: "郡",
+    town: "市 / 鎮",
+    school: "學校",
   },
   offices: {
     President: "總統",
@@ -75,6 +78,14 @@ export const zhHant: Dictionary = {
     "Select Board": "鎮務委員會",
     "Town Manager": "鎮行政經理",
     "School Committee": "學校委員會",
+    "Town Moderator": "鎮議事主持人",
+    "Acting Town Manager": "代理鎮行政經理",
+    "County Commissioner": "郡專員",
+    "Register of Deeds": "契據登記官",
+    "Register of Probate": "遺囑認證登記官",
+    "Clerk of Courts": "法院書記官",
+    "County Treasurer": "郡財政長",
+    "Governor's Councillor": "州長理事會成員",
   },
   card: {
     promisesKept: "已兌現承諾",
@@ -84,6 +95,8 @@ export const zhHant: Dictionary = {
     appointed: "任命",
     maybe: "可能是你的",
     term: "任期",
+    chair: "主席",
+    viceChair: "副主席",
   },
   stats: {
     billsSponsored: "提出法案",
@@ -94,7 +107,6 @@ export const zhHant: Dictionary = {
     termEnds: "任期至 {year} 年",
     website: "網站",
     email: "電子郵件",
-    sampleData: "範例資料",
     promiseTracker: "承諾追蹤",
     notTrackedYet: "我們尚未追蹤 {name} 的競選承諾。",
     howTrackingWorks: "承諾追蹤如何運作",
@@ -103,6 +115,9 @@ export const zhHant: Dictionary = {
     noteFederalExec: "行政命令與行動將在後續版本中加入。",
     noteStateExec: "州級行政官員不提出法案，且我們尚未追蹤其行政行動。",
     englishRecords: "法案標題、投票及其他官方紀錄以英文顯示。",
+    noteLocal: "尚未追蹤此職位的會議紀錄。",
+    sources: "來源",
+    checked: "核實於 {date}",
   },
   activity: {
     all: "全部",
@@ -119,6 +134,10 @@ export const zhHant: Dictionary = {
       No: "反對",
       "Not Voting": "未投票",
       Present: "出席",
+    },
+    docs: {
+      Agenda: "議程",
+      Minutes: "會議紀錄",
     },
   },
   promises: {

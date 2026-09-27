@@ -133,6 +133,7 @@ export function OfficialCard({
             {official.name}
           </p>
           <p className="truncate text-xs text-cream/70">
+            {official.role && `${t.card[official.role]} · `}
             {official.jurisdiction}
           </p>
         </div>

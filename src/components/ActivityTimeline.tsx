@@ -74,7 +74,7 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
                     className={`rounded px-1.5 py-0.5 font-bold ${voteBadge[item.badge] ?? "bg-navy/10 text-navy"}`}
                   >
                     {/* Vote casts are translated; bill numbers stay as they are. */}
-                    {t.activity.casts[item.badge] ?? item.badge}
+                    {t.activity.casts[item.badge] ?? t.activity.docs[item.badge] ?? item.badge}
                   </span>
                 )}
               </div>

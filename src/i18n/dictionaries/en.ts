@@ -51,6 +51,9 @@ export const en = {
     stateExec: "{state} · Executive",
     stateLeg: "{state} · Legislature",
     dcCouncil: "DC Council",
+    county: "County",
+    town: "City / Town",
+    school: "Schools",
   },
   /** Office titles, keyed by the English title the data layer produces. */
   offices: {
@@ -81,6 +84,14 @@ export const en = {
     "Select Board": "Select Board",
     "Town Manager": "Town Manager",
     "School Committee": "School Committee",
+    "Town Moderator": "Town Moderator",
+    "Acting Town Manager": "Acting Town Manager",
+    "County Commissioner": "County Commissioner",
+    "Register of Deeds": "Register of Deeds",
+    "Register of Probate": "Register of Probate",
+    "Clerk of Courts": "Clerk of Courts",
+    "County Treasurer": "County Treasurer",
+    "Governor's Councillor": "Governor's Councillor",
   } as Record<string, string>,
   card: {
     promisesKept: "Promises kept",
@@ -90,6 +101,8 @@ export const en = {
     appointed: "Appointed",
     maybe: "Maybe yours",
     term: "Term",
+    chair: "Chair",
+    viceChair: "Vice Chair",
   },
   /** Card stat labels, keyed by the stat key the data layer produces. */
   stats: {
@@ -101,7 +114,6 @@ export const en = {
     termEnds: "term ends {year}",
     website: "Website",
     email: "Email",
-    sampleData: "sample data",
     promiseTracker: "Promise tracker",
     notTrackedYet: "We haven't tracked {name}'s campaign promises yet.",
     howTrackingWorks: "How promise tracking works",
@@ -110,6 +122,9 @@ export const en = {
     noteFederalExec: "Executive orders and actions are coming in a later build step.",
     noteStateExec: "Statewide officials don't file bills, and executive actions aren't tracked yet.",
     englishRecords: "Bill titles, votes, and other official records are shown in English.",
+    noteLocal: "Meeting records for this office aren't tracked yet.",
+    sources: "Sources",
+    checked: "Checked {date}",
   },
   activity: {
     all: "All",
@@ -127,6 +142,11 @@ export const en = {
       No: "No",
       "Not Voting": "Not Voting",
       Present: "Present",
+    } as Record<string, string>,
+    /** Meeting document badges. */
+    docs: {
+      Agenda: "Agenda",
+      Minutes: "Minutes",
     } as Record<string, string>,
   },
   promises: {

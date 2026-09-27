@@ -1,5 +1,4 @@
 import "server-only";
-import { getMockOfficial, getTierFor, sampleTiersFor } from "./mock";
 import {
   type DelegationMember,
   getBills,
@@ -17,6 +16,8 @@ import {
   getStateBills,
   type StatePerson,
 } from "./providers/openstates";
+import { getMeetings } from "./providers/agendaCenter";
+import { findLocalOfficial, isLocalId, localStateOfficials, localTiers } from "./providers/local";
 import { getSenateVotes } from "./providers/senate";
 import { getPublishedPromises, withPromises } from "./promiseStore";
 import { districtsForZip, type StateDistrict, stateDistrict } from "./providers/zip";
@@ -68,6 +69,13 @@ const FEDERAL_EXEC: Official[] = [
 ];
 
 const BIOGUIDE = /^[A-Z]\d{6}$/;
+
+// Outside curated places, local tiers show as "coming soon".
+const COMING_SOON_TIERS: Tier[] = [
+  { id: "county", level: "county", label: { key: "county" }, officials: [], comingSoon: true },
+  { id: "town", level: "town", label: { key: "town" }, officials: [], comingSoon: true },
+  { id: "school", level: "school", label: { key: "school" }, officials: [], comingSoon: true },
+];
 // Open States IDs are "ocd-person/<uuid>"; URLs use "os-<state>-<uuid>" so a profile
 // knows which state's roster to load.
 const OS_ID = /^os-([a-z]{2})-([0-9a-f-]{36})$/;
@@ -138,6 +146,7 @@ function matchDistricts(roster: StatePerson[], censusNames: string[]) {
 }
 
 async function stateTiers(
+  zip: string,
   state: string,
   upper: StateDistrict[],
   lower: StateDistrict[],
@@ -149,7 +158,11 @@ async function stateTiers(
     const i = EXEC_ORDER.indexOf(o.office);
     return i === -1 ? EXEC_ORDER.length : i;
   };
-  const execCards = getExecutives(state).map(stateCard).sort((a, b) => rank(a) - rank(b));
+  const execCards = [
+    ...getExecutives(state).map(stateCard).sort((a, b) => rank(a) - rank(b)),
+    // Offices Open States doesn't cover, from curated local data (e.g. MA Governor's Council).
+    ...localStateOfficials(zip),
+  ];
 
   // Only the chamber that's actually split gets "maybe" badges.
   const inChamber = (kind: string) => legislators.filter((p) => p.kind === kind);
@@ -256,7 +269,7 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
   const [delegation, index, stateLevel] = await Promise.all([
     getDelegation(state),
     getLegislatorIndex(),
-    stateTiers(state, upper, lower),
+    stateTiers(zip, state, upper, lower),
   ]);
 
   const senators = delegation.filter((m) => m.chamber === "Senate");
@@ -295,7 +308,7 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
     place: `${zip} · ${STATE_NAMES[state] ?? state}`,
     splits: splits.length ? splits : undefined,
     narrowed,
-    tiers: [...federal, ...stateLevel, ...sampleTiersFor(zip)],
+    tiers: [...federal, ...stateLevel, ...(localTiers(zip) ?? COMING_SOON_TIERS)],
   };
 }
 
@@ -405,13 +418,29 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
     };
   }
 
-  const sample = getMockOfficial(id);
-  if (!sample) return null;
-  return {
-    official: sample,
-    tierLabel: getTierFor(id)?.label ?? { text: "" },
-    contact: {},
-    activity: [],
-    sample: true,
-  };
+  if (isLocalId(id)) {
+    const local = findLocalOfficial(id);
+    if (!local) return null;
+    const { place, official } = local;
+    const activity =
+      local.meetings && place.agendaCenter
+        ? await getMeetings(place.agendaCenter, local.meetings, 15).catch(() => [] as ActivityItem[])
+        : [];
+    return {
+      official: {
+        ...official,
+        lastActiveDaysAgo: activity[0] ? daysSince(activity[0].date) : undefined,
+      },
+      tierLabel: local.tierTitle
+        ? { text: local.tierTitle }
+        : { key: "stateExec", state: STATE_NAMES[place.state] ?? place.state },
+      contact: local.contact,
+      activity,
+      activityNote: local.meetings ? undefined : "noteLocal",
+      sources: local.sources,
+      checked: place.checked,
+    };
+  }
+
+  return null;
 }

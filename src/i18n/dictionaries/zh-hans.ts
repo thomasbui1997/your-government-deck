@@ -46,6 +46,9 @@ export const zhHans: Dictionary = {
     stateExec: "{state} · 行政",
     stateLeg: "{state} · 立法",
     dcCouncil: "华盛顿特区议会",
+    county: "县",
+    town: "市 / 镇",
+    school: "学校",
   },
   offices: {
     President: "总统",
@@ -75,6 +78,14 @@ export const zhHans: Dictionary = {
     "Select Board": "镇务委员会",
     "Town Manager": "镇行政经理",
     "School Committee": "学校委员会",
+    "Town Moderator": "镇议事主持人",
+    "Acting Town Manager": "代理镇行政经理",
+    "County Commissioner": "县专员",
+    "Register of Deeds": "契约登记官",
+    "Register of Probate": "遗嘱认证登记官",
+    "Clerk of Courts": "法院书记官",
+    "County Treasurer": "县财政长",
+    "Governor's Councillor": "州长理事会成员",
   },
   card: {
     promisesKept: "已兑现承诺",
@@ -84,6 +95,8 @@ export const zhHans: Dictionary = {
     appointed: "任命",
     maybe: "可能是你的",
     term: "任期",
+    chair: "主席",
+    viceChair: "副主席",
   },
   stats: {
     billsSponsored: "提出法案",
@@ -94,7 +107,6 @@ export const zhHans: Dictionary = {
     termEnds: "任期至 {year} 年",
     website: "网站",
     email: "电子邮件",
-    sampleData: "示例数据",
     promiseTracker: "承诺追踪",
     notTrackedYet: "我们尚未追踪 {name} 的竞选承诺。",
     howTrackingWorks: "承诺追踪如何运作",
@@ -103,6 +115,9 @@ export const zhHans: Dictionary = {
     noteFederalExec: "行政命令与行动将在后续版本中加入。",
     noteStateExec: "州级行政官员不提出法案，且我们尚未追踪其行政行动。",
     englishRecords: "法案标题、投票及其他官方记录以英文显示。",
+    noteLocal: "尚未追踪此职位的会议记录。",
+    sources: "来源",
+    checked: "核实于 {date}",
   },
   activity: {
     all: "全部",
@@ -119,6 +134,10 @@ export const zhHans: Dictionary = {
       No: "反对",
       "Not Voting": "未投票",
       Present: "出席",
+    },
+    docs: {
+      Agenda: "议程",
+      Minutes: "会议记录",
     },
   },
   promises: {

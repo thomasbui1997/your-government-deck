@@ -22,7 +22,7 @@ export interface CardStat {
 
 /** How to title a tier; rendered in the visitor's language. */
 export type TierLabel =
-  | { key: "federalExec" | "federalLeg" | "dcCouncil" }
+  | { key: "federalExec" | "federalLeg" | "dcCouncil" | "county" | "town" | "school" }
   | { key: "stateExec" | "stateLeg"; state: string }
   /** A proper noun such as "Town of Stoughton", shown as is. */
   | { text: string };
@@ -44,6 +44,8 @@ export interface Official {
   photoFallbackUrl?: string;
   /** Shown when a zip spans several districts and this rep may not be yours. */
   maybe?: boolean;
+  /** Leadership role on a board. */
+  role?: "chair" | "viceChair";
   termEnds?: string;
   lastActiveDaysAgo?: number;
   stats: CardStat[];
@@ -97,6 +99,8 @@ export interface OfficialProfile {
   };
   activity: ActivityItem[];
   /** Dictionary key (under `profile`) explaining an empty timeline. */
-  activityNote?: "noteFederalExec" | "noteStateExec";
-  sample?: boolean;
+  activityNote?: "noteFederalExec" | "noteStateExec" | "noteLocal";
+  /** Where hand-curated data came from, and when it was last checked. */
+  sources?: { title: string; url: string }[];
+  checked?: string;
 }

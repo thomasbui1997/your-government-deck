@@ -4,7 +4,7 @@ import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { OfficialCard } from "@/components/OfficialCard";
 import { PromiseTracker } from "@/components/PromiseTracker";
 import { SiteHeader } from "@/components/SiteHeader";
-import { format } from "@/i18n/config";
+import { format, LOCALE_INFO } from "@/i18n/config";
 import { officeTitle, tierTitle } from "@/i18n/labels";
 import { getDictionary, getLocale, href } from "@/i18n/server";
 import { getProfile } from "@/lib/resolve";
@@ -33,13 +33,13 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
             <div className="space-y-2">
               <p className="font-display text-xs tracking-wide text-navy/60 uppercase">
                 {tierTitle(profile.tierLabel, t)}
-                {profile.sample && ` · ${t.profile.sampleData}`}
               </p>
               <h1 className="font-display text-3xl text-navy sm:text-4xl">
                 {official.name}
               </h1>
               <p className="text-lg text-navy/80">
-                {officeTitle(official.office, t)} · {official.jurisdiction}
+                {officeTitle(official.office, t)}
+                {official.role && ` (${t.card[official.role]})`} · {official.jurisdiction}
                 {official.termEnds && ` · ${format(t.profile.termEnds, { year: official.termEnds })}`}
               </p>
             </div>
@@ -94,9 +94,9 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
 
             <section className={panel}>
               <h2 className="font-display text-navy">{t.profile.latestActivity}</h2>
-              {profile.sample || profile.activityNote ? (
+              {profile.activityNote ? (
                 <p className="mt-1 text-sm text-navy/60">
-                  {profile.activityNote ? t.profile[profile.activityNote] : t.profile.activityLater}
+                  {t.profile[profile.activityNote]}
                 </p>
               ) : (
                 <>
@@ -107,6 +107,33 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
                 </>
               )}
             </section>
+
+            {profile.sources && profile.sources.length > 0 && (
+              <section className="text-start text-sm text-navy/70">
+                <h2 className="font-display text-xs tracking-wide text-navy/60 uppercase">
+                  {t.profile.sources}
+                </h2>
+                <ul className="mt-1 list-disc space-y-0.5 ps-5">
+                  {profile.sources.map((s) => (
+                    <li key={s.url}>
+                      <a href={s.url} target="_blank" rel="noreferrer" lang="en" className="underline">
+                        {s.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                {profile.checked && (
+                  <p className="mt-1 text-xs text-navy/50">
+                    {format(t.profile.checked, {
+                      date: new Date(`${profile.checked}T12:00:00`).toLocaleDateString(
+                        LOCALE_INFO[locale].htmlLang,
+                        { year: "numeric", month: "short", day: "numeric" },
+                      ),
+                    })}
+                  </p>
+                )}
+              </section>
+            )}
           </div>
         </div>
       </main>

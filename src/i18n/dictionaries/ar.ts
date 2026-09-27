@@ -46,6 +46,9 @@ export const ar: Dictionary = {
     stateExec: "{state} · تنفيذي",
     stateLeg: "{state} · تشريعي",
     dcCouncil: "مجلس مقاطعة كولومبيا",
+    county: "المقاطعة",
+    town: "المدينة / البلدة",
+    school: "المدارس",
   },
   offices: {
     President: "الرئيس",
@@ -75,6 +78,14 @@ export const ar: Dictionary = {
     "Select Board": "مجلس البلدة",
     "Town Manager": "مدير البلدة",
     "School Committee": "لجنة المدرسة",
+    "Town Moderator": "رئيس اجتماع البلدة",
+    "Acting Town Manager": "مدير البلدة بالإنابة",
+    "County Commissioner": "مفوض المقاطعة",
+    "Register of Deeds": "مسجل الصكوك",
+    "Register of Probate": "مسجل الوصايا",
+    "Clerk of Courts": "كاتب المحاكم",
+    "County Treasurer": "أمين خزانة المقاطعة",
+    "Governor's Councillor": "عضو مجلس الحاكم",
   },
   card: {
     promisesKept: "وعود تم الوفاء بها",
@@ -84,6 +95,8 @@ export const ar: Dictionary = {
     appointed: "معيَّن",
     maybe: "قد يكون ممثلك",
     term: "الولاية",
+    chair: "الرئيس",
+    viceChair: "نائب الرئيس",
   },
   stats: {
     billsSponsored: "مشاريع قوانين مقدمة",
@@ -94,7 +107,6 @@ export const ar: Dictionary = {
     termEnds: "تنتهي الولاية في {year}",
     website: "الموقع",
     email: "البريد الإلكتروني",
-    sampleData: "بيانات نموذجية",
     promiseTracker: "متتبع الوعود",
     notTrackedYet: "لم نتابع وعود حملة {name} الانتخابية بعد.",
     howTrackingWorks: "كيف نتابع الوعود",
@@ -103,6 +115,9 @@ export const ar: Dictionary = {
     noteFederalExec: "ستُضاف الأوامر والإجراءات التنفيذية في مرحلة لاحقة.",
     noteStateExec: "لا يقدّم المسؤولون التنفيذيون في الولاية مشاريع قوانين، ولا نتابع إجراءاتهم التنفيذية بعد.",
     englishRecords: "تُعرض عناوين مشاريع القوانين والتصويتات والسجلات الرسمية الأخرى باللغة الإنجليزية.",
+    noteLocal: "لا نتابع سجلات اجتماعات هذا المنصب بعد.",
+    sources: "المصادر",
+    checked: "تم التحقق في {date}",
   },
   activity: {
     all: "الكل",
@@ -119,6 +134,10 @@ export const ar: Dictionary = {
       No: "لا",
       "Not Voting": "لم يصوّت",
       Present: "حاضر",
+    },
+    docs: {
+      Agenda: "جدول الأعمال",
+      Minutes: "المحضر",
     },
   },
   promises: {

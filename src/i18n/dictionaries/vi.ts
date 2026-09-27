@@ -50,6 +50,9 @@ export const vi: Dictionary = {
     stateExec: "{state} · Hành pháp",
     stateLeg: "{state} · Lập pháp",
     dcCouncil: "Hội đồng DC",
+    county: "Quận",
+    town: "Thành phố / Thị trấn",
+    school: "Trường học",
   },
   offices: {
     President: "Tổng thống",
@@ -79,6 +82,14 @@ export const vi: Dictionary = {
     "Select Board": "Hội đồng Thị trấn",
     "Town Manager": "Quản lý Thị trấn",
     "School Committee": "Ủy ban Trường học",
+    "Town Moderator": "Chủ tọa Thị trấn",
+    "Acting Town Manager": "Quyền Quản lý Thị trấn",
+    "County Commissioner": "Ủy viên Quận",
+    "Register of Deeds": "Viên chức Đăng ký Chứng thư",
+    "Register of Probate": "Viên chức Đăng ký Di chúc",
+    "Clerk of Courts": "Lục sự Tòa án",
+    "County Treasurer": "Thủ quỹ Quận",
+    "Governor's Councillor": "Ủy viên Hội đồng Thống đốc",
   },
   card: {
     promisesKept: "Lời hứa đã giữ",
@@ -88,6 +99,8 @@ export const vi: Dictionary = {
     appointed: "Bổ nhiệm",
     maybe: "Có thể là của bạn",
     term: "Nhiệm kỳ",
+    chair: "Chủ tịch",
+    viceChair: "Phó Chủ tịch",
   },
   stats: {
     billsSponsored: "Dự luật đã đề xuất",
@@ -98,7 +111,6 @@ export const vi: Dictionary = {
     termEnds: "nhiệm kỳ kết thúc năm {year}",
     website: "Trang web",
     email: "Email",
-    sampleData: "dữ liệu mẫu",
     promiseTracker: "Theo dõi lời hứa",
     notTrackedYet: "Chúng tôi chưa theo dõi các lời hứa tranh cử của {name}.",
     howTrackingWorks: "Cách chúng tôi theo dõi lời hứa",
@@ -108,6 +120,9 @@ export const vi: Dictionary = {
     noteStateExec:
       "Quan chức hành pháp tiểu bang không đệ trình dự luật, và chúng tôi chưa theo dõi các hành động hành pháp.",
     englishRecords: "Tên dự luật, các cuộc bỏ phiếu và hồ sơ chính thức khác được hiển thị bằng tiếng Anh.",
+    noteLocal: "Chúng tôi chưa theo dõi biên bản họp của chức vụ này.",
+    sources: "Nguồn",
+    checked: "Kiểm tra ngày {date}",
   },
   activity: {
     all: "Tất cả",
@@ -124,6 +139,10 @@ export const vi: Dictionary = {
       No: "Chống",
       "Not Voting": "Không bỏ phiếu",
       Present: "Có mặt",
+    },
+    docs: {
+      Agenda: "Chương trình nghị sự",
+      Minutes: "Biên bản",
     },
   },
   promises: {

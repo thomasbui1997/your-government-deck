@@ -50,6 +50,9 @@ export const es: Dictionary = {
     stateExec: "{state} · Ejecutivo",
     stateLeg: "{state} · Legislatura",
     dcCouncil: "Concejo de DC",
+    county: "Condado",
+    town: "Ciudad / Pueblo",
+    school: "Escuelas",
   },
   offices: {
     President: "Presidente",
@@ -79,6 +82,14 @@ export const es: Dictionary = {
     "Select Board": "Junta de Selectos",
     "Town Manager": "Administrador Municipal",
     "School Committee": "Comité Escolar",
+    "Town Moderator": "Moderador del Pueblo",
+    "Acting Town Manager": "Administrador Municipal Interino",
+    "County Commissioner": "Comisionado del Condado",
+    "Register of Deeds": "Registrador de Escrituras",
+    "Register of Probate": "Registrador de Sucesiones",
+    "Clerk of Courts": "Secretario de los Tribunales",
+    "County Treasurer": "Tesorero del Condado",
+    "Governor's Councillor": "Consejero del Gobernador",
   },
   card: {
     promisesKept: "Promesas cumplidas",
@@ -88,6 +99,8 @@ export const es: Dictionary = {
     appointed: "Designado",
     maybe: "Quizá el tuyo",
     term: "Mandato",
+    chair: "Presidente",
+    viceChair: "Vicepresidente",
   },
   stats: {
     billsSponsored: "Proyectos presentados",
@@ -98,7 +111,6 @@ export const es: Dictionary = {
     termEnds: "mandato termina en {year}",
     website: "Sitio web",
     email: "Correo",
-    sampleData: "datos de muestra",
     promiseTracker: "Seguimiento de promesas",
     notTrackedYet: "Aún no damos seguimiento a las promesas de campaña de {name}.",
     howTrackingWorks: "Cómo funciona el seguimiento",
@@ -108,6 +120,9 @@ export const es: Dictionary = {
     noteStateExec:
       "Los funcionarios estatales no presentan proyectos de ley, y aún no damos seguimiento a sus acciones ejecutivas.",
     englishRecords: "Los títulos de proyectos, votaciones y otros registros oficiales se muestran en inglés.",
+    noteLocal: "Aún no damos seguimiento a las actas de reuniones de este cargo.",
+    sources: "Fuentes",
+    checked: "Verificado el {date}",
   },
   activity: {
     all: "Todo",
@@ -124,6 +139,10 @@ export const es: Dictionary = {
       No: "No",
       "Not Voting": "No votó",
       Present: "Presente",
+    },
+    docs: {
+      Agenda: "Agenda",
+      Minutes: "Actas",
     },
   },
   promises: {
