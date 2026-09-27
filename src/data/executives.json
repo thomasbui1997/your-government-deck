@@ -1,0 +1,2552 @@
+{
+ "ak": [
+  {
+   "id": "ocd-person/80f0f5f8-976d-427b-b980-ce3a23a23e84",
+   "name": "Mike Dunleavy",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://gov.alaska.gov/wp-content/uploads/Gov-website-photo.jpg",
+   "startDate": "2018-12-03",
+   "termEnd": "2026-12-07",
+   "phone": "907-465-3500",
+   "address": "State Capitol; P.O. Box 110001; Juneau, AK 99811-0001",
+   "website": "https://gov.alaska.gov/",
+   "socials": {
+    "twitter": "GovDunleavy"
+   }
+  },
+  {
+   "id": "ocd-person/6b940121-937e-47ba-916a-626b67fe54f4",
+   "name": "Nancy Dahlstrom",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.alaska.gov/wp-content/uploads/Screenshot-2022-12-14-150552-e1682445198168.png",
+   "startDate": "2022-12-05",
+   "termEnd": "2026-12-07",
+   "phone": "907-465-3520",
+   "address": "P.O. Box 110015; ; Juneau, AK 99811-0001",
+   "website": "https://ltgov.alaska.gov/email-the-lt-governor/",
+   "email": "lt.governor@alaska.gov",
+   "socials": {
+    "twitter": "ltgovdahlstrom"
+   }
+  },
+  {
+   "id": "ocd-person/671acdf5-e1ec-4259-ba3d-19d1df9a146e",
+   "name": "Stephen Cox",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://law.alaska.gov/img/headshot_CoxLG2601.jpg",
+   "startDate": "2025-08-29",
+   "termEnd": "2026-12-07",
+   "phone": "907-269-5100",
+   "address": "1031 West 4th Avenue, Suite 200; Anchorage, AK 99501-1994",
+   "website": "https://law.alaska.gov/",
+   "email": "attorney.general@alaska.gov",
+   "socials": {}
+  }
+ ],
+ "al": [
+  {
+   "id": "ocd-person/6e7f8f74-90fd-416b-b08e-188d6315b3ce",
+   "name": "Andrew Sorrell",
+   "party": "Republican",
+   "title": "Auditor",
+   "image": "http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Sorrell_3.jpeg",
+   "startDate": "2023-01-16",
+   "termEnd": "2027-01-18",
+   "phone": "334-242-7010",
+   "address": "600 Dexter Avenue, Room S-101; Montgomery, AL 36104",
+   "website": "https://www.auditor.alabama.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/1fcc4f8d-90c5-4e7c-aa4c-3b58a3a87ba5",
+   "name": "Kay Ivey",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.alabama.gov/assets/2019/09/Governor-Ivey-2019-Headshot.jpg",
+   "startDate": "2017-04-10",
+   "termEnd": "2027-01-18",
+   "phone": "334-242-7100",
+   "address": "State Capitol; 600 Dexter Avenue; Montgomery, AL 36130-2751",
+   "website": "https://governor.alabama.gov/",
+   "socials": {
+    "twitter": "GovernorKayIvey"
+   }
+  },
+  {
+   "id": "ocd-person/3636b6ed-56b0-44bb-97b8-dee266b6d9c8",
+   "name": "Steve Marshall",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.alabamaag.gov/wp-content/uploads/2023/04/Steve-Marshall-headshot.jpg",
+   "startDate": "2017-02-10",
+   "termEnd": "2027-01-18",
+   "phone": "334-242-7335",
+   "address": "501 Washington Avenue; Montgomery, AL 36104",
+   "website": "https://www.alabamaag.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/f8daba65-dcf6-43b4-8c38-8b02b5b59db7",
+   "name": "Wes Allen",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.nass.org/sites/default/files/2023-01/AL-Allen-2023.jpg",
+   "startDate": "2023-01-16",
+   "termEnd": "2027-01-18",
+   "phone": "334-242-5899",
+   "address": "State Capitol Building, Suite S-105, 600 Dexter Ave, Montgomery, AL 36130",
+   "email": "wes.allen@sos.alabama.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/cb01dcb8-b382-48af-a781-d4019eb3dfa6",
+   "name": "Will Ainsworth",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Ainsworth_27.jpeg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-18",
+   "phone": "334-261-9590",
+   "address": "Alabama State House; 11 S Union Street; Montgomery, AL 36130",
+   "website": "http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85941&OID_PERSON=7709",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/7a749447-b86f-4788-ab1f-235b8f7a0097",
+   "name": "Young Boozer",
+   "party": "Republican",
+   "title": "Treasurer",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Young_Boozer_2023.jpg",
+   "startDate": "2021-10-01",
+   "termEnd": "2027-01-18",
+   "phone": "334-242-7500",
+   "address": "600 Dexter Avenue, Room S-106; Montgomery, AL 36104",
+   "website": "https://treasury.alabama.gov/",
+   "socials": {}
+  }
+ ],
+ "ar": [
+  {
+   "id": "ocd-person/77a57e2c-188c-42fd-adad-24066f27ec3c",
+   "name": "Cole Jester",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.sos.arkansas.gov/uploads/aboutOffice/Cole-Jester-123124.jpg",
+   "startDate": "2025-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "501-682-1010",
+   "address": "State Capitol, Suite 256; 500 Woodlane Avenue; Little Rock, AR 72201",
+   "website": "https://www.sos.arkansas.gov/about-the-office/executive-office/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/7cf8a839-6c34-4375-bfd5-7cfe92233b72",
+   "name": "Dennis Milligan",
+   "party": "Republican",
+   "title": "Auditor",
+   "image": "https://auditor.ar.gov/wp-content/uploads/AOS-HEADSHOT-FINAL-SMALL-e1737127759513.png",
+   "startDate": "2023-01-10",
+   "termEnd": "2027-01-12",
+   "phone": "501-682-6000",
+   "address": "Arkansas State Capitol; 500 Woodlane St., Ste 230; Little Rock, AR 72201",
+   "website": "https://auditor.ar.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/20b42b64-6dd3-4b52-97f2-def9b8207a7d",
+   "name": "John Thurston",
+   "party": "Republican",
+   "title": "Treasurer",
+   "image": "https://media.ark.org/artreasury/Secretary-JT.webp",
+   "startDate": "2025-01-01",
+   "termEnd": "2027-01-12",
+   "phone": "501-682-5888",
+   "address": "State Capitol; 500 Woodlane; Suite 220; Little Rock, AR 72201",
+   "website": "https://artreasury.gov/",
+   "email": "info@artreasury.gov",
+   "socials": {
+    "twitter": "JohnThurstonAR"
+   }
+  },
+  {
+   "id": "ocd-person/29e6b6e2-82fc-48f8-9177-96b1ec30a2a6",
+   "name": "Leslie Rutledge",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgovernor.arkansas.gov/wp-content/uploads/LR-photo.png",
+   "startDate": "2023-01-10",
+   "termEnd": "2027-01-12",
+   "phone": "501-682-2144",
+   "address": "State Capitol, Suite 270; Little Rock, AR 72201-1061",
+   "website": "https://www.ltgovernor.arkansas.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/1c9262ce-53a4-4d0c-ab9e-45edb5377fa0",
+   "name": "Sarah Huckabee Sanders",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.arkansas.gov/wp-content/uploads/GovSHSOfficialHeadshot-2-683x1024.jpg",
+   "startDate": "2023-01-10",
+   "termEnd": "2027-01-12",
+   "phone": "501-682-2345",
+   "address": "Governor Sarah Huckabee Sanders; State Capitol Room 250; 500 Woodlane St.; Little Rock, AR 72201",
+   "website": "https://governor.arkansas.gov/",
+   "socials": {
+    "twitter": "SarahHuckabee"
+   }
+  },
+  {
+   "id": "ocd-person/99f67d4f-c181-46a8-b7a9-4b45ada32c50",
+   "name": "Tim Griffin",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Rep_Tim_Griffin_Official_Photo.jpg/500px-Rep_Tim_Griffin_Official_Photo.jpg",
+   "startDate": "2023-01-10",
+   "termEnd": "2027-01-12",
+   "phone": "501-682-2007",
+   "address": "101 West Capitol Avenue; Little Rock, AR 72201",
+   "website": "https://arkansasag.gov/",
+   "email": "oag@arkansasag.gov",
+   "socials": {}
+  }
+ ],
+ "az": [
+  {
+   "id": "ocd-person/45ff1caf-0d6b-4915-9e34-5f4694907a07",
+   "name": "Adrian Fontes",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://azsos.gov/sites/default/files/Katie-4.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "602-542-4285",
+   "address": "1700 W Washington; Suite 1700; Phoenix, AZ 85007-2808",
+   "website": "https://azsos.gov",
+   "email": "sosadmin@azsos.gov",
+   "socials": {
+    "twitter": "AZSecretary"
+   }
+  },
+  {
+   "id": "ocd-person/6e522a2a-e7b7-4713-a40f-c897e4341a87",
+   "name": "Katie Hobbs",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://azgovernor.gov/sites/default/files/styles/panopoly_image_original/public/governor-katie-hobbs_0_0_0.jpeg",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "602-542-4331",
+   "address": "Office of the Governor; 1700 W. Washington St., Phoenix, AZ 85007",
+   "website": "https://azgovernor.gov/",
+   "email": "sosadmin@azsos.gov",
+   "socials": {
+    "twitter": "SecretaryHobbs"
+   }
+  },
+  {
+   "id": "ocd-person/a94ae259-7b2d-4756-9c9b-d9fc778e6c1f",
+   "name": "Kris Mayes",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-AZ-Mayes.png",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "602-542-5025",
+   "address": "2005 N Central Ave; Phoenix, AZ 85004",
+   "website": "https://www.azag.gov/",
+   "socials": {}
+  }
+ ],
+ "ca": [
+  {
+   "id": "ocd-person/113aeeca-7bac-4407-8ec3-bceab97680e5",
+   "name": "Eleni Kounalakis",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Ambassador_Eleni_Kounalakis.jpeg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "916-445-8994",
+   "address": "1021 O Street, Suite 8730; Sacramento, CA 95814",
+   "website": "https://ltg.ca.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/19e0dbe3-0e2d-4dec-b5dd-c34618cdc2c3",
+   "name": "Gavin Newsom",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://governors.library.ca.gov/images/governors/photos/gnewsom.jpg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "916-445-2841",
+   "address": "Governor Gavin Newsom; 1303 10th Street, Suite 1173; Sacramento, CA 95814",
+   "website": "https://www.gov.ca.gov/",
+   "socials": {
+    "twitter": "CAgovernor"
+   }
+  },
+  {
+   "id": "ocd-person/1529b892-b3da-4958-bb3a-5bf04d7b5e0c",
+   "name": "Rob Bonta",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2021/04/ag-CA-Bonta.jpg",
+   "startDate": "2021-04-23",
+   "termEnd": "2027-01-04",
+   "phone": "916-210-6276",
+   "address": "P.O. Box 944255; Sacramento, CA 94244-2550",
+   "website": "https://a18.asmdc.org",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/c8e67d27-47c2-4565-8e29-79bc78ae9495",
+   "name": "Shirley Weber",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://admin.cdn.sos.ca.gov/img/weber.jpg",
+   "termEnd": "2026-12-31",
+   "phone": "916-653-6814",
+   "address": "California Secretary of State; 1500 11th Street; Sacramento, CA 95814-",
+   "website": "https://www.sos.ca.gov",
+   "email": "secretary.weber@sos.ca.gov",
+   "socials": {
+    "twitter": "CASOSvote"
+   }
+  }
+ ],
+ "co": [
+  {
+   "id": "ocd-person/21632200-6ff5-4b76-9c2e-190d8804ac16",
+   "name": "Dianne Primavera",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgovernor.colorado.gov/sites/ltgovernor/files/styles/large/public/2019-07/diannep.jpg",
+   "startDate": "2019-01-08",
+   "termEnd": "2027-01-12",
+   "phone": "303-866-4075",
+   "address": "State Capitol Building, 200 E. Colfax Ave., Rm. 130; Denver, CO 80203",
+   "website": "http://www.leg.state.co.us//clics/clics2016A/directory.nsf/MemberDetailPage?OpenForm&district=33&chamber=house",
+   "email": "gov_dianne.primavera@state.co.us",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/be56ceea-ca7e-46b1-acdd-d4266e9d2893",
+   "name": "Jared Polis",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.colorado.gov/governor/sites/default/files/2019-04/Jared-Polis_0.jpeg",
+   "startDate": "2019-01-08",
+   "termEnd": "2027-01-12",
+   "phone": "303-866-2471",
+   "address": "State Capitol Building; 200 E. Colfax Ave., Rm. 136; Denver, CO 80203",
+   "website": "https://www.colorado.gov/governor",
+   "email": "Governorpolis@state.co.us",
+   "socials": {
+    "twitter": "govofco"
+   }
+  },
+  {
+   "id": "ocd-person/570385fc-0dd8-4754-9e94-3faeae5f2287",
+   "name": "Jena Griswold",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://www.sos.state.co.us/pubs/images/Griswold.png",
+   "termEnd": "2027-01-12",
+   "phone": "303-894-2200",
+   "address": "1700 Broadway; Suite 200; Denver, CO 80290-",
+   "website": "http://www.sos.state.co.us/",
+   "email": "secretary@sos.state.co.us",
+   "socials": {
+    "twitter": "COSecofState"
+   }
+  },
+  {
+   "id": "ocd-person/fb02dd97-db94-4350-841f-e5adb9065c0c",
+   "name": "Phil Weiser",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-CO-weiser.jpg",
+   "startDate": "2019-01-08",
+   "termEnd": "2027-01-12",
+   "phone": "720-508-6000",
+   "address": "Ralph L. Carr Judicial Building, 1300 Broadway, 10th Floor; Denver, CO 80203",
+   "website": "https://coag.gov/",
+   "socials": {}
+  }
+ ],
+ "ct": [
+  {
+   "id": "ocd-person/4cd3e60f-3830-4121-965f-f29d9b5ec6e7",
+   "name": "Ned Lamont",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://portal.ct.gov/-/media/Office-of-the-Governor/About/govlamont.jpg",
+   "startDate": "2019-01-09",
+   "termEnd": "2027-01-06",
+   "phone": "860-566-4840",
+   "address": "Office of Governor Ned Lamont; State Capitol; 210 Capitol Avenue; Hartford, CT 06106",
+   "website": "https://portal.ct.gov/Office-of-the-Governor/",
+   "socials": {
+    "twitter": "GovNedLamont"
+   }
+  },
+  {
+   "id": "ocd-person/e54205b6-c824-4f64-9a68-301d01318457",
+   "name": "Stephanie Thomas",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://portal.ct.gov/-/media/SOTS/Headshots/Secretary-Stephanie-Thomas/2023_Secretary_Stephanie_Thomas_HiRes.jpg",
+   "termEnd": "2026-12-31",
+   "phone": "860-509-6200",
+   "address": "Capitol Office; PO Box 150470; Hartford, CT 06115-0470",
+   "website": "https://portal.ct.gov/sots",
+   "email": "secretary@ct.gov",
+   "socials": {
+    "twitter": "CTSOTS"
+   }
+  },
+  {
+   "id": "ocd-person/e5e49f6f-a9d8-4f9c-b235-53f7f571c3e3",
+   "name": "Susan Bysiewicz",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://portal.ct.gov/lt-governor/-/media/otlg/02-site-images/official-portraits-of-the-lt-governor/about-lt-governor-susan-bysiewicz.jpg",
+   "startDate": "2019-01-09",
+   "termEnd": "2027-01-06",
+   "address": "State Capitol, 210 Capitol Avenue, Room 304; Hartford, CT 06106",
+   "website": "https://portal.ct.gov/lt-governor",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/4e747abf-37ad-41ba-aba5-064e420d2cc8",
+   "name": "William Tong",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://portal.ct.gov/-/media/ag/about-the-ag/agtong-headshot.png",
+   "startDate": "2019-01-09",
+   "termEnd": "2027-01-06",
+   "phone": "860-808-5318",
+   "address": "165 Capitol Avenue; Hartford, CT 06106",
+   "website": "http://www.housedems.ct.gov/Tong",
+   "socials": {}
+  }
+ ],
+ "de": [
+  {
+   "id": "ocd-person/d1ed8b9a-53e1-4cd6-b1b2-ef6632fbde5d",
+   "name": "Kathy Jennings",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://attorneygeneral.delaware.gov/wp-content/themes/dosgic_AG_theme/img/ag-jennings-bio-photo.jpg",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-05",
+   "phone": "302-577-8400",
+   "address": "Carvel State Building, 820 N. French St.; Wilmington, DE 19801",
+   "website": "https://attorneygeneral.delaware.gov/",
+   "email": "attorney.general@delaware.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/96f29b7f-bd5a-4a83-8ed0-7a5c6d3c6036",
+   "name": "Kyle Gay",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.delaware.gov/wp-content/uploads/sites/222/2024/12/kyle-evans-gay-hero-landscape.jpg",
+   "startDate": "2025-01-21",
+   "termEnd": "2029-01-16",
+   "phone": "302-744-4333",
+   "address": "150 Martin Luther King Jr Blvd South, 3rd Floor; Dover, DE 19901",
+   "website": "https://legis.delaware.gov/LegislatorDetail?personId=13474",
+   "email": "kyle.gay@delaware.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/8c05321d-6737-437f-928b-adaf129103f5",
+   "name": "Matt Meyer",
+   "party": "Democratic",
+   "title": "Governor",
+   "startDate": "2025-01-21",
+   "termEnd": "2029-01-16",
+   "phone": "302-744-4101",
+   "address": "Tatnall Building; 150 Martin Luther King Jr Blvd South; Dover, DE  19901",
+   "website": "https://governor.delaware.gov/",
+   "socials": {}
+  }
+ ],
+ "fl": [
+  {
+   "id": "ocd-person/bf19e4db-85d0-4b4e-a980-e30d84905d8a",
+   "name": "Cord Byrd",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://files.floridados.gov/media/705688/2022-photo.png",
+   "termEnd": "2026-12-31",
+   "phone": "850-245-6500",
+   "address": "R.A. Gray Bldg.; 500 S. Bronough Suite 100; Tallahassee, FL 32399-",
+   "website": "https://dos.myflorida.com",
+   "email": "secretaryofstate@dos.myflorida.com",
+   "socials": {
+    "twitter": "FLSecofState"
+   }
+  },
+  {
+   "id": "ocd-person/669df589-03af-4b3a-9588-d95ab977e171",
+   "name": "James Uthmeier",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-FL-Uthmeier-James.png",
+   "startDate": "2025-02-17",
+   "termEnd": "2029-01-02",
+   "phone": "850-414-3300",
+   "address": "The Capitol, PL 01; Tallahassee, FL 32399-1050",
+   "website": "https://myfloridalegal.com/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/34dac893-eae3-495e-9237-9689a1114895",
+   "name": "Jay Collins",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Official_portrait_of_Lieutenant_Governor_of_Florida_Jay_Collins.jpg",
+   "startDate": "2025-08-12",
+   "termEnd": "2027-01-05",
+   "address": "400 S Monroe St; Tallahassee, FL 32399",
+   "website": "https://flsenate.gov/Senators/2022-2024/S14",
+   "email": "collins.jay.web@flsenate.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/284392c5-5708-4014-9ea1-9552536c5a3e",
+   "name": "Ron DeSantis",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://www.flgov.com/wp-content/uploads/desantis/Ron_DeSantis,_Official_Portrait,_113th_Congress.jpg",
+   "startDate": "2019-01-08",
+   "termEnd": "2027-01-01",
+   "phone": "850-717-9337",
+   "address": "Office of Governor Ron DeSantis; The Capitol; 400 S.Monroe St.; Tallahassee, FL 32399-0001",
+   "website": "https://www.flgov.com/",
+   "email": "GovernorRon.Desantis@eog.myflorida.com",
+   "socials": {
+    "twitter": "GovRonDeSantis"
+   }
+  }
+ ],
+ "ga": [
+  {
+   "id": "ocd-person/02e75ac0-4350-4305-980e-8dc0462c5cc1",
+   "name": "Brad Raffensperger",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://sos.ga.gov/sites/default/files/2021/11/01/SoS_Headshot6.jpg",
+   "termEnd": "2027-01-11",
+   "phone": "470-312-2800",
+   "address": "214 State Capitol ; ; Atlanta, GA 30334-",
+   "website": "https://sos.ga.gov",
+   "email": "soscontact@sos.ga.gov",
+   "socials": {
+    "twitter": "GASecofState"
+   }
+  },
+  {
+   "id": "ocd-person/600e5c48-f5c0-4535-a219-60a5fd94c38f",
+   "name": "Brian Kemp",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://gov.georgia.gov/sites/gov.georgia.gov/files/styles/flexheight/public/2022-06/Headshot%202022.JPG?itok=KYKoui1E",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "phone": "404-656-1776",
+   "address": "206 Washington Street; Suite 203, State Capitol; Atlanta, GA 30334",
+   "website": "https://gov.georgia.gov/",
+   "socials": {
+    "twitter": "govkemp"
+   }
+  },
+  {
+   "id": "ocd-person/ddfab174-3a42-42c0-946e-0ce3169c4d1b",
+   "name": "Burt Jones",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.georgia.gov/sites/ltgov.georgia.gov/files/styles/4_3_720px_x_540px_/public/2022-12/burt-jones.jpeg",
+   "startDate": "2023-01-09",
+   "termEnd": "2027-01-11",
+   "phone": "404-656-5030",
+   "address": "240 State Capitol; Atlanta, GA 30334",
+   "website": "http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=805&Session=27",
+   "email": "burt.jones@senate.ga.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/57002bfc-2ba0-48cd-85d4-94673c5bf75a",
+   "name": "Chris Carr",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-GA-Carr1.jpg",
+   "startDate": "2016-11-01",
+   "termEnd": "2027-01-11",
+   "phone": "404-656-3300",
+   "address": "40 Capitol Square, SW; Atlanta, GA 30334-1300",
+   "website": "https://law.georgia.gov/",
+   "socials": {}
+  }
+ ],
+ "hi": [
+  {
+   "id": "ocd-person/8145b3ac-aaee-43d1-a534-d51d5e80f178",
+   "name": "Anne Lopez",
+   "party": "Nonpartisan",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2023/01/ag-HI-Lopez-2024.jpg",
+   "startDate": "2022-12-05",
+   "termEnd": "2026-12-07",
+   "phone": "808-586-1500",
+   "address": "425 Queen Street; Honolulu, HI 96813",
+   "website": "https://ag.hawaii.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/c7e5e0d4-7a5d-42dc-a3cc-d7b54b1dc51b",
+   "name": "Josh Green",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://governor.hawaii.gov/wp-content/uploads/2023/02/governor_green_-046-scaled.jpg",
+   "startDate": "2022-12-05",
+   "termEnd": "2026-12-07",
+   "phone": "808-586-0034",
+   "address": "Governor Josh Green; Executive Chambers; State Capitol; 415 South Beretania St.; Honolulu, HI 96813",
+   "website": "https://governor.hawaii.gov/",
+   "socials": {
+    "twitter": "govhawaii"
+   }
+  },
+  {
+   "id": "ocd-person/f3a50da6-6c22-4c5a-ba48-d10ee2188333",
+   "name": "Sylvia Luke",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.hawaii.gov/wp-content/uploads/2025/06/LG-Sylvia-Luke-2025-by-Russell-Tanoue-2-cropped-683x1024.jpg",
+   "startDate": "2022-12-05",
+   "termEnd": "2026-12-07",
+   "phone": "808-586-0255",
+   "address": "State Capitol; Honolulu, HI 96813",
+   "website": "http://capitol.hawaii.gov/memberpage.aspx?member=luke&year=2019",
+   "email": "repluke@Capitol.hawaii.gov",
+   "socials": {}
+  }
+ ],
+ "ia": [
+  {
+   "id": "ocd-person/fcb94ca1-9a57-4378-9568-ecbe6c3ae0d6",
+   "name": "Brenna Bird",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-IA-Bird.png",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-01",
+   "address": "Hoover State Office Bldg., 1305 E. Walnut; Des Moines, IA 50319",
+   "website": "https://www.iowaattorneygeneral.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/a32d2cef-0ce9-4a2d-bbf6-8c8a53eaad4f",
+   "name": "Chris Cournoyer",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Iowa_State_Senator_Chris_Cournoyer.jpg/250px-Iowa_State_Senator_Chris_Cournoyer.jpg",
+   "startDate": "2024-12-16",
+   "termEnd": "2027-01-12",
+   "phone": "515-281-5211",
+   "address": "1007 East Grand Avenue; Des Moines, IA 50319",
+   "website": "https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27004",
+   "email": "chris.cournoyer@legis.iowa.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/3895278c-5226-4b70-bce0-d2ac15b3bce1",
+   "name": "Kim Reynolds",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.iowa.gov/sites/default/files/images/2025-01/DSC_6655-Edit.jpg",
+   "startDate": "2017-05-24",
+   "termEnd": "2027-01-12",
+   "phone": "515-281-5211",
+   "address": "Iowa State Capitol; 1007 East Grand Avenue; Des Moines, IA 50319",
+   "website": "https://governor.iowa.gov",
+   "socials": {
+    "twitter": "IAGovernor"
+   }
+  },
+  {
+   "id": "ocd-person/f0883baf-9a96-4631-8dd8-2a768fe9357b",
+   "name": "Paul Pate",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://sos.iowa.gov/img/Pate.png",
+   "termEnd": "2027-01-01",
+   "phone": "515-281-6230",
+   "address": "Lucas Bldg. 1st Fl.; 321 E. 12th St.; Des Moines, IA 50319-",
+   "website": "https://sos.iowa.gov",
+   "email": "sos@sos.iowa.gov",
+   "socials": {
+    "twitter": "IowaSOS"
+   }
+  }
+ ],
+ "id": [
+  {
+   "id": "ocd-person/7b647b3d-a3e6-47b3-91b2-a26f0f7f711c",
+   "name": "Brad Little",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://gov.idaho.gov/wp-content/uploads/2018/12/Brad-Little.jpg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "208-334-2100",
+   "address": "State Capitol; PO Box 83720; Boise, ID 83720",
+   "website": "https://gov.idaho.gov/",
+   "socials": {
+    "twitter": "governorlittle"
+   }
+  },
+  {
+   "id": "ocd-person/e64e04bc-21eb-475a-87f3-89aeacfc9f0c",
+   "name": "Phil McGrane",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.nass.org/sites/default/files/2023-01/ID-McGrane-2023.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "208-334-2300",
+   "address": "PO Box 83720 ; ; Boise, ID 83720-0080",
+   "website": "https://sos.idaho.gov",
+   "email": "elections@sos.idaho.gov",
+   "socials": {
+    "twitter": "IDSecofState"
+   }
+  },
+  {
+   "id": "ocd-person/a6d731ea-af56-43f8-ba93-124774ae97c4",
+   "name": "Raúl Labrador",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.ag.idaho.gov/content/uploads/2025/07/320A4720.jpg",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "208-334-2400",
+   "address": "700 W. Jefferson Street, Suite 210; Boise, ID 83720-0010",
+   "website": "https://www.ag.idaho.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/8f948dc8-8e7a-4a63-8fa8-b65efa9236f8",
+   "name": "Scott Bedke",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://lgo.idaho.gov/wp-content/uploads/2026/02/Bedke.head_.shot_.2025.jpg",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "208-334-2200",
+   "address": "State Capitol Building, 700 W. Jefferson Street; Boise, ID 83702-0057",
+   "website": "https://legislature.idaho.gov/legislators/membership/?yr=2021&district=27",
+   "email": "contact@lgo.idaho.gov",
+   "socials": {}
+  }
+ ],
+ "il": [
+  {
+   "id": "ocd-person/db3adc7a-d2f8-4e61-a017-bf5d3804ba33",
+   "name": "J. B. Pritzker",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www2.illinois.gov/sites/gov/about/PublishingImages/governor-pritzker-headshot.jpg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-04",
+   "phone": "217-782-6830",
+   "address": "Office of the Governor; 207 State House; Springfield, IL 62706",
+   "website": "https://www2.illinois.gov/sites/GOV/Pages/default.aspx",
+   "socials": {
+    "twitter": "govpritzker"
+   }
+  },
+  {
+   "id": "ocd-person/c8b35f07-1a0b-4019-b476-9fa032494c5e",
+   "name": "Juliana Stratton",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://s7d1.scene7.com/is/image/isp/lg-web-about-portrait-smaller",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "phone": "217-558-3085",
+   "address": "214 State House; Springfield, IL 62706",
+   "website": "http://ilga.gov/house/Rep.asp?GA=100&MemberID=2499",
+   "email": "LtGovStratton@illinois.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/65ee6848-68bd-430d-890c-a121fb6e8577",
+   "name": "Kwame Raoul",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://illinoisattorneygeneral.gov/images/AG_BioPhoto.jpg",
+   "startDate": "2019-01-15",
+   "termEnd": "2027-01-11",
+   "phone": "217-782-1090",
+   "address": "500 S. 2nd St.; Springfield, IL 62701",
+   "website": "http://ilga.gov/senate/Senator.asp?GA=100&MemberID=2340",
+   "socials": {}
+  }
+ ],
+ "in": [
+  {
+   "id": "ocd-person/3ed7846b-4aaa-44fc-b502-a64d70bfd36f",
+   "name": "Diego Morales",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.in.gov/sos/images/3033-Secretary-Morales-headshot-1-12-27-22.jpg",
+   "termEnd": "2026-12-31",
+   "phone": "317-232-6531",
+   "address": "201 State Capitol ; ; Indianapolis, IN 46204-",
+   "website": "https://www.in.gov/sos/",
+   "email": "constituentservices@sos.in.gov",
+   "socials": {
+    "twitter": "SOSDiegoMorales"
+   }
+  },
+  {
+   "id": "ocd-person/f3361ebb-630c-4160-9f66-68c7c9eb7419",
+   "name": "Micah Beckwith",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://www.in.gov/lg/images/LG-Headshot-26.jpg",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-08",
+   "website": "https://www.in.gov/lg/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/bdc262d7-ce67-4fd1-a96d-f92059ac0dfd",
+   "name": "Mike Braun",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "http://iga.in.gov/legislative/2017/portraits/legislator_mike_braun_1",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-08",
+   "phone": "317-232-4567",
+   "address": "200 W. Washington St., Rm. 206, Indianapolis, IN  46204",
+   "website": "https://www.in.gov/gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/b2cb0fa8-b426-4c50-94d8-dedd948175cd",
+   "name": "Todd Rokita",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2021/02/ag-IN-Rokita.jpg",
+   "startDate": "2021-01-11",
+   "termEnd": "2029-01-08",
+   "phone": "317-232-6201",
+   "address": "302 W. Washington St., 5th Floor; Indianapolis, IN 46204",
+   "website": "https://www.in.gov/attorneygeneral/",
+   "socials": {}
+  }
+ ],
+ "ks": [
+  {
+   "id": "ocd-person/33e1e312-76c0-4d83-81d3-fa07768eab34",
+   "name": "David Toland",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://www.governor.ks.gov/home/showpublishedimage/827/638816867442470000",
+   "startDate": "2021-01-04",
+   "termEnd": "2027-01-11",
+   "phone": "785-296-3232",
+   "address": "Kansas Statehouse, 300 SW 10th Ave., Ste. 241S; Topeka, KS 66612-1590",
+   "website": "https://www.governor.ks.gov/about-the-office/lt-governor-david-toland",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/10fdb8a1-6fed-43c9-a7ee-289b859b60ab",
+   "name": "Kris Kobach",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-KS-Kobach.png",
+   "startDate": "2023-01-09",
+   "termEnd": "2027-01-11",
+   "phone": "785-296-2215",
+   "address": "120 S.W. 10th Ave., 2nd Fl.; Topeka, KS 66612-1597",
+   "website": "https://www.ag.ks.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/2654d836-700f-464d-a0dd-81cb0bd77b9e",
+   "name": "Laura Kelly",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://governor.kansas.gov/wp-content/uploads/2019/01/Kansas-Governor.jpg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "phone": "785-368-8500",
+   "address": "Capitol, 300 SW 10th Ave., Ste. 241S; Topeka, KS 66612-1590",
+   "website": "https://governor.kansas.gov/",
+   "socials": {
+    "twitter": "GovLauraKelly"
+   }
+  },
+  {
+   "id": "ocd-person/5ef16835-fd08-407d-abaf-0407a665ada1",
+   "name": "Scott Schwab",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://sos.ks.gov/images/about-the-office/ss-headshot.jpg",
+   "termEnd": "2027-01-11",
+   "phone": "785-296-4564",
+   "address": "120 SW 10th Ave. ; ; Topeka, KS 66612-",
+   "website": "https://sos.ks.gov",
+   "email": "sos@sos.ks.gov",
+   "socials": {
+    "twitter": "KansasSOS"
+   }
+  }
+ ],
+ "ky": [
+  {
+   "id": "ocd-person/c7dbc1b4-67fb-4bb2-b1c5-cc5ef9356a5a",
+   "name": "Andy Beshear",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://governor.ky.gov/PublishingImages/Governor-Beshear_Official-Picture.jpg",
+   "startDate": "2019-12-10",
+   "termEnd": "2027-12-14",
+   "phone": "502-564-2611",
+   "address": "700 Capitol Avenue, Suite 100; Frankfort, Kentucky 40601",
+   "website": "https://governor.ky.gov/",
+   "socials": {
+    "twitter": "govandybeshear"
+   }
+  },
+  {
+   "id": "ocd-person/9b07a848-b96c-4424-826a-5194b65e43d9",
+   "name": "Jacqueline Coleman",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://governor.ky.gov/PublishingImages/Lt-Governor-Jacqueline-Coleman-Crop.jpg",
+   "startDate": "2019-12-10",
+   "termEnd": "2027-12-07",
+   "phone": "502-564-2611",
+   "address": "501 High Street, 2nd Floor; Frankfort, KY 40602",
+   "website": "https://governor.ky.gov/about/lt-governor-jacqueline-coleman",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/542cf596-f393-4fcf-b2d6-7439e7726328",
+   "name": "Russell Coleman",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.ag.ky.gov/about/SiteAssets/Pages/Attorney-General/Russell-Coleman-400x500.jpg",
+   "startDate": "2024-01-01",
+   "termEnd": "2028-01-03",
+   "phone": "502-696-5300",
+   "address": "1024 Capital Center Drive, Suite 200; Frankfort, KY 40601",
+   "website": "https://www.ag.ky.gov/",
+   "socials": {}
+  }
+ ],
+ "la": [
+  {
+   "id": "ocd-person/003d1e83-14f4-4bda-8484-c552e036f421",
+   "name": "Billy Nungesser",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://www.crt.state.la.us/Assets/LTG/nungesser.jpg",
+   "startDate": "2016-01-11",
+   "termEnd": "2028-01-10",
+   "phone": "225-342-7009",
+   "address": "Capitol Annex Building, 1051 North Third Street; Baton Rouge, LA 70802",
+   "website": "https://www.crt.state.la.us/lt-governor/",
+   "email": "ltgov@crt.la.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/90d9e851-bec3-4bde-b883-bfa43d63194f",
+   "name": "Jeff Landry",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://gov.louisiana.gov/assets/images/2024/JL-Headshot/Jeff-Landry-Headshot.jpeg",
+   "startDate": "2024-01-08",
+   "termEnd": "2028-01-03",
+   "phone": "225-342-7015",
+   "address": "Office of the Governor; PO Box 94004; Baton Rouge, LA 70804",
+   "website": "https://gov.louisiana.gov/",
+   "socials": {
+    "twitter": "JeffLandry"
+   }
+  },
+  {
+   "id": "ocd-person/6beaac02-1e0d-4aee-96d3-9033f9f918e8",
+   "name": "Liz Murrill",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2024/02/ag-LA-Murrill-Liz.png",
+   "startDate": "2024-01-08",
+   "termEnd": "2028-01-10",
+   "phone": "225-326-6000",
+   "address": "1885 North Third Street; Baton Rouge, LA 70802",
+   "website": "https://www.aglizmurrill.com/",
+   "socials": {}
+  }
+ ],
+ "ma": [
+  {
+   "id": "ocd-person/4e8f36fb-9017-4a35-a692-7f09958dcf61",
+   "name": "Andrea Joy Campbell",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Andrea_Campbell_official_attorney_general_headshot%2C_2023_%283x4%29.jpg",
+   "startDate": "2023-01-04",
+   "termEnd": "2027-01-06",
+   "phone": "617-727-2200",
+   "website": "https://www.mass.gov/orgs/office-of-the-attorney-general",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/34e31265-0ac9-4817-b54a-3dc5a02b313c",
+   "name": "Deborah B. Goldberg",
+   "party": "Democratic",
+   "title": "Treasurer",
+   "image": "https://static.wixstatic.com/media/1cdaec_ca54db32f1e34aea84456889322e22c1~mv2.png",
+   "termEnd": "2027-01-06",
+   "phone": "617-367-6900",
+   "address": "State House, Room 227; Boston, MA 02133",
+   "website": "https://www.mass.gov/orgs/office-of-state-treasurer-and-receiver-general-deborah-b-goldberg",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/ec37a070-639f-4c27-9228-33c9d38f9639",
+   "name": "Diana DiZoglio",
+   "party": "Democratic",
+   "title": "Auditor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Diana_DiZoglio%2C_State_Auditor.png",
+   "termEnd": "2027-01-06",
+   "phone": "617-727-2075",
+   "address": "State House, Room 230; Boston, MA 02133",
+   "website": "https://www.mass.gov/orgs/office-of-the-state-auditor",
+   "email": "Auditor@sao.state.ma.us",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/e4405312-71fd-4192-a658-6adbeeebe48c",
+   "name": "Kim Driscoll",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Kim_Driscoll%2C_official_portrait%2C_lieutenant_governor.jpg",
+   "startDate": "2023-01-05",
+   "termEnd": "2027-01-02",
+   "phone": "617-725-4000",
+   "address": "State House, Room 360; Boston, MA 02133",
+   "website": "https://www.mass.gov/orgs/governor-maura-healey-and-lt-governor-kim-driscoll",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/d90a06b9-0edf-4fda-a823-4247987244dc",
+   "name": "Maura Healey",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.mass.gov/files/styles/570x/public/2023-01/PRINTFINAL-Shopper-Maura_Healey_201R_0.jpg?itok=SjMD6nD2",
+   "startDate": "2023-01-05",
+   "termEnd": "2027-01-02",
+   "phone": "617-725-4005",
+   "address": "Massachusetts State House, 24 Beacon St.; Office of the Governor, Room 280; Boston, MA 02133",
+   "website": "https://www.mass.gov/orgs/office-of-the-governor",
+   "socials": {
+    "twitter": "MassGovernor"
+   }
+  },
+  {
+   "id": "ocd-person/ead7f955-7ff0-4ac0-bc29-35688074b79f",
+   "name": "William Galvin",
+   "party": "Democratic",
+   "title": "Secretary of the Commonwealth",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/WFGalvin_Official_Portrait.png",
+   "termEnd": "2027-01-06",
+   "phone": "617-727-9180",
+   "address": "State House Rm 337; 24 Beacon St.; Boston, MA 02133-1099",
+   "website": "https://www.sec.state.ma.us",
+   "email": "cis@sec.state.ma.us",
+   "socials": {
+    "twitter": "SecretaryOfMass"
+   }
+  }
+ ],
+ "md": [
+  {
+   "id": "ocd-person/1ad81709-e1d6-42bd-86bc-afdec934288c",
+   "name": "Anthony G. Brown",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://oag.maryland.gov/our-office/PublishingImages/AttorneyGeneral.jpg",
+   "startDate": "2023-01-03",
+   "termEnd": "2027-01-04",
+   "phone": "410-576-6300",
+   "address": "200 St. Paul Place; Baltimore, MD 21202",
+   "website": "https://oag.maryland.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/27dd7c4f-0e25-4cd0-b849-6830e5ec7fa1",
+   "name": "Aruna Miller",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://cdn.maryland.gov/maryland-cms/prod/governor/s3fs-public/images/2026-04/lg%201st%20size.png",
+   "startDate": "2023-01-18",
+   "termEnd": "2027-01-20",
+   "phone": "410-974-3901",
+   "address": "100 State Circle; Annapolis, MD 21401-1925",
+   "website": "http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=miller%20a&stab=01",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/a6a4f3ad-59c0-471c-8fd3-ea06a8e21a87",
+   "name": "Wes Moore",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://cdn.maryland.gov/maryland-cms/prod/governor/s3fs-public/images/2026-04/gov%201st%20size.png",
+   "startDate": "2023-01-18",
+   "termEnd": "2027-01-20",
+   "phone": "410-974-3901",
+   "address": "100 State Circle; Annapolis, Maryland; 21401-1925",
+   "website": "https://governor.maryland.gov/",
+   "socials": {
+    "twitter": "GovWesMoore"
+   }
+  }
+ ],
+ "me": [
+  {
+   "id": "ocd-person/530fa17b-8a45-4d39-adb1-e9492081a761",
+   "name": "Aaron M. Frey",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-ME-Frey-Aaron-2025.png",
+   "startDate": "2019-01-08",
+   "termEnd": "2027-01-05",
+   "phone": "207-626-8800",
+   "address": "State House Station 6; Augusta, ME 04333",
+   "website": "http://www.maine.gov/legis/house/hsebios/freyam.htm",
+   "email": "Aaron.Frey@legislature.maine.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/3a068db0-d252-4bf9-929d-feb15cb84087",
+   "name": "Janet Mills",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.maine.gov/portal/img/official-3.jpg",
+   "startDate": "2019-01-02",
+   "termEnd": "2027-01-06",
+   "phone": "207-287-3531",
+   "address": "1 State House Station; Augusta, ME 04333",
+   "website": "https://www.maine.gov/governor/mills/",
+   "socials": {
+    "twitter": "GovJanetMills"
+   }
+  }
+ ],
+ "mi": [
+  {
+   "id": "ocd-person/d45a5608-2735-4ef3-883b-0ebdabed89e0",
+   "name": "Dana Nessel",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-MI-nessel2.jpg",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "517-373-1110",
+   "address": "525 W. Ottawa St.; Lansing, MI 48909-0212",
+   "website": "https://www.michigan.gov/ag",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/e077b72e-8c9e-4506-a4b5-1fd83d6f6226",
+   "name": "Garlin Gilchrist II",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://www.michigan.gov/whitmer/-/media/Project/Websites/Whitmer/Images/About/Lt-Governor-Bio/LtGovGilchrist2x.jpg",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "517-335-7858",
+   "address": "P.O. Box 30013; Lansing, MI 48909",
+   "website": "https://www.michigan.gov/whitmer/ltgov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/9b425a88-36ae-439c-b2f9-8da167b9ff27",
+   "name": "Gretchen Whitmer",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.michigan.gov/whitmer/-/media/Project/Websites/Whitmer/Images/About/Governor-Bio/GovWhitmerPortMaster_8x10.jpg?rev=79becb7ee8ea4ac580070d2a6c255473",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "517-373-3400",
+   "address": "Governor Gretchen Whitmer; P.O. Box 30013; Lansing, Michigan",
+   "website": "https://www.michigan.gov/whitmer/",
+   "socials": {
+    "twitter": "GovWhitmer"
+   }
+  },
+  {
+   "id": "ocd-person/bcdc22e9-cca9-47d9-96a4-757fef25f866",
+   "name": "Jocelyn Benson",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/22lawensn/SOS_Jocelyn_Benson_web.jpg?rev=472f8685a68348eaadbb49b50169f20f&hash=066812B4000A0920442A62601E420910&w=+1400",
+   "termEnd": "2027-01-01",
+   "phone": "517-335-2436",
+   "address": "430 West Allegan St.; 4th Fl.; Lansing, MI 48918-",
+   "website": "https://www.michigan.gov/sos",
+   "email": "secretary@michigan.gov",
+   "socials": {
+    "twitter": "MichSoS"
+   }
+  }
+ ],
+ "mn": [
+  {
+   "id": "ocd-person/46deef0f-6af0-4cb8-b4ac-385aa505df50",
+   "name": "Keith Ellison",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.ag.state.mn.us/Photos/Keith-Ellison.jpg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "651-296-3353",
+   "address": "Suite 102, State Capital, 75 Dr. Martin Luther King, Jr. Blvd.; Saint Paul, MN 55155",
+   "website": "https://www.ag.state.mn.us/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/d563a09c-876b-4384-a7cc-a15f3d5d064c",
+   "name": "Peggy Flanagan",
+   "party": "Democratic-Farmer-Labor",
+   "title": "Lieutenant Governor",
+   "image": "https://mn.gov/governor/assets/flanagan-bio-thumbnail_tcm1055-653288.png",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "651-201-3400",
+   "address": "130 State Capitol, 75 Rev Dr. Martin Luther King Jr. Blvd.; St. Paul, MN 55155",
+   "website": "http://www.house.leg.state.mn.us/members/members.asp?id=15451",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/029aa632-cefd-431d-bba0-e2ed611b2151",
+   "name": "Steve Simon",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://www.sos.state.mn.us/media/1810/steve-simon-official-portrait-fb2.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "651-201-1324",
+   "address": "180 State Capitol; 100 Rev. Dr. MLK Jr. Blvd. ; St. Paul, MN 55155-1299",
+   "website": "https://www.sos.state.mn.us",
+   "email": "secretary.state@state.mn.us",
+   "socials": {
+    "twitter": "MNSteveSimon"
+   }
+  },
+  {
+   "id": "ocd-person/aba9f63e-b8ee-4515-acac-af7a63a4d1ec",
+   "name": "Tim Walz",
+   "party": "Democratic-Farmer-Labor",
+   "title": "Governor",
+   "image": "https://mn.gov/governor/assets/Tim%20Walz-bio_tcm1055-418597.png",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "651-201-3400",
+   "address": "130 State Capitol; 75 Rev Dr. Martin Luther King Jr. Blvd.; St. Paul, MN 55155",
+   "website": "https://mn.gov/governor/about/",
+   "socials": {
+    "twitter": "GovTimWalz"
+   }
+  }
+ ],
+ "mo": [
+  {
+   "id": "ocd-person/c2f94a50-d59c-4c56-abe6-2eebbce40a68",
+   "name": "Catherine Hanaway",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://ago.mo.gov/wp-content/uploads/Hanaway-Headshot-230x300.jpg",
+   "startDate": "2025-09-08",
+   "termEnd": "2029-01-08",
+   "phone": "573-751-3321",
+   "address": "Supreme Court Building, 207 W. High St.; Jefferson City, MO 65102",
+   "website": "https://ago.mo.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/43d8764b-a3b7-432a-8750-ae0e9165ecf9",
+   "name": "David Wasinger",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.mo.gov/wp-content/uploads/2025/06/cropped-Lt-Gov-photo-scaled-1.jpg",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-08",
+   "phone": "573-751-4727",
+   "address": "State Capitol Building, Room 224; Jefferson City, MO 65101",
+   "website": "https://ltgov.mo.gov/",
+   "email": "ltgovinfo@ltgov.mo.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/b1263b48-7df4-443c-8a71-41abc892bd7e",
+   "name": "Mike Kehoe",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "http://www.senate.mo.gov/18web/wp-content/uploads/2015/11/Kehoe-200x300.jpg",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-08",
+   "phone": "573-751-3222",
+   "address": "P.O. Box 720; Jefferson City, MO 65102",
+   "website": "https://governor.mo.gov/",
+   "socials": {}
+  }
+ ],
+ "ms": [
+  {
+   "id": "ocd-person/c735ee81-f40f-4c16-aa57-e7068d7df10e",
+   "name": "Delbert Hosemann",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgovhosemann.ms.gov/wp-content/uploads/2024/10/CDH-Headshot-6.20.22-400x560.jpg",
+   "startDate": "2020-01-09",
+   "termEnd": "2028-01-11",
+   "phone": "601-359-3200",
+   "website": "https://ltgovhosemann.ms.gov/",
+   "email": "ltgov@senate.ms.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/3a1d28c1-dd21-40b8-9a79-159441a5c88a",
+   "name": "Lynn Fitch",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-MS-Fitch-2024.jpg",
+   "startDate": "2020-01-09",
+   "termEnd": "2028-01-06",
+   "phone": "601-359-3680",
+   "address": "P.O. Box 220; Jackson, MS 39205",
+   "website": "https://www.ago.state.ms.us/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/3c19275b-6e87-43fa-83fa-ced52c9119bf",
+   "name": "Tate Reeves",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governorreeves.ms.gov/wp-content/uploads/headshot-governor-tate-reeves_R.jpg",
+   "startDate": "2020-01-14",
+   "termEnd": "2028-01-11",
+   "phone": "601-359-3150",
+   "address": "P.O. Box 139; Jackson, MS 39205",
+   "website": "https://governorreeves.ms.gov/",
+   "email": "governor@govreeves.ms.gov",
+   "socials": {
+    "twitter": "tatereeves"
+   }
+  }
+ ],
+ "mt": [
+  {
+   "id": "ocd-person/6932f017-6867-409a-8321-6cf9dce312ef",
+   "name": "Austin Knudsen",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2021/02/ag-MT-Knudsen.jpg",
+   "startDate": "2021-01-04",
+   "termEnd": "2029-01-01",
+   "phone": "406-444-2026",
+   "address": "Justice Bldg., 215 N. Sanders; Helena, MT 59620-1401",
+   "website": "https://leg.mt.gov/legislator-information/roster/individual/4776",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/c40b88ef-ba7b-415f-a6d4-581bfecf0ea7",
+   "name": "Greg Gianforte",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.mt.gov/_images/portrait_gianforte.jpg",
+   "startDate": "2021-01-04",
+   "termEnd": "2029-01-01",
+   "website": "https://governor.mt.gov/",
+   "socials": {
+    "twitter": "GregForMontana"
+   }
+  },
+  {
+   "id": "ocd-person/f4a7fa52-2f69-40f9-b806-7cec241ab27d",
+   "name": "Kristen Juras",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://governor.mt.gov/_images/portrait_juras.jpg",
+   "startDate": "2021-01-04",
+   "termEnd": "2029-01-01",
+   "phone": "406-444-3111",
+   "address": "P.O. Box 200801; Helena, MT 59620-0801",
+   "website": "https://governor.mt.gov/About/LieutenantGovernor",
+   "socials": {}
+  }
+ ],
+ "nc": [
+  {
+   "id": "ocd-person/59ece42c-d325-427b-bd54-96b3625bc43d",
+   "name": "Jeff Jackson",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-NC-Jackson-Jeff-2025.png",
+   "startDate": "2025-01-01",
+   "termEnd": "2029-01-01",
+   "phone": "919-716-6400",
+   "address": "Dept. of Justice, P.O. Box 629; Raleigh, NC 27602-0629",
+   "website": "https://www.ncleg.gov/Members/Biography/S/386",
+   "email": "Jeff.Jackson@ncleg.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/0a494878-c7fd-4a6a-8b82-3eb681e3fe6e",
+   "name": "Josh Stein",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "http://www.ncga.state.nc.us/Senate/pictures/hiRes/267.jpg",
+   "startDate": "2025-01-01",
+   "termEnd": "2029-01-01",
+   "phone": "919-814-2000",
+   "address": "20301 Mail Service Center; Raleigh, NC 27699-0301;",
+   "website": "https://governor.nc.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/4c3a1120-2dd5-4fbe-a084-e64894e57163",
+   "name": "Rachel Hunt",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://files.nc.gov/lt-governor/images/2025-02/LG_Headshot_final.jpg",
+   "startDate": "2025-01-01",
+   "termEnd": "2029-01-01",
+   "phone": "919-814-3680",
+   "address": "310 N. Blount Street; Raleigh, NC 27601",
+   "website": "https://www.ncleg.gov/Members/IntroducedBills/S/442",
+   "email": "rachel.hunt@ncleg.gov",
+   "socials": {}
+  }
+ ],
+ "nd": [
+  {
+   "id": "ocd-person/b86dfdcd-93e3-40d8-929f-47f1c86813e3",
+   "name": "Drew Wrigley",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/02/ag-ND-Wrigley-Drew.png",
+   "startDate": "2022-02-09",
+   "termEnd": "2027-01-01",
+   "phone": "701-328-2210",
+   "address": "State Capitol, 600 E. Boulevard Ave.; Bismarck, ND 58505-0040",
+   "website": "https://attorneygeneral.nd.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/482e4b71-bc8b-4c9e-80a5-bc2c51e90aa0",
+   "name": "Kelly Armstrong",
+   "party": "Republican",
+   "title": "Governor",
+   "startDate": "2024-12-15",
+   "termEnd": "2028-12-15",
+   "phone": "701-328-2200",
+   "address": "600 East Boulevard Avenue; Bismarck ND, 58505-0001",
+   "website": "https://www.governor.nd.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/31c83885-ce7e-4b8f-ac6d-bf310c12acb8",
+   "name": "Michael Howe",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.sos.nd.gov/sites/www/files/documents/about/michael-howe-official-headshot.jpg",
+   "startDate": "2023-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "701-328-2900",
+   "address": "600 E. Boulevard Ave. Dept. 108 ; ; Bismarck, ND 58505-0500",
+   "website": "http://sos.nd.gov",
+   "email": "sos@nd.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/a6e733ce-ccdc-425a-bb9b-9010a09c3933",
+   "name": "Michelle Strinden",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://www.governor.nd.gov/sites/www/files/documents/portraits/LtGovMichelleStrinden.jpg",
+   "startDate": "2024-12-15",
+   "termEnd": "2028-12-15",
+   "phone": "701-328-2200",
+   "address": "600 East Boulevard Avenue; Bismarck, ND 58505-0100",
+   "website": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-michelle-strinden",
+   "email": "mstrinden@ndlegis.gov",
+   "socials": {}
+  }
+ ],
+ "ne": [
+  {
+   "id": "ocd-person/c67c3ac8-3260-44d7-b419-3d8210c4f0bd",
+   "name": "Jim Pillen",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.nebraska.gov/about-governor-jim-pillen",
+   "startDate": "2023-01-05",
+   "termEnd": "2027-01-07",
+   "phone": "402-471-2244",
+   "address": "P.O. Box 94848; Lincoln, NE 68509-4848",
+   "website": "https://governor.nebraska.gov/",
+   "socials": {
+    "twitter": "TeamPillen"
+   }
+  },
+  {
+   "id": "ocd-person/74c5deca-9550-45e2-a5dc-c3386623edef",
+   "name": "Joe Kelly",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.nebraska.gov/sites/default/files/img/Lt%20Governor%20Kelly-1.jpg",
+   "startDate": "2023-01-05",
+   "termEnd": "2027-01-07",
+   "phone": "402-471-2244",
+   "address": "P.O. Box 94848; Lincoln, NE 68509-4848",
+   "website": "https://ltgov.nebraska.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/3eafc2ab-5448-40ac-9d5f-b317abdbc747",
+   "name": "Mike Hilgers",
+   "party": "Nonpartisan",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-OK-Hilgers.png",
+   "startDate": "2023-01-05",
+   "termEnd": "2027-01-07",
+   "phone": "402-471-2682",
+   "address": "State Capitol, P.O. Box 98920; Lincoln, NE 68509-8920",
+   "website": "http://news.legislature.ne.gov/dist21",
+   "email": "mhilgers@leg.ne.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/ecaf1ef5-c273-497b-8c05-74d0edc97e27",
+   "name": "Robert Evnen",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://sos.nebraska.gov/sites/sos.nebraska.gov/files/img/headshot-bio.jpg",
+   "termEnd": "2027-01-07",
+   "phone": "402-471-2554",
+   "address": "PO Box 94608-4608 ; ; Lincoln, NE 68509-4863",
+   "website": "https://sos.nebraska.gov/index",
+   "email": "sos.info@nebraska.gov",
+   "socials": {
+    "twitter": "NEvnen"
+   }
+  }
+ ],
+ "nh": [
+  {
+   "id": "ocd-person/3eabef50-7d86-44cf-87db-8c549d2d21bd",
+   "name": "Kelly Ayotte",
+   "party": "Republican",
+   "title": "Governor",
+   "startDate": "2025-01-09",
+   "termEnd": "2027-01-06",
+   "phone": "603-271-2121",
+   "address": "Office of the Governor; State House; 107 North Main Street; Concord, NH 03301",
+   "website": "https://www.governor.nh.gov/",
+   "socials": {}
+  }
+ ],
+ "nj": [
+  {
+   "id": "ocd-person/45caac41-0f71-4243-99cc-bb18b7b82386",
+   "name": "Dale Caldwell",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://www.nj.gov/governor/library/secondary/ltgov_LGDaleCaldwell_new.jpg",
+   "startDate": "2026-01-20",
+   "termEnd": "2030-01-15",
+   "address": "P.O. Box 001; Trenton, NJ 08625",
+   "website": "https://www.nj.gov/governor/admin/ltgovernor/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/cf9793dd-4ef2-4db2-807c-4cf8fce4eecb",
+   "name": "Jennifer Davenport",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2026/01/ag-NJ-Davenport-Jennifer.png",
+   "startDate": "2026-02-24",
+   "termEnd": "2030-01-15",
+   "phone": "609-292-8740",
+   "address": "Richard J. Hughes Justice Complex, 25 Market Street, P.O. Box 080; Trenton, NJ 08625",
+   "website": "https://www.njoag.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/d0bf3dce-c5b7-4f9f-a4e2-9637582299ac",
+   "name": "Mikie Sherrill",
+   "party": "Democratic",
+   "title": "Governor",
+   "startDate": "2026-01-20",
+   "termEnd": "2030-01-20",
+   "phone": "609-292-6000",
+   "address": "Office of Governor; P.O. Box 001; Trenton, NJ 08625",
+   "website": "https://nj.gov/governor/",
+   "socials": {}
+  }
+ ],
+ "nm": [
+  {
+   "id": "ocd-person/56e025c5-7367-4e17-98eb-d7a5cf0b5688",
+   "name": "Howie C. Morales",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://www.lgo.nm.gov/wp-content/uploads/2019/08/lt-gov-howie-morales-headshot.jpg",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "505-476-2250",
+   "address": "490 Old Santa Fe Trail, Room 417; Santa Fe, NM 87501",
+   "website": "http://www.nmlegis.gov/Members/Legislator?SponCode=SMORA",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/cb607080-ff7b-48c8-acf4-0180e6e2f999",
+   "name": "Michelle Lujan Grisham",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.sos.state.nm.us/wp-content/uploads/2019/06/Michelle-Lujan-Grisham.png",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "505-476-2200",
+   "address": "490 Old Santa Fe Trail Room 400; Santa Fe, NM 87501",
+   "website": "https://www.governor.state.nm.us/",
+   "socials": {
+    "twitter": "govmlg"
+   }
+  },
+  {
+   "id": "ocd-person/d52c0e56-76f1-4b81-a62c-2a3dd7abcc4e",
+   "name": "Raúl Torrez",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-NM-Torrez.png",
+   "startDate": "2023-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "505-490-4060",
+   "address": "408 Galisteo Street, Villagra Building; Santa Fe, NM 87501",
+   "website": "https://nmdoj.gov/",
+   "socials": {}
+  }
+ ],
+ "nv": [
+  {
+   "id": "ocd-person/05db3ab9-9801-410f-9d35-2f184df77f8e",
+   "name": "Aaron D. Ford",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-NV-ford2.jpg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "775-684-1100",
+   "address": "Old Supreme Ct. Bldg., 100 N. Carson St.; Carson City, NV 89701",
+   "website": "https://www.leg.state.nv.us/App/Legislator/A/api/79th2017/Legislator?id=214",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/b71b3b3a-2122-43ec-a5e8-1ac394f13cf0",
+   "name": "Francisco V. Aguilar",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Francisco_Aguilar%2C_Secretary_of_State_of_Nevada%2C_2024.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "775-684-5709",
+   "address": "101 N. Carson Street; Suite 3; Carson City, NV 89701-",
+   "website": "https://www.nvsos.gov/sos/home",
+   "email": "sosexec@sos.nv.gov",
+   "socials": {
+    "twitter": "NVSOS"
+   }
+  },
+  {
+   "id": "ocd-person/d2c166cc-f53f-491d-9c4a-6c3fc68274fe",
+   "name": "Joe Lombardo",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://gov.nv.gov/uploadedImages/gov2022nvgov/content/AboutUs/Governor%20Joe%20Lombardo_Official%20Photo_600px.jpg",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "775-684-5670",
+   "address": "State Capitol Building; 101 N. Carson Street; Carson  City, NV 89701",
+   "website": "https://gov.nv.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/e730bc7c-c97e-4428-8bc7-f1e9708cb878",
+   "name": "Stavros Anthony",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.nv.gov/uploadedImages/ltgov2022nvgov/content/AboutUs/Stavros%20New%20Headshot.jpg",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "775-684-7111",
+   "address": "State Capitol Building, 101 N. Carson Street, Suite",
+   "website": "https://ltgov.nv.gov/",
+   "socials": {}
+  }
+ ],
+ "ny": [
+  {
+   "id": "ocd-person/6a95f6b7-1eb0-439b-af25-c9b26d19de9e",
+   "name": "Antonio Delgado",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LG_Antonio_Delgado_Portrait.jpg/500px-LG_Antonio_Delgado_Portrait.jpg",
+   "startDate": "2022-05-25",
+   "termEnd": "2027-01-01",
+   "phone": "518-402-2292",
+   "website": "https://www.governor.ny.gov/lt-governor-antonio-delgado",
+   "email": "LGNY@exec.ny.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/ccdd914d-9853-4fd2-9a80-ce6c962cdd18",
+   "name": "Kathy Hochul",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.governor.ny.gov/sites/default/files/styles/square_extra_large/public/2021-08/GovKathyHocul_FeatureBio_Photo.png?h=00546c34&itok=Sdxjp4cd",
+   "startDate": "2021-08-24",
+   "termEnd": "2027-01-01",
+   "phone": "518-474-8390",
+   "address": "The Honorable Kathy Hochul; Governor of New York State; NYS State Capitol Building; Albany, NY 12224",
+   "website": "https://www.governor.ny.gov/",
+   "socials": {
+    "twitter": "GovKathyHochul"
+   }
+  },
+  {
+   "id": "ocd-person/a620faf8-81e3-490e-8d26-dbf84c707786",
+   "name": "Letitia James",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-NY-james2.jpg",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-01",
+   "phone": "518-776-2000",
+   "address": "Dept. of Law, The Capitol, 2nd fl.; Albany, NY 12224",
+   "website": "https://ag.ny.gov/",
+   "socials": {}
+  }
+ ],
+ "oh": [
+  {
+   "id": "ocd-person/b8ac5c3b-66e6-47f4-b8c2-1fd148a1f041",
+   "name": "Dave Yost",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-OH-yost.jpg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "phone": "614-466-4320",
+   "address": "State Office Tower, 30 E. Broad St.; Columbus, OH 43266-0410",
+   "website": "https://www.ohioattorneygeneral.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/eaeed96a-2f5c-43f2-aef4-fa3432d33451",
+   "name": "Frank LaRose",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.sos.state.oh.us/globalassets/about/headshot/laroseheadshot-hires.jpg",
+   "termEnd": "2027-01-11",
+   "phone": "614-466-2655",
+   "address": "22 North 4th Street; 16th Floor; Columbus, OH 43215-",
+   "website": "https://www.sos.state.oh.us",
+   "email": "msheehan@ohiosecretaryofstate.gov",
+   "socials": {
+    "twitter": "FrankLaRose"
+   }
+  },
+  {
+   "id": "ocd-person/6aef5093-5720-48fd-9997-e4f5451014b4",
+   "name": "Jim Tressel",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Jim_Tressel_2025_portrait_%28cropped%29.jpg/960px-Jim_Tressel_2025_portrait_%28cropped%29.jpg",
+   "startDate": "2025-02-14",
+   "termEnd": "2027-01-11",
+   "phone": "614-644-4357",
+   "address": "Riffe Center, 30th Floor, 77 South High Street; Columbus, OH 43215-6117",
+   "website": "https://governor.ohio.gov/administration/lt-governor",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/37478cd9-ed21-43f7-b2cc-578df43ad32d",
+   "name": "Mike DeWine",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Gov-Mike-DeWine.jpg/960px-Gov-Mike-DeWine.jpg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "address": "Riffe Center, 30th Floor, 77 South High Street, Columbus, OH 43215-6117",
+   "website": "https://governor.ohio.gov/wps/portal/gov/governor/",
+   "socials": {
+    "twitter": "govmikedewine"
+   }
+  }
+ ],
+ "ok": [
+  {
+   "id": "ocd-person/e55fbb4f-73e3-4ee7-a4c6-6e5ae860d360",
+   "name": "Gentner Drummond",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-OK-Drummond.png",
+   "startDate": "2023-01-09",
+   "termEnd": "2027-01-11",
+   "phone": "405-521-3921",
+   "address": "313 NE 21st Street; Oklahoma City, OK 73105",
+   "website": "https://oklahoma.gov/oag.html",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/b4b14ac3-5ee6-4404-a4fc-ec6ea805ac90",
+   "name": "Kevin Stitt",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://oklahoma.gov/content/dam/ok/en/governor/images/gov-stitt-official-photo.jpg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "phone": "405-521-2342",
+   "address": "Capitol Building; 2300 N. Lincoln Blvd., Suite 212; Oklahoma City, OK 73105",
+   "website": "https://oklahoma.gov/governor.html",
+   "socials": {
+    "twitter": "GovStitt"
+   }
+  },
+  {
+   "id": "ocd-person/c363ab87-72b9-4c52-af58-c5cb2da323d2",
+   "name": "Matt Pinnell",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://oklahoma.gov/content/dam/ok/en/ltgov/images/photography/Official-LtGovMattPinnell.jpg",
+   "startDate": "2019-01-14",
+   "termEnd": "2027-01-11",
+   "phone": "405-521-2161",
+   "address": "2300 N Lincoln Blvd, Room 117; Oklahoma City, OK 73105",
+   "website": "https://oklahoma.gov/ltgovpinnell.html",
+   "socials": {}
+  }
+ ],
+ "or": [
+  {
+   "id": "ocd-person/201cf42b-d036-4582-a6ff-f23b3ab3f442",
+   "name": "Dan Rayfield",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-OR-Rayfield-Dan.png",
+   "startDate": "2024-12-31",
+   "termEnd": "2029-01-01",
+   "phone": "503-378-6002",
+   "address": "Justice Bldg., 1162 Court St., NE; Salem, OR 97301",
+   "website": "https://www.oregonlegislature.gov/rayfield",
+   "email": "rep.danrayfield@oregonlegislature.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/c136922d-c34a-4b53-a56b-2201b139d469",
+   "name": "Tina Kotek",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://www.oregon.gov/gov/headshots/meet-tina-image-2000px.jpg",
+   "startDate": "2023-01-09",
+   "termEnd": "2027-01-11",
+   "phone": "503-378-4582",
+   "address": "Office of the Governor; State Capitol; 900 Court St. NE, Suite 254; Salem, OR 97301-4047",
+   "website": "https://www.oregon.gov/gov/Pages/index.aspx",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/73710d6f-5ce6-4015-8b6f-92fa17458afc",
+   "name": "Tobias Read",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://sos.oregon.gov/PublishingImages/Tobias-Read.jpg",
+   "startDate": "2025-01-06",
+   "termEnd": "2029-01-01",
+   "phone": "503-986-1523",
+   "address": "900 Court Street NE, Capitol Room 136; Salem, OR 97301",
+   "website": "http://www.oregonlegislature.gov/read",
+   "email": "oregon.sos@sos.oregon.gov",
+   "socials": {}
+  }
+ ],
+ "pa": [
+  {
+   "id": "ocd-person/6726e869-3e54-4b33-8765-d4704529465d",
+   "name": "Al Schmidt",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.dos.pa.gov/about-us/PublishingImages/Al-Schmidt-Headshot.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "717-787-6458",
+   "address": "302 North Office Building ; ; Harrisburg, PA 17120-3025",
+   "website": "https://www.dos.pa.gov/Pages/default.aspx",
+   "email": "st-press@pa.gov",
+   "socials": {
+    "twitter": "PAStateDept"
+   }
+  },
+  {
+   "id": "ocd-person/e5de67f9-3e82-4e65-89ce-47aa0772d1f8",
+   "name": "Austin A. Davis",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://s7d9.scene7.com/is/image/statepa/LG%20Portrait",
+   "startDate": "2023-01-17",
+   "termEnd": "2027-01-19",
+   "phone": "717-787-3300",
+   "address": "200 Main Capitol Building; Harrisburg, PA 17120",
+   "website": "http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1794",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/d880fd50-7249-4f5d-b7d4-193a4ae8319e",
+   "name": "Dave Sunday",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-PA-Sunday-2025.jpg",
+   "startDate": "2025-01-21",
+   "termEnd": "2029-01-16",
+   "phone": "717-787-3391",
+   "address": "Strawberry Square; Harrisburg, PA 17120",
+   "website": "https://www.attorneygeneral.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/ac7497c7-0a0d-495f-98ce-75dedbfeb0c7",
+   "name": "Josh Shapiro",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://s7d9.scene7.com/is/image/statepa/headshot?ts=1706910357175&dpr=off",
+   "startDate": "2023-01-17",
+   "termEnd": "2027-01-19",
+   "phone": "717-787-2500",
+   "address": "Office of Governor; 501 North 3rd Street; 508 Main Capitol Building; Harrisburg, PA 17120",
+   "website": "https://www.pa.gov/en/governor.html",
+   "socials": {
+    "twitter": "JoshShapiroPA"
+   }
+  }
+ ],
+ "ri": [
+  {
+   "id": "ocd-person/7ca005d1-05b8-4ce2-80b4-04ff7acaa59e",
+   "name": "Dan McKee",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://governor.ri.gov/sites/g/files/xkgbur236/files/styles/max_1300x1300/public/2021-08/Gov.%20Dan%20Mckee%20Headshot%20July%202021_1.jpg?itok=W6R-LV-G",
+   "startDate": "2021-03-02",
+   "termEnd": "2027-01-05",
+   "phone": "401-222-2080",
+   "address": "Office of the Governor; 82 Smith Street; Providence, RI 02903",
+   "website": "https://governor.ri.gov/",
+   "email": "governor@governor.ri.gov",
+   "socials": {
+    "twitter": "GovDanMcKee"
+   }
+  },
+  {
+   "id": "ocd-person/18b9f6aa-ba50-4c0a-953c-fba2720ef2a6",
+   "name": "Gregg Amore",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://www.sos.ri.gov/assets/img/secretary-amore-headshot.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "401-222-2357",
+   "address": "82 Smith St.; Rm 217; Providence, RI 02903-",
+   "website": "https://www.sos.ri.gov",
+   "email": "secretaryamore@sos.ri.gov",
+   "socials": {
+    "twitter": "RISecState"
+   }
+  },
+  {
+   "id": "ocd-person/2c4e5251-d011-436c-8d4e-5142d174813e",
+   "name": "Peter Neronha",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-RI-neronha2.jpg",
+   "startDate": "2019-01-01",
+   "termEnd": "2027-01-05",
+   "phone": "401-274-4400",
+   "address": "150 S. Main St.; Providence, RI 02903",
+   "website": "https://riag.ri.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/811001df-7f40-4641-9461-fb2dc02bacce",
+   "name": "Sabina Matos",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.ri.gov/sites/g/files/xkgbur491/files/styles/max_2600x2600/public/2021-05/Sabina-StatePhoto.png",
+   "startDate": "2021-04-14",
+   "termEnd": "2027-01-05",
+   "phone": "401-222-2371",
+   "address": "82 Smith Street, Room 116; Providence, RI 02903",
+   "website": "https://ltgov.ri.gov/",
+   "socials": {}
+  }
+ ],
+ "sc": [
+  {
+   "id": "ocd-person/b9f92b67-9de4-489e-861b-995274f4d20e",
+   "name": "Alan Wilson",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.scag.gov/media/ie5nqrqm/about-meet.jpg",
+   "startDate": "2011-01-12",
+   "termEnd": "2027-01-13",
+   "phone": "803-734-3970",
+   "address": "Rembert C. Dennis Office Bldg., P.O. Box 11549; Columbia, SC 29211-1549",
+   "website": "https://www.scag.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/333130a9-ecba-4992-b223-d2af0c9f2a06",
+   "name": "Henry McMaster",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.sc.gov/sites/governor/files/Documents/Images/newsImage_0.jpg",
+   "startDate": "2017-01-24",
+   "termEnd": "2027-01-13",
+   "phone": "803-734-2100",
+   "address": "1205 Pendleton Street; Columbia, SC 29201",
+   "website": "https://governor.sc.gov/",
+   "socials": {
+    "twitter": "henrymcmaster"
+   }
+  },
+  {
+   "id": "ocd-person/fd462977-6631-4203-820c-a91b0b4ebcd2",
+   "name": "Howard Knapp",
+   "party": "Independent",
+   "title": "Secretary of State",
+   "startDate": "2023-03-02",
+   "termEnd": "2026-12-31",
+   "phone": "803-734-9060",
+   "address": "Post Office Box 5987; ; Columbia, SC 29250-5987",
+   "website": "https://scvotes.gov/about-the-sec/",
+   "email": "hknapp@elections.sc.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/f96c83a2-ed1e-4ff6-b5a7-7bb83afdf2df",
+   "name": "Pamela Evette",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://governor.sc.gov/sites/governor/files/Documents/Images/LG%20Headshot%202022.jpg",
+   "startDate": "2019-01-09",
+   "termEnd": "2027-01-13",
+   "phone": "803-734-2100",
+   "address": "State House, 1100 Gervais Street; Columbia, SC 29201",
+   "website": "https://governor.sc.gov/lieutenant-governor",
+   "socials": {}
+  }
+ ],
+ "sd": [
+  {
+   "id": "ocd-person/b41fff76-c4dd-4e5c-b7f5-c6480a6b1710",
+   "name": "Larry Rhoden",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.sd.gov/img/Governor-Rhoden-header.jpg",
+   "startDate": "2025-01-25",
+   "termEnd": "2027-01-04",
+   "phone": "605-773-3212",
+   "address": "500 East Capitol Avenue; Pierre, SD 57501",
+   "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1463&Session=2018s",
+   "socials": {
+    "twitter": "GovLarryRhoden",
+    "instagram": "govlarryrhoden",
+    "youtube": "GovLarryRhoden",
+    "facebook": "GovLarryRhoden"
+   }
+  },
+  {
+   "id": "ocd-person/b305d3f4-6e90-44ab-a228-3ed2933e2989",
+   "name": "Marty Jackley",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/11/ag-SD-Jackley-Marty.png",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "605-773-3215",
+   "address": "1302 East Highway 14, Suite 1; Pierre, SD 57501-8501",
+   "website": "https://atg.sd.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/e4192363-de65-4632-8224-6d59098f1e61",
+   "name": "Monae Johnson",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://sdsos.gov/general-information/assets/Monae0008a.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "605-773-3537",
+   "address": "500 East Capitol Ave.; #204; Pierre, SD 57501-",
+   "website": "https://sdsos.gov/default.aspx",
+   "email": "sdsos@state.sd.us",
+   "socials": {
+    "twitter": "sodaksos"
+   }
+  },
+  {
+   "id": "ocd-person/c8d6a31f-a4e9-454a-a75a-28b668c1b729",
+   "name": "Tony Venhuizen",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://governor.sd.gov/img/LtGovTV-photo.jpg",
+   "startDate": "2025-01-30",
+   "termEnd": "2027-01-06",
+   "phone": "605-773-3212",
+   "address": "500 East Capitol Avenue; Pierre, SD 57501",
+   "website": "https://sdlegislature.gov/Legislators/Profile/4465/Detail",
+   "email": "tony.venhuizen@sdlegislature.gov",
+   "socials": {}
+  }
+ ],
+ "tn": [
+  {
+   "id": "ocd-person/d94cf7a2-1ba6-46f2-bdbf-54ace20b8dfc",
+   "name": "Bill Lee",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://www.tn.gov/content/dam/tn/governorsoffice-documents/governorlee-images/lee_portraits_2.jpg",
+   "startDate": "2019-01-19",
+   "termEnd": "2027-01-16",
+   "phone": "615-741-2001",
+   "address": "Office of Governor Bill Lee; Tennessee State Capitol; 600 Dr. Martin L. King, Jr. Blvd.; Nashville, TN 37243-0001",
+   "website": "https://www.tn.gov/governor.html",
+   "socials": {
+    "twitter": "GovBillLee"
+   }
+  },
+  {
+   "id": "ocd-person/8a5fa491-f871-4b57-962e-8db9adf2c8c3",
+   "name": "Jonathan Skrmetti",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2022/09/ag-TN-Skrmetti-2025.png",
+   "startDate": "2022-09-01",
+   "termEnd": "2030-09-01",
+   "phone": "615-741-3491",
+   "address": "P.O. Box 20207; Nashville, TN 37202",
+   "website": "https://www.tn.gov/attorneygeneral.html",
+   "socials": {}
+  }
+ ],
+ "tx": [
+  {
+   "id": "ocd-person/22c1bff3-e936-4398-8d7c-95233e85b5c5",
+   "name": "Dan Patrick",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg",
+   "startDate": "2015-01-20",
+   "termEnd": "2027-01-19",
+   "phone": "512-463-0001",
+   "address": "P.O. Box 12068; Austin, TX 78711",
+   "website": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1430",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/d73f10ee-69f2-4ca8-ac00-405c453a62d7",
+   "name": "Greg Abbott",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://gov.texas.gov/uploads/images/general/2015-GovernorAbbott-Portrait.jpg",
+   "startDate": "2015-01-20",
+   "termEnd": "2027-01-10",
+   "phone": "512-463-2000",
+   "address": "P.O. Box 12428; Austin, TX 78711",
+   "website": "https://gov.texas.gov/",
+   "socials": {
+    "twitter": "GovAbbott"
+   }
+  },
+  {
+   "id": "ocd-person/ff63d52e-ec3f-4749-9b96-8e8323cd655f",
+   "name": "Jane Nelson",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://www.sos.state.tx.us/images/jane-nelson-portrait-small.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "512-463-5650",
+   "address": "1100 Congress Ave. ; ; Austin, TX 78701-",
+   "website": "https://www.sos.state.tx.us/index.shtml",
+   "email": "secretary@sos.texas.gov",
+   "socials": {
+    "twitter": "TXsecofstate"
+   }
+  },
+  {
+   "id": "ocd-person/1c1b6320-5ed6-4739-9f53-389b724b0305",
+   "name": "Ken Paxton",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2020/09/ag-TX-Paxton.jpg",
+   "startDate": "2015-01-05",
+   "termEnd": "2027-01-01",
+   "phone": "512-463-2100",
+   "address": "Capitol Station, P.O. Box 12548; Austin, TX 78711-2548",
+   "website": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1020",
+   "socials": {}
+  }
+ ],
+ "ut": [
+  {
+   "id": "ocd-person/8bae8ef6-d21e-4eba-94e4-2aad97023cbc",
+   "name": "Deidre M. Henderson",
+   "party": "Republican",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgovernor.utah.gov/wp-content/uploads/Official-portrait-2-scaled-1-728x1024.jpg",
+   "startDate": "2021-01-04",
+   "termEnd": "2029-01-01",
+   "phone": "801-538-1041",
+   "address": "Utah State Capitol, 350 N. State Street, Suite 200; Salt Lake City, UT 84114-2220",
+   "website": "https://senate.utah.gov/deidre-henderson",
+   "email": "dhenderson@le.utah.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/34430fff-d52e-4218-a99b-3d2764578bc9",
+   "name": "Derek E Brown",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-UT-Brown-Derek.png",
+   "startDate": "2025-01-07",
+   "termEnd": "2029-01-01",
+   "phone": "801-538-9600",
+   "address": "State Capitol, Rm. 236; Salt Lake City, UT 84114-0810",
+   "website": "http://le.utah.gov/house2/detail.jsp?i=BROWNDE",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/52dd3ff2-e7a2-458e-b8f1-797fdab69e4a",
+   "name": "Spencer Cox",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "http://site.utah.gov/governor-cox/wp-content/uploads/sites/52/2022/02/DSC08566-2-683x1024.jpg",
+   "startDate": "2021-01-04",
+   "termEnd": "2029-01-01",
+   "phone": "801-538-1041",
+   "address": "PO Box 142325 ; ; Salt Lake City, UT 84114-",
+   "website": "https://governor.utah.gov/",
+   "email": "spencercox@utah.gov",
+   "socials": {
+    "twitter": "SpencerJCox"
+   }
+  }
+ ],
+ "va": [
+  {
+   "id": "ocd-person/30e93a95-5457-4263-96f9-2ea38017a253",
+   "name": "Abigail Spanberger",
+   "party": "Democratic",
+   "title": "Governor",
+   "startDate": "2026-01-17",
+   "termEnd": "2030-01-17",
+   "phone": "804-786-2211",
+   "website": "https://www.governor.virginia.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/2ae6c10e-e6d0-4033-927f-0b067b2ba0fc",
+   "name": "Ghazala Hashmi",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://www.ltgov.virginia.gov/media/governorvirginiagov/lieutenant-governor/Portrait-LT-Governor-Ghazala-Hashmi.jpg",
+   "startDate": "2026-01-17",
+   "termEnd": "2030-01-12",
+   "phone": "804-593-2897",
+   "address": "P.O. Box 1195; Richmond, VA 23218",
+   "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S108",
+   "email": "Ltgov43@ltgov.virginia.gov",
+   "socials": {
+    "twitter": "Hashmi4Va",
+    "facebook": "SenatorGhazalaHashmi"
+   }
+  },
+  {
+   "id": "ocd-person/7ef2fdd9-b55d-4ab4-83ea-17c47c2e5227",
+   "name": "Jerrauld C. \"Jay\" Jones",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.oag.state.va.us/images/Jones-headshot-20260320.jpg",
+   "startDate": "2026-01-17",
+   "termEnd": "2030-01-12",
+   "phone": "804-786-2071",
+   "address": "202 North Ninth Street; Richmond, VA 23219",
+   "website": "http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H299",
+   "email": "DelJJones@house.virginia.gov",
+   "socials": {
+    "twitter": "jonesjay",
+    "facebook": "jayccjonesva"
+   }
+  }
+ ],
+ "vt": [
+  {
+   "id": "ocd-person/5ff8e24a-93df-4bc3-a669-7ea42d42c59b",
+   "name": "Charity Clark",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://ago.vermont.gov/sites/ago/files/inline-images/Charity%20R%20Clark%20headshot.jpg",
+   "startDate": "2023-01-05",
+   "termEnd": "2027-01-14",
+   "phone": "802-828-3173",
+   "address": "109 State St.; Montpelier, VT 05609-1001",
+   "website": "https://ago.vermont.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/2cb218ea-52a4-4d1f-9732-217940ba260e",
+   "name": "John Rodgers",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://ltgov.vermont.gov/sites/gray/files/inline-images/John%20Rodgers%20002_0.jpg",
+   "startDate": "2025-01-09",
+   "termEnd": "2027-01-07",
+   "phone": "802-828-2226",
+   "address": "115 State Street; Montpelier, VT 05633",
+   "website": "http://legislature.vermont.gov/people/single/2020/20398",
+   "email": "jrodgers@leg.state.vt.us",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/f3e613ff-3cd6-4b2c-b268-f6460d029f05",
+   "name": "Phil Scott",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://www.vermont.gov/themes/custom/vt2018/images/governor.jpg",
+   "startDate": "2017-01-05",
+   "termEnd": "2027-01-14",
+   "phone": "802-828-3333",
+   "address": "109 State Street; Pavilion Office Building; Montpelier, VT 05609",
+   "website": "https://governor.vermont.gov/",
+   "socials": {
+    "twitter": "GovPhilScott"
+   }
+  },
+  {
+   "id": "ocd-person/19d6cf01-f77c-4db7-8765-af838a00bc75",
+   "name": "Sarah L. Copeland Hanzas",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://sos.vermont.gov/sites/sos/files/images/sarah.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "802-828-2148",
+   "address": "128 State Street; ; Montpelier, VT 05633-",
+   "website": "https://sos.vermont.gov",
+   "email": "secretary@vermont.gov",
+   "socials": {
+    "twitter": "VermontSOS"
+   }
+  }
+ ],
+ "wa": [
+  {
+   "id": "ocd-person/117499b6-79e9-4eaf-827d-59c0ed14b7c0",
+   "name": "Bob Ferguson",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://governor.wa.gov/sites/default/files/styles/max_650x650/public/2025-01/Bob%20Bio%20Headshot%20banner%20width.JPG",
+   "startDate": "2025-01-09",
+   "termEnd": "2028-12-30",
+   "phone": "360-902-4111",
+   "address": "Office of the Governor; PO Box 40002; Olympia, WA 98504-0002",
+   "website": "https://governor.wa.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/b1789e29-3532-4554-9ee1-853497224a85",
+   "name": "Denny Heck",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://images.squarespace-cdn.com/content/v1/5d70140860791400013fe3ce/2bb4d89d-3bb3-45dd-896a-5f984bdd1d4e/Lt.+Gov+Heck+headshot_updated.jpg",
+   "startDate": "2021-01-11",
+   "termEnd": "2029-01-08",
+   "phone": "360-786-7700",
+   "address": "220 Legislative Building, 416 Sid Snyder Ave. S.W.; Olympia, WA 98504",
+   "website": "https://www.ltgov.wa.gov/",
+   "email": "ltgov@ltgov.wa.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/4816d75e-eac4-4ff8-8270-fb79324b93c8",
+   "name": "Nick Brown",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-WA-Brown-Nick.png",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-08",
+   "phone": "360-753-6200",
+   "address": "1125 Washington St. SE, P.O. Box 40100; Olympia, WA 98504-0100",
+   "website": "https://www.atg.wa.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/4a203502-87b1-49f6-8cf2-8cbf4dedb954",
+   "name": "Steve Hobbs",
+   "party": "Democratic",
+   "title": "Secretary of State",
+   "image": "https://www.sos.wa.gov/sites/default/files/styles/max_650x650/public/2022-08/Hobbs.jpg",
+   "startDate": "2021-11-22",
+   "termEnd": "2029-01-01",
+   "phone": "360-902-4151",
+   "address": "PO Box 40220; Olympia, WA 98503-0220",
+   "website": "https://www.sos.wa.gov/secretary-state-steve-hobbs",
+   "email": "secretaryofstate@sos.wa.gov",
+   "socials": {
+    "twitter": "secstatewa",
+    "facebook": "WaSecretaryOfState",
+    "instagram": "secstatewa",
+    "youtube": "secstatewa"
+   }
+  }
+ ],
+ "wi": [
+  {
+   "id": "ocd-person/21c76f44-b31e-4300-b8d1-bb8d4b93bc51",
+   "name": "Josh Kaul",
+   "party": "Democratic",
+   "title": "Attorney General",
+   "image": "https://www.wisdoj.gov/PublishingImages/josh-kaul-headshot.jpg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "608-266-1221",
+   "address": "State Capitol, Room 114 East, P.O. Box 7857; Madison, WI 53707-7857",
+   "website": "https://www.wisdoj.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/827a69f2-8b85-4a72-ac01-14be2c08aa6c",
+   "name": "Sara Rodriguez",
+   "party": "Democratic",
+   "title": "Lieutenant Governor",
+   "image": "https://evers.wi.gov/ltgov/PublishingImages/Pages/default/230207%20LG%20Sara%20Rodriguez%20Portrait%20Second%2002.jpg",
+   "startDate": "2023-01-02",
+   "termEnd": "2027-01-04",
+   "phone": "608-266-3516",
+   "address": "19 East Capitol; Madison, WI 53702",
+   "website": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2264",
+   "email": "Rep.SRodriguez@legis.wisconsin.gov",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/44ad52d1-4ba8-4ca2-b1e1-cda1621a0bc7",
+   "name": "Tony Evers",
+   "party": "Democratic",
+   "title": "Governor",
+   "image": "https://evers.wi.gov/PublishingImages/Pages/About_Tony/Governor.png",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "608-266-1212",
+   "address": "115 East, State Capitol, Madison WI 53702",
+   "website": "https://evers.wi.gov/Pages/Home.aspx",
+   "email": "EversInfo@wisconsin.gov",
+   "socials": {
+    "twitter": "GovEvers"
+   }
+  }
+ ],
+ "wv": [
+  {
+   "id": "ocd-person/0788d53c-8461-4f0f-ba32-07f626cb45e1",
+   "name": "John B. McCuskey",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/01/ag-WA-McCusker.png",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-15",
+   "phone": "304-558-2021",
+   "address": "State Capitol, 1900 Kanawha Blvd., E.; Charleston, WV 25305",
+   "website": "http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McCuskey",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/cf5ab5dc-33c4-4d93-a810-f42cd6f98f5d",
+   "name": "Patrick Morrisey",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.wv.gov/sites/default/files/2024-12/morrissey.jpg",
+   "startDate": "2025-01-13",
+   "termEnd": "2029-01-15",
+   "phone": "304-558-2000",
+   "address": "State Capitol, 1900 Kanawha Blvd. E; Charleston, WV 25305",
+   "website": "https://governor.wv.gov/",
+   "socials": {
+    "twitter": "wvgovernor",
+    "facebook": "WVGovernor"
+   }
+  }
+ ],
+ "wy": [
+  {
+   "id": "ocd-person/fc4a66ba-5fc1-47e2-8e8a-4fec762c7af6",
+   "name": "Chuck Gray",
+   "party": "Republican",
+   "title": "Secretary of State",
+   "image": "https://sos.wyo.gov/images/AboutUs_Team/Chuck_Gray.jpg",
+   "termEnd": "2027-01-04",
+   "phone": "307-777-7378",
+   "address": "Herschler Bldg East; 122 West 25th St. Suite 100; Cheyenne, WY 82002-",
+   "website": "https://sos.wyo.gov",
+   "email": "secofstate@wyo.gov",
+   "socials": {
+    "twitter": "WyomingSOS"
+   }
+  },
+  {
+   "id": "ocd-person/d2a01d75-b8ff-4c5b-8e8e-38803e9502b4",
+   "name": "Keith G. Kautz",
+   "party": "Republican",
+   "title": "Attorney General",
+   "image": "https://www.naag.org/wp-content/uploads/2025/07/ag-WY-Kautz-Keith-2025.png",
+   "startDate": "2025-07-07",
+   "termEnd": "2027-01-04",
+   "phone": "307-777-7841",
+   "address": "State Capitol Building; Cheyenne, WY 82002",
+   "website": "https://ag.wyo.gov/",
+   "socials": {}
+  },
+  {
+   "id": "ocd-person/d832b435-0a83-49ba-abd8-6ce265eb52ef",
+   "name": "Mark Gordon",
+   "party": "Republican",
+   "title": "Governor",
+   "image": "https://governor.wyo.gov/assets/markgordon-B8-zFG2R.jpg",
+   "startDate": "2019-01-07",
+   "termEnd": "2027-01-04",
+   "phone": "307-777-7434",
+   "address": "State Capitol; 200 West 24th Street; Cheyenne, WY 82002",
+   "website": "https://governor.wyo.gov/",
+   "socials": {
+    "twitter": "governorgordon"
+   }
+  }
+ ]
+}
