@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AddressLookup } from "@/components/AddressLookup";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TierBand } from "@/components/TierBand";
 import { type DistrictPick, getDeck } from "@/lib/resolve";
@@ -29,7 +28,7 @@ export default async function DeckPage(props: PageProps<"/z/[zip]">) {
 
   return (
     <>
-      <SiteHeader zip={zip} />
+      <SiteHeader />
       <main className="mx-auto w-full max-w-6xl flex-1 px-0 py-8 sm:px-4">
         <h1 className="px-4 text-center font-display text-2xl text-navy sm:text-3xl">
           {deck.place}
@@ -47,14 +46,16 @@ export default async function DeckPage(props: PageProps<"/z/[zip]">) {
                 <li key={s}>{s}</li>
               ))}
             </ul>
-            <AddressLookup zip={zip} />
+            <p className="mt-3">
+              Search your full street address above to see just yours.
+            </p>
           </div>
         )}
 
         {deck.narrowed && !deck.splits && (
           <p className="mx-4 mt-4 rounded-full bg-emerald-100 px-4 py-1.5 text-center text-sm text-navy sm:mx-auto sm:w-fit">
             📍 Showing the officials for your street address ·{" "}
-            <Link href={`/z/${zip}`} className="font-medium underline">
+            <Link href="/" className="font-medium underline">
               use a different address
             </Link>
           </p>

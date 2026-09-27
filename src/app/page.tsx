@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ZipInput } from "@/components/ZipInput";
+import { AddressInput } from "@/components/AddressInput";
 
 export default function Home() {
   return (
@@ -31,8 +31,11 @@ export default function Home() {
         </p>
       </div>
 
-      <ZipInput />
-      <p className="text-sm text-navy/50">Try 02072 (Stoughton, MA)</p>
+      <AddressInput />
+      <p className="-mt-6 max-w-md text-xs text-navy/50">
+        We send your address to the U.S. Census Geocoder to find your districts,
+        and never store it.
+      </p>
     </main>
   );
 }
