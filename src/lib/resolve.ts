@@ -18,7 +18,7 @@ import {
   type StatePerson,
 } from "./providers/openstates";
 import { getSenateVotes } from "./providers/senate";
-import { districtsForZip } from "./providers/zip";
+import { districtsForZip, type StateDistrict, stateDistrict } from "./providers/zip";
 import type { ActivityItem, Deck, Official, OfficialProfile, Tier } from "./types";
 
 const STATE_NAMES: Record<string, string> = {
@@ -127,7 +127,11 @@ function matchDistricts(roster: StatePerson[], censusNames: string[]) {
   });
 }
 
-async function stateTiers(state: string, upper: string[], lower: string[]): Promise<Tier[]> {
+async function stateTiers(
+  state: string,
+  upper: StateDistrict[],
+  lower: StateDistrict[],
+): Promise<Tier[]> {
   const legislators = await getLegislators(state);
   const upperKind = UNICAMERAL.has(state) ? "legislature" : "upper";
 
@@ -140,8 +144,14 @@ async function stateTiers(state: string, upper: string[], lower: string[]): Prom
   // Only the chamber that's actually split gets "maybe" badges.
   const inChamber = (kind: string) => legislators.filter((p) => p.kind === kind);
   const legCards = [
-    ...matchDistricts(inChamber(upperKind), upper).map((p) => ({ ...stateCard(p), maybe: upper.length > 1 })),
-    ...matchDistricts(inChamber("lower"), lower).map((p) => ({ ...stateCard(p), maybe: lower.length > 1 })),
+    ...matchDistricts(inChamber(upperKind), upper.map((d) => d.name)).map((p) => ({
+      ...stateCard(p),
+      maybe: upper.length > 1,
+    })),
+    ...matchDistricts(inChamber("lower"), lower.map((d) => d.name)).map((p) => ({
+      ...stateCard(p),
+      maybe: lower.length > 1,
+    })),
   ];
 
   const stateName = STATE_NAMES[state] ?? state;
@@ -208,10 +218,25 @@ async function toCard(
   };
 }
 
-export async function getDeck(zip: string): Promise<Deck | null> {
+/** District codes from a street-address lookup: congressional number, state GEOIDs. */
+export interface DistrictPick {
+  cd?: number;
+  upper?: string;
+  lower?: string;
+}
+
+export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Deck | null> {
   const found = districtsForZip(zip);
   if (!found) return null;
-  const { state, districts, upper, lower } = found;
+  const { state } = found;
+  // An address pick beats the zip's options: it can land in a sliver the zip table
+  // dropped. Unknown GEOIDs are ignored.
+  const pickUpper = pick.upper ? stateDistrict("upper", pick.upper) : null;
+  const pickLower = pick.lower ? stateDistrict("lower", pick.lower) : null;
+  const districts = pick.cd !== undefined ? [pick.cd] : found.districts;
+  const upper = pickUpper ? [pickUpper] : found.upper;
+  const lower = pickLower ? [pickLower] : found.lower;
+  const narrowed = pick.cd !== undefined || !!pickUpper || !!pickLower;
 
   const [delegation, index, stateLevel] = await Promise.all([
     getDelegation(state),
@@ -240,8 +265,8 @@ export async function getDeck(zip: string): Promise<Deck | null> {
   const splits = [
     split && `U.S. House: ${districts.map((d) => districtLabel(state, d)).join(", ")}`,
     upper.length > 1 &&
-      `${state === "DC" ? "Council" : UNICAMERAL.has(state) ? "Legislature" : "State Senate"}: ${upper.join(", ")}`,
-    lower.length > 1 && `State House: ${lower.join(", ")}`,
+      `${state === "DC" ? "Council" : UNICAMERAL.has(state) ? "Legislature" : "State Senate"}: ${upper.map((d) => d.name).join(", ")}`,
+    lower.length > 1 && `State House: ${lower.map((d) => d.name).join(", ")}`,
   ].filter((s): s is string => Boolean(s));
 
   return {
@@ -249,6 +274,7 @@ export async function getDeck(zip: string): Promise<Deck | null> {
     state,
     place: `${zip} · ${STATE_NAMES[state] ?? state}`,
     splits: splits.length ? splits : undefined,
+    narrowed,
     tiers: [...federal, ...stateLevel, ...sampleTiersFor(zip)],
   };
 }

@@ -55,6 +55,8 @@ export interface Deck {
   state: string;
   /** One line per kind of district the zip splits, e.g. "U.S. House: NY-12, NY-13". */
   splits?: string[];
+  /** True when the deck was narrowed to the districts of a street address. */
+  narrowed?: boolean;
   tiers: Tier[];
 }
 

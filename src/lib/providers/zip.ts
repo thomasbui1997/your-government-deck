@@ -7,13 +7,24 @@ const table = data as unknown as {
   lower: Record<string, string>;
 };
 
+export interface StateDistrict {
+  geoid: string;
+  name: string;
+}
+
 export interface ZipDistricts {
   state: string;
   /** Congressional district numbers, largest land share first. 0 = at-large or delegate. */
   districts: number[];
-  /** Census names of the state senate / state house districts the zip overlaps. */
-  upper: string[];
-  lower: string[];
+  /** State senate / state house districts the zip overlaps, largest share first. */
+  upper: StateDistrict[];
+  lower: StateDistrict[];
+}
+
+/** Looks up a state legislative district by Census GEOID (e.g. from an address lookup). */
+export function stateDistrict(chamber: "upper" | "lower", geoid: string): StateDistrict | null {
+  const name = table[chamber][geoid];
+  return name ? { geoid, name } : null;
 }
 
 /** Built by scripts/build-zip-districts.mjs from Census ZCTA relationship files. */
@@ -31,7 +42,7 @@ export function districtsForZip(zip: string): ZipDistricts | null {
   return {
     state,
     districts,
-    upper: row.u.filter(inState).map((g) => table.upper[g]),
-    lower: row.l.filter(inState).map((g) => table.lower[g]),
+    upper: row.u.filter(inState).map((geoid) => ({ geoid, name: table.upper[geoid] })),
+    lower: row.l.filter(inState).map((geoid) => ({ geoid, name: table.lower[geoid] })),
   };
 }
