@@ -37,6 +37,8 @@ street address or zip via the free Census Geocoder).
 - `src/lib/providers/`: one file per source (congress, senate XML votes, legislators,
   openstates, zip, geocode, places, local, agendaCenter, bluesky).
 - `src/data/local/<place>.json`: hand-curated local officials. Only Stoughton, MA (02072).
+  Per official: `website`, `email`, `phone` (`x123` for extensions), `address`, and `photo`
+  (hot-linked from an official page, with its source key). `office` is the title, not the address.
 - `src/i18n/`: config, dictionaries (en is the type source), server/client helpers.
 - Promise tracker: `src/lib/promises.ts` (model), `src/data/promises.json` (published, empty),
   `/[locale]/admin/review` (local-only review UI; 404 in production), `/methodology`.
