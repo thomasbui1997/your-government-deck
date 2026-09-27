@@ -1,9 +1,17 @@
 import "server-only";
+import { type SocialLink, socialLinks } from "@/lib/socials";
 
 // github.com/unitedstates/congress-legislators: public-domain roster details that
 // Congress.gov lacks (term end dates, nicknames, Senate LIS IDs used by senate.gov votes).
 const CURRENT =
   "https://raw.githubusercontent.com/unitedstates/congress-legislators/gh-pages/legislators-current.json";
+const SOCIAL =
+  "https://raw.githubusercontent.com/unitedstates/congress-legislators/gh-pages/legislators-social-media.json";
+
+interface RawSocial {
+  id: { bioguide: string };
+  social: Record<string, string>;
+}
 
 interface RawLegislator {
   id: { bioguide: string; lis?: string };
@@ -25,12 +33,19 @@ export interface LegislatorInfo {
   website?: string;
   phone?: string;
   office?: string;
+  socials: SocialLink[];
 }
 
 export async function getLegislatorIndex(): Promise<Map<string, LegislatorInfo>> {
-  const res = await fetch(CURRENT, { next: { revalidate: 86400 } });
+  const [res, socialRes] = await Promise.all([
+    fetch(CURRENT, { next: { revalidate: 86400 } }),
+    fetch(SOCIAL, { next: { revalidate: 86400 } }),
+  ]);
   if (!res.ok) throw new Error(`congress-legislators ${res.status}`);
   const raw: RawLegislator[] = await res.json();
+  // Social handles are nice-to-have; a failed fetch just means no links.
+  const social: RawSocial[] = socialRes.ok ? await socialRes.json() : [];
+  const socialsById = new Map(social.map((s) => [s.id.bioguide, s.social]));
 
   const index = new Map<string, LegislatorInfo>();
   for (const l of raw) {
@@ -47,6 +62,7 @@ export async function getLegislatorIndex(): Promise<Map<string, LegislatorInfo>>
       website: term.url,
       phone: term.phone,
       office: term.address ?? term.office,
+      socials: socialLinks(socialsById.get(l.id.bioguide) ?? {}),
     });
   }
   return index;

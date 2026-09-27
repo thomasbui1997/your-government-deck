@@ -117,6 +117,7 @@ export const zhHans: Dictionary = {
     termEnds: "任期至 {year} 年",
     website: "网站",
     email: "电子邮件",
+    social: "社交媒体",
     promiseTracker: "承诺追踪",
     notTrackedYet: "我们尚未追踪 {name} 的竞选承诺。",
     howTrackingWorks: "承诺追踪如何运作",
@@ -193,6 +194,11 @@ export const zhHans: Dictionary = {
     lastReviewed: "最近审核：{date}",
     footer: "更新于 {date}。承诺来自存档的竞选材料；每项状态在发布前都经过人工审核。",
     englishContent: "承诺与证据以英文显示，与原始来源一致。",
+  },
+  notFound: {
+    title: "牌组里没有这张牌",
+    body: "找不到该邮政编码或官员。请尝试搜索你的地址。",
+    home: "返回首页",
   },
   error: {
     title: "牌组被打乱了",

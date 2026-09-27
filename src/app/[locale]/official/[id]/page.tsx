@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { format, LOCALE_INFO } from "@/i18n/config";
 import { officeTitle, tierTitle } from "@/i18n/labels";
 import { getDictionary, getLocale, href } from "@/i18n/server";
+import { SOCIAL_LABELS } from "@/lib/socials";
 import { getProfile } from "@/lib/resolve";
 
 const panel =
@@ -73,6 +74,24 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
                   </a>
                 )}
               </div>
+            )}
+            {contact.socials && contact.socials.length > 0 && (
+              <nav
+                aria-label={t.profile.social}
+                className="flex flex-wrap justify-center gap-1.5 md:justify-start"
+              >
+                {contact.socials.map((s) => (
+                  <a
+                    key={s.url}
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full border-2 border-navy/30 bg-white px-3 py-0.5 text-sm text-navy hover:border-navy"
+                  >
+                    {SOCIAL_LABELS[s.platform]}
+                  </a>
+                ))}
+              </nav>
             )}
             {contact.office && (
               <p className="text-sm text-navy/60">📍 {contact.office}</p>

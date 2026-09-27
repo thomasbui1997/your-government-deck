@@ -121,6 +121,7 @@ export const es: Dictionary = {
     termEnds: "mandato termina en {year}",
     website: "Sitio web",
     email: "Correo",
+    social: "Redes sociales",
     promiseTracker: "Seguimiento de promesas",
     notTrackedYet: "Aún no damos seguimiento a las promesas de campaña de {name}.",
     howTrackingWorks: "Cómo funciona el seguimiento",
@@ -209,6 +210,11 @@ export const es: Dictionary = {
     footer:
       "Actualizado el {date}. Las promesas provienen de materiales de campaña archivados; una persona revisa cada estado antes de publicarlo.",
     englishContent: "Las promesas y la evidencia se muestran en inglés, tal como aparecen en las fuentes originales.",
+  },
+  notFound: {
+    title: "Esta carta no está en la baraja",
+    body: "No encontramos ese código postal ni ese funcionario. Intenta buscar tu dirección.",
+    home: "Volver al inicio",
   },
   error: {
     title: "Se barajó la baraja",

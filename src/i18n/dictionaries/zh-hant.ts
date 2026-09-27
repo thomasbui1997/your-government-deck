@@ -117,6 +117,7 @@ export const zhHant: Dictionary = {
     termEnds: "任期至 {year} 年",
     website: "網站",
     email: "電子郵件",
+    social: "社群媒體",
     promiseTracker: "承諾追蹤",
     notTrackedYet: "我們尚未追蹤 {name} 的競選承諾。",
     howTrackingWorks: "承諾追蹤如何運作",
@@ -193,6 +194,11 @@ export const zhHant: Dictionary = {
     lastReviewed: "最近審核：{date}",
     footer: "更新於 {date}。承諾來自存檔的競選資料；每項狀態在發布前都經過人工審核。",
     englishContent: "承諾與證據以英文顯示，與原始來源一致。",
+  },
+  notFound: {
+    title: "牌組裡沒有這張牌",
+    body: "找不到該郵遞區號或官員。請嘗試搜尋你的地址。",
+    home: "返回首頁",
   },
   error: {
     title: "牌組被打亂了",

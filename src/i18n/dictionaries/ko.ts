@@ -117,6 +117,7 @@ export const ko: Dictionary = {
     termEnds: "임기 종료 {year}년",
     website: "웹사이트",
     email: "이메일",
+    social: "소셜 미디어",
     promiseTracker: "약속 추적",
     notTrackedYet: "아직 {name}의 선거 공약을 추적하지 않았습니다.",
     howTrackingWorks: "약속 추적 방식",
@@ -196,6 +197,11 @@ export const ko: Dictionary = {
     lastReviewed: "마지막 검토 {date}",
     footer: "{date} 업데이트. 약속은 보관된 선거 자료에서 가져왔으며, 모든 상태는 게시 전에 사람이 검토합니다.",
     englishContent: "약속과 증거는 원본 출처 그대로 영어로 표시됩니다.",
+  },
+  notFound: {
+    title: "이 카드는 덱에 없어요",
+    body: "해당 우편번호나 공직자를 찾을 수 없습니다. 주소로 검색해 보세요.",
+    home: "처음으로",
   },
   error: {
     title: "카드가 뒤섞였어요",

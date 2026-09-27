@@ -1,6 +1,7 @@
 import "server-only";
 import Papa from "papaparse";
 import executives from "@/data/executives.json";
+import { type SocialLink, socialLinks } from "@/lib/socials";
 import type { ActivityItem } from "@/lib/types";
 
 // Rosters come from Open States' bulk files (no key, no rate limit). Only bills use the
@@ -24,6 +25,7 @@ export interface StatePerson {
   address?: string;
   website?: string;
   email?: string;
+  socials: SocialLink[];
 }
 
 interface CsvRow {
@@ -39,6 +41,10 @@ interface CsvRow {
   capitol_address: string;
   district_voice: string;
   district_address: string;
+  twitter: string;
+  youtube: string;
+  instagram: string;
+  facebook: string;
 }
 
 export async function getLegislators(state: string): Promise<StatePerson[]> {
@@ -57,6 +63,7 @@ export async function getLegislators(state: string): Promise<StatePerson[]> {
     address: r.capitol_address || r.district_address || undefined,
     website: r.links.split(";")[0] || undefined,
     email: r.email || undefined,
+    socials: socialLinks(r),
   }));
 }
 
@@ -71,6 +78,7 @@ interface ExecutiveRow {
   address?: string;
   website?: string;
   email?: string;
+  socials?: Record<string, string>;
 }
 
 const execTable = executives as unknown as Record<string, ExecutiveRow[]>;
@@ -90,6 +98,7 @@ export function getExecutives(state: string): StatePerson[] {
     address: e.address,
     website: e.website,
     email: e.email,
+    socials: socialLinks(e.socials ?? {}),
   }));
 }
 

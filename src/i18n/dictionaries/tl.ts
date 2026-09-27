@@ -121,6 +121,7 @@ export const tl: Dictionary = {
     termEnds: "matatapos ang termino sa {year}",
     website: "Website",
     email: "Email",
+    social: "Social media",
     promiseTracker: "Tagasubaybay ng pangako",
     notTrackedYet: "Hindi pa namin sinusubaybayan ang mga pangako sa kampanya ni {name}.",
     howTrackingWorks: "Paano gumagana ang pagsubaybay",
@@ -208,6 +209,11 @@ export const tl: Dictionary = {
     footer:
       "Na-update noong {date}. Galing ang mga pangako sa mga naka-archive na materyales ng kampanya; sinusuri ng isang tao ang bawat katayuan bago ito ilathala.",
     englishContent: "Nasa Ingles ang mga pangako at ebidensya, gaya ng nasa orihinal na pinagmulan.",
+  },
+  notFound: {
+    title: "Wala ang barahang ito sa deck",
+    body: "Hindi namin mahanap ang zip code o opisyal na iyon. Subukang hanapin ang iyong address.",
+    home: "Bumalik sa simula",
   },
   error: {
     title: "Nabalasa ang baraha",

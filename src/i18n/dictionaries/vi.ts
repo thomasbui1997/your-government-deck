@@ -121,6 +121,7 @@ export const vi: Dictionary = {
     termEnds: "nhiệm kỳ kết thúc năm {year}",
     website: "Trang web",
     email: "Email",
+    social: "Mạng xã hội",
     promiseTracker: "Theo dõi lời hứa",
     notTrackedYet: "Chúng tôi chưa theo dõi các lời hứa tranh cử của {name}.",
     howTrackingWorks: "Cách chúng tôi theo dõi lời hứa",
@@ -208,6 +209,11 @@ export const vi: Dictionary = {
     footer:
       "Cập nhật ngày {date}. Các lời hứa lấy từ tài liệu tranh cử được lưu trữ; mọi trạng thái đều được một người xem xét trước khi đăng.",
     englishContent: "Lời hứa và bằng chứng được hiển thị bằng tiếng Anh, đúng như trong nguồn gốc.",
+  },
+  notFound: {
+    title: "Lá bài này không có trong bộ bài",
+    body: "Không tìm thấy mã bưu chính hoặc quan chức đó. Hãy thử tìm địa chỉ của bạn.",
+    home: "Về trang đầu",
   },
   error: {
     title: "Bộ bài bị xáo trộn",

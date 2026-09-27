@@ -1,4 +1,5 @@
 import type { PublishedPromises } from "./promises";
+import type { SocialLink } from "./socials";
 
 export type Party = "D" | "R" | "I" | "NP";
 
@@ -96,6 +97,7 @@ export interface OfficialProfile {
     phone?: string;
     email?: string;
     office?: string;
+    socials?: SocialLink[];
   };
   activity: ActivityItem[];
   /** Dictionary key (under `profile`) explaining an empty timeline. */

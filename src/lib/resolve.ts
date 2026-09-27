@@ -17,6 +17,7 @@ import {
   type StatePerson,
 } from "./providers/openstates";
 import { getMeetings } from "./providers/agendaCenter";
+import { getBlueskyPosts, handleFromWebsite } from "./providers/bluesky";
 import { findLocalOfficial, isLocalId, localStateOfficials, localTiers } from "./providers/local";
 import { getSenateVotes } from "./providers/senate";
 import { getPublishedPromises, withPromises } from "./promiseStore";
@@ -351,10 +352,13 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
         : Promise.resolve([])
       : getHouseVotes(id, 12);
 
-    const [sponsored, cosponsored, voteItems] = await Promise.all([
+    // Posts only from a Bluesky handle verified by their official website's domain.
+    const bskyHandle = handleFromWebsite(info?.website ?? member.officialWebsiteUrl);
+    const [sponsored, cosponsored, voteItems, posts] = await Promise.all([
       getBills(id, "sponsored", 10),
       getBills(id, "cosponsored", 10),
       votes.catch(() => [] as ActivityItem[]),
+      bskyHandle ? getBlueskyPosts(bskyHandle, 8).catch(() => [] as ActivityItem[]) : [],
     ]);
 
     const official: Official = {
@@ -382,8 +386,15 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
         website: info?.website ?? member.officialWebsiteUrl,
         phone: info?.phone ?? member.addressInformation?.phoneNumber,
         office: info?.office ?? member.addressInformation?.officeAddress,
+        socials: [
+          ...(info?.socials ?? []),
+          // Only link Bluesky when the domain-verified account is active.
+          ...(bskyHandle && posts.length
+            ? [{ platform: "bluesky" as const, url: `https://bsky.app/profile/${bskyHandle}` }]
+            : []),
+        ],
       },
-      activity: merge(voteItems, sponsored, cosponsored),
+      activity: merge(voteItems, sponsored, cosponsored, posts),
     };
   }
 
@@ -412,6 +423,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
         phone: person.phone,
         email: person.email,
         office: person.address,
+        socials: person.socials,
       },
       activity,
       activityNote: isExec ? "noteStateExec" : undefined,

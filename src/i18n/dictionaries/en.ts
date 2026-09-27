@@ -124,6 +124,7 @@ export const en = {
     termEnds: "term ends {year}",
     website: "Website",
     email: "Email",
+    social: "Social media",
     promiseTracker: "Promise tracker",
     notTrackedYet: "We haven't tracked {name}'s campaign promises yet.",
     howTrackingWorks: "How promise tracking works",
@@ -212,6 +213,11 @@ export const en = {
     footer:
       "Updated {date}. Promises come from archived campaign materials; every status is reviewed by a person before it's published.",
     englishContent: "Promises and evidence are shown in English, as they appear in the original sources.",
+  },
+  notFound: {
+    title: "This card isn't in the deck",
+    body: "We couldn't find that zip code or official. Try searching your address instead.",
+    home: "Back to the start",
   },
   error: {
     title: "The deck got shuffled",
