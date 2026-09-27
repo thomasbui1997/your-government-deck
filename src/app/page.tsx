@@ -33,8 +33,8 @@ export default function Home() {
 
       <AddressInput />
       <p className="-mt-6 max-w-md text-xs text-navy/50">
-        We send your address to the U.S. Census Geocoder to find your districts,
-        and never store it.
+        We send what you type to Google Maps and the U.S. Census Geocoder to find
+        your districts, and never store it.
       </p>
     </main>
   );
