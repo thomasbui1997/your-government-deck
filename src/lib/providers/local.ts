@@ -1,6 +1,6 @@
 import "server-only";
 import stoughton from "@/data/local/stoughton-ma.json";
-import type { Level, Official, Party, Tier, TierId } from "@/lib/types";
+import type { Level, Official, OfficialBio, Party, Tier, TierId } from "@/lib/types";
 
 // Hand-curated local officials, one JSON file per place in src/data/local/. Every entry
 // names its sources; `checked` is when the whole file was last verified.
@@ -21,6 +21,18 @@ interface LocalOfficial {
   address?: string;
   /** Headshot from an official site, hot-linked; `source` is a key into `sources`. */
   photo?: { url: string; source: string };
+  /**
+   * Biography from one official page (`source` is a key into `sources`). `summary` is quoted
+   * verbatim, whole sentences only; the lists hold only what that same page states outright.
+   */
+  bio?: {
+    source: string;
+    summary?: string;
+    hometown?: string;
+    education?: string[];
+    career?: string[];
+    military?: string[];
+  };
   appointed?: boolean;
   /** Agenda Center category whose meetings this official takes part in. */
   meetings?: number;
@@ -56,6 +68,19 @@ function toOfficial(place: LocalPlace, o: LocalOfficial): Official {
     termEnds: o.termEnds,
     appointed: o.appointed,
     stats: [],
+  };
+}
+
+function toBio(place: LocalPlace, o: LocalOfficial): OfficialBio | undefined {
+  const source = o.bio && place.sources[o.bio.source];
+  if (!o.bio || !source) return undefined;
+  return {
+    summary: o.bio.summary,
+    hometown: o.bio.hometown,
+    education: o.bio.education ?? [],
+    career: o.bio.career ?? [],
+    military: o.bio.military ?? [],
+    sources: [source],
   };
 }
 
@@ -104,7 +129,14 @@ export function findLocalOfficial(id: string) {
           office: hit.o.address,
         },
         meetings: hit.o.meetings,
-        sources: [...new Set([...hit.o.sources, ...(hit.o.photo ? [hit.o.photo.source] : [])])]
+        bio: toBio(place, hit.o),
+        sources: [
+          ...new Set([
+            ...hit.o.sources,
+            ...(hit.o.photo ? [hit.o.photo.source] : []),
+            ...(hit.o.bio ? [hit.o.bio.source] : []),
+          ]),
+        ]
           .map((key) => place.sources[key])
           .filter(Boolean),
       };

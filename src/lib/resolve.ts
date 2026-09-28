@@ -519,6 +519,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
       contact: local.contact,
       activity,
       activityNote: local.meetings ? undefined : "noteLocal",
+      bio: local.bio,
       sources: local.sources,
       checked: place.checked,
     };
