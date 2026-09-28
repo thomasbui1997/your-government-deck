@@ -126,7 +126,7 @@ export const vi: Dictionary = {
   bio: {
     flipBack: "Lật thẻ xem tiểu sử",
     flipFront: "Lật lại",
-    hometown: "Quê quán",
+    hometown: "Nơi sống",
     born: "Sinh",
     education: "Học vấn",
     career: "Trước khi nhậm chức",
@@ -230,7 +230,7 @@ export const vi: Dictionary = {
     howTrackingWorks: "Cách chúng tôi theo dõi lời hứa",
     latestActivity: "Hoạt động gần đây",
     activityLater: "Hoạt động thực tế của chức vụ này sẽ được bổ sung ở giai đoạn sau.",
-    noteFederalExec: "Sắc lệnh và hành động hành pháp sẽ được bổ sung ở giai đoạn sau.",
+    noteFederalExec: "Phó Tổng thống không ký sắc lệnh hành pháp và không đệ trình dự luật, nên không có hoạt động chính thức nào để hiển thị ở đây.",
     noteStateExec:
       "Quan chức hành pháp tiểu bang không đệ trình dự luật, và chúng tôi chưa theo dõi các hành động hành pháp.",
     englishRecords: "Tên dự luật, các cuộc bỏ phiếu và hồ sơ chính thức khác được hiển thị bằng tiếng Anh.",

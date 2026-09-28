@@ -128,7 +128,7 @@ export const en = {
   bio: {
     flipBack: "Flip for their story",
     flipFront: "Flip back",
-    hometown: "Hometown",
+    hometown: "Lives in",
     born: "Born",
     education: "Education",
     career: "Before office",
@@ -235,7 +235,7 @@ export const en = {
     howTrackingWorks: "How promise tracking works",
     latestActivity: "Latest activity",
     activityLater: "Real activity for this office arrives in a later build step.",
-    noteFederalExec: "Executive orders and actions are coming in a later build step.",
+    noteFederalExec: "The Vice President doesn't sign executive orders or file bills, so there's no official activity to show here.",
     noteStateExec: "Statewide officials don't file bills, and executive actions aren't tracked yet.",
     englishRecords: "Bill titles, votes, and other official records are shown in English.",
     noteLocal: "Meeting records for this office aren't tracked yet.",

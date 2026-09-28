@@ -126,7 +126,7 @@ export const tl: Dictionary = {
   bio: {
     flipBack: "Baligtarin para sa kanilang kuwento",
     flipFront: "Ibalik",
-    hometown: "Bayan",
+    hometown: "Nakatira sa",
     born: "Ipinanganak",
     education: "Edukasyon",
     career: "Bago ang puwesto",
@@ -230,7 +230,7 @@ export const tl: Dictionary = {
     howTrackingWorks: "Paano gumagana ang pagsubaybay",
     latestActivity: "Pinakabagong aktibidad",
     activityLater: "Darating ang tunay na aktibidad para sa posisyong ito sa susunod na yugto.",
-    noteFederalExec: "Darating ang mga executive order at aksyon sa susunod na yugto.",
+    noteFederalExec: "Hindi pumipirma ng mga executive order o naghahain ng panukalang batas ang Pangalawang Pangulo, kaya walang opisyal na aktibidad na maipapakita rito.",
     noteStateExec:
       "Hindi naghahain ng panukalang batas ang mga opisyal ng buong estado, at hindi pa sinusubaybayan ang kanilang mga aksyong ehekutibo.",
     englishRecords: "Nasa Ingles ang mga pamagat ng panukalang batas, mga boto, at iba pang opisyal na rekord.",

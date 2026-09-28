@@ -400,7 +400,9 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
       activity: [],
       // The Vice President presides over the Senate, so the Congressional Directory has an entry.
       bio: await congressBio(exec.id),
-      activityNote: "noteFederalExec",
+      // The VP has no documents of his own; the President lands here only if the Federal
+      // Register can't be reached, and then gets the ordinary empty timeline.
+      activityNote: exec.id === "vice-president" ? "noteFederalExec" : undefined,
     };
   }
 

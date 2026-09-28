@@ -115,6 +115,7 @@ export interface OfficialBio {
   summary?: string;
   /** A chamber leadership post as the legislature lists it, e.g. "Majority Leader". */
   leadership?: string;
+  /** Where they live, as their source states it (the Directory's "of …", "lives in …"). */
   hometown?: string;
   born?: { place: string; date?: string };
   education: string[];

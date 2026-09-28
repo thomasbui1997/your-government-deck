@@ -122,7 +122,7 @@ export const ko: Dictionary = {
   bio: {
     flipBack: "뒤집어서 이야기 보기",
     flipFront: "앞면으로",
-    hometown: "고향",
+    hometown: "거주지",
     born: "출생",
     education: "학력",
     career: "취임 전 경력",
@@ -226,7 +226,7 @@ export const ko: Dictionary = {
     howTrackingWorks: "약속 추적 방식",
     latestActivity: "최근 활동",
     activityLater: "이 직책의 실제 활동은 이후 단계에서 추가됩니다.",
-    noteFederalExec: "행정명령과 행정 조치는 이후 단계에서 추가됩니다.",
+    noteFederalExec: "부통령은 행정명령에 서명하거나 법안을 발의하지 않으므로 여기에 표시할 공식 활동이 없습니다.",
     noteStateExec: "주 행정 공직자는 법안을 발의하지 않으며, 행정 조치는 아직 추적하지 않습니다.",
     englishRecords: "법안 제목, 표결 및 기타 공식 기록은 영어로 표시됩니다.",
     noteLocal: "이 직책의 회의 기록은 아직 추적하지 않습니다.",

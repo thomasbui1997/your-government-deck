@@ -122,7 +122,7 @@ export const zhHans: Dictionary = {
   bio: {
     flipBack: "翻面看其经历",
     flipFront: "翻回正面",
-    hometown: "家乡",
+    hometown: "居住地",
     born: "出生",
     education: "教育",
     career: "从政前经历",
@@ -226,7 +226,7 @@ export const zhHans: Dictionary = {
     howTrackingWorks: "承诺追踪如何运作",
     latestActivity: "最新动态",
     activityLater: "此职位的真实动态将在后续版本中加入。",
-    noteFederalExec: "行政命令与行动将在后续版本中加入。",
+    noteFederalExec: "副总统不签署行政命令，也不提出法案，因此这里没有可显示的官方活动。",
     noteStateExec: "州级行政官员不提出法案，且我们尚未追踪其行政行动。",
     englishRecords: "法案标题、投票及其他官方记录以英文显示。",
     noteLocal: "尚未追踪此职位的会议记录。",

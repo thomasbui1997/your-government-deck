@@ -122,7 +122,7 @@ export const zhHant: Dictionary = {
   bio: {
     flipBack: "翻面看其經歷",
     flipFront: "翻回正面",
-    hometown: "家鄉",
+    hometown: "居住地",
     born: "出生",
     education: "教育",
     career: "從政前經歷",
@@ -226,7 +226,7 @@ export const zhHant: Dictionary = {
     howTrackingWorks: "承諾追蹤如何運作",
     latestActivity: "最新動態",
     activityLater: "此職位的真實動態將在後續版本中加入。",
-    noteFederalExec: "行政命令與行動將在後續版本中加入。",
+    noteFederalExec: "副總統不簽署行政命令，也不提出法案，因此這裡沒有可顯示的官方活動。",
     noteStateExec: "州級行政官員不提出法案，且我們尚未追蹤其行政行動。",
     englishRecords: "法案標題、投票及其他官方紀錄以英文顯示。",
     noteLocal: "尚未追蹤此職位的會議紀錄。",

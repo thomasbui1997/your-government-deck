@@ -126,7 +126,7 @@ export const es: Dictionary = {
   bio: {
     flipBack: "Voltear para conocer su historia",
     flipFront: "Volver al frente",
-    hometown: "Ciudad natal",
+    hometown: "Vive en",
     born: "Nació",
     education: "Estudios",
     career: "Antes del cargo",
@@ -230,7 +230,7 @@ export const es: Dictionary = {
     howTrackingWorks: "Cómo funciona el seguimiento",
     latestActivity: "Actividad reciente",
     activityLater: "La actividad real de este cargo llegará en una etapa posterior.",
-    noteFederalExec: "Las órdenes y acciones ejecutivas llegarán en una etapa posterior.",
+    noteFederalExec: "El vicepresidente no firma órdenes ejecutivas ni presenta proyectos de ley, así que no hay actividad oficial que mostrar aquí.",
     noteStateExec:
       "Los funcionarios estatales no presentan proyectos de ley, y aún no damos seguimiento a sus acciones ejecutivas.",
     englishRecords: "Los títulos de proyectos, votaciones y otros registros oficiales se muestran en inglés.",
