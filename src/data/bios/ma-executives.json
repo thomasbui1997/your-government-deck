@@ -1,0 +1,80 @@
+{
+  "_note": "Hand-curated bios of Massachusetts statewide executives, keyed by Open States person ID. `summary` is quoted verbatim from the official page (whole sentences, never paraphrased); structured fields only where that page states them. Recheck after the Nov 3, 2026 election. Secretary of the Commonwealth William Galvin is omitted: sec.state.ma.us and mass.gov publish no biography of him.",
+  "checked": "2026-09-27",
+  "officials": {
+    "ocd-person/d90a06b9-0edf-4fda-a823-4247987244dc": {
+      "name": "Maura Healey",
+      "title": "Governor",
+      "summary": "Maura Healey is the 73rd Governor of Massachusetts. In 2022, she became the first woman elected Governor in state history and the first openly lesbian Governor elected in the country.\n\nGovernor Healey previously served two terms as Massachusetts Attorney General, first elected in 2014 and re-elected in 2018. In her role as the People’s Lawyer, she took on the tough issues affecting Massachusetts residents, including the opioid epidemic, climate change, health care costs, and student loan debt. Earlier in her career, Healey was a litigation partner at an international law firm.",
+      "hometown": "Arlington, Massachusetts",
+      "born": { "place": "Bethesda Naval Hospital" },
+      "education": ["Harvard College"],
+      "career": [
+        "Starting point guard on a professional basketball team in Europe, two years",
+        "Litigation partner at an international law firm",
+        "Massachusetts Attorney General, two terms (first elected in 2014, re-elected in 2018)"
+      ],
+      "sources": [
+        { "title": "Maura Healey, Governor | Mass.gov", "url": "https://www.mass.gov/person/maura-healey-governor" }
+      ]
+    },
+    "ocd-person/e4405312-71fd-4192-a658-6adbeeebe48c": {
+      "name": "Kim Driscoll",
+      "title": "Lieutenant Governor",
+      "summary": "Kim Driscoll is the 73rd Lieutenant Governor of the Commonwealth of Massachusetts. She was sworn in on January 5, 2023, joining Governor Maura Healey in a historic series of firsts: Governor Healey is the first woman and first openly LGBTQ person elected Governor of Massachusetts, and together, Healey and Driscoll are the first all-women executive team to lead Massachusetts.\n\nPrior to taking office as Lieutenant Governor, Driscoll served as the City of Salem’s first woman Mayor. Elected in 2005, she turned deficits into record surpluses and saved taxpayers’ money by strengthening city services, revitalizing Salem’s downtown, leading a vast improvement in Salem’s k-12 schools, reforming city pensions and health insurance programs to protect employee benefits, bidding public contracts, and bringing transparency to City Hall.",
+      "hometown": "Salem",
+      "education": ["Salem State University (studied government)", "Law degree, Massachusetts School of Law"],
+      "career": [
+        "Community Development Director, City of Beverly",
+        "Chief Legal Counsel and Deputy City Manager, City of Chelsea",
+        "Salem City Council",
+        "Mayor of Salem (elected 2005)"
+      ],
+      "sources": [
+        { "title": "Kim Driscoll, Lieutenant Governor | Mass.gov", "url": "https://www.mass.gov/person/kim-driscoll-lieutenant-governor" }
+      ]
+    },
+    "ocd-person/4e8f36fb-9017-4a35-a692-7f09958dcf61": {
+      "name": "Andrea Joy Campbell",
+      "title": "Attorney General",
+      "summary": "On January 18, 2023, Andrea Joy Campbell was sworn in to be the 45th Attorney General of the Commonwealth of Massachusetts, becoming the first woman of color to win statewide office in Massachusetts.\n\nBefore becoming Attorney General, in 2015, Andrea successfully ran for the Boston City Council, becoming the first woman to represent District 4 on the Council. Her first piece of legislation was the Community Preservation Act, which still generates over $20 million annually for new affordable housing, historical preservation, and parks and open space. In 2018, she was unanimously elected City Council President – the first Black woman to hold that title.",
+      "born": { "place": "Roxbury and the South End neighborhoods of Boston" },
+      "education": ["Boston Latin School", "Princeton University", "UCLA Law School"],
+      "career": [
+        "Legal services attorney defending the rights of children and their families",
+        "Private-sector law practice",
+        "General Counsel, Metropolitan Area Planning Commission",
+        "Legal counsel to Governor Deval Patrick",
+        "Boston City Council, District 4 (elected 2015)",
+        "Boston City Council President (elected 2018)"
+      ],
+      "sources": [
+        { "title": "Andrea Joy Campbell, Attorney General | Mass.gov", "url": "https://www.mass.gov/person/andrea-joy-campbell-attorney-general" }
+      ]
+    },
+    "ocd-person/34e31265-0ac9-4817-b54a-3dc5a02b313c": {
+      "name": "Deborah B. Goldberg",
+      "title": "Treasurer",
+      "summary": "Deborah B. Goldberg is the Massachusetts State Treasurer and Receiver General. In that role she is responsible for the state’s cash and debt management, unclaimed property, and chairs state boards and commissions, including the Massachusetts School Building Authority, the Pension Reserves Investment Management Board, the State Board of Retirement, Massachusetts State Lottery Commission, and the Massachusetts Clean Water Trust. In 2015, she established the Office of Economic Empowerment, the first of its kind in the country, and chairs its Economic Empowerment Trust Fund.\n\nTreasurer Goldberg served for six years on the Brookline Board of Selectmen, including two as its Chair. Prior to her career in public service, she worked in retail operations, buying, and consumer affairs at The Stop & Shop Companies, Inc.",
+      "education": [],
+      "career": [
+        "Retail operations, buying, and consumer affairs, The Stop & Shop Companies, Inc.",
+        "Brookline Board of Selectmen, six years (two as Chair)",
+        "Former President, National Association of State Treasurers"
+      ],
+      "sources": [
+        { "title": "About Treasury: Treasurer Goldberg | MassTreasury.gov", "url": "https://www.masstreasury.gov/about" }
+      ]
+    },
+    "ocd-person/ec37a070-639f-4c27-9228-33c9d38f9639": {
+      "name": "Diana DiZoglio",
+      "title": "Auditor",
+      "summary": "Diana DiZoglio serves as the 26th Auditor of the Commonwealth of Massachusetts.\n\nAs a former State Senator, State Representative, small business owner, and non-profit project manager, Auditor DiZoglio’s history in the public, private, and non-profit sectors has provided her with well-rounded insights around the real and pressing needs of working families across Massachusetts.",
+      "education": [],
+      "career": ["State Senator", "State Representative", "Small business owner", "Non-profit project manager"],
+      "sources": [
+        { "title": "Diana DiZoglio, State Auditor | Mass.gov", "url": "https://www.mass.gov/person/diana-dizoglio-state-auditor" }
+      ]
+    }
+  }
+}

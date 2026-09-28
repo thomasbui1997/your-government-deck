@@ -53,6 +53,9 @@ street address or zip via the free Census Geocoder).
 - Card back (click the profile card to flip): `FlipCard.tsx`; bio assembled in `resolve.ts`
   (`congressBio`) from `providers/bios.ts`, bill policy areas (`getSponsoredPolicyAreas`), and
   committees (`getCommittees`). Only Congress and the VP have bios; others say none on file.
+- `src/data/bios/ma-executives.json` (via `providers/maExecBios.ts`): hand-curated bios for MA
+  statewide executives, keyed by Open States person ID, `summary` quoted verbatim from mass.gov /
+  masstreasury.gov with sources and a `checked` date. Galvin has no official bio page, so none.
 - Promise tracker: `src/lib/promises.ts` (model), `src/data/promises.json` (published, empty),
   `/[locale]/admin/review` (local-only review UI; 404 in production), `/methodology`.
 
@@ -122,7 +125,9 @@ street address or zip via the free Census Geocoder).
 ## Dates when data goes stale
 
 - **After Nov 3, 2026:** update `src/data/local/stoughton-ma.json` (DA, Commissioner Collins,
-  County Treasurer, Register of Probate, Governor's Councillor were on the ballot), rerun
+  County Treasurer, Register of Probate, Governor's Councillor were on the ballot), recheck
+  `src/data/bios/ma-executives.json` (Governor, Lt. Governor, AG, Secretary, Treasurer, and
+  Auditor were all on the ballot; new officeholders get new Open States IDs), rerun
   `build-executives.mjs`, and rerun `build-ma-results.mjs` once MA certifies the general.
 - **Jan 3, 2027 (120th Congress):** switch the geocoder vintage to `Current_Current`,
   rebuild `zips.json` with the new CD/SLD relationship files, and rerun
