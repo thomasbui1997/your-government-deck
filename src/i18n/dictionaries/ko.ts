@@ -326,6 +326,9 @@ export const ko: Dictionary = {
     body: "데이터 출처 중 하나가 응답하지 않았습니다. 잠시 후 다시 시도하세요.",
     retry: "다시 시도",
   },
+  maLegislature: {
+    leadership: "지도부 직책",
+  },
   methodology: {
     metaTitle: "약속을 추적하는 방법",
     title: "약속을 추적하는 방법",

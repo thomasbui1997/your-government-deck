@@ -19,6 +19,7 @@ import {
   type StatePerson,
 } from "./providers/openstates";
 import { getMeetings } from "./providers/agendaCenter";
+import { getMaLegislatorProfile } from "./providers/malegislature";
 import { getBlueskyPosts, handleFromWebsite } from "./providers/bluesky";
 import { directorySource, getDirectoryBio } from "./providers/bios";
 import { getMaExecutiveBio } from "./providers/maExecBios";
@@ -473,14 +474,22 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
     const person = await findStatePerson(state, `ocd-person/${osMatch[2]}`);
     if (!person) return null;
     const isExec = person.kind === "executive";
+    // Massachusetts legislators: the Legislature's own API and profile pages.
+    const ma = !isExec && state === "MA" ? await getMaLegislatorProfile(person) : null;
     const activity = isExec
       ? []
-      : await getStateBills(state, person.id, 15).catch(() => [] as ActivityItem[]);
+      : ma
+        ? ma.activity
+        : await getStateBills(state, person.id, 15).catch(() => [] as ActivityItem[]);
     const stateName = STATE_NAMES[state] ?? state;
+    const card = stateCard(person);
     return {
       official: {
-        ...stateCard(person),
+        ...card,
         lastActiveDaysAgo: activity[0] ? daysSince(activity[0].date) : undefined,
+        ...(ma
+          ? { stats: [...card.stats, { icon: "📜", key: "billsSponsored", value: String(ma.member.sponsoredCount) }] }
+          : {}),
       },
       tierLabel: isExec
         ? { key: "stateExec", state: stateName }
@@ -489,14 +498,15 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
           : { key: "stateLeg", state: stateName },
       contact: {
         website: person.website,
-        phone: person.phone,
-        email: person.email,
+        phone: person.phone ?? ma?.member.phone,
+        email: person.email ?? ma?.member.email,
         office: person.address,
         socials: person.socials,
       },
       activity,
       activityNote: isExec ? "noteStateExec" : undefined,
-      bio: isExec && state === "MA" ? getMaExecutiveBio(person.id) : undefined,
+      // Legislators: the Legislature's profile. Statewide executives: curated official bios.
+      bio: ma?.bio ?? (isExec && state === "MA" ? getMaExecutiveBio(person.id) : undefined),
     };
   }
 

@@ -323,6 +323,9 @@ export const zhHans: Dictionary = {
     body: "我们的某个数据来源没有响应，请稍后再试。",
     retry: "重试",
   },
+  maLegislature: {
+    leadership: "领导职务",
+  },
   methodology: {
     metaTitle: "我们如何追踪承诺",
     title: "我们如何追踪承诺",

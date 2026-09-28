@@ -94,6 +94,15 @@ function CardBack({ official, bio, lang, t }: { official: Official; bio?: Offici
               </p>
             )}
 
+            {bio.leadership && (
+              <section>
+                <h3 className="font-display text-[11px] tracking-wide text-gold uppercase">
+                  {t.maLegislature.leadership}
+                </h3>
+                <p lang="en">{bio.leadership}</p>
+              </section>
+            )}
+
             {(bio.hometown || bio.born) && (
               <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1">
                 {bio.hometown && (

@@ -338,6 +338,9 @@ export const vi: Dictionary = {
     body: "Một nguồn dữ liệu của chúng tôi không phản hồi. Vui lòng thử lại sau.",
     retry: "Thử lại",
   },
+  maLegislature: {
+    leadership: "Chức vụ lãnh đạo",
+  },
   methodology: {
     metaTitle: "Cách chúng tôi theo dõi lời hứa",
     title: "Cách chúng tôi theo dõi lời hứa",

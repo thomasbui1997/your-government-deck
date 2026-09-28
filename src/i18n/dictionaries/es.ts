@@ -339,6 +339,9 @@ export const es: Dictionary = {
     body: "Una de nuestras fuentes de datos no respondió. Inténtalo de nuevo en un momento.",
     retry: "Reintentar",
   },
+  maLegislature: {
+    leadership: "Liderazgo",
+  },
   methodology: {
     metaTitle: "Cómo damos seguimiento a las promesas",
     title: "Cómo damos seguimiento a las promesas",

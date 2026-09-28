@@ -323,6 +323,9 @@ export const zhHant: Dictionary = {
     body: "我們的某個資料來源沒有回應，請稍後再試。",
     retry: "重試",
   },
+  maLegislature: {
+    leadership: "領導職務",
+  },
   methodology: {
     metaTitle: "我們如何追蹤承諾",
     title: "我們如何追蹤承諾",

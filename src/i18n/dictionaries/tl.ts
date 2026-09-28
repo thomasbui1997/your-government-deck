@@ -338,6 +338,9 @@ export const tl: Dictionary = {
     body: "Hindi sumagot ang isa sa aming mga pinagmumulan ng datos. Subukang muli mamaya.",
     retry: "Subukang muli",
   },
+  maLegislature: {
+    leadership: "Pamunuan",
+  },
   methodology: {
     metaTitle: "Paano namin sinusubaybayan ang mga pangako",
     title: "Paano namin sinusubaybayan ang mga pangako",
