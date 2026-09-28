@@ -109,6 +109,8 @@ export interface ActivityItem {
 export interface OfficialBio {
   /** An official biography published as prose (e.g. a legislature profile), shown verbatim. */
   summary?: string;
+  /** A chamber leadership post as the legislature lists it, e.g. "Majority Leader". */
+  leadership?: string;
   hometown?: string;
   born?: { place: string; date?: string };
   education: string[];

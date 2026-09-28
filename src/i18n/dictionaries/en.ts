@@ -329,6 +329,10 @@ export const en = {
     body: "One of our data sources didn't answer. Give it another try in a moment.",
     retry: "Try again",
   },
+  maLegislature: {
+    /** A chamber leadership post on the Massachusetts Legislature card back. */
+    leadership: "Leadership",
+  },
   methodology: {
     metaTitle: "How we track promises",
     title: "How we track promises",

@@ -311,6 +311,9 @@ export const ar: Dictionary = {
     body: "لم يستجب أحد مصادر بياناتنا. حاول مرة أخرى بعد قليل.",
     retry: "حاول مجددًا",
   },
+  maLegislature: {
+    leadership: "المنصب القيادي",
+  },
   methodology: {
     metaTitle: "كيف نتابع الوعود",
     title: "كيف نتابع الوعود",

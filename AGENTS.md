@@ -53,6 +53,10 @@ street address or zip via the free Census Geocoder).
 - Card back (click the profile card to flip): `FlipCard.tsx`; bio assembled in `resolve.ts`
   (`congressBio`) from `providers/bios.ts`, bill policy areas (`getSponsoredPolicyAreas`), and
   committees (`getCommittees`). Only Congress and the VP have bios; others say none on file.
+- MA state legislators: `src/lib/providers/malegislature.ts` (`GENERAL_COURT` = 194) gives
+  their card back (official Biography prose verbatim, leadership post, committees) and
+  activity (bills filed/cosponsored) instead of the Open States API. Open States people are
+  matched to MemberCodes by branch + district + last name; misses are logged, not guessed.
 - Promise tracker: `src/lib/promises.ts` (model), `src/data/promises.json` (published, empty),
   `/[locale]/admin/review` (local-only review UI; 404 in production), `/methodology`.
 
@@ -73,6 +77,11 @@ street address or zip via the free Census Geocoder).
   committee seats and leadership titles.
 - Massachusetts PD43+ (electionstats.state.ma.us): official vote counts. Other states show
   money without results until someone adds a `build-<state>-results` script.
+- malegislature.gov: member lists (`/Legislators/Members/House|Senate`, for matching),
+  profile `Biography` and `Committees` pages, and the API (`/api/GeneralCourts/194/…`,
+  swagger at `/api/swagger`) for bills, leadership, and bill histories. The API's
+  `CoSponsoredBills` includes bills the member isn't on, so only bills whose `Cosponsors`
+  list them are shown. Its roll calls are Senate-only, with no date or bill, so not shown.
 - Bluesky public API: posts only from handles equal to the official's website domain
   (domain-verified). X and Meta APIs are paid/gated, so those are link-outs only.
 
@@ -122,6 +131,8 @@ street address or zip via the free Census Geocoder).
 - **Jan 3, 2027 (120th Congress):** switch the geocoder vintage to `Current_Current`,
   rebuild `zips.json` with the new CD/SLD relationship files, and rerun
   `build-congress-bios.mjs` once GPO publishes the 120th Congress directory.
+- **January 2027 (195th General Court):** set `GENERAL_COURT = 195` in
+  `src/lib/providers/malegislature.ts`.
 
 ## Open work
 
