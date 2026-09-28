@@ -23,6 +23,7 @@ import { getBlueskyPosts, handleFromWebsite } from "./providers/bluesky";
 import { directorySource, getDirectoryBio } from "./providers/bios";
 import { findLocalOfficial, isLocalId, localStateOfficials, localTiers } from "./providers/local";
 import { getSenateVotes } from "./providers/senate";
+import { federalRegisterSource, getPresidentialDocuments } from "./providers/federalRegister";
 import { getPublishedPromises, withPromises } from "./promiseStore";
 import { districtsForZip, type StateDistrict, stateDistrict } from "./providers/zip";
 import type { ActivityItem, Deck, Official, OfficialBio, OfficialProfile, SplitKind, Tier } from "./types";
@@ -272,10 +273,11 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
   const lower = pickLower ? [pickLower] : found.lower;
   const narrowed = pick.cd !== undefined || !!pickUpper || !!pickLower;
 
-  const [delegation, index, stateLevel] = await Promise.all([
+  const [delegation, index, stateLevel, presidentDocs] = await Promise.all([
     getDelegation(state),
     getLegislatorIndex(),
     stateTiers(zip, state, upper, lower),
+    getPresidentialDocuments(1).catch(() => []),
   ]);
 
   const senators = delegation.filter((m) => m.chamber === "Senate");
@@ -303,7 +305,13 @@ export async function getDeck(zip: string, pick: DistrictPick = {}): Promise<Dec
       id: "federal-exec",
       level: "federal",
       label: { key: "federalExec" },
-      officials: FEDERAL_EXEC.map(withPromises),
+      officials: FEDERAL_EXEC.map((o) =>
+        withPromises(
+          o.id === "president" && presidentDocs[0]
+            ? { ...o, lastActiveDaysAgo: daysSince(presidentDocs[0].date) }
+            : o,
+        ),
+      ),
     },
     { id: "federal-leg", level: "federal", label: { key: "federalLeg" }, officials: congress },
   ];
@@ -369,6 +377,19 @@ export async function getProfile(id: string): Promise<OfficialProfile | null> {
 
 async function loadProfile(id: string): Promise<OfficialProfile | null> {
   const exec = FEDERAL_EXEC.find((o) => o.id === id);
+  if (exec?.id === "president") {
+    // Presidents don't file bills; their official actions are published in the Federal Register.
+    const docs = await getPresidentialDocuments(20).catch(() => null);
+    if (docs?.length) {
+      return {
+        official: { ...exec, lastActiveDaysAgo: daysSince(docs[0].date) },
+        tierLabel: { key: "federalExec" },
+        contact: { website: "https://www.whitehouse.gov" },
+        activity: docs,
+        sources: [federalRegisterSource],
+      };
+    }
+  }
   if (exec) {
     return {
       official: exec,

@@ -245,6 +245,7 @@ export const tl: Dictionary = {
     cosponsor: "Co-sponsor",
     meeting: "Mga pulong",
     post: "Mga post",
+    executive: "Mga aksyong ehekutibo",
     none: "Walang nahanap na kamakailang aktibidad.",
     casts: {
       Yea: "Oo",
@@ -257,6 +258,20 @@ export const tl: Dictionary = {
     docs: {
       Agenda: "Agenda",
       Minutes: "Katitikan",
+    },
+  },
+  presidential: {
+    signed: "Nilagdaan",
+    published: "Inilathala",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "Executive Order",
+      Proclamation: "Proklamasyon",
+      Memorandum: "Memorandum",
+      Notice: "Paunawa",
+      Determination: "Determinasyon",
+      "Presidential Order": "Kautusan ng Pangulo",
+      Other: "Iba pa",
     },
   },
   promises: {

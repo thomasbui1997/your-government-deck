@@ -249,6 +249,7 @@ export const en = {
     cosponsor: "Cosponsored",
     meeting: "Meetings",
     post: "Posts",
+    executive: "Executive actions",
     none: "No recent activity found.",
     /** Vote casts as the Clerk and Senate record them. */
     casts: {
@@ -263,6 +264,21 @@ export const en = {
     docs: {
       Agenda: "Agenda",
       Minutes: "Minutes",
+    } as Record<string, string>,
+  },
+  /** Presidential documents from the Federal Register. */
+  presidential: {
+    signed: "Signed",
+    published: "Published",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "Executive Order",
+      Proclamation: "Proclamation",
+      Memorandum: "Memorandum",
+      Notice: "Notice",
+      Determination: "Determination",
+      "Presidential Order": "Presidential Order",
+      Other: "Other",
     } as Record<string, string>,
   },
   promises: {

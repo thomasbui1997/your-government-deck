@@ -245,6 +245,7 @@ export const es: Dictionary = {
     cosponsor: "Copatrocinados",
     meeting: "Reuniones",
     post: "Publicaciones",
+    executive: "Acciones ejecutivas",
     none: "No se encontró actividad reciente.",
     casts: {
       Yea: "Sí",
@@ -257,6 +258,20 @@ export const es: Dictionary = {
     docs: {
       Agenda: "Agenda",
       Minutes: "Actas",
+    },
+  },
+  presidential: {
+    signed: "Firmado",
+    published: "Publicado",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "Orden ejecutiva",
+      Proclamation: "Proclamación",
+      Memorandum: "Memorando",
+      Notice: "Aviso",
+      Determination: "Determinación",
+      "Presidential Order": "Orden presidencial",
+      Other: "Otro",
     },
   },
   promises: {
