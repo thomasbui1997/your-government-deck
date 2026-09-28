@@ -10,6 +10,7 @@ const kinds: { kind: ActivityKind; icon: string }[] = [
   { kind: "cosponsor", icon: "🤝" },
   { kind: "meeting", icon: "📅" },
   { kind: "post", icon: "💬" },
+  { kind: "executive", icon: "🖋️" },
 ];
 
 const iconFor = Object.fromEntries(kinds.map((k) => [k.kind, k.icon]));
@@ -68,13 +69,18 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
             </span>
             <div className="min-w-0 flex-1 border-b border-navy/10 pb-3">
               <div className="flex flex-wrap items-center gap-2 text-xs text-navy/60">
+                {item.dateKind && <span>{t.presidential[item.dateKind]}</span>}
                 <time dateTime={item.date}>{formatDate(item.date, htmlLang)}</time>
                 {item.badge && (
                   <span
                     className={`rounded px-1.5 py-0.5 font-bold ${voteBadge[item.badge] ?? "bg-navy/10 text-navy"}`}
                   >
                     {/* Vote casts are translated; bill numbers stay as they are. */}
-                    {t.activity.casts[item.badge] ?? t.activity.docs[item.badge] ?? item.badge}
+                    {t.activity.casts[item.badge] ??
+                      t.activity.docs[item.badge] ??
+                      t.presidential.docKinds[item.badge] ??
+                      item.badge}
+                    {item.badgeNumber && <> <bdi>{item.badgeNumber}</bdi></>}
                   </span>
                 )}
               </div>
@@ -95,7 +101,7 @@ export function ActivityTimeline({ items }: { items: ActivityItem[] }) {
               )}
               {item.detail && (
                 <p lang="en" className="mt-0.5 line-clamp-1 text-sm text-navy/60">
-                  {item.detail}
+                  <bdi>{item.detail}</bdi>
                 </p>
               )}
             </div>

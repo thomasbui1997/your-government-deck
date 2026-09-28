@@ -75,6 +75,11 @@ street address or zip via the free Census Geocoder).
   money without results until someone adds a `build-<state>-results` script.
 - Bluesky public API: posts only from handles equal to the official's website domain
   (domain-verified). X and Meta APIs are paid/gated, so those are link-outs only.
+- Federal Register API (no key; `providers/federalRegister.ts`): the President's timeline
+  (EOs, proclamations, memoranda, notices…) as `executive` activity, and his card's "last
+  active". Query `conditions[type][]=PRESDOCU&conditions[president][]=donald-trump`; the
+  slug spans both Trump terms, so it also filters `signing_date >= 2025-01-20` (update
+  `PRESIDENT` for a new President). Only Presidents sign these, so the VP keeps his note.
 
 ## Conventions
 

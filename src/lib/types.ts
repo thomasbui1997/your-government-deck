@@ -93,7 +93,7 @@ export interface Deck {
   tiers: Tier[];
 }
 
-export type ActivityKind = "vote" | "bill" | "cosponsor" | "meeting" | "post";
+export type ActivityKind = "vote" | "bill" | "cosponsor" | "meeting" | "post" | "executive";
 
 export interface ActivityItem {
   kind: ActivityKind;
@@ -102,6 +102,10 @@ export interface ActivityItem {
   detail?: string;
   /** Short badge, e.g. the vote cast ("Yea") or the bill number. */
   badge?: string;
+  /** A number shown after the translated badge, e.g. the executive order number. */
+  badgeNumber?: string;
+  /** What `date` is, when it's worth saying (a signing date vs. a publication date). */
+  dateKind?: "signed" | "published";
   url?: string;
 }
 

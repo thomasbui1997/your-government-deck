@@ -240,6 +240,7 @@ export const zhHant: Dictionary = {
     cosponsor: "聯署",
     meeting: "會議",
     post: "貼文",
+    executive: "行政行動",
     none: "未找到近期動態。",
     casts: {
       Yea: "贊成",
@@ -252,6 +253,20 @@ export const zhHant: Dictionary = {
     docs: {
       Agenda: "議程",
       Minutes: "會議紀錄",
+    },
+  },
+  presidential: {
+    signed: "簽署於",
+    published: "發布於",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "行政命令",
+      Proclamation: "公告",
+      Memorandum: "備忘錄",
+      Notice: "通知",
+      Determination: "決定",
+      "Presidential Order": "總統令",
+      Other: "其他",
     },
   },
   promises: {

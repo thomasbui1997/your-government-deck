@@ -245,6 +245,7 @@ export const vi: Dictionary = {
     cosponsor: "Đồng bảo trợ",
     meeting: "Cuộc họp",
     post: "Bài đăng",
+    executive: "Hành động hành pháp",
     none: "Không tìm thấy hoạt động gần đây.",
     casts: {
       Yea: "Thuận",
@@ -257,6 +258,20 @@ export const vi: Dictionary = {
     docs: {
       Agenda: "Chương trình nghị sự",
       Minutes: "Biên bản",
+    },
+  },
+  presidential: {
+    signed: "Ký ngày",
+    published: "Công bố ngày",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "Sắc lệnh hành pháp",
+      Proclamation: "Tuyên cáo",
+      Memorandum: "Bị vong lục",
+      Notice: "Thông báo",
+      Determination: "Quyết định",
+      "Presidential Order": "Lệnh của Tổng thống",
+      Other: "Khác",
     },
   },
   promises: {

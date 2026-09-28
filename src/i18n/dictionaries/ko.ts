@@ -240,6 +240,7 @@ export const ko: Dictionary = {
     cosponsor: "공동 발의",
     meeting: "회의",
     post: "게시물",
+    executive: "행정 조치",
     none: "최근 활동이 없습니다.",
     casts: {
       Yea: "찬성",
@@ -252,6 +253,20 @@ export const ko: Dictionary = {
     docs: {
       Agenda: "안건",
       Minutes: "회의록",
+    },
+  },
+  presidential: {
+    signed: "서명일",
+    published: "게재일",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "행정명령",
+      Proclamation: "포고문",
+      Memorandum: "각서",
+      Notice: "공고",
+      Determination: "결정",
+      "Presidential Order": "대통령령",
+      Other: "기타",
     },
   },
   promises: {

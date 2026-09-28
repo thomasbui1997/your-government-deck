@@ -240,6 +240,7 @@ export const ar: Dictionary = {
     cosponsor: "رعاية مشتركة",
     meeting: "الاجتماعات",
     post: "المنشورات",
+    executive: "إجراءات تنفيذية",
     none: "لم يُعثر على نشاط حديث.",
     casts: {
       Yea: "نعم",
@@ -252,6 +253,20 @@ export const ar: Dictionary = {
     docs: {
       Agenda: "جدول الأعمال",
       Minutes: "المحضر",
+    },
+  },
+  presidential: {
+    signed: "وُقّع في",
+    published: "نُشر في",
+    /** Federal Register document subtypes. */
+    docKinds: {
+      "Executive Order": "أمر تنفيذي",
+      Proclamation: "إعلان",
+      Memorandum: "مذكرة",
+      Notice: "إشعار",
+      Determination: "قرار",
+      "Presidential Order": "أمر رئاسي",
+      Other: "أخرى",
     },
   },
   promises: {
