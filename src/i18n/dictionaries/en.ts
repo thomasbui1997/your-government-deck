@@ -373,6 +373,50 @@ export const en = {
     money5:
       "Vote counts come from each state's official results, so far only Massachusetts. The “On the ballot” ribbon means the seat is up in the next federal election; whether the official is running comes from their FEC filings and, where we have them, official primary results. Presidential campaign money isn't shown yet because it runs through committees the FEC reports differently.",
   },
+  /** Massachusetts state campaign money, from OCPF. */
+  stateMoney: {
+    panelTitle: "Campaign money",
+    cycle: "Massachusetts election cycle",
+    electionDay: "State election {date}",
+    committee: "Campaign committee",
+    raised: "Raised",
+    spent: "Spent",
+    cashOnHand: "Cash on hand",
+    bankThrough: "Bank totals through {date}",
+    whoGave: "Who gave",
+    grassroots: "Grassroots",
+    bigMoney: "Big money",
+    upTo50: "Gifts of $50 or less",
+    from51: "$51–$199",
+    from200: "$200–$499",
+    from500: "$500–$999",
+    from1000: "$1,000 or more",
+    pacs: "PACs",
+    unions: "Unions and associations",
+    committees: "Party, candidate and other committees",
+    summaryGrassroots: "Gifts of $50 or less made up {pct} of contributions.",
+    summaryBig: "{pct} came in big checks: gifts of $500 or more, plus PACs and unions.",
+    note: "Shares are of {total} in contributions deposited from {from} through {date}. Sizes count each gift, not each donor's total.",
+    noContributions: "No contributions reported this cycle.",
+    byYear: "Year by year",
+    year: "Year",
+    topBackers: "Top organizations",
+    tagPac: "PAC",
+    tagUnion: "Union",
+    tagCommittee: "Cmte",
+    noOrgs: "No money from PACs, unions or other committees this cycle.",
+    truncated: "This committee has more organization gifts than we load at once, so these totals leave out the oldest ones.",
+    ocpfLink: "This committee on OCPF",
+    howWeCount: "How we count state campaign money",
+    unavailable: "Campaign money couldn't be loaded from OCPF right now. Try again later.",
+    methodTitle: "How we count Massachusetts campaign money",
+    method1:
+      "For Massachusetts state legislators and statewide officials, campaign money comes from the Massachusetts Office of Campaign and Political Finance (OCPF), which publishes every candidate committee's bank and deposit reports. We match each official to the one committee whose candidate holds their seat, by office, district and last name; if there isn't exactly one match, we show nothing. Money is counted over the election cycle: two years for the Legislature, four for statewide offices. Raised, spent and cash on hand are OCPF's year-to-date bank totals.",
+    method2:
+      "Massachusetts law caps what one person can give a candidate at $1,000 a year and what a PAC can give at $500, and businesses can't give at all. Campaigns must name anyone whose gifts total more than $50 (with their employer at $200 or more); smaller gifts can be reported as one lump sum. So grassroots here means gifts of $50 or less, and big money means gifts of $500 or more (at least half the yearly limit), plus PACs and unions. Sizes are per gift, not per donor, and a candidate's own contributions count as individual gifts.",
+    method3:
+      "Contributor types are OCPF's: individuals; PACs (committees registered as PACs or people's committees); unions and associations; and other political committees, such as party and candidate committees. Loans, bank interest, in-kind gifts and refunds aren't in the bar. We list organizations only and never name individual donors. Reports can be amended, and new deposits show up before the monthly bank totals do.",
+  },
 };
 
 export type Dictionary = typeof en;
