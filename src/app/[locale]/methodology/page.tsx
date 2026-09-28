@@ -79,6 +79,12 @@ export default async function MethodologyPage() {
           <p>{m.money5}</p>
         </Section>
 
+        <Section id="state-money" title={t.stateMoney.methodTitle}>
+          <p>{t.stateMoney.method1}</p>
+          <p>{t.stateMoney.method2}</p>
+          <p>{t.stateMoney.method3}</p>
+        </Section>
+
         <Section title={m.correctionsTitle}>
           <p>
             {m.correctionsBefore}

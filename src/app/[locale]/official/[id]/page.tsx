@@ -6,6 +6,7 @@ import { MoneyPanel, MoneyPanelSkeleton } from "@/components/MoneyPanel";
 import { FlipCard } from "@/components/FlipCard";
 import { PromiseTracker } from "@/components/PromiseTracker";
 import { SiteHeader } from "@/components/SiteHeader";
+import { StateMoneyPanel } from "@/components/StateMoneyPanel";
 import { format, LOCALE_INFO } from "@/i18n/config";
 import { officeTitle, tierTitle } from "@/i18n/labels";
 import { getDictionary, getLocale, href } from "@/i18n/server";
@@ -109,6 +110,12 @@ export default async function OfficialPage(props: PageProps<"/[locale]/official/
               // Streams in after the rest of the profile: FEC calls can be slow.
               <Suspense fallback={<MoneyPanelSkeleton />}>
                 <MoneyPanel bioguideId={official.id} />
+              </Suspense>
+            )}
+            {official.id.startsWith("os-ma-") && (
+              // Massachusetts state campaign money, from OCPF.
+              <Suspense fallback={<MoneyPanelSkeleton />}>
+                <StateMoneyPanel officialId={official.id} />
               </Suspense>
             )}
 

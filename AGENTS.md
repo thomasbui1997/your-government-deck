@@ -73,6 +73,15 @@ street address or zip via the free Census Geocoder).
 - Open States: legislators via bulk CSV (`data.openstates.org/people/current/<st>.csv`, no
   rate limit); the API (10 req/min) only for profile bills. MA has no roll-call votes there.
 - Census Geocoder (`ACS2025_Current` vintage = 119th Congress + 2024 state lines).
+- OCPF (api.ocpf.us, the public JSON API behind ocpf.us; no key): MA state officials' campaign
+  money. Filer match = `/filers/listings/A?searchPhrase=<ASCII last name>` filtered to the seat
+  in "office held" (all 203 MA legislators + statewide officers match; none guessed). Totals from
+  `/reports/{legislative/depository,statewide,county}/ytd/<year>`; gifts from `/search/items`
+  (record types 201 individual, 202 committee, 203 union, 220 unitemized, 299 PAC ⊂ 202).
+  MA definitions (M.G.L. c. 55 §§ 7A, 18, 19; OCPF limits chart): $1,000/yr individual limit,
+  $500 PAC, names above $50, employer at $200+. Grassroots = gifts ≤ $50; big money = gifts
+  ≥ $500 + PACs + unions. Code: `providers/ocpf.ts`, `lib/stateMoney.ts`,
+  `components/StateMoneyPanel.tsx`; strings in `stateMoney`; methodology `#state-money`.
 - Stoughton Agenda Center (CivicPlus) for Select Board / School Committee meetings.
 - FEC API (api.open.fec.gov, 1,000 req/hour/key): campaign totals per election
   (`election_full=true`), donor-size buckets, independent expenditures, PAC gifts. Members'
@@ -140,6 +149,9 @@ street address or zip via the free Census Geocoder).
   `src/data/bios/ma-executives.json` (Governor, Lt. Governor, AG, Secretary, Treasurer, and
   Auditor were all on the ballot; new officeholders get new Open States IDs), rerun
   `build-executives.mjs`, and rerun `build-ma-results.mjs` once MA certifies the general.
+- **Jan 2027:** the OCPF panel rolls to the 2027–28 legislative cycle (it falls back to the
+  finished cycle until gifts arrive). OCPF limits change biennially for people's committees
+  only; recheck the chart (ocpf.us/Legal/ContributionLimits) if the $1,000/$500 limits change.
 - **Jan 3, 2027 (120th Congress):** switch the geocoder vintage to `Current_Current`,
   rebuild `zips.json` with the new CD/SLD relationship files, and rerun
   `build-congress-bios.mjs` once GPO publishes the 120th Congress directory.
