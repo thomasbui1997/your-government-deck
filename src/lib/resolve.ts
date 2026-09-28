@@ -21,6 +21,7 @@ import {
 import { getMeetings } from "./providers/agendaCenter";
 import { getBlueskyPosts, handleFromWebsite } from "./providers/bluesky";
 import { directorySource, getDirectoryBio } from "./providers/bios";
+import { getMaExecutiveBio } from "./providers/maExecBios";
 import { findLocalOfficial, isLocalId, localStateOfficials, localTiers } from "./providers/local";
 import { getSenateVotes } from "./providers/senate";
 import { getPublishedPromises, withPromises } from "./promiseStore";
@@ -474,6 +475,7 @@ async function loadProfile(id: string): Promise<OfficialProfile | null> {
       },
       activity,
       activityNote: isExec ? "noteStateExec" : undefined,
+      bio: isExec && state === "MA" ? getMaExecutiveBio(person.id) : undefined,
     };
   }
 
